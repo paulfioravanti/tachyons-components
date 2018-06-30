@@ -1,3 +1,13 @@
 import { Main } from "./Main.elm";
 
-Main.embed(document.getElementById("root"));
+document.addEventListener("DOMContentLoaded", () => {
+  const appContainer = document.querySelector("#root")
+
+  if (appContainer) {
+    const app = Main.embed(appContainer)
+
+    app.ports.setBodyClasses.subscribe((classes) => {
+      document.body.className = classes
+    })
+  }
+})
