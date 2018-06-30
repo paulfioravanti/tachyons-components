@@ -1,4 +1,5 @@
-import { Main } from "./Main.elm";
+import "tachyons"
+import { Main } from "./Main.elm"
 
 document.addEventListener("DOMContentLoaded", () => {
   const appContainer = document.querySelector("#root")

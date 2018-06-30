@@ -2,6 +2,7 @@ port module Main exposing (..)
 
 import Html exposing (Html, text, div, h1, img)
 import Html.Attributes exposing (src)
+import Styles
 
 
 port setBodyClasses : String -> Cmd msg
@@ -17,7 +18,7 @@ type alias Model =
 
 init : ( Model, Cmd Msg )
 init =
-    ( {}, setBodyClasses "w-100 sans-serif" )
+    ( {}, setBodyClasses Styles.body )
 
 
 
