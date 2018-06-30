@@ -1,8 +1,8 @@
 port module Main exposing (main)
 
-import Html
 import Model exposing (Model)
-import Msg exposing (Msg(NoOp))
+import Msg exposing (Msg(UrlChange))
+import Navigation exposing (Location)
 import Styles
 import View
 
@@ -10,21 +10,24 @@ import View
 port setBodyClasses : String -> Cmd msg
 
 
-init : ( Model, Cmd Msg )
-init =
-    ( {}, setBodyClasses Styles.body )
-
-
-update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    ( model, Cmd.none )
-
-
 main : Program Never Model Msg
 main =
-    Html.program
+    Navigation.program
+        UrlChange
         { init = init
         , update = update
         , view = View.view
         , subscriptions = always Sub.none
         }
+
+
+init : Location -> ( Model, Cmd Msg )
+init location =
+    ( {}, setBodyClasses Styles.body )
+
+
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        UrlChange location ->
+            ( model, Cmd.none )
