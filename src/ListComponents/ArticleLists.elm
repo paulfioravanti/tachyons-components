@@ -8,27 +8,32 @@ import Msg exposing (Msg)
 
 view : Html Msg
 view =
+    div [ class Styles.sectionContentWrapper ]
+        [ div [ class Styles.sectionContent ]
+            [ titlePreviewAuthorMediaFlipped
+            ]
+        ]
+
+
+titlePreviewAuthorMediaFlipped : Html Msg
+titlePreviewAuthorMediaFlipped =
     let
         screenshot =
             "/components/article-lists/"
                 ++ "title-preview-author-media-flipped/screenshot.jpg"
     in
-        div [ class Styles.sectionContentWrapper ]
-            [ div [ class Styles.sectionContent ]
-                [ a
-                    [ class Styles.sectionContentLink
-                    , href "#"
-                    , title "Title Preview Author Media Flipped"
+        a
+            [ class Styles.sectionContentLink
+            , href "#"
+            , title "Title Preview Author Media Flipped"
+            ]
+            [ div [ class Styles.sectionContentLinkContent ]
+                [ div
+                    [ class Styles.sectionContentLinkImage
+                    , attribute "data-bg" screenshot
                     ]
-                    [ div [ class Styles.sectionContentLinkContent ]
-                        [ div
-                            [ class Styles.sectionContentLinkImage
-                            , attribute "data-bg" screenshot
-                            ]
-                            []
-                        ]
-                    , p [ class Styles.sectionContentTitle ]
-                        [ text "Title Preview Author Media Flipped" ]
-                    ]
+                    []
                 ]
+            , p [ class Styles.sectionContentTitle ]
+                [ text "Title Preview Author Media Flipped" ]
             ]
