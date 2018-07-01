@@ -8,6 +8,15 @@ module ListComponents.Styles
         , mainHeader
         , nav
         , navLink
+        , sectionContent
+        , sectionContentLink
+        , sectionContentLinkContent
+        , sectionContentLinkImage
+        , sectionContentTitle
+        , sectionContentWrapper
+        , sectionHeader
+        , sectionTitle
+        , sectionTitleWrapper
         , title
         , titleLink
         , versionNumber
@@ -102,6 +111,92 @@ navLink =
     , "hover-blue"
     , "link"
     , "mr2 mr3-m mr4-l"
+    ]
+        |> String.join " "
+
+
+sectionContent : String
+sectionContent =
+    [ "center"
+    , "cf"
+    , "mw9"
+    ]
+        |> String.join " "
+
+
+sectionContentLink : String
+sectionContentLink =
+    [ "black-70"
+    , "border-box"
+    , "db"
+    , "fl"
+    , "link"
+    , "pb2"
+    , "pointer"
+    , "pr2"
+    , "underline-hover"
+    , "w-50 w-25-l"
+    , "w-third-m"
+    ]
+        |> String.join " "
+
+
+sectionContentLinkContent : String
+sectionContentLinkContent =
+    [ "aspect-ratio"
+    , "aspect-ratio--4x3"
+    , "ba"
+    , "b--black-20"
+    ]
+        |> String.join " "
+
+
+sectionContentLinkImage : String
+sectionContentLinkImage =
+    [ "aspect-ratio--object"
+    , "lazyloaded"
+    ]
+        |> String.join " "
+
+
+sectionContentTitle : String
+sectionContentTitle =
+    [ "f6"
+    , "truncate"
+    ]
+        |> String.join " "
+
+
+sectionContentWrapper : String
+sectionContentWrapper =
+    [ "mb5"
+    , "ph3 ph5-ns"
+    ]
+        |> String.join " "
+
+
+sectionHeader : String
+sectionHeader =
+    "ph3 ph5-ns"
+
+
+sectionTitle : String
+sectionTitle =
+    [ "b--black-10"
+    , "bb"
+    , "black-70"
+    , "f5"
+    , "fw6"
+    , "pb2"
+    , "ttc"
+    ]
+        |> String.join " "
+
+
+sectionTitleWrapper : String
+sectionTitleWrapper =
+    [ "center"
+    , "mw9"
     ]
         |> String.join " "
 

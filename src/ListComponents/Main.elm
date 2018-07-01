@@ -1,7 +1,7 @@
 module ListComponents.Main exposing (view)
 
-import Html exposing (Html, header, main_, a, div, text)
-import Html.Attributes exposing (class, href, title)
+import Html exposing (Html, header, main_, a, div, h3, p, section, text)
+import Html.Attributes exposing (attribute, class, href, id, title)
 import ListComponents.Styles as Styles
 import Msg exposing (Msg)
 
@@ -10,6 +10,28 @@ view : Html Msg
 view =
     main_ [ class Styles.main_ ]
         [ mainHeader
+        , section []
+            [ sectionHeader "article-lists" "Article Lists"
+            , div [ class Styles.sectionContentWrapper ]
+                [ div [ class Styles.sectionContent ]
+                    [ a
+                        [ class Styles.sectionContentLink
+                        , href "#"
+                        , title "Title Preview Author Media Flipped"
+                        ]
+                        [ div [ class Styles.sectionContentLinkContent ]
+                            [ div
+                                [ class Styles.sectionContentLinkImage
+                                , attribute "data-bg" "/components/article-lists/title-preview-author-media-flipped/screenshot.jpg"
+                                ]
+                                []
+                            ]
+                        , p [ class Styles.sectionContentTitle ]
+                            [ text "Title Preview Author Media Flipped" ]
+                        ]
+                    ]
+                ]
+            ]
         ]
 
 
@@ -50,3 +72,13 @@ anchorLink : ( String, String ) -> Html Msg
 anchorLink ( link, linkText ) =
     a [ class Styles.anchor, href link ]
         [ text linkText ]
+
+
+sectionHeader : String -> String -> Html Msg
+sectionHeader sectionId title =
+    div [ class Styles.sectionHeader, id sectionId ]
+        [ div [ class Styles.sectionTitleWrapper ]
+            [ h3 [ class Styles.sectionTitle ]
+                [ text title ]
+            ]
+        ]
