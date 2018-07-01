@@ -1,13 +1,11 @@
-port module Main exposing (main)
+module Main exposing (main)
 
 import Model exposing (Model)
 import Msg exposing (Msg(UrlChange))
 import Navigation exposing (Location)
+import Ports
 import Styles
 import View
-
-
-port setBodyClasses : String -> Cmd msg
 
 
 main : Program Never Model Msg
@@ -23,7 +21,11 @@ main =
 
 init : Location -> ( Model, Cmd Msg )
 init location =
-    ( {}, setBodyClasses Styles.body )
+    ( {}
+    , Cmd.batch
+        [ Ports.setBodyClasses Styles.body
+        ]
+    )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
