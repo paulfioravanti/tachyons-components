@@ -1,7 +1,11 @@
 module ListComponents.Styles
     exposing
-        ( header
+        ( anchor
+        , anchors
+        , header
         , headerContent
+        , main_
+        , mainHeader
         , nav
         , navLink
         , title
@@ -9,6 +13,31 @@ module ListComponents.Styles
         , versionNumber
         , versionNumberWrapper
         )
+
+
+anchor : String
+anchor =
+    [ "b"
+    , "black-70"
+    , "dib"
+    , "f6"
+    , "fw6"
+    , "hover-blue"
+    , "link"
+    , "mb3"
+    , "mr3"
+    , "pb1"
+    , "ttc"
+    ]
+        |> String.join " "
+
+
+anchors : String
+anchors =
+    [ "center"
+    , "mw9"
+    ]
+        |> String.join " "
 
 
 header : String
@@ -28,6 +57,26 @@ headerContent =
     , "dt-ns"
     , "mw9"
     , "w-100"
+    ]
+        |> String.join " "
+
+
+main_ : String
+main_ =
+    [ "bg-white"
+    , "black-70"
+    ]
+        |> String.join " "
+
+
+mainHeader : String
+mainHeader =
+    [ "b--black-10"
+    , "bb"
+    , "bt"
+    , "mb4"
+    , "ph3 ph5-ns"
+    , "pt3"
     ]
         |> String.join " "
 
