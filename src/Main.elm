@@ -4,6 +4,7 @@ import Model exposing (Model)
 import Msg exposing (Msg(UrlChange))
 import Navigation exposing (Location)
 import Ports
+import Route exposing (Route(ListComponentsRoute))
 import Styles
 import View
 
@@ -21,11 +22,18 @@ main =
 
 init : Location -> ( Model, Cmd Msg )
 init location =
-    ( {}
-    , Cmd.batch
-        [ Ports.setBodyClasses Styles.body
-        ]
-    )
+    let
+        setUrl =
+            ListComponentsRoute
+                |> Route.toPath
+                |> Navigation.newUrl
+    in
+        ( {}
+        , Cmd.batch
+            [ Ports.setBodyClasses Styles.body
+            , setUrl
+            ]
+        )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
