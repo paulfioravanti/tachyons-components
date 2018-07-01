@@ -34,7 +34,7 @@ init location =
     in
         ( { route = route }
         , Cmd.batch
-            [ Ports.setBodyClasses Styles.body
+            [ Ports.setBodyClasses (Styles.bodyClasses route)
             , setUrl
             ]
         )
@@ -50,7 +50,12 @@ update msg model =
                         |> Route.toPath
                         |> Navigation.newUrl
             in
-                ( { route = route }, setUrl )
+                ( { route = route }
+                , Cmd.batch
+                    [ Ports.setBodyClasses (Styles.bodyClasses route)
+                    , setUrl
+                    ]
+                )
 
         UrlChange location ->
             ( model, Cmd.none )
