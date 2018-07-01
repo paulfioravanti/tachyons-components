@@ -5,30 +5,30 @@ import UrlParser exposing (Parser, (</>), map, oneOf, s, string, top)
 
 
 type Route
-    = ListComponentsRoute
-    | NotFoundRoute
+    = ListComponents
+    | NotFound
 
 
 fromLocation : Location -> Route
 fromLocation location =
     location
         |> UrlParser.parsePath matchers
-        |> Maybe.withDefault NotFoundRoute
+        |> Maybe.withDefault NotFound
 
 
 toPath : Route -> String
 toPath route =
     case route of
-        ListComponentsRoute ->
+        ListComponents ->
             "/components/"
 
-        NotFoundRoute ->
+        NotFound ->
             "/not-found/"
 
 
 matchers : Parser (Route -> a) a
 matchers =
     oneOf
-        [ map ListComponentsRoute top
-        , map ListComponentsRoute (s "components")
+        [ map ListComponents top
+        , map ListComponents (s "components")
         ]

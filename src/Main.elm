@@ -4,7 +4,7 @@ import Model exposing (Model)
 import Msg exposing (Msg(UrlChange))
 import Navigation exposing (Location)
 import Ports
-import Route exposing (Route(ListComponentsRoute))
+import Route
 import Styles
 import View
 
