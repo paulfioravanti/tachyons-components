@@ -1,43 +1,21 @@
 module ListComponents.Main exposing (view)
 
-import Html exposing (Html, header, main_, a, div, h3, p, section, text)
-import Html.Attributes exposing (attribute, class, href, id, title)
+import Html exposing (Html, header, main_, a, div, h3, section, text)
+import Html.Attributes exposing (class, href, id)
 import ListComponents.Styles as Styles
+import ListComponents.ArticleLists as ArticleLists
 import Msg exposing (Msg)
 
 
 view : Html Msg
 view =
-    let
-        screenshot =
-            "/components/article-lists/"
-                ++ "title-preview-author-media-flipped/screenshot.jpg"
-    in
-        main_ [ class Styles.main_ ]
-            [ mainHeader
-            , section []
-                [ sectionHeader "article-lists" "Article Lists"
-                , div [ class Styles.sectionContentWrapper ]
-                    [ div [ class Styles.sectionContent ]
-                        [ a
-                            [ class Styles.sectionContentLink
-                            , href "#"
-                            , title "Title Preview Author Media Flipped"
-                            ]
-                            [ div [ class Styles.sectionContentLinkContent ]
-                                [ div
-                                    [ class Styles.sectionContentLinkImage
-                                    , attribute "data-bg" screenshot
-                                    ]
-                                    []
-                                ]
-                            , p [ class Styles.sectionContentTitle ]
-                                [ text "Title Preview Author Media Flipped" ]
-                            ]
-                        ]
-                    ]
-                ]
+    main_ [ class Styles.main_ ]
+        [ mainHeader
+        , section []
+            [ sectionHeader "article-lists" "Article Lists"
+            , ArticleLists.view
             ]
+        ]
 
 
 mainHeader : Html Msg
