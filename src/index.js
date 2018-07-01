@@ -1,4 +1,6 @@
 import "tachyons"
+import "lazysizes/plugins/unveilhooks/ls.unveilhooks"
+import "lazysizes"
 import { Main } from "./Main.elm"
 
 document.addEventListener("DOMContentLoaded", () => {

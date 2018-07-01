@@ -154,7 +154,9 @@ sectionContentLinkContent =
 sectionContentLinkImage : String
 sectionContentLinkImage =
     [ "aspect-ratio--object"
-    , "lazyloaded"
+    , "bg-center"
+    , "cover"
+    , "lazyload"
     ]
         |> String.join " "
 
