@@ -3,14 +3,18 @@ module ListComponents.ArticleLists exposing (view)
 import Html exposing (Html, a, div, p, text)
 import Html.Attributes exposing (attribute, class, href, title)
 import ListComponents.Styles as Styles
+import ListComponents.Utils as Utils
 import Msg exposing (Msg)
 
 
 view : Html Msg
 view =
-    div [ class Styles.sectionContentWrapper ]
-        [ div [ class Styles.sectionContent ]
-            [ titlePreviewAuthorMediaFlipped
+    div []
+        [ Utils.sectionHeader "article-lists" "Article Lists"
+        , div [ class Styles.sectionContentWrapper ]
+            [ div [ class Styles.sectionContent ]
+                [ titlePreviewAuthorMediaFlipped
+                ]
             ]
         ]
 

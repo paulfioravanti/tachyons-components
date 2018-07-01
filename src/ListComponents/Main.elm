@@ -12,8 +12,7 @@ view =
     main_ [ class Styles.main_ ]
         [ mainHeader
         , section []
-            [ sectionHeader "article-lists" "Article Lists"
-            , ArticleLists.view
+            [ ArticleLists.view
             ]
         ]
 
@@ -55,13 +54,3 @@ anchorLink : ( String, String ) -> Html Msg
 anchorLink ( link, linkText ) =
     a [ class Styles.anchor, href link ]
         [ text linkText ]
-
-
-sectionHeader : String -> String -> Html Msg
-sectionHeader sectionId title =
-    div [ class Styles.sectionHeader, id sectionId ]
-        [ div [ class Styles.sectionTitleWrapper ]
-            [ h3 [ class Styles.sectionTitle ]
-                [ text title ]
-            ]
-        ]
