@@ -1,7 +1,9 @@
 module Msg exposing (Msg(..))
 
 import Navigation exposing (Location)
+import Route exposing (Route)
 
 
 type Msg
-    = UrlChange Location
+    = ChangeLocation Route
+    | UrlChange Location

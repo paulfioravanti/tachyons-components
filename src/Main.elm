@@ -1,7 +1,7 @@
 module Main exposing (main)
 
 import Model exposing (Model)
-import Msg exposing (Msg(UrlChange))
+import Msg exposing (Msg(ChangeLocation, UrlChange))
 import Navigation exposing (Location)
 import Ports
 import Route
@@ -40,5 +40,14 @@ init location =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
+        ChangeLocation route ->
+            let
+                setUrl =
+                    route
+                        |> Route.toPath
+                        |> Navigation.newUrl
+            in
+                ( model, setUrl )
+
         UrlChange location ->
             ( model, Cmd.none )

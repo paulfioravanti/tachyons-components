@@ -2,8 +2,10 @@ module View exposing (view)
 
 import Html exposing (Html, a, div, header, nav, small, text)
 import Html.Attributes exposing (class, href, title)
+import Html.Events exposing (onWithOptions)
+import Json.Decode as Decode
 import Model exposing (Model)
-import Msg exposing (Msg)
+import Msg exposing (Msg(ChangeLocation))
 import Route exposing (Route(ListComponents))
 import Styles
 
@@ -50,12 +52,7 @@ pageHeaderNav =
             , title "Documentation"
             ]
             [ text "Docs" ]
-        , a
-            [ class Styles.navLink
-            , href (Route.toPath ListComponents)
-            , title "Components"
-            ]
-            [ text "Components" ]
+        , componentsLink
         , a
             [ class Styles.navLink
             , href "http://tachyons.io/gallery"
@@ -75,3 +72,21 @@ pageHeaderNav =
             ]
             [ text "Github" ]
         ]
+
+
+componentsLink : Html Msg
+componentsLink =
+    let
+        clickOptions =
+            onWithOptions
+                "click"
+                { preventDefault = True, stopPropagation = False }
+                (Decode.succeed (ChangeLocation ListComponents))
+    in
+        a
+            [ class Styles.navLink
+            , href (Route.toPath ListComponents)
+            , title "Components"
+            , clickOptions
+            ]
+            [ text "Components" ]
