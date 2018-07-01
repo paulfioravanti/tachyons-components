@@ -8,31 +8,36 @@ import Msg exposing (Msg)
 
 view : Html Msg
 view =
-    main_ [ class Styles.main_ ]
-        [ mainHeader
-        , section []
-            [ sectionHeader "article-lists" "Article Lists"
-            , div [ class Styles.sectionContentWrapper ]
-                [ div [ class Styles.sectionContent ]
-                    [ a
-                        [ class Styles.sectionContentLink
-                        , href "#"
-                        , title "Title Preview Author Media Flipped"
-                        ]
-                        [ div [ class Styles.sectionContentLinkContent ]
-                            [ div
-                                [ class Styles.sectionContentLinkImage
-                                , attribute "data-bg" "/components/article-lists/title-preview-author-media-flipped/screenshot.jpg"
-                                ]
-                                []
+    let
+        screenshot =
+            "/components/article-lists/"
+                ++ "title-preview-author-media-flipped/screenshot.jpg"
+    in
+        main_ [ class Styles.main_ ]
+            [ mainHeader
+            , section []
+                [ sectionHeader "article-lists" "Article Lists"
+                , div [ class Styles.sectionContentWrapper ]
+                    [ div [ class Styles.sectionContent ]
+                        [ a
+                            [ class Styles.sectionContentLink
+                            , href "#"
+                            , title "Title Preview Author Media Flipped"
                             ]
-                        , p [ class Styles.sectionContentTitle ]
-                            [ text "Title Preview Author Media Flipped" ]
+                            [ div [ class Styles.sectionContentLinkContent ]
+                                [ div
+                                    [ class Styles.sectionContentLinkImage
+                                    , attribute "data-bg" screenshot
+                                    ]
+                                    []
+                                ]
+                            , p [ class Styles.sectionContentTitle ]
+                                [ text "Title Preview Author Media Flipped" ]
+                            ]
                         ]
                     ]
                 ]
             ]
-        ]
 
 
 mainHeader : Html Msg
