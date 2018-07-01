@@ -23,13 +23,16 @@ main =
 init : Location -> ( Model, Cmd Msg )
 init location =
     let
-        setUrl =
+        route =
             location
                 |> Route.fromLocation
+
+        setUrl =
+            route
                 |> Route.toPath
                 |> Navigation.newUrl
     in
-        ( {}
+        ( { route = route }
         , Cmd.batch
             [ Ports.setBodyClasses Styles.body
             , setUrl
@@ -47,7 +50,7 @@ update msg model =
                         |> Route.toPath
                         |> Navigation.newUrl
             in
-                ( model, setUrl )
+                ( { route = route }, setUrl )
 
         UrlChange location ->
             ( model, Cmd.none )
