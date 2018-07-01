@@ -24,7 +24,8 @@ init : Location -> ( Model, Cmd Msg )
 init location =
     let
         setUrl =
-            ListComponentsRoute
+            location
+                |> Route.fromLocation
                 |> Route.toPath
                 |> Navigation.newUrl
     in

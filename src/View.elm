@@ -4,6 +4,7 @@ import Html exposing (Html, a, div, header, nav, small, text)
 import Html.Attributes exposing (class, href, title)
 import Model exposing (Model)
 import Msg exposing (Msg)
+import Route exposing (Route(ListComponentsRoute))
 import Styles
 
 
@@ -51,7 +52,7 @@ pageHeaderNav =
             [ text "Docs" ]
         , a
             [ class Styles.navLink
-            , href "#"
+            , href (Route.toPath ListComponentsRoute)
             , title "Components"
             ]
             [ text "Components" ]
