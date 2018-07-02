@@ -11,6 +11,7 @@ import Html.Attributes
         , title
         )
 import Msg exposing (Msg)
+import Styles
 import Utils
 
 

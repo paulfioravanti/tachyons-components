@@ -4,6 +4,7 @@ import Html exposing (Html, a, div, h3, p, text)
 import Html.Attributes exposing (attribute, class, href, id, title)
 import ListComponents.Styles as Styles
 import Msg exposing (Msg)
+import Styles
 
 
 component : String -> String -> String -> Html Msg

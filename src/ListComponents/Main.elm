@@ -6,6 +6,7 @@ import ListComponents.Styles as Styles
 import ListComponents.Articles as Articles
 import ListComponents.ArticleLists as ArticleLists
 import Msg exposing (Msg)
+import Styles
 
 
 view : Html Msg

@@ -4,7 +4,6 @@ module Footer.Styles
         , callsToAction
         , callToAction
         , callToActionSvg
-        , centerContent
         , footer
         , footerLink
         , footerLinks
@@ -49,14 +48,6 @@ callToActionSvg =
     [ "pr2"
     , "pv1"
     , "w2"
-    ]
-        |> String.join " "
-
-
-centerContent : String
-centerContent =
-    [ "center"
-    , "mw9"
     ]
         |> String.join " "
 

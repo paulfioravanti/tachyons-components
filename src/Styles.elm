@@ -1,4 +1,4 @@
-module Styles exposing (bodyClasses)
+module Styles exposing (bodyClasses, centerContent)
 
 import Route exposing (Route(NotFound, ListComponents))
 
@@ -20,3 +20,11 @@ bodyClasses route =
     in
         styles
             |> String.join " "
+
+
+centerContent : String
+centerContent =
+    [ "center"
+    , "mw9"
+    ]
+        |> String.join " "

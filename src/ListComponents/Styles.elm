@@ -1,7 +1,6 @@
 module ListComponents.Styles
     exposing
         ( anchor
-        , centerContent
         , header
         , headerContent
         , main_
@@ -22,6 +21,8 @@ module ListComponents.Styles
         , versionNumberWrapper
         )
 
+import Styles
+
 
 anchor : String
 anchor =
@@ -36,14 +37,6 @@ anchor =
     , "mr3"
     , "pb1"
     , "ttc"
-    ]
-        |> String.join " "
-
-
-centerContent : String
-centerContent =
-    [ "center"
-    , "mw9"
     ]
         |> String.join " "
 
@@ -65,7 +58,7 @@ headerContent =
     , "w-100"
     ]
         |> String.join " "
-        |> (++) centerContent
+        |> (++) Styles.centerContent
 
 
 main_ : String
@@ -115,7 +108,7 @@ navLink =
 
 sectionContent : String
 sectionContent =
-    centerContent ++ " cf"
+    Styles.centerContent ++ " cf"
 
 
 sectionContentLink : String
