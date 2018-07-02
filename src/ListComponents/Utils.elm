@@ -9,7 +9,7 @@ import Msg exposing (Msg)
 sectionHeader : String -> String -> Html Msg
 sectionHeader sectionId title =
     div [ class Styles.sectionHeader, id sectionId ]
-        [ div [ class Styles.sectionTitleWrapper ]
+        [ div [ class Styles.centerContent ]
             [ h3 [ class Styles.sectionTitle ]
                 [ text title ]
             ]

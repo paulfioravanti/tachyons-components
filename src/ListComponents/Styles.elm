@@ -1,7 +1,8 @@
 module ListComponents.Styles
     exposing
         ( anchor
-        , anchors
+        , centerContent
+        , footer
         , header
         , headerContent
         , main_
@@ -16,7 +17,6 @@ module ListComponents.Styles
         , sectionContentWrapper
         , sectionHeader
         , sectionTitle
-        , sectionTitleWrapper
         , title
         , titleLink
         , versionNumber
@@ -41,10 +41,22 @@ anchor =
         |> String.join " "
 
 
-anchors : String
-anchors =
+centerContent : String
+centerContent =
     [ "center"
     , "mw9"
+    ]
+        |> String.join " "
+
+
+footer : String
+footer =
+    [ "bg-white"
+    , "b--black-10"
+    , "black-70"
+    , "bt"
+    , "ph3 ph5-ns"
+    , "pv5 pv6-ns"
     ]
         |> String.join " "
 
@@ -61,13 +73,12 @@ header =
 
 headerContent : String
 headerContent =
-    [ "center"
-    , "db"
+    [ "db"
     , "dt-ns"
-    , "mw9"
     , "w-100"
     ]
         |> String.join " "
+        |> (++) centerContent
 
 
 main_ : String
@@ -117,11 +128,7 @@ navLink =
 
 sectionContent : String
 sectionContent =
-    [ "center"
-    , "cf"
-    , "mw9"
-    ]
-        |> String.join " "
+    centerContent ++ " cf"
 
 
 sectionContentLink : String
@@ -191,14 +198,6 @@ sectionTitle =
     , "fw6"
     , "pb2"
     , "ttc"
-    ]
-        |> String.join " "
-
-
-sectionTitleWrapper : String
-sectionTitleWrapper =
-    [ "center"
-    , "mw9"
     ]
         |> String.join " "
 

@@ -47,7 +47,7 @@ mainHeader =
             ]
     in
         header [ class Styles.mainHeader ]
-            [ div [ class Styles.anchors ]
+            [ div [ class Styles.centerContent ]
                 (List.map anchorLink anchorLinks)
             ]
 
