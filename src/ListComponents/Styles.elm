@@ -23,6 +23,8 @@ module ListComponents.Styles
         , title
         , titleLink
         , twitterBadge
+        , twitterSvg
+        , twitterText
         , versionNumber
         , versionNumberWrapper
         )
@@ -269,6 +271,25 @@ twitterBadge =
     , "ph2"
     , "twitter"
     , "v-top"
+    ]
+        |> String.join " "
+
+
+twitterSvg : String
+twitterSvg =
+    [ "dib"
+    , "v-mid"
+    ]
+        |> String.join " "
+
+
+twitterText : String
+twitterText =
+    [ "dib"
+    , "fw6"
+    , "pl1"
+    , "v-mid"
+    , "white"
     ]
         |> String.join " "
 
