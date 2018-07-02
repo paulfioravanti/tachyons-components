@@ -61,9 +61,9 @@ pageHeaderNav =
         , a
             [ class Styles.navLink
             , href "http://github.com/tachyons-css/tachyons"
-            , title "Tachyons on Github"
+            , title "Tachyons on GitHub"
             ]
-            [ text "Github" ]
+            [ text "GitHub" ]
         ]
 
 
