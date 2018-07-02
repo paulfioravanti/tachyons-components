@@ -1,5 +1,8 @@
-module ListComponents.Footer exposing (view)
+module Footer.View exposing (view)
 
+import Footer.Badges as Badges
+import Footer.CallsToAction as CallsToAction
+import Footer.Styles as Styles
 import Html exposing (Html, a, br, div, footer, p, small, text)
 import Html.Attributes
     exposing
@@ -7,11 +10,8 @@ import Html.Attributes
         , href
         , title
         )
-import ListComponents.Badges as Badges
-import ListComponents.CallsToAction as CallsToAction
-import ListComponents.Styles as Styles
-import ListComponents.Utils as Utils
 import Msg exposing (Msg)
+import Utils
 
 
 view : Html Msg

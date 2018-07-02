@@ -3,8 +3,8 @@ module ListComponents.Header exposing (view)
 import Html exposing (Html, a, div, header, nav, small, text)
 import Html.Attributes exposing (class, href, title)
 import ListComponents.Styles as Styles
-import ListComponents.Utils as Utils
 import Msg exposing (Msg)
+import Utils
 
 
 view : Html Msg

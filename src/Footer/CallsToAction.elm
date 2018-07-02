@@ -1,5 +1,7 @@
-module ListComponents.CallsToAction exposing (view)
+module Footer.CallsToAction exposing (view)
 
+import Footer.Styles as Styles
+import Footer.SvgPath as SvgPath
 import Html exposing (Html, a, div, span, text)
 import Html.Attributes
     exposing
@@ -7,8 +9,6 @@ import Html.Attributes
         , href
         , title
         )
-import ListComponents.Styles as Styles
-import ListComponents.SvgPath as SvgPath
 import Msg exposing (Msg)
 import Svg exposing (Svg, g, path, svg)
 import Svg.Attributes

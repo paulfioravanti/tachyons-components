@@ -1,5 +1,7 @@
-module ListComponents.Badges exposing (view)
+module Footer.Badges exposing (view)
 
+import Footer.Styles as Styles
+import Footer.SvgPath as SvgPath
 import Html exposing (Html, a, article, iframe, span, text)
 import Html.Attributes
     exposing
@@ -11,8 +13,6 @@ import Html.Attributes
         , style
         , width
         )
-import ListComponents.Styles as Styles
-import ListComponents.SvgPath as SvgPath
 import Msg exposing (Msg)
 import Svg exposing (path, svg)
 import Svg.Attributes exposing (d, fill, viewBox)

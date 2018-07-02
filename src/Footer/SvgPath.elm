@@ -1,4 +1,4 @@
-module ListComponents.SvgPath
+module Footer.SvgPath
     exposing
         ( gitHubLogo
         , slackLogo
