@@ -13,31 +13,14 @@ view =
         [ Utils.sectionHeader "article-lists" "Article Lists"
         , div [ class Styles.sectionContentWrapper ]
             [ div [ class Styles.sectionContent ]
-                [ titlePreviewAuthorMediaFlipped
+                [ Utils.component
+                    "#"
+                    "Title Preview Author Media Flipped"
+                    "article-lists/title-preview-author-media-flipped"
+                , Utils.component
+                    "#"
+                    "Title Preview Author Media"
+                    "article-lists/title-preview-author-media"
                 ]
             ]
         ]
-
-
-titlePreviewAuthorMediaFlipped : Html Msg
-titlePreviewAuthorMediaFlipped =
-    let
-        screenshot =
-            "/components/article-lists/"
-                ++ "title-preview-author-media-flipped/screenshot.jpg"
-    in
-        a
-            [ class Styles.sectionContentLink
-            , href "#"
-            , title "Title Preview Author Media Flipped"
-            ]
-            [ div [ class Styles.sectionContentLinkContent ]
-                [ div
-                    [ class Styles.sectionContentLinkImage
-                    , attribute "data-bg" screenshot
-                    ]
-                    []
-                ]
-            , p [ class Styles.sectionContentTitle ]
-                [ text "Title Preview Author Media Flipped" ]
-            ]
