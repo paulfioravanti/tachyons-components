@@ -4,4 +4,4 @@ import Route exposing (Route)
 
 
 type alias Model =
-    { route : Route }
+    Route

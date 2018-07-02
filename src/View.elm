@@ -9,7 +9,7 @@ import Route exposing (Route(NotFound, ListComponents))
 
 view : Model -> Html Msg
 view model =
-    case model.route of
+    case model of
         ListComponents ->
             ListComponents.view
 

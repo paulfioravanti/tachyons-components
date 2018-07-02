@@ -1,7 +1,7 @@
 module ListComponents.Main exposing (view)
 
-import Html exposing (Html, header, main_, a, div, h3, section, text)
-import Html.Attributes exposing (class, href, id)
+import Html exposing (Html, header, main_, a, div, section, text)
+import Html.Attributes exposing (class, href)
 import ListComponents.Styles as Styles
 import ListComponents.Articles as Articles
 import ListComponents.ArticleLists as ArticleLists

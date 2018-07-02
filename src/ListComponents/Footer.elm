@@ -1,6 +1,6 @@
 module ListComponents.Footer exposing (view)
 
-import Html exposing (Html, a, div, footer, nav, text)
+import Html exposing (Html, a, div, footer, text)
 import Html.Attributes exposing (class, href, title)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils

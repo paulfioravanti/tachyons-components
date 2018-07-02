@@ -53,10 +53,10 @@ componentsLink styles =
 
 
 sectionHeader : String -> String -> Html Msg
-sectionHeader sectionId title =
+sectionHeader sectionId sectionTitle =
     div [ class Styles.sectionHeader, id sectionId ]
         [ div [ class Styles.centerContent ]
             [ h3 [ class Styles.sectionTitle ]
-                [ text title ]
+                [ text sectionTitle ]
             ]
         ]
