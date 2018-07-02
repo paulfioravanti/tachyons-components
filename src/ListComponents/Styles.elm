@@ -15,6 +15,7 @@ module ListComponents.Styles
         , mainHeader
         , nav
         , navLink
+        , offerOfHelp
         , sectionContent
         , sectionContentLink
         , sectionContentLinkContent
@@ -23,6 +24,7 @@ module ListComponents.Styles
         , sectionContentWrapper
         , sectionHeader
         , sectionTitle
+        , tachyonsDefinition
         , title
         , titleLink
         , twitterBadge
@@ -193,6 +195,16 @@ navLink =
         |> String.join " "
 
 
+offerOfHelp : String
+offerOfHelp =
+    [ "copy"
+    , "f6"
+    , "lh-copy"
+    , "measure"
+    ]
+        |> String.join " "
+
+
 sectionContent : String
 sectionContent =
     centerContent ++ " cf"
@@ -265,6 +277,17 @@ sectionTitle =
     , "fw6"
     , "pb2"
     , "ttc"
+    ]
+        |> String.join " "
+
+
+tachyonsDefinition : String
+tachyonsDefinition =
+    [ "db"
+    , "f6"
+    , "lh-copy"
+    , "measure"
+    , "mt5"
     ]
         |> String.join " "
 
