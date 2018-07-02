@@ -2,6 +2,9 @@ module ListComponents.Styles
     exposing
         ( anchor
         , badges
+        , callsToAction
+        , callToAction
+        , callToActionSvg
         , centerContent
         , footer
         , footerLink
@@ -50,6 +53,38 @@ anchor =
 badges : String
 badges =
     "v-top"
+
+
+callsToAction : String
+callsToAction =
+    "mt4"
+
+
+callToAction : String
+callToAction =
+    [ "b"
+    , "ba"
+    , "black-70"
+    , "br2"
+    , "grow"
+    , "inline-flex"
+    , "items-center"
+    , "mb3"
+    , "mr3"
+    , "no-underline"
+    , "ph3"
+    , "pv2"
+    ]
+        |> String.join " "
+
+
+callToActionSvg : String
+callToActionSvg =
+    [ "pr2"
+    , "pv1"
+    , "w2"
+    ]
+        |> String.join " "
 
 
 centerContent : String

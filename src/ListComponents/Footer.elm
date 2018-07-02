@@ -8,6 +8,7 @@ import Html.Attributes
         , title
         )
 import ListComponents.Badges as Badges
+import ListComponents.CallsToAction as CallsToAction
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
 import Msg exposing (Msg)
@@ -19,6 +20,7 @@ view =
         [ div [ class Styles.centerContent ]
             [ links
             , Badges.view
+            , CallsToAction.view
             ]
         ]
 
