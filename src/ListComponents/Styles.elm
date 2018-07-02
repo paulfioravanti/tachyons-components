@@ -1,6 +1,7 @@
 module ListComponents.Styles
     exposing
         ( anchor
+        , badges
         , centerContent
         , footer
         , footerLink
@@ -21,6 +22,7 @@ module ListComponents.Styles
         , sectionTitle
         , title
         , titleLink
+        , twitterBadge
         , versionNumber
         , versionNumberWrapper
         )
@@ -41,6 +43,11 @@ anchor =
     , "ttc"
     ]
         |> String.join " "
+
+
+badges : String
+badges =
+    "v-top"
 
 
 centerContent : String
@@ -246,6 +253,22 @@ titleLink =
     , "mb1"
     , "mt0"
     , "v-mid"
+    ]
+        |> String.join " "
+
+
+twitterBadge : String
+twitterBadge =
+    [ "bg-white-50"
+    , "br2"
+    , "dib"
+    , "dim"
+    , "lh-solid"
+    , "link"
+    , "pb1"
+    , "ph2"
+    , "twitter"
+    , "v-top"
     ]
         |> String.join " "
 
