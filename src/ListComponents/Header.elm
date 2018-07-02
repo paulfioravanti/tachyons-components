@@ -2,11 +2,9 @@ module ListComponents.Header exposing (view)
 
 import Html exposing (Html, a, div, header, nav, small, text)
 import Html.Attributes exposing (class, href, title)
-import Html.Events exposing (onWithOptions)
-import Json.Decode as Decode
 import ListComponents.Styles as Styles
-import Msg exposing (Msg(ChangeLocation))
-import Route exposing (Route(ListComponents))
+import ListComponents.Utils as Utils
+import Msg exposing (Msg)
 
 
 view : Html Msg
@@ -39,47 +37,21 @@ pageTitle =
 pageHeaderNav : Html Msg
 pageHeaderNav =
     nav [ class Styles.nav ]
-        [ a
-            [ class Styles.navLink
-            , href "http://tachyons.io/docs"
-            , title "Documentation"
-            ]
-            [ text "Docs" ]
-        , componentsLink
-        , a
-            [ class Styles.navLink
-            , href "http://tachyons.io/gallery"
-            , title "Gallery of sites built with Tachyons"
-            ]
-            [ text "Gallery" ]
-        , a
-            [ class Styles.navLink
-            , href "http://tachyons.io/resources"
-            , title "Resources"
-            ]
-            [ text "Resources" ]
-        , a
-            [ class Styles.navLink
-            , href "http://github.com/tachyons-css/tachyons"
-            , title "Tachyons on GitHub"
-            ]
-            [ text "GitHub" ]
+        [ link "http://tachyons.io/docs" "Documentation" "Docs"
+        , Utils.componentsLink Styles.navLink
+        , link
+            "http://tachyons.io/gallery"
+            "Gallery of sites built with Tachyons"
+            "Gallery"
+        , link "http://tachyons.io/resources" "Resources" "Resources"
+        , link
+            "http://github.com/tachyons-css/tachyons"
+            "Tachyons on GitHub"
+            "GitHub"
         ]
 
 
-componentsLink : Html Msg
-componentsLink =
-    let
-        clickOptions =
-            onWithOptions
-                "click"
-                { preventDefault = True, stopPropagation = False }
-                (Decode.succeed (ChangeLocation ListComponents))
-    in
-        a
-            [ class Styles.navLink
-            , href (Route.toPath ListComponents)
-            , title "Components"
-            , clickOptions
-            ]
-            [ text "Components" ]
+link : String -> String -> String -> Html Msg
+link url linkTitle linkText =
+    a [ class Styles.navLink, href url, title linkTitle ]
+        [ text linkText ]

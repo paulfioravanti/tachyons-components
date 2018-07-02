@@ -3,6 +3,8 @@ module ListComponents.Styles
         ( anchor
         , centerContent
         , footer
+        , footerLink
+        , footerLinks
         , header
         , headerContent
         , main_
@@ -57,6 +59,27 @@ footer =
     , "bt"
     , "ph3 ph5-ns"
     , "pv5 pv6-ns"
+    ]
+        |> String.join " "
+
+
+footerLink : String
+footerLink =
+    [ "b"
+    , "black-70"
+    , "dib"
+    , "hover-blue"
+    , "link"
+    , "mb3"
+    , "mr3"
+    ]
+        |> String.join " "
+
+
+footerLinks : String
+footerLinks =
+    [ "lh-copy"
+    , "mb5"
     ]
         |> String.join " "
 
