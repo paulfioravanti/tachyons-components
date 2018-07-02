@@ -1,6 +1,6 @@
 module ListComponents.Badges exposing (view)
 
-import Html exposing (Html, a, article, div, footer, iframe, span, text)
+import Html exposing (Html, a, article, iframe, span, text)
 import Html.Attributes
     exposing
         ( attribute
@@ -9,7 +9,6 @@ import Html.Attributes
         , href
         , src
         , style
-        , title
         , width
         )
 import ListComponents.Styles as Styles

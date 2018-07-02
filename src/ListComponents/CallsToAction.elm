@@ -1,16 +1,11 @@
 module ListComponents.CallsToAction exposing (view)
 
-import Html exposing (Html, a, div, footer, span, text)
+import Html exposing (Html, a, div, span, text)
 import Html.Attributes
     exposing
-        ( attribute
-        , class
-        , height
+        ( class
         , href
-        , src
-        , style
         , title
-        , width
         )
 import ListComponents.Styles as Styles
 import ListComponents.SvgPath as SvgPath
