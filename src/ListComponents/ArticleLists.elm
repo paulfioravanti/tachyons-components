@@ -24,12 +24,10 @@ view =
                 [ Utils.component
                     "article-lists/title-preview-author-media-flipped/"
                     "Title Preview Author Media Flipped"
-                    "article-lists/title-preview-author-media-flipped"
                     (ArticleLists TitlePreviewAuthorMediaFlipped)
                 , Utils.component
-                    "#"
+                    "article-lists/title-preview-author-media/"
                     "Title Preview Author Media"
-                    "article-lists/title-preview-author-media"
                     ListComponents
                 ]
             ]

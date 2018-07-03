@@ -10,13 +10,14 @@ import Route exposing (Route)
 import Styles
 
 
-component : String -> String -> String -> Route -> Html Msg
-component hrefLink linkTitle imageLocation route =
+component : String -> String -> Route -> Html Msg
+component url linkTitle route =
     let
-        screenshot =
-            "/components/"
-                ++ imageLocation
-                ++ "/screenshot.jpg"
+        componentsUrl =
+            "/components/" ++ url
+
+        screenshotUrl =
+            componentsUrl ++ "screenshot.jpg"
 
         clickOptions =
             onWithOptions
@@ -26,14 +27,14 @@ component hrefLink linkTitle imageLocation route =
     in
         a
             [ class Styles.sectionContentLink
-            , href ("/components/" ++ hrefLink)
+            , href componentsUrl
             , title linkTitle
             , clickOptions
             ]
             [ div [ class Styles.sectionContentLinkContent ]
                 [ div
                     [ class Styles.sectionContentLinkImage
-                    , attribute "data-bg" screenshot
+                    , attribute "data-bg" screenshotUrl
                     ]
                     []
                 ]

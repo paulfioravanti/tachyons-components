@@ -20,59 +20,48 @@ view =
         , div [ class Styles.sectionContentWrapper ]
             [ div [ class Styles.sectionContent ]
                 [ Utils.component
-                    "#"
+                    "articles/feature/"
                     "Feature"
-                    "articles/feature"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/full-bleed-background/"
                     "Full Bleed Background"
-                    "articles/full-bleed-background"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/headline-title-text/"
                     "Headline Title Text"
-                    "articles/headline-title-text"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/large-title-text/"
                     "Large Title Text"
-                    "articles/large-title-text"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/left-title-top-border/"
                     "Left Title Top Border"
-                    "articles/left-title-top-border"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/left-title/"
                     "Left Title"
-                    "articles/left-title"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/photo-essay/"
                     "Photo Essay"
-                    "articles/photo-essay"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/single-column-large-title/"
                     "Single Column Large Title"
-                    "articles/single-column-large-title"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/title-highlight-header-cover/"
                     "Title Highlight Header Cover"
-                    "articles/title-highlight-header-cover"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/title-text-image/"
                     "Title Text Image"
-                    "articles/title-text-image"
                     ListComponents
                 , Utils.component
-                    "#"
+                    "articles/title-text/"
                     "Title Text"
-                    "articles/title-text"
                     ListComponents
                 ]
             ]
