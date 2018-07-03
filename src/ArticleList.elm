@@ -3,6 +3,7 @@ module ArticleList
         ( Route
         , bodyClasses
         , matchers
+        , titlePreviewAuthorMediaRoute
         , titlePreviewAuthorMediaFlippedRoute
         , toPath
         , view
@@ -27,6 +28,11 @@ bodyClasses route =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+titlePreviewAuthorMediaRoute : Route
+titlePreviewAuthorMediaRoute =
+    Route.TitlePreviewAuthorMedia
 
 
 titlePreviewAuthorMediaFlippedRoute : Route

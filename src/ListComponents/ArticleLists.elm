@@ -31,7 +31,11 @@ view changeLocationMsg =
                 , Utils.component
                     "article-lists/title-preview-author-media/"
                     "Title Preview Author Media"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg
+                        (ArticleLists
+                            ArticleList.titlePreviewAuthorMediaRoute
+                        )
+                    )
                 ]
             ]
         ]
