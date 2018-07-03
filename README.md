@@ -6,7 +6,9 @@ documentation pages using [Elm][].
 The purpose is simply for web interface coding practice using [Tachyons][] and
 Elm.
 
-Currently a work in progress...
+Currently a work in progress, but you can see the results at:
+
+- Heroku: <https://tachyons-components.herokuapp.com/>
 
 ## Development
 
