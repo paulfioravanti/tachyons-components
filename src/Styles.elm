@@ -1,6 +1,6 @@
 module Styles exposing (bodyClasses, centerContent)
 
-import ArticleList.Styles
+import ArticleList
 import Route
     exposing
         ( Route
@@ -18,7 +18,7 @@ bodyClasses route =
             case route of
                 ArticleLists articleListRoute ->
                     articleListRoute
-                        |> ArticleList.Styles.bodyClasses
+                        |> ArticleList.bodyClasses
 
                 ListComponents ->
                     [ "sans-serif"
