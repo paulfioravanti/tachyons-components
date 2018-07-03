@@ -9,17 +9,18 @@ import NotFound
 import Route
     exposing
         ( Route
-            ( ArticleListsTitlePreviewAuthorMediaFlipped
+            ( ArticleLists
             , ListComponents
             , NotFound
             )
+        , ArticleListRoute(TitlePreviewAuthorMediaFlipped)
         )
 
 
 view : Model -> Html Msg
 view model =
     case model of
-        ArticleListsTitlePreviewAuthorMediaFlipped ->
+        ArticleLists TitlePreviewAuthorMediaFlipped ->
             ArticleLists.TitlePreviewAuthorMediaFlipped.view
 
         ListComponents ->

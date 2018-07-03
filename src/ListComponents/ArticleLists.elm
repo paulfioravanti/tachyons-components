@@ -8,9 +8,10 @@ import Msg exposing (Msg)
 import Route
     exposing
         ( Route
-            ( ArticleListsTitlePreviewAuthorMediaFlipped
+            ( ArticleLists
             , ListComponents
             )
+        , ArticleListRoute(TitlePreviewAuthorMediaFlipped)
         )
 
 
@@ -24,7 +25,7 @@ view =
                     "article-lists/title-preview-author-media-flipped/"
                     "Title Preview Author Media Flipped"
                     "article-lists/title-preview-author-media-flipped"
-                    ArticleListsTitlePreviewAuthorMediaFlipped
+                    (ArticleLists TitlePreviewAuthorMediaFlipped)
                 , Utils.component
                     "#"
                     "Title Preview Author Media"
