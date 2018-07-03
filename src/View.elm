@@ -30,10 +30,7 @@ view changeLocationMsg model =
                     footer
 
             ListComponents ->
-                ListComponents.view
-                    (changeLocationMsg ListComponents)
-                    changeLocationMsg
-                    footer
+                ListComponents.view changeLocationMsg footer
 
             NotFound ->
                 NotFound.view
