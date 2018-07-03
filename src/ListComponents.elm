@@ -2,9 +2,9 @@ module ListComponents exposing (view)
 
 import Html exposing (Html)
 import ListComponents.View as View
-import Msg exposing (Msg)
+import Route exposing (Route)
 
 
-view : Html Msg
-view =
-    View.view
+view : msg -> (Route -> msg) -> Html msg
+view msg changeLocationMsg =
+    View.view msg changeLocationMsg

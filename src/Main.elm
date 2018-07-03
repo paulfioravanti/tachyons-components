@@ -1,7 +1,7 @@
 module Main exposing (main)
 
 import Model exposing (Model)
-import Msg exposing (Msg(UrlChange))
+import Msg exposing (Msg(ChangeLocation, UrlChange))
 import Navigation exposing (Location)
 import Ports
 import Route
@@ -12,13 +12,17 @@ import View
 
 main : Program Never Model Msg
 main =
-    Navigation.program
-        UrlChange
-        { init = init
-        , update = Update.update
-        , view = View.view
-        , subscriptions = always Sub.none
-        }
+    let
+        changeLocationMsg =
+            ChangeLocation
+    in
+        Navigation.program
+            UrlChange
+            { init = init
+            , update = Update.update
+            , view = View.view changeLocationMsg
+            , subscriptions = always Sub.none
+            }
 
 
 init : Location -> ( Model, Cmd Msg )

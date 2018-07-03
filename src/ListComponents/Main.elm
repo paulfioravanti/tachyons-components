@@ -5,22 +5,22 @@ import Html.Attributes exposing (class, href)
 import ListComponents.Styles as Styles
 import ListComponents.Articles as Articles
 import ListComponents.ArticleLists as ArticleLists
-import Msg exposing (Msg)
+import Route exposing (Route)
 import Styles
 
 
-view : Html Msg
-view =
+view : (Route -> msg) -> Html msg
+view changeLocationMsg =
     main_ [ class Styles.main_ ]
         [ mainHeader
         , section []
-            [ ArticleLists.view
-            , Articles.view
+            [ ArticleLists.view changeLocationMsg
+            , Articles.view changeLocationMsg
             ]
         ]
 
 
-mainHeader : Html Msg
+mainHeader : Html msg
 mainHeader =
     let
         anchorLinks =
@@ -53,7 +53,7 @@ mainHeader =
             ]
 
 
-anchorLink : ( String, String ) -> Html Msg
+anchorLink : ( String, String ) -> Html msg
 anchorLink ( link, linkText ) =
     a [ class Styles.anchor, href link ]
         [ text linkText ]

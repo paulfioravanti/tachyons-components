@@ -4,7 +4,6 @@ import ArticleList.View
 import Html exposing (Html)
 import ListComponents
 import Model exposing (Model)
-import Msg exposing (Msg(ChangeLocation))
 import NotFound
 import Route
     exposing
@@ -16,14 +15,18 @@ import Route
         )
 
 
-view : Model -> Html Msg
-view model =
+view : (Route -> msg) -> Model -> Html msg
+view changeLocationMsg model =
     case model of
         ArticleLists articleListRoute ->
-            ArticleList.View.view (ChangeLocation ListComponents) articleListRoute
+            ArticleList.View.view
+                (changeLocationMsg ListComponents)
+                articleListRoute
 
         ListComponents ->
             ListComponents.view
+                (changeLocationMsg ListComponents)
+                changeLocationMsg
 
         NotFound ->
             NotFound.view

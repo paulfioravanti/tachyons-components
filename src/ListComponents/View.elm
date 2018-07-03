@@ -4,14 +4,13 @@ import Footer
 import Html exposing (Html, div)
 import ListComponents.Header as Header
 import ListComponents.Main as Main
-import Msg exposing (Msg(ChangeLocation))
-import Route exposing (Route(ListComponents))
+import Route exposing (Route)
 
 
-view : Html Msg
-view =
+view : msg -> (Route -> msg) -> Html msg
+view msg changeLocationMsg =
     div []
-        [ Header.view (ChangeLocation ListComponents)
-        , Main.view
-        , Footer.view (ChangeLocation ListComponents)
+        [ Header.view msg
+        , Main.view changeLocationMsg
+        , Footer.view msg
         ]
