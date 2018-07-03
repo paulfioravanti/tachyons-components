@@ -1,12 +1,12 @@
 module Route exposing (Route(..), fromLocation, toPath)
 
-import ArticleLists.Route
+import ArticleList.Route
 import Navigation exposing (Location)
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 
 
 type Route
-    = ArticleLists ArticleLists.Route.Route
+    = ArticleLists ArticleList.Route.Route
     | ListComponents
     | NotFound
 
@@ -23,7 +23,7 @@ toPath route =
     case route of
         ArticleLists articleListRoute ->
             "/components/article-lists/"
-                ++ ArticleLists.Route.toPath articleListRoute
+                ++ ArticleList.Route.toPath articleListRoute
 
         ListComponents ->
             "/components/"
@@ -39,7 +39,7 @@ matchers =
             ArticleLists
             (s "components"
                 </> s "article-lists"
-                </> ArticleLists.Route.matchers
+                </> ArticleList.Route.matchers
             )
         , map ListComponents top
         , map ListComponents (s "components")

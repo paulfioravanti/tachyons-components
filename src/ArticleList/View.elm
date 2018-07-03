@@ -1,7 +1,7 @@
-module ArticleLists.View exposing (view)
+module ArticleList.View exposing (view)
 
-import ArticleLists.Route exposing (Route(TitlePreviewAuthorMediaFlipped))
-import ArticleLists.TitlePreviewAuthorMediaFlipped as TitlePreviewAuthorMediaFlipped
+import ArticleList.Route exposing (Route(TitlePreviewAuthorMediaFlipped))
+import ArticleList.TitlePreviewAuthorMediaFlipped as TitlePreviewAuthorMediaFlipped
 import Html exposing (Html)
 import Msg exposing (Msg)
 

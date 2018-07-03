@@ -1,6 +1,6 @@
-module ArticleLists.Styles exposing (bodyClasses)
+module ArticleList.Styles exposing (bodyClasses)
 
-import ArticleLists.Route exposing (Route(TitlePreviewAuthorMediaFlipped))
+import ArticleList.Route exposing (Route(TitlePreviewAuthorMediaFlipped))
 
 
 bodyClasses : Route -> List String

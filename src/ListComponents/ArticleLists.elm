@@ -1,6 +1,6 @@
 module ListComponents.ArticleLists exposing (view)
 
-import ArticleLists.Route exposing (Route(TitlePreviewAuthorMediaFlipped))
+import ArticleList.Route exposing (Route(TitlePreviewAuthorMediaFlipped))
 import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles

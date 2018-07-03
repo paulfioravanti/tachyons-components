@@ -1,6 +1,6 @@
 module View exposing (view)
 
-import ArticleLists.View
+import ArticleList.View
 import Html exposing (Html)
 import ListComponents
 import Model exposing (Model)
@@ -20,7 +20,7 @@ view : Model -> Html Msg
 view model =
     case model of
         ArticleLists articleListRoute ->
-            ArticleLists.View.view articleListRoute
+            ArticleList.View.view articleListRoute
 
         ListComponents ->
             ListComponents.view

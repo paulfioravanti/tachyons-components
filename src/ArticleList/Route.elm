@@ -1,4 +1,4 @@
-module ArticleLists.Route exposing (Route(..), matchers, toPath)
+module ArticleList.Route exposing (Route(..), matchers, toPath)
 
 import UrlParser exposing (Parser, map, oneOf, s)
 
