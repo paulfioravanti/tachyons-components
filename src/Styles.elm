@@ -1,5 +1,6 @@
 module Styles exposing (bodyClasses, centerContent)
 
+import ArticleLists.Styles
 import Route
     exposing
         ( Route
@@ -7,7 +8,6 @@ import Route
             , ListComponents
             , NotFound
             )
-        , ArticleListRoute(TitlePreviewAuthorMediaFlipped)
         )
 
 
@@ -16,11 +16,9 @@ bodyClasses route =
     let
         styles =
             case route of
-                ArticleLists TitlePreviewAuthorMediaFlipped ->
-                    [ "bg-white"
-                    , "sans-serif"
-                    , "w-100"
-                    ]
+                ArticleLists articleListRoute ->
+                    articleListRoute
+                        |> ArticleLists.Styles.bodyClasses
 
                 ListComponents ->
                     [ "sans-serif"

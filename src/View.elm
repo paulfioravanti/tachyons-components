@@ -1,6 +1,6 @@
 module View exposing (view)
 
-import ArticleLists.TitlePreviewAuthorMediaFlipped
+import ArticleLists.View
 import Html exposing (Html)
 import ListComponents
 import Model exposing (Model)
@@ -13,15 +13,14 @@ import Route
             , ListComponents
             , NotFound
             )
-        , ArticleListRoute(TitlePreviewAuthorMediaFlipped)
         )
 
 
 view : Model -> Html Msg
 view model =
     case model of
-        ArticleLists TitlePreviewAuthorMediaFlipped ->
-            ArticleLists.TitlePreviewAuthorMediaFlipped.view
+        ArticleLists articleListRoute ->
+            ArticleLists.View.view articleListRoute
 
         ListComponents ->
             ListComponents.view
