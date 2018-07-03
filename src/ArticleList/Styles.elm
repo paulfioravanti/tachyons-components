@@ -1,4 +1,4 @@
-module ArticleList.Styles exposing (bodyClasses)
+module ArticleList.Styles exposing (bodyClasses, flexFormatting, image)
 
 import ArticleList.Route
     exposing
@@ -23,3 +23,16 @@ bodyClasses route =
             , "sans-serif"
             , "w-100"
             ]
+
+
+flexFormatting : String
+flexFormatting =
+    [ "flex"
+    , "flex-column flex-row-ns"
+    ]
+        |> String.join " "
+
+
+image : String
+image =
+    "db"

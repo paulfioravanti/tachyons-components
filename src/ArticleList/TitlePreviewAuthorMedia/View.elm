@@ -13,9 +13,7 @@ import Html
         , img
         , p
         , section
-        , span
         , text
-        , time
         )
 import Html.Attributes exposing (alt, class, href, src)
 

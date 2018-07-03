@@ -4,7 +4,6 @@ module ArticleList.TitlePreviewAuthorMedia.Styles
         , articleLink
         , articleContent
         , articleCopy
-        , author
         , byline
         , flexFormatting
         , headline
@@ -13,6 +12,8 @@ module ArticleList.TitlePreviewAuthorMedia.Styles
         , section
         , title
         )
+
+import ArticleList.Styles as Styles
 
 
 article : String
@@ -51,11 +52,6 @@ articleCopy =
         |> String.join " "
 
 
-author : String
-author =
-    "ttu"
-
-
 byline : String
 byline =
     [ "f6"
@@ -67,10 +63,7 @@ byline =
 
 flexFormatting : String
 flexFormatting =
-    [ "flex"
-    , "flex-column flex-row-ns"
-    ]
-        |> String.join " "
+    Styles.flexFormatting
 
 
 headline : String
@@ -86,7 +79,7 @@ headline =
 
 image : String
 image =
-    "db"
+    Styles.image
 
 
 photo : String
