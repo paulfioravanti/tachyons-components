@@ -1,0 +1,15 @@
+{
+  "root": "build/",
+  "routes": {
+    "/static/*": "/static/",
+    "/**": "index.html"
+  },
+  "headers": {
+    "/": {
+      "Cache-Control": "no-store, no-cache"
+    },
+    "/**": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}
