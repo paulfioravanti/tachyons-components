@@ -5,6 +5,6 @@ import ListComponents.View as View
 import Route exposing (Route)
 
 
-view : msg -> (Route -> msg) -> Html msg
-view msg changeLocationMsg =
-    View.view msg changeLocationMsg
+view : msg -> (Route -> msg) -> Html msg -> Html msg
+view msg changeLocationMsg footer =
+    View.view msg changeLocationMsg footer

@@ -5,16 +5,13 @@ module ArticleList
         , matchers
         , titlePreviewAuthorMediaFlippedRoute
         , toPath
+        , view
         )
 
 import ArticleList.Route as Route exposing (Route)
 import ArticleList.Styles as Styles
-
-
--- import ArticleList.View as View
--- import Model exposing (Model)
--- import Msg exposing (Msg)
-
+import ArticleList.View as View
+import Html exposing (Html)
 import UrlParser exposing (Parser)
 
 
@@ -42,7 +39,6 @@ toPath route =
     Route.toPath route
 
 
-
--- view : Route -> Html Msg
--- view route =
---     View.view route
+view : msg -> Route -> Html msg -> Html msg
+view msg route footer =
+    View.view msg route footer

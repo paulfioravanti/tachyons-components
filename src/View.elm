@@ -1,6 +1,7 @@
 module View exposing (view)
 
-import ArticleList.View
+import ArticleList
+import Footer
 import Html exposing (Html)
 import ListComponents
 import Model exposing (Model)
@@ -17,16 +18,22 @@ import Route
 
 view : (Route -> msg) -> Model -> Html msg
 view changeLocationMsg model =
-    case model of
-        ArticleLists articleListRoute ->
-            ArticleList.View.view
-                (changeLocationMsg ListComponents)
-                articleListRoute
+    let
+        footer =
+            Footer.view (changeLocationMsg ListComponents)
+    in
+        case model of
+            ArticleLists articleListRoute ->
+                ArticleList.view
+                    (changeLocationMsg ListComponents)
+                    articleListRoute
+                    footer
 
-        ListComponents ->
-            ListComponents.view
-                (changeLocationMsg ListComponents)
-                changeLocationMsg
+            ListComponents ->
+                ListComponents.view
+                    (changeLocationMsg ListComponents)
+                    changeLocationMsg
+                    footer
 
-        NotFound ->
-            NotFound.view
+            NotFound ->
+                NotFound.view
