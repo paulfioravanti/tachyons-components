@@ -1,4 +1,4 @@
-module ArticleList.Article
+module ArticleList.TitlePreviewAuthorMediaFlipped.Article
     exposing
         ( Article
         , list

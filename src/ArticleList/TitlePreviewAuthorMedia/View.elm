@@ -1,10 +1,11 @@
 module ArticleList.TitlePreviewAuthorMedia.View exposing (view)
 
-import ArticleList.Article as Article exposing (Article)
+import ArticleList.TitlePreviewAuthorMedia.Article as Article exposing (Article)
 import ArticleList.TitlePreviewAuthorMedia.Styles as Styles
 import Html
     exposing
         ( Html
+        , a
         , article
         , div
         , h1
@@ -16,7 +17,7 @@ import Html
         , text
         , time
         )
-import Html.Attributes exposing (alt, class, src)
+import Html.Attributes exposing (alt, class, href, src)
 
 
 view : Html msg -> Html msg
@@ -35,25 +36,14 @@ pageHeading =
 
 
 newsArticle : Article -> Html msg
-newsArticle { headline, copy, imageUrl, caption, author, timestamp } =
+newsArticle { headline, copy, imageUrl, caption, author } =
     article [ class Styles.article ]
-        [ div [ class Styles.flexFormatting ]
-            [ content headline copy
-            , photo imageUrl caption
+        [ a [ class Styles.articleLink, href "#0" ]
+            [ div [ class Styles.flexFormatting ]
+                [ photo imageUrl caption
+                , content headline copy author
+                ]
             ]
-        , byline author
-        , time [ class Styles.timestamp ]
-            [ text timestamp ]
-        ]
-
-
-content : String -> String -> Html msg
-content headline copy =
-    div [ class Styles.articleContent ]
-        [ h1 [ class Styles.headline ]
-            [ text headline ]
-        , p [ class Styles.articleCopy ]
-            [ text copy ]
         ]
 
 
@@ -65,10 +55,18 @@ photo imageUrl caption =
         ]
 
 
+content : String -> String -> String -> Html msg
+content headline copy author =
+    div [ class Styles.articleContent ]
+        [ h1 [ class Styles.headline ]
+            [ text headline ]
+        , p [ class Styles.articleCopy ]
+            [ text copy ]
+        , byline author
+        ]
+
+
 byline : String -> Html msg
 byline author =
     p [ class Styles.byline ]
-        [ text "By "
-        , span [ class Styles.author ]
-            [ text author ]
-        ]
+        [ text ("By " ++ author) ]

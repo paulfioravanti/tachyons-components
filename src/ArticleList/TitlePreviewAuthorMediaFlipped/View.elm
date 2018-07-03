@@ -1,6 +1,6 @@
 module ArticleList.TitlePreviewAuthorMediaFlipped.View exposing (view)
 
-import ArticleList.Article as Article exposing (Article)
+import ArticleList.TitlePreviewAuthorMediaFlipped.Article as Article exposing (Article)
 import ArticleList.TitlePreviewAuthorMediaFlipped.Styles as Styles
 import Html
     exposing

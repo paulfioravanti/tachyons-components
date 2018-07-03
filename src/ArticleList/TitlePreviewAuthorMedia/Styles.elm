@@ -1,6 +1,7 @@
 module ArticleList.TitlePreviewAuthorMedia.Styles
     exposing
         ( article
+        , articleLink
         , articleContent
         , articleCopy
         , author
@@ -10,16 +11,24 @@ module ArticleList.TitlePreviewAuthorMedia.Styles
         , image
         , photo
         , section
-        , timestamp
         , title
         )
 
 
 article : String
 article =
-    [ "bb"
-    , "bt"
+    [ "bt"
     , "b--black-10"
+    ]
+        |> String.join " "
+
+
+articleLink : String
+articleLink =
+    [ "black"
+    , "db"
+    , "dim"
+    , "no-underline"
     , "ph3 ph0-l"
     , "pv4"
     ]
@@ -28,8 +37,7 @@ article =
 
 articleContent : String
 articleContent =
-    [ "order-2 order-1-ns"
-    , "pr3-ns"
+    [ "pl3-ns"
     , "w-100 w-60-ns"
     ]
         |> String.join " "
@@ -37,8 +45,7 @@ articleContent =
 
 articleCopy : String
 articleCopy =
-    [ "athelas"
-    , "f5 f4-l"
+    [ "f5 f5-l"
     , "lh-copy"
     ]
         |> String.join " "
@@ -52,7 +59,6 @@ author =
 byline : String
 byline =
     [ "f6"
-    , "gray"
     , "lh-copy"
     , "mv0"
     ]
@@ -69,8 +75,9 @@ flexFormatting =
 
 headline : String
 headline =
-    [ "athelas"
+    [ "baskerville"
     , "f3"
+    , "fw1"
     , "lh-title"
     , "mt0"
     ]
@@ -85,8 +92,7 @@ image =
 photo : String
 photo =
     [ "mb4 mb0-ns"
-    , "order-1 order-2-ns"
-    , "pl3-ns"
+    , "pr3-ns"
     , "w-100 w-40-ns"
     ]
         |> String.join " "
@@ -94,24 +100,17 @@ photo =
 
 section : String
 section =
-    [ "center"
+    [ "avenir"
+    , "center"
     , "mw7"
-    ]
-        |> String.join " "
-
-
-timestamp : String
-timestamp =
-    [ "db"
-    , "f6"
-    , "gray"
     ]
         |> String.join " "
 
 
 title : String
 title =
-    [ "athelas"
+    [ "baskerville"
+    , "fw1"
     , "ph3 ph0-l"
     ]
         |> String.join " "
