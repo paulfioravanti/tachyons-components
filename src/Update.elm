@@ -17,13 +17,13 @@ update msg model =
                     route
                         |> Route.toPath
                         |> Navigation.newUrl
+
+                setBodyClasses =
+                    route
+                        |> Styles.bodyClasses
+                        |> Ports.setBodyClasses
             in
-                ( route
-                , Cmd.batch
-                    [ Ports.setBodyClasses (Styles.bodyClasses route)
-                    , setUrl
-                    ]
-                )
+                ( route, Cmd.batch [ setBodyClasses, setUrl ] )
 
         UrlChange _ ->
             ( model, Cmd.none )
