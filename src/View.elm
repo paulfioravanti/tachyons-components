@@ -24,10 +24,7 @@ view changeLocationMsg model =
     in
         case model of
             ArticleLists articleListRoute ->
-                ArticleList.view
-                    (changeLocationMsg ListComponents)
-                    articleListRoute
-                    footer
+                ArticleList.view articleListRoute footer
 
             ListComponents ->
                 ListComponents.view changeLocationMsg footer

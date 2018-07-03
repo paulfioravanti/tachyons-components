@@ -5,8 +5,8 @@ import ArticleList.TitlePreviewAuthorMediaFlipped as TitlePreviewAuthorMediaFlip
 import Html exposing (Html)
 
 
-view : msg -> Route -> Html msg -> Html msg
-view msg route footer =
+view : Route -> Html msg -> Html msg
+view route footer =
     case route of
         TitlePreviewAuthorMediaFlipped ->
-            TitlePreviewAuthorMediaFlipped.view msg footer
+            TitlePreviewAuthorMediaFlipped.view footer

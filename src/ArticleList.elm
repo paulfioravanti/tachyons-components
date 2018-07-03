@@ -39,6 +39,6 @@ toPath route =
     Route.toPath route
 
 
-view : msg -> Route -> Html msg -> Html msg
-view msg route footer =
-    View.view msg route footer
+view : Route -> Html msg -> Html msg
+view route footer =
+    View.view route footer

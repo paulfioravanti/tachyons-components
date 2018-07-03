@@ -5,12 +5,11 @@ import Html.Attributes exposing (attribute, class, href, id, title)
 import Html.Events exposing (onWithOptions)
 import Json.Decode as Decode
 import ListComponents.Styles as Styles
-import Route exposing (Route)
 import Styles
 
 
-component : String -> String -> Route -> (Route -> msg) -> Html msg
-component url linkTitle route changeLocationMsg =
+component : String -> String -> msg -> Html msg
+component url linkTitle msg =
     let
         componentsUrl =
             "/components/" ++ url
@@ -22,7 +21,7 @@ component url linkTitle route changeLocationMsg =
             onWithOptions
                 "click"
                 { preventDefault = True, stopPropagation = False }
-                (Decode.succeed (changeLocationMsg route))
+                (Decode.succeed msg)
     in
         a
             [ class Styles.sectionContentLink

@@ -21,58 +21,47 @@ view changeLocationMsg =
                 [ Utils.component
                     "articles/feature/"
                     "Feature"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/full-bleed-background/"
                     "Full Bleed Background"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/headline-title-text/"
                     "Headline Title Text"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/large-title-text/"
                     "Large Title Text"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/left-title-top-border/"
                     "Left Title Top Border"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/left-title/"
                     "Left Title"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/photo-essay/"
                     "Photo Essay"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/single-column-large-title/"
                     "Single Column Large Title"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/title-highlight-header-cover/"
                     "Title Highlight Header Cover"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/title-text-image/"
                     "Title Text Image"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 , Utils.component
                     "articles/title-text/"
                     "Title Text"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 ]
             ]
         ]

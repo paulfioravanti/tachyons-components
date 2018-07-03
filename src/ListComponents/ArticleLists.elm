@@ -23,15 +23,15 @@ view changeLocationMsg =
                 [ Utils.component
                     "article-lists/title-preview-author-media-flipped/"
                     "Title Preview Author Media Flipped"
-                    (ArticleLists
-                        ArticleList.titlePreviewAuthorMediaFlippedRoute
+                    (changeLocationMsg
+                        (ArticleLists
+                            ArticleList.titlePreviewAuthorMediaFlippedRoute
+                        )
                     )
-                    changeLocationMsg
                 , Utils.component
                     "article-lists/title-preview-author-media/"
                     "Title Preview Author Media"
-                    ListComponents
-                    changeLocationMsg
+                    (changeLocationMsg ListComponents)
                 ]
             ]
         ]
