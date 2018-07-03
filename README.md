@@ -1,7 +1,7 @@
 # Tachyons Components
 
 This is my attempt to (mostly) re-create the [Tachyons Components][]
-documentation page using [Elm][].
+documentation pages using [Elm][].
 
 The purpose is simply for web interface coding practice using [Tachyons][] and
 Elm.
