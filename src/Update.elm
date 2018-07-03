@@ -9,7 +9,7 @@ import Styles
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
+update msg _ =
     case msg of
         ChangeLocation route ->
             let

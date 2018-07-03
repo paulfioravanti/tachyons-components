@@ -1,11 +1,12 @@
 module Route exposing (Route(..), fromLocation, toPath)
 
 import Navigation exposing (Location)
-import UrlParser exposing (Parser, map, oneOf, s, top)
+import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 
 
 type Route
-    = ListComponents
+    = ArticleListsTitlePreviewAuthorMediaFlipped
+    | ListComponents
     | NotFound
 
 
@@ -19,6 +20,9 @@ fromLocation location =
 toPath : Route -> String
 toPath route =
     case route of
+        ArticleListsTitlePreviewAuthorMediaFlipped ->
+            "/components/article-lists/title-preview-author-media-flipped/"
+
         ListComponents ->
             "/components/"
 
@@ -29,6 +33,12 @@ toPath route =
 matchers : Parser (Route -> a) a
 matchers =
     oneOf
-        [ map ListComponents top
+        [ map
+            ArticleListsTitlePreviewAuthorMediaFlipped
+            (s "components"
+                </> s "article-lists"
+                </> s "title-preview-author-media-flipped"
+            )
+        , map ListComponents top
         , map ListComponents (s "components")
         ]
