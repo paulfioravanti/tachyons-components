@@ -4,6 +4,7 @@ import Html exposing (Html)
 import ListComponents
 import Model exposing (Model)
 import Msg exposing (Msg)
+import NotFound
 import Route exposing (Route(NotFound, ListComponents))
 
 
@@ -14,4 +15,4 @@ view model =
             ListComponents.view
 
         NotFound ->
-            ListComponents.view
+            NotFound.view

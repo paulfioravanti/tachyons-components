@@ -25,5 +25,10 @@ update msg model =
             in
                 ( route, Cmd.batch [ setBodyClasses, setUrl ] )
 
-        UrlChange _ ->
-            ( model, Cmd.none )
+        UrlChange location ->
+            let
+                route =
+                    location
+                        |> Route.fromLocation
+            in
+                ( route, Cmd.none )
