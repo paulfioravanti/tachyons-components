@@ -1,6 +1,6 @@
 module ListComponents.ArticleLists exposing (view)
 
-import ArticleList.Route exposing (Route(TitlePreviewAuthorMediaFlipped))
+import ArticleList
 import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
@@ -24,7 +24,9 @@ view =
                 [ Utils.component
                     "article-lists/title-preview-author-media-flipped/"
                     "Title Preview Author Media Flipped"
-                    (ArticleLists TitlePreviewAuthorMediaFlipped)
+                    (ArticleLists
+                        ArticleList.titlePreviewAuthorMediaFlippedRoute
+                    )
                 , Utils.component
                     "article-lists/title-preview-author-media/"
                     "Title Preview Author Media"

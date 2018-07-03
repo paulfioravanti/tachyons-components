@@ -1,4 +1,11 @@
-module ArticleList exposing (Route, bodyClasses, matchers, toPath)
+module ArticleList
+    exposing
+        ( Route
+        , bodyClasses
+        , matchers
+        , titlePreviewAuthorMediaFlippedRoute
+        , toPath
+        )
 
 import ArticleList.Route as Route exposing (Route)
 import ArticleList.Styles as Styles
@@ -23,6 +30,11 @@ bodyClasses route =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+titlePreviewAuthorMediaFlippedRoute : Route
+titlePreviewAuthorMediaFlippedRoute =
+    Route.TitlePreviewAuthorMediaFlipped
 
 
 toPath : Route -> String
