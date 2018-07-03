@@ -23,13 +23,15 @@ view : Html msg -> Html msg
 view footer =
     div []
         [ section [ class Styles.section ]
-            ([ h2 [ class Styles.title ]
-                [ text "News" ]
-             ]
-                ++ (List.map newsArticle Article.list)
-            )
+            (pageHeading :: List.map newsArticle Article.list)
         , footer
         ]
+
+
+pageHeading : Html msg
+pageHeading =
+    h2 [ class Styles.title ]
+        [ text "News" ]
 
 
 newsArticle : Article -> Html msg
