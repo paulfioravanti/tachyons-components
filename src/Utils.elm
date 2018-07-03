@@ -4,18 +4,17 @@ import Html exposing (Html, a, text)
 import Html.Attributes exposing (class, href, title)
 import Html.Events exposing (onWithOptions)
 import Json.Decode as Decode
-import Msg exposing (Msg(ChangeLocation))
 import Route exposing (Route(ListComponents))
 
 
-componentsLink : String -> Html Msg
-componentsLink styles =
+componentsLink : msg -> String -> Html msg
+componentsLink msg styles =
     let
         clickOptions =
             onWithOptions
                 "click"
                 { preventDefault = True, stopPropagation = False }
-                (Decode.succeed (ChangeLocation ListComponents))
+                (Decode.succeed msg)
     in
         a
             [ class styles

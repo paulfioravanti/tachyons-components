@@ -13,12 +13,11 @@ import Html.Attributes
         , style
         , width
         )
-import Msg exposing (Msg)
 import Svg exposing (path, svg)
 import Svg.Attributes exposing (d, fill, viewBox)
 
 
-view : Html Msg
+view : Html msg
 view =
     article [ class Styles.badges ]
         [ githubButton "star"
@@ -27,7 +26,7 @@ view =
         ]
 
 
-githubButton : String -> Html Msg
+githubButton : String -> Html msg
 githubButton badgeType =
     let
         url =
@@ -48,7 +47,7 @@ githubButton badgeType =
             []
 
 
-twitterBadge : Html Msg
+twitterBadge : Html msg
 twitterBadge =
     let
         link =

@@ -9,7 +9,6 @@ import Html.Attributes
         , href
         , title
         )
-import Msg exposing (Msg)
 import Svg exposing (Svg, g, path, svg)
 import Svg.Attributes
     exposing
@@ -23,7 +22,7 @@ import Svg.Attributes
         )
 
 
-view : Html Msg
+view : Html msg
 view =
     div [ class Styles.callsToAction ]
         [ twitter
@@ -32,7 +31,7 @@ view =
         ]
 
 
-twitter : Html Msg
+twitter : Html msg
 twitter =
     let
         logo =
@@ -45,7 +44,7 @@ twitter =
             "Follow @tachyons_css"
 
 
-slack : Html Msg
+slack : Html msg
 slack =
     let
         logo =
@@ -61,7 +60,7 @@ slack =
             "Need Help? Join our Slack Channel"
 
 
-gitHub : Html Msg
+gitHub : Html msg
 gitHub =
     let
         logo =

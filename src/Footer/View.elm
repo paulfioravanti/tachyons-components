@@ -10,16 +10,15 @@ import Html.Attributes
         , href
         , title
         )
-import Msg exposing (Msg)
 import Styles
 import Utils
 
 
-view : Html Msg
-view =
+view : msg -> Html msg
+view msg =
     footer [ class Styles.footer ]
         [ div [ class Styles.centerContent ]
-            [ links
+            [ links msg
             , Badges.view
             , CallsToAction.view
             , offerOfHelp
@@ -28,12 +27,12 @@ view =
         ]
 
 
-links : Html Msg
-links =
+links : msg -> Html msg
+links msg =
     div [ class Styles.footerLinks ]
         [ link "http://tachyons.io/" "Home" "Home"
         , link "http://tachyons.io/docs" "Docs" "Docs"
-        , Utils.componentsLink Styles.footerLink
+        , Utils.componentsLink msg Styles.footerLink
         , link
             "http://tachyons.io/gallery"
             "Gallery of Sites built with Tachyons"
@@ -52,13 +51,13 @@ links =
         ]
 
 
-link : String -> String -> String -> Html Msg
+link : String -> String -> String -> Html msg
 link url linkTitle linkText =
     a [ class Styles.footerLink, href url, title linkTitle ]
         [ text linkText ]
 
 
-offerOfHelp : Html Msg
+offerOfHelp : Html msg
 offerOfHelp =
     let
         content =
@@ -71,7 +70,7 @@ offerOfHelp =
             [ text content ]
 
 
-tachyonsDefinition : Html Msg
+tachyonsDefinition : Html msg
 tachyonsDefinition =
     let
         definition =

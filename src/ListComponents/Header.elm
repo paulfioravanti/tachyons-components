@@ -3,21 +3,20 @@ module ListComponents.Header exposing (view)
 import Html exposing (Html, a, div, header, nav, small, text)
 import Html.Attributes exposing (class, href, title)
 import ListComponents.Styles as Styles
-import Msg exposing (Msg)
 import Utils
 
 
-view : Html Msg
-view =
+view : msg -> Html msg
+view msg =
     header [ class Styles.header ]
         [ div [ class Styles.headerContent ]
             [ pageTitle
-            , pageHeaderNav
+            , pageHeaderNav msg
             ]
         ]
 
 
-pageTitle : Html Msg
+pageTitle : Html msg
 pageTitle =
     div [ class Styles.title ]
         [ a
@@ -34,11 +33,11 @@ pageTitle =
         ]
 
 
-pageHeaderNav : Html Msg
-pageHeaderNav =
+pageHeaderNav : msg -> Html msg
+pageHeaderNav msg =
     nav [ class Styles.nav ]
         [ link "http://tachyons.io/docs" "Documentation" "Docs"
-        , Utils.componentsLink Styles.navLink
+        , Utils.componentsLink msg Styles.navLink
         , link
             "http://tachyons.io/gallery"
             "Gallery of sites built with Tachyons"
@@ -51,7 +50,7 @@ pageHeaderNav =
         ]
 
 
-link : String -> String -> String -> Html Msg
+link : String -> String -> String -> Html msg
 link url linkTitle linkText =
     a [ class Styles.navLink, href url, title linkTitle ]
         [ text linkText ]
