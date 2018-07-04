@@ -33,7 +33,9 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/headline-title-text/"
                     "Headline Title Text"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg
+                        (Articles Article.headlineTitleTextRoute)
+                    )
                 , Utils.component
                     "articles/large-title-text/"
                     "Large Title Text"

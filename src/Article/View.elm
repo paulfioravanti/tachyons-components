@@ -5,10 +5,12 @@ import Article.Route
         ( Route
             ( Feature
             , FullBleedBackground
+            , HeadlineTitleText
             )
         )
 import Article.Feature.View as Feature
 import Article.FullBleedBackground.View as FullBleedBackground
+import Article.HeadlineTitleText.View as HeadlineTitleText
 import Html exposing (Html)
 
 
@@ -20,3 +22,6 @@ view route footer =
 
         FullBleedBackground ->
             FullBleedBackground.view footer
+
+        HeadlineTitleText ->
+            HeadlineTitleText.view footer

@@ -5,6 +5,7 @@ module Article
         , matchers
         , featureRoute
         , fullBleedBackgroundRoute
+        , headlineTitleTextRoute
         , toPath
         , view
         )
@@ -38,6 +39,11 @@ featureRoute =
 fullBleedBackgroundRoute : Route
 fullBleedBackgroundRoute =
     Route.FullBleedBackground
+
+
+headlineTitleTextRoute : Route
+headlineTitleTextRoute =
+    Route.HeadlineTitleText
 
 
 toPath : Route -> String
