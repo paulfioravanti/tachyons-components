@@ -67,7 +67,7 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/title-text/"
                     "Title Text"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg (Articles Article.titleTextRoute))
                 ]
             ]
         ]

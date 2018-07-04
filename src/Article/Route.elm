@@ -8,6 +8,7 @@ type Route
     | FullBleedBackground
     | HeadlineTitleText
     | LargeTitleText
+    | TitleText
 
 
 toPath : Route -> String
@@ -25,6 +26,9 @@ toPath route =
         LargeTitleText ->
             "large-title-text/"
 
+        TitleText ->
+            "title-text/"
+
 
 matchers : Parser (Route -> a) a
 matchers =
@@ -33,4 +37,5 @@ matchers =
         , map FullBleedBackground (s "full-bleed-background")
         , map HeadlineTitleText (s "headline-title-text")
         , map LargeTitleText (s "large-title-text")
+        , map TitleText (s "title-text")
         ]
