@@ -1,19 +1,8 @@
 module Article.HeadlineTitleText.View exposing (view)
 
 import Article.HeadlineTitleText.Styles as Styles
-import Html
-    exposing
-        ( Html
-        , article
-        , div
-        , header
-        , h1
-        , h4
-        , p
-        , section
-        , text
-        )
-import Html.Attributes exposing (attribute, class, style)
+import Html exposing (Html, article, div, h1, p, text)
+import Html.Attributes exposing (class)
 
 
 view : Html msg -> Html msg

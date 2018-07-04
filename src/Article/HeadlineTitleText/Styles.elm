@@ -1,9 +1,4 @@
-module Article.HeadlineTitleText.Styles
-    exposing
-        ( article
-        , heading
-        , copy
-        )
+module Article.HeadlineTitleText.Styles exposing (article, heading, copy)
 
 
 article : String
