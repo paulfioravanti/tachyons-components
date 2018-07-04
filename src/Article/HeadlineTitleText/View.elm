@@ -3,6 +3,7 @@ module Article.HeadlineTitleText.View exposing (view)
 import Article.HeadlineTitleText.Styles as Styles
 import Html exposing (Html, article, div, h1, p, text)
 import Html.Attributes exposing (class)
+import LoremIpsum
 
 
 view : Html msg -> Html msg
@@ -27,13 +28,4 @@ paragraph copy =
 
 paragraphs : List String
 paragraphs =
-    [ loremIpsum, loremIpsum ]
-
-
-loremIpsum : String
-loremIpsum =
-    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam "
-        ++ "nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam "
-        ++ "erat, sed diam voluptua. At vero eos et accusam et justo duo "
-        ++ "dolores et ea rebum. Stet clita kasd gubergren, no sea takimata "
-        ++ "sanctus est Lorem ipsum dolor sit amet."
+    [ LoremIpsum.string, LoremIpsum.string ]
