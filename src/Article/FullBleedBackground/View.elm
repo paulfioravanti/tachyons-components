@@ -6,12 +6,8 @@ import Html
     exposing
         ( Html
         , article
-        , blockquote
-        , cite
         , div
         , header
-        , h1
-        , h2
         , h3
         , h4
         , p

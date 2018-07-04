@@ -1,12 +1,6 @@
 module Article.Styles exposing (bodyClasses)
 
-import Article.Route
-    exposing
-        ( Route
-            ( Feature
-            , FullBleedBackground
-            )
-        )
+import Article.Route exposing (Route)
 
 
 bodyClasses : Route -> List String
