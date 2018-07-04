@@ -10,16 +10,6 @@ module Article.FullBleedBackground.Styles
         )
 
 
-author : String
-author =
-    [ "f6"
-    , "fs-normal"
-    , "tracked"
-    , "ttu"
-    ]
-        |> String.join " "
-
-
 backgroundImage : String
 backgroundImage =
     [ "cf"
