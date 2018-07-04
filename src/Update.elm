@@ -22,8 +22,13 @@ update msg _ =
                     route
                         |> Styles.bodyClasses
                         |> Ports.setBodyClasses
+
+                scrollToTopOfPage =
+                    Ports.scrollToTopOfPage ()
             in
-                ( route, Cmd.batch [ setBodyClasses, setUrl ] )
+                ( route
+                , Cmd.batch [ setBodyClasses, setUrl, scrollToTopOfPage ]
+                )
 
         UrlChange location ->
             let

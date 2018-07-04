@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (appContainer) {
     const app = Main.embed(appContainer)
 
+    app.ports.scrollToTopOfPage.subscribe(() => {
+      window.scrollTo(0, 0)
+    })
+
     app.ports.setBodyClasses.subscribe((classes) => {
       document.body.className = classes
     })
