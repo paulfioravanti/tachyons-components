@@ -4,6 +4,7 @@ import Article.Route
     exposing
         ( Route
             ( Feature
+            , FullBleedBackground
             )
         )
 
@@ -11,7 +12,7 @@ import Article.Route
 bodyClasses : Route -> List String
 bodyClasses route =
     case route of
-        Feature ->
+        _ ->
             [ "bg-white"
             , "sans-serif"
             , "w-100"

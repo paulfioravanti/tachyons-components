@@ -4,9 +4,11 @@ import Article.Route
     exposing
         ( Route
             ( Feature
+            , FullBleedBackground
             )
         )
 import Article.Feature.View as Feature
+import Article.FullBleedBackground.View as FullBleedBackground
 import Html exposing (Html)
 
 
@@ -15,3 +17,6 @@ view route footer =
     case route of
         Feature ->
             Feature.view footer
+
+        FullBleedBackground ->
+            FullBleedBackground.view footer

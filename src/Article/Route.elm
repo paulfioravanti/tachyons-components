@@ -5,6 +5,7 @@ import UrlParser exposing (Parser, map, oneOf, s)
 
 type Route
     = Feature
+    | FullBleedBackground
 
 
 toPath : Route -> String
@@ -13,9 +14,13 @@ toPath route =
         Feature ->
             "feature/"
 
+        FullBleedBackground ->
+            "full-bleed-background/"
+
 
 matchers : Parser (Route -> a) a
 matchers =
     oneOf
         [ map Feature (s "feature")
+        , map FullBleedBackground (s "full-bleed-background")
         ]

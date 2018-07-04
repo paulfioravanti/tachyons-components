@@ -27,7 +27,9 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/full-bleed-background/"
                     "Full Bleed Background"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg
+                        (Articles Article.fullBleedBackgroundRoute)
+                    )
                 , Utils.component
                     "articles/headline-title-text/"
                     "Headline Title Text"

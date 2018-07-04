@@ -4,6 +4,7 @@ module Article
         , bodyClasses
         , matchers
         , featureRoute
+        , fullBleedBackgroundRoute
         , toPath
         , view
         )
@@ -32,6 +33,11 @@ matchers =
 featureRoute : Route
 featureRoute =
     Route.Feature
+
+
+fullBleedBackgroundRoute : Route
+fullBleedBackgroundRoute =
+    Route.FullBleedBackground
 
 
 toPath : Route -> String
