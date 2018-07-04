@@ -7,6 +7,7 @@ type Route
     = Feature
     | FullBleedBackground
     | HeadlineTitleText
+    | LargeTitleText
 
 
 toPath : Route -> String
@@ -21,6 +22,9 @@ toPath route =
         HeadlineTitleText ->
             "headline-title-text/"
 
+        LargeTitleText ->
+            "large-title-text/"
+
 
 matchers : Parser (Route -> a) a
 matchers =
@@ -28,4 +32,5 @@ matchers =
         [ map Feature (s "feature")
         , map FullBleedBackground (s "full-bleed-background")
         , map HeadlineTitleText (s "headline-title-text")
+        , map LargeTitleText (s "large-title-text")
         ]

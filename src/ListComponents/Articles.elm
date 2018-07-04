@@ -39,7 +39,7 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/large-title-text/"
                     "Large Title Text"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg (Articles Article.largeTitleTextRoute))
                 , Utils.component
                     "articles/left-title-top-border/"
                     "Left Title Top Border"

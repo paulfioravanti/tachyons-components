@@ -6,6 +6,7 @@ module Article
         , featureRoute
         , fullBleedBackgroundRoute
         , headlineTitleTextRoute
+        , largeTitleTextRoute
         , toPath
         , view
         )
@@ -44,6 +45,11 @@ fullBleedBackgroundRoute =
 headlineTitleTextRoute : Route
 headlineTitleTextRoute =
     Route.HeadlineTitleText
+
+
+largeTitleTextRoute : Route
+largeTitleTextRoute =
+    Route.LargeTitleText
 
 
 toPath : Route -> String
