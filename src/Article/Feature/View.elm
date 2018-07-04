@@ -5,7 +5,6 @@ import Article.Feature.Styles as Styles
 import Html
     exposing
         ( Html
-        , a
         , article
         , blockquote
         , cite
@@ -14,12 +13,10 @@ import Html
         , h1
         , h2
         , h3
-        , img
         , p
-        , section
         , text
         )
-import Html.Attributes exposing (alt, class, href, src, style)
+import Html.Attributes exposing (class, style)
 
 
 view : Html msg -> Html msg
