@@ -1,26 +1,13 @@
 module Article.FullBleedBackground.Styles
     exposing
-        ( article
-        , author
-        , backgroundImage
+        ( backgroundImage
         , content
         , copy
-        , edition
         , header
-        , headline
-        , heroContent
-        , heroFooter
-        , issue
         , section
-        , slogan
         , subtitle
         , title
         )
-
-
-article : String
-article =
-    "athelas"
 
 
 author : String
@@ -37,6 +24,7 @@ backgroundImage : String
 backgroundImage =
     [ "cf"
     , "cover"
+    , "bg-center"
     ]
         |> String.join " "
 
@@ -65,15 +53,6 @@ copy =
         |> String.join " "
 
 
-edition : String
-edition =
-    [ "f6"
-    , "fw1"
-    , "lh-title"
-    ]
-        |> String.join " "
-
-
 header : String
 header =
     [ "b--black-70"
@@ -83,58 +62,10 @@ header =
         |> String.join " "
 
 
-headline : String
-headline =
-    [ "f1"
-    , "lh-title"
-    ]
-        |> String.join " "
-
-
-heroContent : String
-heroContent =
-    [ "dtc"
-    , "v-mid"
-    ]
-        |> String.join " "
-
-
-heroFooter : String
-heroFooter =
-    [ "center"
-    , "f4"
-    , "lh-copy"
-    , "measure"
-    , "mh0"
-    , "ph0"
-    ]
-        |> String.join " "
-
-
-issue : String
-issue =
-    [ "f6"
-    , "fw1"
-    , "lh-title"
-    , "mb2"
-    , "tracked"
-    , "ttu"
-    ]
-        |> String.join " "
-
-
 section : String
 section =
     [ "pb4"
     , "pt5"
-    ]
-        |> String.join " "
-
-
-slogan : String
-slogan =
-    [ "fw1"
-    , "white-70"
     ]
         |> String.join " "
 

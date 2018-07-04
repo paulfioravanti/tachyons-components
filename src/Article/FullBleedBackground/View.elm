@@ -33,7 +33,8 @@ view footer =
             ]
     in
         div []
-            [ article [ attribute "data-name" "article-full-bleed-background" ]
+            [ article
+                [ attribute "data-name" "article-full-bleed-background" ]
                 [ div
                     [ class Styles.backgroundImage
                     , style backgroundImageStyle
