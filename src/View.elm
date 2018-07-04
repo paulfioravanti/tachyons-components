@@ -1,5 +1,6 @@
 module View exposing (view)
 
+import Article
 import ArticleList
 import Footer
 import Html exposing (Html)
@@ -9,7 +10,8 @@ import NotFound
 import Route
     exposing
         ( Route
-            ( ArticleLists
+            ( Articles
+            , ArticleLists
             , ListComponents
             , NotFound
             )
@@ -23,6 +25,9 @@ view changeLocationMsg model =
             Footer.view (changeLocationMsg ListComponents)
     in
         case model of
+            Articles articleRoute ->
+                Article.view articleRoute footer
+
             ArticleLists articleListRoute ->
                 ArticleList.view articleListRoute footer
 

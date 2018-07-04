@@ -1,10 +1,12 @@
 module Styles exposing (bodyClasses, centerContent)
 
+import Article
 import ArticleList
 import Route
     exposing
         ( Route
-            ( ArticleLists
+            ( Articles
+            , ArticleLists
             , ListComponents
             , NotFound
             )
@@ -16,6 +18,10 @@ bodyClasses route =
     let
         styles =
             case route of
+                Articles articleRoute ->
+                    articleRoute
+                        |> Article.bodyClasses
+
                 ArticleLists articleListRoute ->
                     articleListRoute
                         |> ArticleList.bodyClasses
