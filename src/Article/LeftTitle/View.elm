@@ -2,7 +2,7 @@ module Article.LeftTitle.View exposing (view)
 
 import Article.LeftTitle.Article as Article exposing (Article)
 import Article.LeftTitle.Styles as Styles
-import Html exposing (Html, article, div, h1, h2, header, p, span, text, time)
+import Html exposing (Html, article, div, h1, header, p, span, text)
 import Html.Attributes exposing (class)
 
 
