@@ -53,7 +53,7 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/photo-essay/"
                     "Photo Essay"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg (Articles Article.photoEssayRoute))
                 , Utils.component
                     "articles/single-column-large-title/"
                     "Single Column Large Title"

@@ -9,6 +9,7 @@ module Article
         , largeTitleTextRoute
         , leftTitleRoute
         , leftTitleTopBorderRoute
+        , photoEssayRoute
         , titleTextRoute
         , view
         )
@@ -62,6 +63,11 @@ leftTitleRoute =
 leftTitleTopBorderRoute : Route
 leftTitleTopBorderRoute =
     Route.LeftTitleTopBorder
+
+
+photoEssayRoute : Route
+photoEssayRoute =
+    Route.PhotoEssay
 
 
 titleTextRoute : Route

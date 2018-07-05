@@ -10,6 +10,7 @@ type Route
     | LargeTitleText
     | LeftTitle
     | LeftTitleTopBorder
+    | PhotoEssay
     | TitleText
 
 
@@ -22,5 +23,6 @@ matchers =
         , map LargeTitleText (s "large-title-text")
         , map LeftTitle (s "left-title")
         , map LeftTitleTopBorder (s "left-title-top-border")
+        , map PhotoEssay (s "photo-essay")
         , map TitleText (s "title-text")
         ]

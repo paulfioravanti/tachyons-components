@@ -9,6 +9,7 @@ import Article.Route
             , LargeTitleText
             , LeftTitle
             , LeftTitleTopBorder
+            , PhotoEssay
             , TitleText
             )
         )
@@ -18,6 +19,7 @@ import Article.HeadlineTitleText.View as HeadlineTitleText
 import Article.LargeTitleText.View as LargeTitleText
 import Article.LeftTitle.View as LeftTitle
 import Article.LeftTitleTopBorder.View as LeftTitleTopBorder
+import Article.PhotoEssay.View as PhotoEssay
 import Article.TitleText.View as TitleText
 import Html exposing (Html)
 
@@ -42,6 +44,9 @@ view route footer =
 
         LeftTitleTopBorder ->
             LeftTitleTopBorder.view footer
+
+        PhotoEssay ->
+            PhotoEssay.view footer
 
         TitleText ->
             TitleText.view footer
