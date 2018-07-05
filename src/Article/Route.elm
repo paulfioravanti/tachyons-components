@@ -1,4 +1,4 @@
-module Article.Route exposing (Route(..), matchers, toPath)
+module Article.Route exposing (Route(..), matchers)
 
 import UrlParser exposing (Parser, map, oneOf, s)
 
@@ -9,25 +9,6 @@ type Route
     | HeadlineTitleText
     | LargeTitleText
     | TitleText
-
-
-toPath : Route -> String
-toPath route =
-    case route of
-        Feature ->
-            "feature/"
-
-        FullBleedBackground ->
-            "full-bleed-background/"
-
-        HeadlineTitleText ->
-            "headline-title-text/"
-
-        LargeTitleText ->
-            "large-title-text/"
-
-        TitleText ->
-            "title-text/"
 
 
 matchers : Parser (Route -> a) a

@@ -1,4 +1,4 @@
-module ArticleList.Route exposing (Route(..), matchers, toPath)
+module ArticleList.Route exposing (Route(..), matchers)
 
 import UrlParser exposing (Parser, map, oneOf, s)
 
@@ -6,16 +6,6 @@ import UrlParser exposing (Parser, map, oneOf, s)
 type Route
     = TitlePreviewAuthorMedia
     | TitlePreviewAuthorMediaFlipped
-
-
-toPath : Route -> String
-toPath route =
-    case route of
-        TitlePreviewAuthorMedia ->
-            "title-preview-author-media/"
-
-        TitlePreviewAuthorMediaFlipped ->
-            "title-preview-author-media-flipped/"
 
 
 matchers : Parser (Route -> a) a

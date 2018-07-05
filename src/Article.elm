@@ -8,7 +8,6 @@ module Article
         , headlineTitleTextRoute
         , largeTitleTextRoute
         , titleTextRoute
-        , toPath
         , view
         )
 
@@ -56,11 +55,6 @@ largeTitleTextRoute =
 titleTextRoute : Route
 titleTextRoute =
     Route.TitleText
-
-
-toPath : Route -> String
-toPath route =
-    Route.toPath route
 
 
 view : Route -> Html msg -> Html msg

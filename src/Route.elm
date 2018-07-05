@@ -3,6 +3,7 @@ module Route exposing (Route(..), fromLocation, toPath)
 import Article
 import ArticleList
 import Navigation exposing (Location)
+import String.Extra
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 
 
@@ -24,12 +25,10 @@ toPath : Route -> String
 toPath route =
     case route of
         Articles articleRoute ->
-            "/components/articles/"
-                ++ Article.toPath articleRoute
+            "/components/articles/" ++ pathify articleRoute
 
         ArticleLists articleListRoute ->
-            "/components/article-lists/"
-                ++ ArticleList.toPath articleListRoute
+            "/components/article-lists/" ++ pathify articleListRoute
 
         ListComponents ->
             "/components/"
@@ -48,3 +47,12 @@ matchers =
         , map ListComponents top
         , map ListComponents (s "components")
         ]
+
+
+pathify : route -> String
+pathify route =
+    route
+        |> toString
+        |> String.Extra.underscored
+        |> String.Extra.dasherize
+        |> (++) "/"

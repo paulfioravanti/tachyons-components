@@ -5,7 +5,6 @@ module ArticleList
         , matchers
         , titlePreviewAuthorMediaRoute
         , titlePreviewAuthorMediaFlippedRoute
-        , toPath
         , view
         )
 
@@ -38,11 +37,6 @@ titlePreviewAuthorMediaRoute =
 titlePreviewAuthorMediaFlippedRoute : Route
 titlePreviewAuthorMediaFlippedRoute =
     Route.TitlePreviewAuthorMediaFlipped
-
-
-toPath : Route -> String
-toPath route =
-    Route.toPath route
 
 
 view : Route -> Html msg -> Html msg
