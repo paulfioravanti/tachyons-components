@@ -57,7 +57,7 @@ image012 =
 
 image013 : Photo
 image013 =
-    { url = "http://mrmrs.github.io/photos/012.jpg"
+    { url = "http://mrmrs.github.io/photos/013.jpg"
     , caption = "Photo of the foundations of a building on a cliff overlooking a lighthouse."
     }
 
