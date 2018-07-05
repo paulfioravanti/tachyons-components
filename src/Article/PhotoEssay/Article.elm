@@ -29,42 +29,42 @@ type alias Photo =
 
 image009 : Photo
 image009 =
-    { url = "http://mrmrs.github.io/photos/009.jpg"
+    { url = "https://mrmrs.github.io/photos/009.jpg"
     , caption = ""
     }
 
 
 image010 : Photo
 image010 =
-    { url = "http://mrmrs.github.io/photos/010.jpg"
+    { url = "https://mrmrs.github.io/photos/010.jpg"
     , caption = "Photo of a dusk skyline above a grassy rockface covered in trees."
     }
 
 
 image011 : Photo
 image011 =
-    { url = "http://mrmrs.github.io/photos/011.jpg"
+    { url = "https://mrmrs.github.io/photos/011.jpg"
     , caption = "Photo of the sea and sky on the horizon with the foundations of a demolished house."
     }
 
 
 image012 : Photo
 image012 =
-    { url = "http://mrmrs.github.io/photos/012.jpg"
+    { url = "https://mrmrs.github.io/photos/012.jpg"
     , caption = "Photo of the sea with mist covering the rocky formations near the shore."
     }
 
 
 image013 : Photo
 image013 =
-    { url = "http://mrmrs.github.io/photos/013.jpg"
+    { url = "https://mrmrs.github.io/photos/013.jpg"
     , caption = "Photo of the foundations of a building on a cliff overlooking a lighthouse."
     }
 
 
 example : Article
 example =
-    { backgroundImageUrl = "http://mrmrs.github.io/photos/display.jpg"
+    { backgroundImageUrl = "https://mrmrs.github.io/photos/display.jpg"
     , title = "A Night Taking Photos at San Francisco’s Spooky Ruins of the Sutro Baths"
     , author = "A story by Nancy Drew"
     , lead = "On March 14, 1896, the Sutro Baths were opened to the public as the world's largest indoor swimming pool establishment."

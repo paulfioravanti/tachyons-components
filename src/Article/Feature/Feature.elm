@@ -19,7 +19,7 @@ type alias Feature =
 
 example : Feature
 example =
-    { backgroundImageUrl = "http://mrmrs.github.io/photos/u/009.jpg"
+    { backgroundImageUrl = "https://mrmrs.github.io/photos/u/009.jpg"
     , issue = "Issue Six"
     , edition = "Summer MMXVI"
     , title = "The Chronicles"
