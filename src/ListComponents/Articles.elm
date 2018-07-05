@@ -49,7 +49,7 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/left-title/"
                     "Left Title"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg (Articles Article.leftTitleRoute))
                 , Utils.component
                     "articles/photo-essay/"
                     "Photo Essay"

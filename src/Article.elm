@@ -7,6 +7,7 @@ module Article
         , fullBleedBackgroundRoute
         , headlineTitleTextRoute
         , largeTitleTextRoute
+        , leftTitleRoute
         , leftTitleTopBorderRoute
         , titleTextRoute
         , view
@@ -51,6 +52,11 @@ headlineTitleTextRoute =
 largeTitleTextRoute : Route
 largeTitleTextRoute =
     Route.LargeTitleText
+
+
+leftTitleRoute : Route
+leftTitleRoute =
+    Route.LeftTitle
 
 
 leftTitleTopBorderRoute : Route
