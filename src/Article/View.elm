@@ -7,6 +7,7 @@ import Article.Route
             , FullBleedBackground
             , HeadlineTitleText
             , LargeTitleText
+            , LeftTitleTopBorder
             , TitleText
             )
         )
@@ -14,6 +15,7 @@ import Article.Feature.View as Feature
 import Article.FullBleedBackground.View as FullBleedBackground
 import Article.HeadlineTitleText.View as HeadlineTitleText
 import Article.LargeTitleText.View as LargeTitleText
+import Article.LeftTitleTopBorder.View as LeftTitleTopBorder
 import Article.TitleText.View as TitleText
 import Html exposing (Html)
 
@@ -32,6 +34,9 @@ view route footer =
 
         LargeTitleText ->
             LargeTitleText.view footer
+
+        LeftTitleTopBorder ->
+            LeftTitleTopBorder.view footer
 
         TitleText ->
             TitleText.view footer

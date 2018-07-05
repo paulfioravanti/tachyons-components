@@ -51,8 +51,11 @@ matchers =
 
 pathify : route -> String
 pathify route =
-    route
-        |> toString
-        |> String.Extra.underscored
-        |> String.Extra.dasherize
-        |> (++) "/"
+    let
+        path =
+            route
+                |> toString
+                |> String.Extra.underscored
+                |> String.Extra.dasherize
+    in
+        path ++ "/"

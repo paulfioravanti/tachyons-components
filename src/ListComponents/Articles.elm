@@ -43,7 +43,9 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/left-title-top-border/"
                     "Left Title Top Border"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg
+                        (Articles Article.leftTitleTopBorderRoute)
+                    )
                 , Utils.component
                     "articles/left-title/"
                     "Left Title"

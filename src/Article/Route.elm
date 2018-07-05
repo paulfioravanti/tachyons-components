@@ -8,6 +8,7 @@ type Route
     | FullBleedBackground
     | HeadlineTitleText
     | LargeTitleText
+    | LeftTitleTopBorder
     | TitleText
 
 
@@ -18,5 +19,6 @@ matchers =
         , map FullBleedBackground (s "full-bleed-background")
         , map HeadlineTitleText (s "headline-title-text")
         , map LargeTitleText (s "large-title-text")
+        , map LeftTitleTopBorder (s "left-title-top-border")
         , map TitleText (s "title-text")
         ]
