@@ -11,6 +11,7 @@ module Article
         , leftTitleTopBorderRoute
         , photoEssayRoute
         , singleColumnLargeTitleRoute
+        , titleHighlightHeaderCoverRoute
         , titleTextRoute
         , view
         )
@@ -74,6 +75,11 @@ photoEssayRoute =
 singleColumnLargeTitleRoute : Route
 singleColumnLargeTitleRoute =
     Route.SingleColumnLargeTitle
+
+
+titleHighlightHeaderCoverRoute : Route
+titleHighlightHeaderCoverRoute =
+    Route.TitleHighlightHeaderCover
 
 
 titleTextRoute : Route

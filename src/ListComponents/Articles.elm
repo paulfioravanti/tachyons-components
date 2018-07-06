@@ -63,7 +63,9 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/title-highlight-header-cover/"
                     "Title Highlight Header Cover"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg
+                        (Articles Article.titleHighlightHeaderCoverRoute)
+                    )
                 , Utils.component
                     "articles/title-text-image/"
                     "Title Text Image"
