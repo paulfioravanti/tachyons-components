@@ -11,7 +11,7 @@ import Route exposing (Route(ArticleLists))
 view : (Route -> msg) -> Html msg
 view changeLocationMsg =
     div []
-        [ Utils.sectionHeader "article-lists" "Article Lists"
+        [ Utils.sectionHeader "Article Lists"
         , div [ class Styles.sectionContentWrapper ]
             [ div [ class Styles.sectionContent ]
                 [ Utils.component

@@ -5,6 +5,7 @@ import Html.Attributes exposing (attribute, class, href, id, title)
 import Html.Events exposing (onWithOptions)
 import Json.Decode as Decode
 import ListComponents.Styles as Styles
+import String.Extra
 import Styles
 
 
@@ -41,11 +42,17 @@ component url linkTitle msg =
             ]
 
 
-sectionHeader : String -> String -> Html msg
-sectionHeader sectionId sectionTitle =
-    div [ class Styles.sectionHeader, id sectionId ]
-        [ div [ class Styles.centerContent ]
-            [ h3 [ class Styles.sectionTitle ]
-                [ text sectionTitle ]
+sectionHeader : String -> Html msg
+sectionHeader sectionTitle =
+    let
+        sectionId =
+            sectionTitle
+                |> String.Extra.underscored
+                |> String.Extra.dasherize
+    in
+        div [ class Styles.sectionHeader, id sectionId ]
+            [ div [ class Styles.centerContent ]
+                [ h3 [ class Styles.sectionTitle ]
+                    [ text sectionTitle ]
+                ]
             ]
-        ]
