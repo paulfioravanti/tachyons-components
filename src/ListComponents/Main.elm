@@ -5,7 +5,9 @@ import Html.Attributes exposing (class, href)
 import ListComponents.Styles as Styles
 import ListComponents.Articles as Articles
 import ListComponents.ArticleLists as ArticleLists
+import ListComponents.Avatars as Avatars
 import Route exposing (Route)
+import String.Extra
 import Styles
 
 
@@ -24,27 +26,27 @@ mainHeader : Html msg
 mainHeader =
     let
         anchorLinks =
-            [ ( "#article-lists", "Article Lists" )
-            , ( "#articles", "Articles" )
-            , ( "#avatars", "Avatars" )
-            , ( "#banners", "Banners" )
-            , ( "#buttons", "Buttons" )
-            , ( "#cards", "Cards" )
-            , ( "#collections", "Collections" )
-            , ( "#definition-lists", "Definition Lists" )
-            , ( "#error-pages", "Error Pages" )
-            , ( "#footers", "Footers" )
-            , ( "#forms", "Forms" )
-            , ( "#headers", "Headers" )
-            , ( "#layout", "Layout" )
-            , ( "#links", "Links" )
-            , ( "#lists", "Lists" )
-            , ( "#marketing", "Marketing" )
-            , ( "#nav", "Nav" )
-            , ( "#pages", "Pages" )
-            , ( "#quotes", "Quotes" )
-            , ( "#tables", "Tables" )
-            , ( "#text", "Text" )
+            [ "Article Lists"
+            , "Articles"
+            , "Avatars"
+            , "Banners"
+            , "Buttons"
+            , "Cards"
+            , "Collections"
+            , "Definition Lists"
+            , "Error Pages"
+            , "Footers"
+            , "Forms"
+            , "Headers"
+            , "Layout"
+            , "Links"
+            , "Lists"
+            , "Marketing"
+            , "Nav"
+            , "Pages"
+            , "Quotes"
+            , "Tables"
+            , "Text"
             ]
     in
         header [ class Styles.mainHeader ]
@@ -53,7 +55,14 @@ mainHeader =
             ]
 
 
-anchorLink : ( String, String ) -> Html msg
-anchorLink ( link, linkText ) =
-    a [ class Styles.anchor, href link ]
-        [ text linkText ]
+anchorLink : String -> Html msg
+anchorLink linkText =
+    let
+        anchor =
+            linkText
+                |> String.Extra.underscored
+                |> String.Extra.dasherize
+                |> (++) "#"
+    in
+        a [ class Styles.anchor, href anchor ]
+            [ text linkText ]
