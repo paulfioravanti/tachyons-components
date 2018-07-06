@@ -5,13 +5,7 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route
-    exposing
-        ( Route
-            ( Articles
-            , ListComponents
-            )
-        )
+import Route exposing (Route(Articles))
 
 
 view : (Route -> msg) -> Html msg
