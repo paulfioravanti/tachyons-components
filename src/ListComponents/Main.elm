@@ -18,6 +18,7 @@ view changeLocationMsg =
         , section []
             [ ArticleLists.view changeLocationMsg
             , Articles.view changeLocationMsg
+            , Avatars.view changeLocationMsg
             ]
         ]
 

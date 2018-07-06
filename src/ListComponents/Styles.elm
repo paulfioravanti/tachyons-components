@@ -21,6 +21,8 @@ module ListComponents.Styles
         , versionNumberWrapper
         )
 
+import Article
+import Route exposing (Route(Articles, Avatars))
 import Styles
 
 
@@ -138,14 +140,27 @@ sectionContentLinkContent =
         |> String.join " "
 
 
-sectionContentLinkImage : String
-sectionContentLinkImage =
-    [ "aspect-ratio--object"
-    , "bg-center"
-    , "cover"
-    , "lazyload"
-    ]
-        |> String.join " "
+sectionContentLinkImage : Route -> String
+sectionContentLinkImage route =
+    let
+        imageFormatting =
+            case route of
+                Articles articleRoute ->
+                    Article.sectionContentLinkImageFormatting articleRoute
+
+                Avatars _ ->
+                    [ "bg-center" ]
+
+                _ ->
+                    [ "cover"
+                    , "bg-center"
+                    ]
+    in
+        imageFormatting
+            ++ [ "aspect-ratio--object"
+               , "lazyload"
+               ]
+            |> String.join " "
 
 
 sectionContentTitle : String

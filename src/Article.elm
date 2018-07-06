@@ -10,6 +10,7 @@ module Article
         , leftTitleRoute
         , leftTitleTopBorderRoute
         , photoEssayRoute
+        , sectionContentLinkImageFormatting
         , singleColumnLargeTitleRoute
         , titleHighlightHeaderCoverRoute
         , titleTextImageRoute
@@ -71,6 +72,11 @@ leftTitleTopBorderRoute =
 photoEssayRoute : Route
 photoEssayRoute =
     Route.PhotoEssay
+
+
+sectionContentLinkImageFormatting : Route -> List String
+sectionContentLinkImageFormatting route =
+    Styles.sectionContentLinkImageFormatting route
 
 
 singleColumnLargeTitleRoute : Route

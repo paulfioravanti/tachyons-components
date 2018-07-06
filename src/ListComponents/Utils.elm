@@ -5,12 +5,13 @@ import Html.Attributes exposing (attribute, class, href, id, title)
 import Html.Events exposing (onWithOptions)
 import Json.Decode as Decode
 import ListComponents.Styles as Styles
+import Route exposing (Route)
 import String.Extra
 import Styles
 
 
-component : String -> String -> msg -> Html msg
-component url linkTitle msg =
+component : String -> String -> (Route -> msg) -> Route -> Html msg
+component url linkTitle msg route =
     let
         componentsUrl =
             "/components/" ++ url
@@ -22,7 +23,7 @@ component url linkTitle msg =
             onWithOptions
                 "click"
                 { preventDefault = True, stopPropagation = False }
-                (Decode.succeed msg)
+                (Decode.succeed (msg route))
     in
         a
             [ class Styles.sectionContentLink
@@ -32,7 +33,7 @@ component url linkTitle msg =
             ]
             [ div [ class Styles.sectionContentLinkContent ]
                 [ div
-                    [ class Styles.sectionContentLinkImage
+                    [ class (Styles.sectionContentLinkImage route)
                     , attribute "data-bg" screenshotUrl
                     ]
                     []

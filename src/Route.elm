@@ -2,6 +2,7 @@ module Route exposing (Route(..), fromLocation, toPath)
 
 import Article
 import ArticleList
+import Avatar
 import Navigation exposing (Location)
 import String.Extra
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
@@ -10,6 +11,7 @@ import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 type Route
     = Articles Article.Route
     | ArticleLists ArticleList.Route
+    | Avatars Avatar.Route
     | ListComponents
     | NotFound
 
@@ -30,6 +32,9 @@ toPath route =
         ArticleLists articleListRoute ->
             "/components/article-lists/" ++ pathify articleListRoute
 
+        Avatars avatarRoute ->
+            "/components/avatars/" ++ pathify avatarRoute
+
         ListComponents ->
             "/components/"
 
@@ -44,6 +49,7 @@ matchers =
         , map
             ArticleLists
             (s "components" </> s "article-lists" </> ArticleList.matchers)
+        , map Avatars (s "components" </> s "avatars" </> Avatar.matchers)
         , map ListComponents top
         , map ListComponents (s "components")
         ]

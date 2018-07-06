@@ -2,13 +2,13 @@ module Styles exposing (bodyClasses, centerContent)
 
 import Article
 import ArticleList
+import Avatar
 import Route
     exposing
         ( Route
-            ( Articles
-            , ArticleLists
-            , ListComponents
-            , NotFound
+            ( ArticleLists
+            , Articles
+            , Avatars
             )
         )
 
@@ -18,20 +18,19 @@ bodyClasses route =
     let
         styles =
             case route of
-                Articles articleRoute ->
-                    articleRoute
-                        |> Article.bodyClasses
-
                 ArticleLists articleListRoute ->
                     articleListRoute
                         |> ArticleList.bodyClasses
 
-                ListComponents ->
-                    [ "sans-serif"
-                    , "w-100"
-                    ]
+                Articles articleRoute ->
+                    articleRoute
+                        |> Article.bodyClasses
 
-                NotFound ->
+                Avatars avatarRoute ->
+                    avatarRoute
+                        |> Avatar.bodyClasses
+
+                _ ->
                     [ "sans-serif"
                     , "w-100"
                     ]

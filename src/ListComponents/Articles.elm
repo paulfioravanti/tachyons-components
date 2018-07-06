@@ -17,57 +17,58 @@ view changeLocationMsg =
                 [ Utils.component
                     "articles/feature/"
                     "Feature"
-                    (changeLocationMsg (Articles Article.featureRoute))
+                    changeLocationMsg
+                    (Articles Article.featureRoute)
                 , Utils.component
                     "articles/full-bleed-background/"
                     "Full Bleed Background"
-                    (changeLocationMsg
-                        (Articles Article.fullBleedBackgroundRoute)
-                    )
+                    changeLocationMsg
+                    (Articles Article.fullBleedBackgroundRoute)
                 , Utils.component
                     "articles/headline-title-text/"
                     "Headline Title Text"
-                    (changeLocationMsg
-                        (Articles Article.headlineTitleTextRoute)
-                    )
+                    changeLocationMsg
+                    (Articles Article.headlineTitleTextRoute)
                 , Utils.component
                     "articles/large-title-text/"
                     "Large Title Text"
-                    (changeLocationMsg (Articles Article.largeTitleTextRoute))
+                    changeLocationMsg
+                    (Articles Article.largeTitleTextRoute)
                 , Utils.component
                     "articles/left-title-top-border/"
                     "Left Title Top Border"
-                    (changeLocationMsg
-                        (Articles Article.leftTitleTopBorderRoute)
-                    )
+                    changeLocationMsg
+                    (Articles Article.leftTitleTopBorderRoute)
                 , Utils.component
                     "articles/left-title/"
                     "Left Title"
-                    (changeLocationMsg (Articles Article.leftTitleRoute))
+                    changeLocationMsg
+                    (Articles Article.leftTitleRoute)
                 , Utils.component
                     "articles/photo-essay/"
                     "Photo Essay"
-                    (changeLocationMsg (Articles Article.photoEssayRoute))
+                    changeLocationMsg
+                    (Articles Article.photoEssayRoute)
                 , Utils.component
                     "articles/single-column-large-title/"
                     "Single Column Large Title"
-                    (changeLocationMsg
-                        (Articles Article.singleColumnLargeTitleRoute)
-                    )
+                    changeLocationMsg
+                    (Articles Article.singleColumnLargeTitleRoute)
                 , Utils.component
                     "articles/title-highlight-header-cover/"
                     "Title Highlight Header Cover"
-                    (changeLocationMsg
-                        (Articles Article.titleHighlightHeaderCoverRoute)
-                    )
+                    changeLocationMsg
+                    (Articles Article.titleHighlightHeaderCoverRoute)
                 , Utils.component
                     "articles/title-text-image/"
                     "Title Text Image"
-                    (changeLocationMsg (Articles Article.titleTextImageRoute))
+                    changeLocationMsg
+                    (Articles Article.titleTextImageRoute)
                 , Utils.component
                     "articles/title-text/"
                     "Title Text"
-                    (changeLocationMsg (Articles Article.titleTextRoute))
+                    changeLocationMsg
+                    (Articles Article.titleTextRoute)
                 ]
             ]
         ]
