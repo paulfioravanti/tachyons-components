@@ -1,6 +1,6 @@
 module Article.PhotoEssay.View exposing (view)
 
-import Article.PhotoEssay.Article as Article exposing (Article, Photo)
+import Article.PhotoEssay.Article as Article exposing (Article)
 import Article.PhotoEssay.Styles as Styles
 import Html exposing (Html, article, div, h1, img, header, p, span, text)
 import Html.Attributes exposing (alt, class, src, style)
@@ -41,12 +41,12 @@ heading { backgroundImageUrl, title, author } =
 
 
 content : Article -> Html msg
-content article =
+content essayArticle =
     div [ class Styles.content ]
         [ p [ class Styles.lead ]
-            [ text article.lead ]
+            [ text essayArticle.lead ]
         , div [ class Styles.copy ]
-            [ mainContent article
+            [ mainContent essayArticle
             , div [ class Styles.clearfix ]
                 [ image010
                 , image011

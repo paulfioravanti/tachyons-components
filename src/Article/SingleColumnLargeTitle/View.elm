@@ -6,8 +6,8 @@ import Article.SingleColumnLargeTitle.Article as Article
         , Photo
         )
 import Article.SingleColumnLargeTitle.Styles as Styles
-import Html exposing (Html, article, div, h1, img, header, p, span, text, time)
-import Html.Attributes exposing (alt, class, src, style)
+import Html exposing (Html, article, div, h1, img, header, p, text, time)
+import Html.Attributes exposing (alt, class, src)
 
 
 view : Html msg -> Html msg
@@ -46,24 +46,24 @@ heading { title, date } =
 
 
 content : Article -> Html msg
-content article =
+content { lead, paragraph1, paragraph2, paragraph3, paragraph4 } =
     div [ class Styles.content ]
-        [ lead article
+        [ leadParagraph lead
         , div [ class Styles.copy ]
             [ photo Article.image013
-            , p [] [ text article.paragraph1 ]
+            , p [] [ text paragraph1 ]
             , photo Article.image012
-            , p [] [ text article.paragraph2 ]
+            , p [] [ text paragraph2 ]
             , photo Article.image010
-            , p [] [ text article.paragraph3 ]
+            , p [] [ text paragraph3 ]
             , photo Article.image011
-            , p [] [ text article.paragraph4 ]
+            , p [] [ text paragraph4 ]
             ]
         ]
 
 
-lead : Article -> Html msg
-lead { lead } =
+leadParagraph : String -> Html msg
+leadParagraph lead =
     p [ class Styles.lead ]
         [ text lead ]
 
