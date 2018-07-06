@@ -10,7 +10,6 @@ import Html
         , h3
         , h4
         , h5
-        , img
         , header
         , p
         , small
@@ -18,7 +17,7 @@ import Html
         , text
         , time
         )
-import Html.Attributes exposing (alt, class, src)
+import Html.Attributes exposing (class)
 
 
 view : Html msg -> Html msg
