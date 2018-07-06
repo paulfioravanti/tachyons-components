@@ -14,6 +14,7 @@ type Route
     | SingleColumnLargeTitle
     | TitleHighlightHeaderCover
     | TitleText
+    | TitleTextImage
 
 
 matchers : Parser (Route -> a) a
@@ -29,4 +30,5 @@ matchers =
         , map SingleColumnLargeTitle (s "single-column-large-title")
         , map TitleHighlightHeaderCover (s "title-highlight-header-cover")
         , map TitleText (s "title-text")
+        , map TitleTextImage (s "title-text-image")
         ]

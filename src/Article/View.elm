@@ -13,6 +13,7 @@ import Article.Route
             , SingleColumnLargeTitle
             , TitleHighlightHeaderCover
             , TitleText
+            , TitleTextImage
             )
         )
 import Article.Feature.View as Feature
@@ -25,6 +26,7 @@ import Article.PhotoEssay.View as PhotoEssay
 import Article.SingleColumnLargeTitle.View as SingleColumnLargeTitle
 import Article.TitleHighlightHeaderCover.View as TitleHighlightHeaderCover
 import Article.TitleText.View as TitleText
+import Article.TitleTextImage.View as TitleTextImage
 import Html exposing (Html)
 
 
@@ -60,3 +62,6 @@ view route footer =
 
         TitleText ->
             TitleText.view footer
+
+        TitleTextImage ->
+            TitleTextImage.view footer

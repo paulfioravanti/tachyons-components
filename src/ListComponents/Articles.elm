@@ -69,7 +69,7 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/title-text-image/"
                     "Title Text Image"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg (Articles Article.titleTextImageRoute))
                 , Utils.component
                     "articles/title-text/"
                     "Title Text"
