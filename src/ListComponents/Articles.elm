@@ -57,7 +57,9 @@ view changeLocationMsg =
                 , Utils.component
                     "articles/single-column-large-title/"
                     "Single Column Large Title"
-                    (changeLocationMsg ListComponents)
+                    (changeLocationMsg
+                        (Articles Article.singleColumnLargeTitleRoute)
+                    )
                 , Utils.component
                     "articles/title-highlight-header-cover/"
                     "Title Highlight Header Cover"

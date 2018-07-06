@@ -11,6 +11,7 @@ type Route
     | LeftTitle
     | LeftTitleTopBorder
     | PhotoEssay
+    | SingleColumnLargeTitle
     | TitleText
 
 
@@ -24,5 +25,6 @@ matchers =
         , map LeftTitle (s "left-title")
         , map LeftTitleTopBorder (s "left-title-top-border")
         , map PhotoEssay (s "photo-essay")
+        , map SingleColumnLargeTitle (s "single-column-large-title")
         , map TitleText (s "title-text")
         ]
