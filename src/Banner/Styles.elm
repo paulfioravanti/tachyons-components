@@ -12,7 +12,8 @@ bodyClasses : Route -> List String
 bodyClasses route =
     case route of
         _ ->
-            [ "bg-near-white"
+            [ "bg-white"
+            , "pt5"
             , "sans-serif"
             , "w-100"
             ]

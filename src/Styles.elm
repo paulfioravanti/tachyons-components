@@ -3,12 +3,14 @@ module Styles exposing (bodyClasses, centerContent)
 import Article
 import ArticleList
 import Avatar
+import Banner
 import Route
     exposing
         ( Route
             ( ArticleLists
             , Articles
             , Avatars
+            , Banners
             )
         )
 
@@ -29,6 +31,10 @@ bodyClasses route =
                 Avatars avatarRoute ->
                     avatarRoute
                         |> Avatar.bodyClasses
+
+                Banners bannerRoute ->
+                    bannerRoute
+                        |> Banner.bodyClasses
 
                 _ ->
                     [ "sans-serif"
