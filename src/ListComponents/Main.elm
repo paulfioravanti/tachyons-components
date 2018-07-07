@@ -6,6 +6,7 @@ import ListComponents.Styles as Styles
 import ListComponents.Articles as Articles
 import ListComponents.ArticleLists as ArticleLists
 import ListComponents.Avatars as Avatars
+import ListComponents.Banners as Banners
 import Route exposing (Route)
 import Styles
 import Utils
@@ -19,6 +20,7 @@ view changeLocationMsg =
             [ ArticleLists.view changeLocationMsg
             , Articles.view changeLocationMsg
             , Avatars.view changeLocationMsg
+            , Banners.view changeLocationMsg
             ]
         ]
 

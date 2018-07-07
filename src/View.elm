@@ -3,6 +3,7 @@ module View exposing (view)
 import Article
 import ArticleList
 import Avatar
+import Banner
 import Footer
 import Html exposing (Html)
 import ListComponents
@@ -14,6 +15,7 @@ import Route
             ( Articles
             , ArticleLists
             , Avatars
+            , Banners
             , ListComponents
             , NotFound
             )
@@ -35,6 +37,9 @@ view changeLocationMsg model =
 
             Avatars avatarRoute ->
                 Avatar.view avatarRoute footer
+
+            Banners bannerRoute ->
+                Banner.view bannerRoute footer
 
             ListComponents ->
                 ListComponents.view changeLocationMsg footer
