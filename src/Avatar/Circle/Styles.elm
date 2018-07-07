@@ -1,4 +1,4 @@
-module Avatar.CircleBorder.Styles exposing (avatar, image)
+module Avatar.Circle.Styles exposing (avatar, image)
 
 
 avatar : String
@@ -11,8 +11,7 @@ avatar =
 
 image : String
 image =
-    [ "ba"
-    , "br-100"
+    [ "br-100"
     , "dib"
     , "h3"
     , "w3"

@@ -5,12 +5,14 @@ import Utils
 
 
 type Route
-    = CircleBorder
+    = Circle
+    | CircleBorder
 
 
 matchers : Parser (Route -> a) a
 matchers =
-    [ CircleBorder
+    [ Circle
+    , CircleBorder
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

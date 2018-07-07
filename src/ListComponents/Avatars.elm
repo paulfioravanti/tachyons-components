@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Circle Border"
                     changeLocationMsg
                     (Avatars Avatar.circleBorderRoute)
+                , Utils.component
+                    "avatars/circle/"
+                    "Circle"
+                    changeLocationMsg
+                    (Avatars Avatar.circleRoute)
                 ]
             ]
         ]

@@ -3,6 +3,7 @@ module Avatar
         ( Route
         , bodyClasses
         , matchers
+        , circleRoute
         , circleBorderRoute
         , view
         )
@@ -26,6 +27,11 @@ bodyClasses route =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+circleRoute : Route
+circleRoute =
+    Route.Circle
 
 
 circleBorderRoute : Route
