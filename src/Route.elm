@@ -6,6 +6,7 @@ import Avatar
 import Navigation exposing (Location)
 import String.Extra
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
+import Utils
 
 
 type Route
@@ -27,13 +28,15 @@ toPath : Route -> String
 toPath route =
     case route of
         Articles articleRoute ->
-            "/components/articles/" ++ pathify articleRoute
+            "/components/articles/" ++ Utils.pathify articleRoute ++ "/"
 
         ArticleLists articleListRoute ->
-            "/components/article-lists/" ++ pathify articleListRoute
+            "/components/article-lists/"
+                ++ Utils.pathify articleListRoute
+                ++ "/"
 
         Avatars avatarRoute ->
-            "/components/avatars/" ++ pathify avatarRoute
+            "/components/avatars/" ++ Utils.pathify avatarRoute ++ "/"
 
         ListComponents ->
             "/components/"
@@ -53,15 +56,3 @@ matchers =
         , map ListComponents top
         , map ListComponents (s "components")
         ]
-
-
-pathify : route -> String
-pathify route =
-    let
-        path =
-            route
-                |> toString
-                |> String.Extra.underscored
-                |> String.Extra.dasherize
-    in
-        path ++ "/"

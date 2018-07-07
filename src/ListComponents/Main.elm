@@ -7,8 +7,8 @@ import ListComponents.Articles as Articles
 import ListComponents.ArticleLists as ArticleLists
 import ListComponents.Avatars as Avatars
 import Route exposing (Route)
-import String.Extra
 import Styles
+import Utils
 
 
 view : (Route -> msg) -> Html msg
@@ -61,8 +61,7 @@ anchorLink linkText =
     let
         anchor =
             linkText
-                |> String.Extra.underscored
-                |> String.Extra.dasherize
+                |> Utils.pathify
                 |> (++) "#"
     in
         a [ class Styles.anchor, href anchor ]

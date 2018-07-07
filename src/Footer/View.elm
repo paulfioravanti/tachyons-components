@@ -10,6 +10,7 @@ import Html.Attributes
         , href
         , title
         )
+import Route exposing (Route(ListComponents))
 import Styles
 import Utils
 
@@ -32,7 +33,10 @@ links msg =
     div [ class Styles.footerLinks ]
         [ link "http://tachyons.io/" "Home" "Home"
         , link "http://tachyons.io/docs" "Docs" "Docs"
-        , Utils.componentsLink msg Styles.footerLink
+        , Utils.componentsLink
+            msg
+            (Route.toPath ListComponents)
+            Styles.footerLink
         , link
             "http://tachyons.io/gallery"
             "Gallery of Sites built with Tachyons"

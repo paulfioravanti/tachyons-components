@@ -3,6 +3,7 @@ module ListComponents.Header exposing (view)
 import Html exposing (Html, a, div, header, nav, small, text)
 import Html.Attributes exposing (class, href, title)
 import ListComponents.Styles as Styles
+import Route exposing (Route(ListComponents))
 import Utils
 
 
@@ -37,7 +38,10 @@ pageHeaderNav : msg -> Html msg
 pageHeaderNav msg =
     nav [ class Styles.nav ]
         [ link "http://tachyons.io/docs" "Documentation" "Docs"
-        , Utils.componentsLink msg Styles.navLink
+        , Utils.componentsLink
+            msg
+            (Route.toPath ListComponents)
+            Styles.navLink
         , link
             "http://tachyons.io/gallery"
             "Gallery of sites built with Tachyons"

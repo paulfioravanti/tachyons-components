@@ -6,8 +6,8 @@ import Html.Events exposing (onWithOptions)
 import Json.Decode as Decode
 import ListComponents.Styles as Styles
 import Route exposing (Route)
-import String.Extra
 import Styles
+import Utils
 
 
 component : String -> String -> (Route -> msg) -> Route -> Html msg
@@ -48,8 +48,7 @@ sectionHeader sectionTitle =
     let
         sectionId =
             sectionTitle
-                |> String.Extra.underscored
-                |> String.Extra.dasherize
+                |> Utils.pathify
     in
         div [ class Styles.sectionHeader, id sectionId ]
             [ div [ class Styles.centerContent ]

@@ -1,14 +1,14 @@
-module Utils exposing (componentsLink)
+module Utils exposing (componentsLink, pathify)
 
 import Html exposing (Html, a, text)
 import Html.Attributes exposing (class, href, title)
 import Html.Events exposing (onWithOptions)
 import Json.Decode as Decode
-import Route exposing (Route(ListComponents))
+import String.Extra
 
 
-componentsLink : msg -> String -> Html msg
-componentsLink msg styles =
+componentsLink : msg -> String -> String -> Html msg
+componentsLink msg link styles =
     let
         clickOptions =
             onWithOptions
@@ -18,8 +18,16 @@ componentsLink msg styles =
     in
         a
             [ class styles
-            , href (Route.toPath ListComponents)
+            , href link
             , title "Components"
             , clickOptions
             ]
             [ text "Components" ]
+
+
+pathify : a -> String
+pathify a =
+    a
+        |> toString
+        |> String.Extra.underscored
+        |> String.Extra.dasherize
