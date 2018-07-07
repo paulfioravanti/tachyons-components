@@ -1,6 +1,6 @@
 module Avatar.Route exposing (Route(..), matchers)
 
-import UrlParser exposing (Parser, oneOf)
+import UrlParser exposing (Parser)
 import Utils
 
 
@@ -10,6 +10,7 @@ type Route
 
 matchers : Parser (Route -> a) a
 matchers =
-    oneOf
-        [ Utils.routeFor CircleBorder
-        ]
+    [ CircleBorder
+    ]
+        |> List.map Utils.routeFor
+        |> UrlParser.oneOf
