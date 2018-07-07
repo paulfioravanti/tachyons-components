@@ -29,6 +29,11 @@ view changeLocationMsg =
                     "Double Ring"
                     changeLocationMsg
                     (Avatars Avatar.doubleRingRoute)
+                , Utils.component
+                    "avatars/rounded-large/"
+                    "Rounded Large"
+                    changeLocationMsg
+                    (Avatars Avatar.roundedLargeRoute)
                 ]
             ]
         ]

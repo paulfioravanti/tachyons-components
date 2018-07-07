@@ -6,6 +6,7 @@ module Avatar
         , circleRoute
         , circleBorderRoute
         , doubleRingRoute
+        , roundedLargeRoute
         , view
         )
 
@@ -43,6 +44,11 @@ circleBorderRoute =
 doubleRingRoute : Route
 doubleRingRoute =
     Route.DoubleRing
+
+
+roundedLargeRoute : Route
+roundedLargeRoute =
+    Route.RoundedLarge
 
 
 view : Route -> Html msg -> Html msg
