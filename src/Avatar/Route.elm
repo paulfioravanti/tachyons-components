@@ -9,6 +9,7 @@ type Route
     | CircleBorder
     | DoubleRing
     | RoundedLarge
+    | RoundedMedium
 
 
 matchers : Parser (Route -> a) a
@@ -17,6 +18,7 @@ matchers =
     , CircleBorder
     , DoubleRing
     , RoundedLarge
+    , RoundedMedium
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

@@ -7,12 +7,14 @@ import Avatar.Route
             , CircleBorder
             , DoubleRing
             , RoundedLarge
+            , RoundedMedium
             )
         )
 import Avatar.Circle.View as Circle
 import Avatar.CircleBorder.View as CircleBorder
 import Avatar.DoubleRing.View as DoubleRing
 import Avatar.RoundedLarge.View as RoundedLarge
+import Avatar.RoundedMedium.View as RoundedMedium
 import Html exposing (Html)
 
 
@@ -30,3 +32,6 @@ view route footer =
 
         RoundedLarge ->
             RoundedLarge.view footer
+
+        RoundedMedium ->
+            RoundedMedium.view footer

@@ -1,4 +1,4 @@
-module Avatar.RoundedLarge.Styles exposing (avatar, image)
+module Avatar.RoundedMedium.Styles exposing (avatar, image)
 
 
 avatar : String
@@ -11,7 +11,7 @@ avatar =
 
 image : String
 image =
-    [ "br4"
+    [ "br2"
     , "dib"
     , "h3"
     , "w3"

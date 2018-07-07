@@ -34,6 +34,11 @@ view changeLocationMsg =
                     "Rounded Large"
                     changeLocationMsg
                     (Avatars Avatar.roundedLargeRoute)
+                , Utils.component
+                    "avatars/rounded-medium/"
+                    "Rounded Medium"
+                    changeLocationMsg
+                    (Avatars Avatar.roundedMediumRoute)
                 ]
             ]
         ]
