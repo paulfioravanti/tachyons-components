@@ -26,8 +26,8 @@ componentsLink msg link styles =
 
 
 pathify : a -> String
-pathify a =
-    a
+pathify stringifiable =
+    stringifiable
         |> toString
         |> String.Extra.underscored
         |> String.Extra.dasherize

@@ -4,7 +4,6 @@ import Article
 import ArticleList
 import Avatar
 import Navigation exposing (Location)
-import String.Extra
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
 
@@ -48,11 +47,14 @@ toPath route =
 matchers : Parser (Route -> a) a
 matchers =
     oneOf
-        [ map Articles (s "components" </> s "articles" </> Article.matchers)
-        , map
-            ArticleLists
-            (s "components" </> s "article-lists" </> ArticleList.matchers)
-        , map Avatars (s "components" </> s "avatars" </> Avatar.matchers)
+        [ routeFor Articles Article.matchers
+        , routeFor ArticleLists ArticleList.matchers
+        , routeFor Avatars Avatar.matchers
         , map ListComponents top
         , map ListComponents (s "components")
         ]
+
+
+routeFor : a -> Parser a b -> Parser (b -> c) c
+routeFor route matchers =
+    map route (s "components" </> s (Utils.pathify route) </> matchers)
