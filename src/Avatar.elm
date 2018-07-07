@@ -9,6 +9,7 @@ module Avatar
         , roundedLargeRoute
         , roundedMediumRoute
         , roundedSmallRoute
+        , squareRoute
         , view
         )
 
@@ -61,6 +62,11 @@ roundedMediumRoute =
 roundedSmallRoute : Route
 roundedSmallRoute =
     Route.RoundedSmall
+
+
+squareRoute : Route
+squareRoute =
+    Route.Square
 
 
 view : Route -> Html msg -> Html msg
