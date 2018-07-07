@@ -1,10 +1,11 @@
-module Utils exposing (componentsLink, pathify)
+module Utils exposing (componentsLink, pathify, routeFor)
 
 import Html exposing (Html, a, text)
 import Html.Attributes exposing (class, href, title)
 import Html.Events exposing (onWithOptions)
 import Json.Decode as Decode
 import String.Extra
+import UrlParser exposing (Parser)
 
 
 componentsLink : msg -> String -> String -> Html msg
@@ -31,3 +32,11 @@ pathify stringifiable =
         |> toString
         |> String.Extra.underscored
         |> String.Extra.dasherize
+
+
+routeFor : a -> Parser (a -> b) b
+routeFor route =
+    route
+        |> pathify
+        |> UrlParser.s
+        |> UrlParser.map route

@@ -1,6 +1,7 @@
 module ArticleList.Route exposing (Route(..), matchers)
 
-import UrlParser exposing (Parser, map, oneOf, s)
+import UrlParser exposing (Parser, oneOf)
+import Utils
 
 
 type Route
@@ -11,10 +12,6 @@ type Route
 matchers : Parser (Route -> a) a
 matchers =
     oneOf
-        [ map
-            TitlePreviewAuthorMedia
-            (s "title-preview-author-media")
-        , map
-            TitlePreviewAuthorMediaFlipped
-            (s "title-preview-author-media-flipped")
+        [ Utils.routeFor TitlePreviewAuthorMedia
+        , Utils.routeFor TitlePreviewAuthorMediaFlipped
         ]

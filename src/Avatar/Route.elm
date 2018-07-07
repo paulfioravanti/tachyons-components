@@ -1,6 +1,7 @@
 module Avatar.Route exposing (Route(..), matchers)
 
-import UrlParser exposing (Parser, map, oneOf, s)
+import UrlParser exposing (Parser, oneOf)
+import Utils
 
 
 type Route
@@ -10,5 +11,5 @@ type Route
 matchers : Parser (Route -> a) a
 matchers =
     oneOf
-        [ map CircleBorder (s "circle-border")
+        [ Utils.routeFor CircleBorder
         ]

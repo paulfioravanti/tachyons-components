@@ -1,6 +1,7 @@
 module Article.Route exposing (Route(..), matchers)
 
-import UrlParser exposing (Parser, map, oneOf, s)
+import UrlParser exposing (Parser, oneOf)
+import Utils
 
 
 type Route
@@ -20,15 +21,15 @@ type Route
 matchers : Parser (Route -> a) a
 matchers =
     oneOf
-        [ map Feature (s "feature")
-        , map FullBleedBackground (s "full-bleed-background")
-        , map HeadlineTitleText (s "headline-title-text")
-        , map LargeTitleText (s "large-title-text")
-        , map LeftTitle (s "left-title")
-        , map LeftTitleTopBorder (s "left-title-top-border")
-        , map PhotoEssay (s "photo-essay")
-        , map SingleColumnLargeTitle (s "single-column-large-title")
-        , map TitleHighlightHeaderCover (s "title-highlight-header-cover")
-        , map TitleText (s "title-text")
-        , map TitleTextImage (s "title-text-image")
+        [ Utils.routeFor Feature
+        , Utils.routeFor FullBleedBackground
+        , Utils.routeFor HeadlineTitleText
+        , Utils.routeFor LargeTitleText
+        , Utils.routeFor LeftTitle
+        , Utils.routeFor LeftTitleTopBorder
+        , Utils.routeFor PhotoEssay
+        , Utils.routeFor SingleColumnLargeTitle
+        , Utils.routeFor TitleHighlightHeaderCover
+        , Utils.routeFor TitleText
+        , Utils.routeFor TitleTextImage
         ]
