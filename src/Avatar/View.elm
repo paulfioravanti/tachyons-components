@@ -5,10 +5,12 @@ import Avatar.Route
         ( Route
             ( Circle
             , CircleBorder
+            , DoubleRing
             )
         )
 import Avatar.Circle.View as Circle
 import Avatar.CircleBorder.View as CircleBorder
+import Avatar.DoubleRing.View as DoubleRing
 import Html exposing (Html)
 
 
@@ -20,3 +22,6 @@ view route footer =
 
         CircleBorder ->
             CircleBorder.view footer
+
+        DoubleRing ->
+            DoubleRing.view footer

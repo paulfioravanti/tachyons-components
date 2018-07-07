@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Circle"
                     changeLocationMsg
                     (Avatars Avatar.circleRoute)
+                , Utils.component
+                    "avatars/double-ring/"
+                    "Double Ring"
+                    changeLocationMsg
+                    (Avatars Avatar.doubleRingRoute)
                 ]
             ]
         ]
