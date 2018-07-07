@@ -8,8 +8,6 @@ module Banner.Basic.Styles
         , subHeading
         )
 
-import Banner.Styles as Styles
-
 
 article : String
 article =

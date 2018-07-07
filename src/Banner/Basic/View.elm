@@ -1,20 +1,8 @@
 module Banner.Basic.View exposing (view)
 
 import Banner.Basic.Styles as Styles
-import Html
-    exposing
-        ( Html
-        , a
-        , article
-        , div
-        , h1
-        , h2
-        , img
-        , p
-        , section
-        , text
-        )
-import Html.Attributes exposing (alt, class, href, src)
+import Html exposing (Html, a, article, div, h1, h2, p, text)
+import Html.Attributes exposing (class, href)
 
 
 view : Html msg -> Html msg

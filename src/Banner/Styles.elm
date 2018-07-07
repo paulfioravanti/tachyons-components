@@ -1,11 +1,6 @@
 module Banner.Styles exposing (bodyClasses)
 
-import Banner.Route
-    exposing
-        ( Route
-            ( Basic
-            )
-        )
+import Banner.Route exposing (Route)
 
 
 bodyClasses : Route -> List String
