@@ -4,6 +4,7 @@ import Article
 import ArticleList
 import Avatar
 import Banner
+import Button
 import Footer
 import Html exposing (Html)
 import ListComponents
@@ -16,6 +17,7 @@ import Route
             , ArticleLists
             , Avatars
             , Banners
+            , Buttons
             , ListComponents
             , NotFound
             )
@@ -40,6 +42,9 @@ view changeLocationMsg model =
 
             Banners bannerRoute ->
                 Banner.view bannerRoute footer
+
+            Buttons buttonRoute ->
+                Button.view buttonRoute footer
 
             ListComponents ->
                 ListComponents.view changeLocationMsg footer

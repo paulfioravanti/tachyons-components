@@ -4,6 +4,7 @@ import Article
 import ArticleList
 import Avatar
 import Banner
+import Button
 import Route
     exposing
         ( Route
@@ -11,6 +12,9 @@ import Route
             , Articles
             , Avatars
             , Banners
+            , Buttons
+            , ListComponents
+            , NotFound
             )
         )
 
@@ -18,6 +22,11 @@ import Route
 bodyClasses : Route -> String
 bodyClasses route =
     let
+        defaultStyles =
+            [ "sans-serif"
+            , "w-100"
+            ]
+
         styles =
             case route of
                 ArticleLists articleListRoute ->
@@ -36,10 +45,15 @@ bodyClasses route =
                     bannerRoute
                         |> Banner.bodyClasses
 
-                _ ->
-                    [ "sans-serif"
-                    , "w-100"
-                    ]
+                Buttons buttonRoute ->
+                    buttonRoute
+                        |> Button.bodyClasses
+
+                ListComponents ->
+                    defaultStyles
+
+                NotFound ->
+                    defaultStyles
     in
         styles
             |> String.join " "

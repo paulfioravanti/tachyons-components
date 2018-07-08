@@ -23,7 +23,19 @@ module ListComponents.Styles
 
 import Article
 import Banner
-import Route exposing (Route(Articles, Avatars, Banners))
+import Button
+import Route
+    exposing
+        ( Route
+            ( ArticleLists
+            , Articles
+            , Avatars
+            , Banners
+            , Buttons
+            , ListComponents
+            , NotFound
+            )
+        )
 import Styles
 
 
@@ -144,8 +156,16 @@ sectionContentLinkContent =
 sectionContentLinkImage : Route -> String
 sectionContentLinkImage route =
     let
+        defaultFormatting =
+            [ "cover"
+            , "bg-center"
+            ]
+
         imageFormatting =
             case route of
+                ArticleLists _ ->
+                    defaultFormatting
+
                 Articles articleRoute ->
                     Article.sectionContentLinkImageFormatting articleRoute
 
@@ -155,10 +175,14 @@ sectionContentLinkImage route =
                 Banners bannerRoute ->
                     Banner.sectionContentLinkImageFormatting bannerRoute
 
-                _ ->
-                    [ "cover"
-                    , "bg-center"
-                    ]
+                Buttons buttonRoute ->
+                    Button.sectionContentLinkImageFormatting buttonRoute
+
+                ListComponents ->
+                    defaultFormatting
+
+                NotFound ->
+                    defaultFormatting
     in
         imageFormatting
             ++ [ "aspect-ratio--object"

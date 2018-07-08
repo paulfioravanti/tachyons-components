@@ -4,6 +4,7 @@ import Article
 import ArticleList
 import Avatar
 import Banner
+import Button
 import Navigation exposing (Location)
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
@@ -14,6 +15,7 @@ type Route
     | ArticleLists ArticleList.Route
     | Avatars Avatar.Route
     | Banners Banner.Route
+    | Buttons Button.Route
     | ListComponents
     | NotFound
 
@@ -42,6 +44,9 @@ toPath route =
         Banners bannerRoute ->
             "/components/banners/" ++ Utils.pathify bannerRoute ++ "/"
 
+        Buttons buttonRoute ->
+            "/components/buttons/" ++ Utils.pathify buttonRoute ++ "/"
+
         ListComponents ->
             "/components/"
 
@@ -64,6 +69,9 @@ matchers =
         , map
             Banners
             (s "components" </> s "banners" </> Banner.matchers)
+        , map
+            Buttons
+            (s "components" </> s "buttons" </> Button.matchers)
         , map ListComponents top
         , map ListComponents (s "components")
         ]
