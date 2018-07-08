@@ -48,7 +48,7 @@ sectionHeader sectionTitle =
     let
         sectionId =
             sectionTitle
-                |> Utils.pathify
+                |> Utils.toPath
     in
         div [ class Styles.sectionHeader, id sectionId ]
             [ div [ class Styles.centerContent ]
