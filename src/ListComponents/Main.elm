@@ -14,15 +14,20 @@ import Utils
 
 view : (Route -> msg) -> Html msg
 view changeLocationMsg =
-    main_ [ class Styles.main_ ]
-        [ mainHeader
-        , section []
-            [ ArticleLists.view changeLocationMsg
-            , Articles.view changeLocationMsg
-            , Avatars.view changeLocationMsg
-            , Banners.view changeLocationMsg
+    let
+        views =
+            [ ArticleLists.view
+            , Articles.view
+            , Avatars.view
+            , Banners.view
             ]
-        ]
+                |> List.map (\view -> view changeLocationMsg)
+    in
+        main_ [ class Styles.main_ ]
+            [ mainHeader
+            , section []
+                views
+            ]
 
 
 mainHeader : Html msg
@@ -51,10 +56,11 @@ mainHeader =
             , "Tables"
             , "Text"
             ]
+                |> List.map anchorLink
     in
         header [ class Styles.mainHeader ]
             [ div [ class Styles.centerContent ]
-                (List.map anchorLink anchorLinks)
+                anchorLinks
             ]
 
 
