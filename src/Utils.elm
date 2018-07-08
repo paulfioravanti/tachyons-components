@@ -1,4 +1,4 @@
-module Utils exposing (componentsLink, pathify, routeFor)
+module Utils exposing (componentsLink, pathify, routeFor, toPath)
 
 import Html exposing (Html, a, text)
 import Html.Attributes exposing (class, href, title)
@@ -30,8 +30,7 @@ pathify : a -> String
 pathify stringifiable =
     stringifiable
         |> toString
-        |> String.Extra.underscored
-        |> String.Extra.dasherize
+        |> toPath
 
 
 routeFor : a -> Parser (a -> b) b
@@ -40,3 +39,10 @@ routeFor route =
         |> pathify
         |> UrlParser.s
         |> UrlParser.map route
+
+
+toPath : String -> String
+toPath string =
+    string
+        |> String.Extra.underscored
+        |> String.Extra.dasherize

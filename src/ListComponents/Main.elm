@@ -8,6 +8,7 @@ import ListComponents.ArticleLists as ArticleLists
 import ListComponents.Avatars as Avatars
 import ListComponents.Banners as Banners
 import Route exposing (Route)
+import String.Extra
 import Styles
 import Utils
 
@@ -63,7 +64,7 @@ anchorLink linkText =
     let
         anchor =
             linkText
-                |> Utils.pathify
+                |> Utils.toPath
                 |> (++) "#"
     in
         a [ class Styles.anchor, href anchor ]
