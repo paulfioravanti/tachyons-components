@@ -1,8 +1,8 @@
 module Banner.SingleCta.View exposing (view)
 
 import Banner.SingleCta.Styles as Styles
-import Html exposing (Html, a, article, div, h2, p, section, span, text)
-import Html.Attributes exposing (attribute, class, href, style)
+import Html exposing (Html, a, article, div, h2, p, section, text)
+import Html.Attributes exposing (class, href)
 
 
 view : Html msg -> Html msg
