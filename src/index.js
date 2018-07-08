@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const app = Main.embed(appContainer)
 
     app.ports.scrollToTopOfPage.subscribe(() => {
-      window.scrollTo(0, 0)
+      window.scroll(0, 0)
     })
 
     app.ports.setBodyClasses.subscribe((classes) => {
