@@ -6,6 +6,7 @@ module Banner
         , infoRoute
         , matchers
         , sectionContentLinkImageFormatting
+        , singleCtaRoute
         , view
         )
 
@@ -43,6 +44,11 @@ matchers =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+singleCtaRoute : Route
+singleCtaRoute =
+    Route.SingleCta
 
 
 view : Route -> Html msg -> Html msg

@@ -1,8 +1,9 @@
 module Banner.View exposing (view)
 
-import Banner.Route exposing (Route(Basic, Info))
+import Banner.Route exposing (Route(Basic, Info, SingleCta))
 import Banner.Basic.View as Basic
 import Banner.Info.View as Info
+import Banner.SingleCta.View as SingleCta
 import Html exposing (Html)
 
 
@@ -14,3 +15,6 @@ view route footer =
 
         Info ->
             Info.view footer
+
+        SingleCta ->
+            SingleCta.view footer

@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Info"
                     changeLocationMsg
                     (Banners Banner.infoRoute)
+                , Utils.component
+                    "banners/single-cta/"
+                    "Single Cta"
+                    changeLocationMsg
+                    (Banners Banner.singleCtaRoute)
                 ]
             ]
         ]
