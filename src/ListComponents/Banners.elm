@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Basic"
                     changeLocationMsg
                     (Banners Banner.basicRoute)
+                , Utils.component
+                    "banners/info/"
+                    "Info"
+                    changeLocationMsg
+                    (Banners Banner.infoRoute)
                 ]
             ]
         ]

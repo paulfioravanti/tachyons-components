@@ -6,11 +6,13 @@ import Utils
 
 type Route
     = Basic
+    | Info
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ Basic
+    , Info
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

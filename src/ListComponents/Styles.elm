@@ -22,7 +22,8 @@ module ListComponents.Styles
         )
 
 import Article
-import Route exposing (Route(Articles, Avatars))
+import Banner
+import Route exposing (Route(Articles, Avatars, Banners))
 import Styles
 
 
@@ -150,6 +151,9 @@ sectionContentLinkImage route =
 
                 Avatars _ ->
                     [ "bg-center" ]
+
+                Banners bannerRoute ->
+                    Banner.sectionContentLinkImageFormatting bannerRoute
 
                 _ ->
                     [ "cover"

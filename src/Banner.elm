@@ -3,7 +3,9 @@ module Banner
         ( Route
         , basicRoute
         , bodyClasses
+        , infoRoute
         , matchers
+        , sectionContentLinkImageFormatting
         , view
         )
 
@@ -28,9 +30,19 @@ bodyClasses route =
     Styles.bodyClasses route
 
 
+infoRoute : Route
+infoRoute =
+    Route.Info
+
+
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+sectionContentLinkImageFormatting : Route -> List String
+sectionContentLinkImageFormatting route =
+    Styles.sectionContentLinkImageFormatting route
 
 
 view : Route -> Html msg -> Html msg
