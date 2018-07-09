@@ -11,6 +11,7 @@ import ListComponents.Buttons as Buttons
 import ListComponents.Cards as Cards
 import ListComponents.Collections as Collections
 import ListComponents.DefinitionLists as DefinitionLists
+import ListComponents.ErrorPages as ErrorPages
 import Route exposing (Route)
 import Styles
 import Utils
@@ -28,6 +29,7 @@ view changeLocationMsg =
             , Cards.view
             , Collections.view
             , DefinitionLists.view
+            , ErrorPages.view
             ]
                 |> List.map (\componentView -> componentView changeLocationMsg)
     in

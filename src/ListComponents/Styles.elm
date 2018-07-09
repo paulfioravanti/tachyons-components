@@ -27,6 +27,7 @@ import Button
 import Card
 import Collection
 import DefinitionList
+import ErrorPage
 import Route
     exposing
         ( Route
@@ -38,6 +39,7 @@ import Route
             , Cards
             , Collections
             , DefinitionLists
+            , ErrorPages
             , ListComponents
             , NotFound
             )
@@ -192,6 +194,9 @@ sectionContentLinkImage route =
 
                 DefinitionLists subRoute ->
                     DefinitionList.sectionContentLinkImageFormatting subRoute
+
+                ErrorPages subRoute ->
+                    ErrorPage.sectionContentLinkImageFormatting subRoute
 
                 ListComponents ->
                     defaultFormatting

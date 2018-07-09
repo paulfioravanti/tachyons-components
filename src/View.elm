@@ -8,6 +8,7 @@ import Button
 import Card
 import Collection
 import DefinitionList
+import ErrorPage
 import Footer
 import Html exposing (Html)
 import ListComponents
@@ -24,6 +25,7 @@ import Route
             , Cards
             , Collections
             , DefinitionLists
+            , ErrorPages
             , ListComponents
             , NotFound
             )
@@ -60,6 +62,9 @@ view changeLocationMsg model =
 
             DefinitionLists subRoute ->
                 DefinitionList.view subRoute footer
+
+            ErrorPages subRoute ->
+                ErrorPage.view subRoute footer
 
             ListComponents ->
                 ListComponents.view changeLocationMsg footer

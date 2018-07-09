@@ -8,6 +8,7 @@ import Button
 import Card
 import Collection
 import DefinitionList
+import ErrorPage
 import Navigation exposing (Location)
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
@@ -22,6 +23,7 @@ type Route
     | Cards Card.Route
     | Collections Collection.Route
     | DefinitionLists DefinitionList.Route
+    | ErrorPages ErrorPage.Route
     | ListComponents
     | NotFound
 
@@ -59,6 +61,9 @@ toPath route =
 
         DefinitionLists subRoute ->
             "/components/definition-lists/" ++ Utils.pathify subRoute ++ "/"
+
+        ErrorPages subRoute ->
+            "/components/error-pages/" ++ Utils.pathify subRoute ++ "/"
 
         ListComponents ->
             "/components/"
@@ -99,4 +104,7 @@ matchers =
                 </> s "definition-lists"
                 </> DefinitionList.matchers
             )
+        , map
+            ErrorPages
+            (s "components" </> s "error-pages" </> ErrorPage.matchers)
         ]
