@@ -31,6 +31,7 @@ import ErrorPage
 import Footer
 import Form
 import Header
+import Layout
 import Route
     exposing
         ( Route
@@ -46,6 +47,7 @@ import Route
             , Footers
             , Forms
             , Headers
+            , Layouts
             , ListComponents
             , NotFound
             )
@@ -212,6 +214,9 @@ sectionContentLinkImage route =
 
                 Headers subRoute ->
                     Header.sectionContentLinkImageFormatting subRoute
+
+                Layouts subRoute ->
+                    Layout.sectionContentLinkImageFormatting subRoute
 
                 ListComponents ->
                     defaultFormatting

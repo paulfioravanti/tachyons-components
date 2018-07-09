@@ -12,6 +12,7 @@ import ErrorPage
 import Footer
 import Form
 import Header
+import Layout
 import Route
     exposing
         ( Route
@@ -27,6 +28,7 @@ import Route
             , Footers
             , Forms
             , Headers
+            , Layouts
             , ListComponents
             , NotFound
             )
@@ -78,6 +80,9 @@ bodyClasses route =
 
                 Headers subRoute ->
                     Header.bodyClasses subRoute
+
+                Layouts subRoute ->
+                    Layout.bodyClasses subRoute
 
                 ListComponents ->
                     defaultStyles

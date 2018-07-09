@@ -13,6 +13,7 @@ import Footer
 import Form
 import Header
 import Html exposing (Html)
+import Layout
 import ListComponents
 import Model exposing (Model)
 import NotFound
@@ -32,6 +33,7 @@ import Route
             , Footers
             , Forms
             , Headers
+            , Layouts
             , ListComponents
             , NotFound
             )
@@ -80,6 +82,9 @@ view changeLocationMsg model =
 
             Headers subRoute ->
                 Header.view subRoute footer
+
+            Layouts subRoute ->
+                Layout.view subRoute footer
 
             ListComponents ->
                 ListComponents.view changeLocationMsg footer
