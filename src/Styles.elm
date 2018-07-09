@@ -10,6 +10,7 @@ import Collection
 import DefinitionList
 import ErrorPage
 import Footer
+import Form
 import Route
     exposing
         ( Route
@@ -23,6 +24,7 @@ import Route
             , DefinitionLists
             , ErrorPages
             , Footers
+            , Forms
             , ListComponents
             , NotFound
             )
@@ -68,6 +70,9 @@ bodyClasses route =
 
                 Footers subRoute ->
                     Footer.bodyClasses subRoute
+
+                Forms subRoute ->
+                    Form.bodyClasses subRoute
 
                 ListComponents ->
                     defaultStyles

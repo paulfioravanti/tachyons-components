@@ -13,6 +13,7 @@ import ListComponents.Collections as Collections
 import ListComponents.DefinitionLists as DefinitionLists
 import ListComponents.ErrorPages as ErrorPages
 import ListComponents.Footers as Footers
+import ListComponents.Forms as Forms
 import Route exposing (Route)
 import Styles
 import Utils
@@ -32,6 +33,7 @@ view changeLocationMsg =
             , DefinitionLists.view
             , ErrorPages.view
             , Footers.view
+            , Forms.view
             ]
                 |> List.map (\componentView -> componentView changeLocationMsg)
     in

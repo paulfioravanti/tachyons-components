@@ -29,6 +29,7 @@ import Collection
 import DefinitionList
 import ErrorPage
 import Footer
+import Form
 import Route
     exposing
         ( Route
@@ -42,6 +43,7 @@ import Route
             , DefinitionLists
             , ErrorPages
             , Footers
+            , Forms
             , ListComponents
             , NotFound
             )
@@ -202,6 +204,9 @@ sectionContentLinkImage route =
 
                 Footers subRoute ->
                     Footer.sectionContentLinkImageFormatting subRoute
+
+                Forms subRoute ->
+                    Form.sectionContentLinkImageFormatting subRoute
 
                 ListComponents ->
                     defaultFormatting
