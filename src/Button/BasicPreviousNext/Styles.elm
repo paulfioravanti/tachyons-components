@@ -31,10 +31,3 @@ previous =
 svg : String
 svg =
     "w1"
-
-
-link : String
-link =
-    [ "bg-washed-green"
-    ]
-        |> String.join " "

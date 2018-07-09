@@ -23,7 +23,7 @@ view changeLocationMsg =
             , Banners.view
             , Buttons.view
             ]
-                |> List.map (\view -> view changeLocationMsg)
+                |> List.map (\componentView -> componentView changeLocationMsg)
     in
         main_ [ class Styles.main_ ]
             [ mainHeader
