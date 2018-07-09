@@ -10,6 +10,7 @@ import ListComponents.Banners as Banners
 import ListComponents.Buttons as Buttons
 import ListComponents.Cards as Cards
 import ListComponents.Collections as Collections
+import ListComponents.DefinitionLists as DefinitionLists
 import Route exposing (Route)
 import Styles
 import Utils
@@ -26,6 +27,7 @@ view changeLocationMsg =
             , Buttons.view
             , Cards.view
             , Collections.view
+            , DefinitionLists.view
             ]
                 |> List.map (\componentView -> componentView changeLocationMsg)
     in

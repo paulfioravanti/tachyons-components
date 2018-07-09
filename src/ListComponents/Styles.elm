@@ -26,6 +26,7 @@ import Banner
 import Button
 import Card
 import Collection
+import DefinitionList
 import Route
     exposing
         ( Route
@@ -36,6 +37,7 @@ import Route
             , Buttons
             , Cards
             , Collections
+            , DefinitionLists
             , ListComponents
             , NotFound
             )
@@ -187,6 +189,9 @@ sectionContentLinkImage route =
 
                 Collections subRoute ->
                     Collection.sectionContentLinkImageFormatting subRoute
+
+                DefinitionLists subRoute ->
+                    DefinitionList.sectionContentLinkImageFormatting subRoute
 
                 ListComponents ->
                     defaultFormatting

@@ -7,6 +7,7 @@ import Banner
 import Button
 import Card
 import Collection
+import DefinitionList
 import Route
     exposing
         ( Route
@@ -17,6 +18,7 @@ import Route
             , Buttons
             , Cards
             , Collections
+            , DefinitionLists
             , ListComponents
             , NotFound
             )
@@ -53,6 +55,9 @@ bodyClasses route =
 
                 Collections subRoute ->
                     Collection.bodyClasses subRoute
+
+                DefinitionLists subRoute ->
+                    DefinitionList.bodyClasses subRoute
 
                 ListComponents ->
                     defaultStyles

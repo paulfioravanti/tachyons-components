@@ -7,6 +7,7 @@ import Banner
 import Button
 import Card
 import Collection
+import DefinitionList
 import Navigation exposing (Location)
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
@@ -20,6 +21,7 @@ type Route
     | Buttons Button.Route
     | Cards Card.Route
     | Collections Collection.Route
+    | DefinitionLists DefinitionList.Route
     | ListComponents
     | NotFound
 
@@ -55,6 +57,9 @@ toPath route =
         Collections subRoute ->
             "/components/collections/" ++ Utils.pathify subRoute ++ "/"
 
+        DefinitionLists subRoute ->
+            "/components/definition-lists/" ++ Utils.pathify subRoute ++ "/"
+
         ListComponents ->
             "/components/"
 
@@ -88,4 +93,10 @@ matchers =
         , map
             Collections
             (s "components" </> s "collections" </> Collection.matchers)
+        , map
+            DefinitionLists
+            (s "components"
+                </> s "definition-lists"
+                </> DefinitionList.matchers
+            )
         ]
