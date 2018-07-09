@@ -5,6 +5,7 @@ import ArticleList
 import Avatar
 import Banner
 import Button
+import Card
 import Navigation exposing (Location)
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
@@ -16,6 +17,7 @@ type Route
     | Avatars Avatar.Route
     | Banners Banner.Route
     | Buttons Button.Route
+    | Cards Card.Route
     | ListComponents
     | NotFound
 
@@ -47,6 +49,9 @@ toPath route =
         Buttons buttonRoute ->
             "/components/buttons/" ++ Utils.pathify buttonRoute ++ "/"
 
+        Cards cardRoute ->
+            "/components/cards/" ++ Utils.pathify cardRoute ++ "/"
+
         ListComponents ->
             "/components/"
 
@@ -57,7 +62,9 @@ toPath route =
 matchers : Parser (Route -> a) a
 matchers =
     oneOf
-        [ map
+        [ map ListComponents top
+        , map ListComponents (s "components")
+        , map
             Articles
             (s "components" </> s "articles" </> Article.matchers)
         , map
@@ -72,6 +79,7 @@ matchers =
         , map
             Buttons
             (s "components" </> s "buttons" </> Button.matchers)
-        , map ListComponents top
-        , map ListComponents (s "components")
+        , map
+            Cards
+            (s "components" </> s "cards" </> Card.matchers)
         ]

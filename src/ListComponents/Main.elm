@@ -8,6 +8,7 @@ import ListComponents.ArticleLists as ArticleLists
 import ListComponents.Avatars as Avatars
 import ListComponents.Banners as Banners
 import ListComponents.Buttons as Buttons
+import ListComponents.Cards as Cards
 import Route exposing (Route)
 import Styles
 import Utils
@@ -22,6 +23,7 @@ view changeLocationMsg =
             , Avatars.view
             , Banners.view
             , Buttons.view
+            , Cards.view
             ]
                 |> List.map (\componentView -> componentView changeLocationMsg)
     in

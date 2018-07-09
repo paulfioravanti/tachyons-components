@@ -5,6 +5,7 @@ import ArticleList
 import Avatar
 import Banner
 import Button
+import Card
 import Footer
 import Html exposing (Html)
 import ListComponents
@@ -18,6 +19,7 @@ import Route
             , Avatars
             , Banners
             , Buttons
+            , Cards
             , ListComponents
             , NotFound
             )
@@ -31,20 +33,23 @@ view changeLocationMsg model =
             Footer.view (changeLocationMsg ListComponents)
     in
         case model of
-            ArticleLists articleListRoute ->
-                ArticleList.view articleListRoute footer
+            ArticleLists subRoute ->
+                ArticleList.view subRoute footer
 
-            Articles articleRoute ->
-                Article.view articleRoute footer
+            Articles subRoute ->
+                Article.view subRoute footer
 
-            Avatars avatarRoute ->
-                Avatar.view avatarRoute footer
+            Avatars subRoute ->
+                Avatar.view subRoute footer
 
-            Banners bannerRoute ->
-                Banner.view bannerRoute footer
+            Banners subRoute ->
+                Banner.view subRoute footer
 
-            Buttons buttonRoute ->
-                Button.view buttonRoute footer
+            Buttons subRoute ->
+                Button.view subRoute footer
+
+            Cards subRoute ->
+                Card.view subRoute footer
 
             ListComponents ->
                 ListComponents.view changeLocationMsg footer

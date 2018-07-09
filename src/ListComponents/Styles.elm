@@ -24,6 +24,7 @@ module ListComponents.Styles
 import Article
 import Banner
 import Button
+import Card
 import Route
     exposing
         ( Route
@@ -32,6 +33,7 @@ import Route
             , Avatars
             , Banners
             , Buttons
+            , Cards
             , ListComponents
             , NotFound
             )
@@ -177,6 +179,9 @@ sectionContentLinkImage route =
 
                 Buttons buttonRoute ->
                     Button.sectionContentLinkImageFormatting buttonRoute
+
+                Cards cardRoute ->
+                    Card.sectionContentLinkImageFormatting cardRoute
 
                 ListComponents ->
                     defaultFormatting

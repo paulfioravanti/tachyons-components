@@ -5,6 +5,7 @@ import ArticleList
 import Avatar
 import Banner
 import Button
+import Card
 import Route
     exposing
         ( Route
@@ -13,6 +14,7 @@ import Route
             , Avatars
             , Banners
             , Buttons
+            , Cards
             , ListComponents
             , NotFound
             )
@@ -48,6 +50,10 @@ bodyClasses route =
                 Buttons buttonRoute ->
                     buttonRoute
                         |> Button.bodyClasses
+
+                Cards cardRoute ->
+                    cardRoute
+                        |> Card.bodyClasses
 
                 ListComponents ->
                     defaultStyles
