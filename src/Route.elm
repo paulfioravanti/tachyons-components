@@ -11,6 +11,7 @@ import DefinitionList
 import ErrorPage
 import Footer
 import Form
+import Header
 import Navigation exposing (Location)
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
@@ -28,6 +29,7 @@ type Route
     | ErrorPages ErrorPage.Route
     | Footers Footer.Route
     | Forms Form.Route
+    | Headers Header.Route
     | ListComponents
     | NotFound
 
@@ -75,6 +77,9 @@ toPath route =
         Forms subRoute ->
             "/components/forms/" ++ Utils.pathify subRoute ++ "/"
 
+        Headers subRoute ->
+            "/components/headers/" ++ Utils.pathify subRoute ++ "/"
+
         ListComponents ->
             "/components/"
 
@@ -109,4 +114,5 @@ matchers =
             (s "components" </> s "error-pages" </> ErrorPage.matchers)
         , map Footers (s "components" </> s "footers" </> Footer.matchers)
         , map Forms (s "components" </> s "forms" </> Form.matchers)
+        , map Headers (s "components" </> s "headers" </> Header.matchers)
         ]

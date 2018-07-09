@@ -11,6 +11,7 @@ import DefinitionList
 import ErrorPage
 import Footer
 import Form
+import Header
 import Html exposing (Html)
 import ListComponents
 import Model exposing (Model)
@@ -30,6 +31,7 @@ import Route
             , ErrorPages
             , Footers
             , Forms
+            , Headers
             , ListComponents
             , NotFound
             )
@@ -75,6 +77,9 @@ view changeLocationMsg model =
 
             Forms subRoute ->
                 Form.view subRoute footer
+
+            Headers subRoute ->
+                Header.view subRoute footer
 
             ListComponents ->
                 ListComponents.view changeLocationMsg footer
