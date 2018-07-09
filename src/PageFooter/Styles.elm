@@ -1,4 +1,4 @@
-module Footer.Styles
+module PageFooter.Styles
     exposing
         ( badges
         , callsToAction

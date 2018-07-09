@@ -1,4 +1,4 @@
-module Footer.SvgPath
+module PageFooter.SvgPath
     exposing
         ( gitHubLogo
         , slackLogo

@@ -1,8 +1,8 @@
-module Footer.View exposing (view)
+module PageFooter.View exposing (view)
 
-import Footer.Badges as Badges
-import Footer.CallsToAction as CallsToAction
-import Footer.Styles as Styles
+import PageFooter.Badges as Badges
+import PageFooter.CallsToAction as CallsToAction
+import PageFooter.Styles as Styles
 import Html exposing (Html, a, br, div, footer, p, small, text)
 import Html.Attributes
     exposing

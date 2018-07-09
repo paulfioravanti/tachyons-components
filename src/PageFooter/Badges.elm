@@ -1,7 +1,7 @@
-module Footer.Badges exposing (view)
+module PageFooter.Badges exposing (view)
 
-import Footer.Styles as Styles
-import Footer.SvgPath as SvgPath
+import PageFooter.Styles as Styles
+import PageFooter.SvgPath as SvgPath
 import Html exposing (Html, a, article, iframe, span, text)
 import Html.Attributes
     exposing

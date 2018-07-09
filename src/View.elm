@@ -9,11 +9,11 @@ import Card
 import Collection
 import DefinitionList
 import ErrorPage
-import Footer
 import Html exposing (Html)
 import ListComponents
 import Model exposing (Model)
 import NotFound
+import PageFooter
 import Route
     exposing
         ( Route
@@ -36,7 +36,7 @@ view : (Route -> msg) -> Model -> Html msg
 view changeLocationMsg model =
     let
         footer =
-            Footer.view (changeLocationMsg ListComponents)
+            PageFooter.view (changeLocationMsg ListComponents)
     in
         case model of
             ArticleLists subRoute ->

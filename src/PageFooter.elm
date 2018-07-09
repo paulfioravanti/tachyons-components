@@ -1,6 +1,6 @@
-module Footer exposing (view)
+module PageFooter exposing (view)
 
-import Footer.View as View
+import PageFooter.View as View
 import Html exposing (Html)
 
 
