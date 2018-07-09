@@ -25,6 +25,7 @@ import Article
 import Banner
 import Button
 import Card
+import Collection
 import Route
     exposing
         ( Route
@@ -34,6 +35,7 @@ import Route
             , Banners
             , Buttons
             , Cards
+            , Collections
             , ListComponents
             , NotFound
             )
@@ -168,20 +170,23 @@ sectionContentLinkImage route =
                 ArticleLists _ ->
                     defaultFormatting
 
-                Articles articleRoute ->
-                    Article.sectionContentLinkImageFormatting articleRoute
+                Articles subRoute ->
+                    Article.sectionContentLinkImageFormatting subRoute
 
                 Avatars _ ->
                     [ "bg-center" ]
 
-                Banners bannerRoute ->
-                    Banner.sectionContentLinkImageFormatting bannerRoute
+                Banners subRoute ->
+                    Banner.sectionContentLinkImageFormatting subRoute
 
-                Buttons buttonRoute ->
-                    Button.sectionContentLinkImageFormatting buttonRoute
+                Buttons subRoute ->
+                    Button.sectionContentLinkImageFormatting subRoute
 
-                Cards cardRoute ->
-                    Card.sectionContentLinkImageFormatting cardRoute
+                Cards subRoute ->
+                    Card.sectionContentLinkImageFormatting subRoute
+
+                Collections subRoute ->
+                    Collection.sectionContentLinkImageFormatting subRoute
 
                 ListComponents ->
                     defaultFormatting

@@ -6,6 +6,7 @@ import Avatar
 import Banner
 import Button
 import Card
+import Collection
 import Route
     exposing
         ( Route
@@ -15,6 +16,7 @@ import Route
             , Banners
             , Buttons
             , Cards
+            , Collections
             , ListComponents
             , NotFound
             )
@@ -31,29 +33,26 @@ bodyClasses route =
 
         styles =
             case route of
-                ArticleLists articleListRoute ->
-                    articleListRoute
-                        |> ArticleList.bodyClasses
+                ArticleLists subRoute ->
+                    ArticleList.bodyClasses subRoute
 
-                Articles articleRoute ->
-                    articleRoute
-                        |> Article.bodyClasses
+                Articles subRoute ->
+                    Article.bodyClasses subRoute
 
-                Avatars avatarRoute ->
-                    avatarRoute
-                        |> Avatar.bodyClasses
+                Avatars subRoute ->
+                    Avatar.bodyClasses subRoute
 
-                Banners bannerRoute ->
-                    bannerRoute
-                        |> Banner.bodyClasses
+                Banners subRoute ->
+                    Banner.bodyClasses subRoute
 
-                Buttons buttonRoute ->
-                    buttonRoute
-                        |> Button.bodyClasses
+                Buttons subRoute ->
+                    Button.bodyClasses subRoute
 
-                Cards cardRoute ->
-                    cardRoute
-                        |> Card.bodyClasses
+                Cards subRoute ->
+                    Card.bodyClasses subRoute
+
+                Collections subRoute ->
+                    Collection.bodyClasses subRoute
 
                 ListComponents ->
                     defaultStyles

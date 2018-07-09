@@ -6,6 +6,7 @@ import Avatar
 import Banner
 import Button
 import Card
+import Collection
 import Footer
 import Html exposing (Html)
 import ListComponents
@@ -20,6 +21,7 @@ import Route
             , Banners
             , Buttons
             , Cards
+            , Collections
             , ListComponents
             , NotFound
             )
@@ -50,6 +52,9 @@ view changeLocationMsg model =
 
             Cards subRoute ->
                 Card.view subRoute footer
+
+            Collections subRoute ->
+                Collection.view subRoute footer
 
             ListComponents ->
                 ListComponents.view changeLocationMsg footer

@@ -6,6 +6,7 @@ import Avatar
 import Banner
 import Button
 import Card
+import Collection
 import Navigation exposing (Location)
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
@@ -18,6 +19,7 @@ type Route
     | Banners Banner.Route
     | Buttons Button.Route
     | Cards Card.Route
+    | Collections Collection.Route
     | ListComponents
     | NotFound
 
@@ -32,25 +34,26 @@ fromLocation location =
 toPath : Route -> String
 toPath route =
     case route of
-        Articles articleRoute ->
-            "/components/articles/" ++ Utils.pathify articleRoute ++ "/"
+        Articles subRoute ->
+            "/components/articles/" ++ Utils.pathify subRoute ++ "/"
 
-        ArticleLists articleListRoute ->
-            "/components/article-lists/"
-                ++ Utils.pathify articleListRoute
-                ++ "/"
+        ArticleLists subRoute ->
+            "/components/article-lists/" ++ Utils.pathify subRoute ++ "/"
 
-        Avatars avatarRoute ->
-            "/components/avatars/" ++ Utils.pathify avatarRoute ++ "/"
+        Avatars subRoute ->
+            "/components/avatars/" ++ Utils.pathify subRoute ++ "/"
 
-        Banners bannerRoute ->
-            "/components/banners/" ++ Utils.pathify bannerRoute ++ "/"
+        Banners subRoute ->
+            "/components/banners/" ++ Utils.pathify subRoute ++ "/"
 
-        Buttons buttonRoute ->
-            "/components/buttons/" ++ Utils.pathify buttonRoute ++ "/"
+        Buttons subRoute ->
+            "/components/buttons/" ++ Utils.pathify subRoute ++ "/"
 
-        Cards cardRoute ->
-            "/components/cards/" ++ Utils.pathify cardRoute ++ "/"
+        Cards subRoute ->
+            "/components/cards/" ++ Utils.pathify subRoute ++ "/"
+
+        Collections subRoute ->
+            "/components/collections/" ++ Utils.pathify subRoute ++ "/"
 
         ListComponents ->
             "/components/"
@@ -82,4 +85,7 @@ matchers =
         , map
             Cards
             (s "components" </> s "cards" </> Card.matchers)
+        , map
+            Collections
+            (s "components" </> s "collections" </> Collection.matchers)
         ]
