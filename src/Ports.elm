@@ -1,7 +1,4 @@
-port module Ports exposing (scrollToTopOfPage, setBodyClasses)
-
-
-port scrollToTopOfPage : () -> Cmd msg
+port module Ports exposing (setBodyClasses)
 
 
 port setBodyClasses : String -> Cmd msg
