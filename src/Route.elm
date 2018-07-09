@@ -9,6 +9,7 @@ import Card
 import Collection
 import DefinitionList
 import ErrorPage
+import Footer
 import Navigation exposing (Location)
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
@@ -24,6 +25,7 @@ type Route
     | Collections Collection.Route
     | DefinitionLists DefinitionList.Route
     | ErrorPages ErrorPage.Route
+    | Footers Footer.Route
     | ListComponents
     | NotFound
 
@@ -65,6 +67,9 @@ toPath route =
         ErrorPages subRoute ->
             "/components/error-pages/" ++ Utils.pathify subRoute ++ "/"
 
+        Footers subRoute ->
+            "/components/footers/" ++ Utils.pathify subRoute ++ "/"
+
         ListComponents ->
             "/components/"
 
@@ -77,24 +82,14 @@ matchers =
     oneOf
         [ map ListComponents top
         , map ListComponents (s "components")
-        , map
-            Articles
-            (s "components" </> s "articles" </> Article.matchers)
+        , map Articles (s "components" </> s "articles" </> Article.matchers)
         , map
             ArticleLists
             (s "components" </> s "article-lists" </> ArticleList.matchers)
-        , map
-            Avatars
-            (s "components" </> s "avatars" </> Avatar.matchers)
-        , map
-            Banners
-            (s "components" </> s "banners" </> Banner.matchers)
-        , map
-            Buttons
-            (s "components" </> s "buttons" </> Button.matchers)
-        , map
-            Cards
-            (s "components" </> s "cards" </> Card.matchers)
+        , map Avatars (s "components" </> s "avatars" </> Avatar.matchers)
+        , map Banners (s "components" </> s "banners" </> Banner.matchers)
+        , map Buttons (s "components" </> s "buttons" </> Button.matchers)
+        , map Cards (s "components" </> s "cards" </> Card.matchers)
         , map
             Collections
             (s "components" </> s "collections" </> Collection.matchers)
@@ -107,4 +102,5 @@ matchers =
         , map
             ErrorPages
             (s "components" </> s "error-pages" </> ErrorPage.matchers)
+        , map Footers (s "components" </> s "footers" </> Footer.matchers)
         ]

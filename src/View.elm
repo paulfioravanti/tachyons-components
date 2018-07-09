@@ -9,6 +9,7 @@ import Card
 import Collection
 import DefinitionList
 import ErrorPage
+import Footer
 import Html exposing (Html)
 import ListComponents
 import Model exposing (Model)
@@ -26,6 +27,7 @@ import Route
             , Collections
             , DefinitionLists
             , ErrorPages
+            , Footers
             , ListComponents
             , NotFound
             )
@@ -65,6 +67,9 @@ view changeLocationMsg model =
 
             ErrorPages subRoute ->
                 ErrorPage.view subRoute footer
+
+            Footers subRoute ->
+                Footer.view subRoute footer
 
             ListComponents ->
                 ListComponents.view changeLocationMsg footer
