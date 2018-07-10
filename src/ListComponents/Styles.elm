@@ -62,9 +62,11 @@ import Route
             , NotFound
             , Pages
             , Quotes
+            , Tables
             )
         )
 import Styles
+import Table
 
 
 anchor : String
@@ -253,6 +255,9 @@ sectionContentLinkImage route =
 
                 Quotes subRoute ->
                     Quote.sectionContentLinkImageFormatting subRoute
+
+                Tables subRoute ->
+                    Table.sectionContentLinkImageFormatting subRoute
     in
         imageFormatting
             ++ [ "aspect-ratio--object"

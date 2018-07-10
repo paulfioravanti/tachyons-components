@@ -48,8 +48,10 @@ import Route
             , NotFound
             , Pages
             , Quotes
+            , Tables
             )
         )
+import Table
 
 
 view : (Route -> msg) -> Model -> Html msg
@@ -121,3 +123,6 @@ view changeLocationMsg model =
 
             Quotes subRoute ->
                 Quote.view subRoute footer
+
+            Tables subRoute ->
+                Table.view subRoute footer

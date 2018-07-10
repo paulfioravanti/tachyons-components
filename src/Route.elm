@@ -20,6 +20,7 @@ import Nav
 import Navigation exposing (Location)
 import Page
 import Quote
+import Table
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
 
@@ -46,6 +47,7 @@ type Route
     | NotFound
     | Pages Page.Route
     | Quotes Quote.Route
+    | Tables Table.Route
 
 
 fromLocation : Location -> Route
@@ -135,6 +137,9 @@ toPath route =
         Quotes subRoute ->
             "/components/quotes/" ++ Utils.pathify subRoute ++ "/"
 
+        Tables subRoute ->
+            "/components/tables/" ++ Utils.pathify subRoute ++ "/"
+
 
 matchers : Parser (Route -> a) a
 matchers =
@@ -173,4 +178,5 @@ matchers =
         , map Navs (s "components" </> s "nav" </> Nav.matchers)
         , map Pages (s "components" </> s "pages" </> Page.matchers)
         , map Quotes (s "components" </> s "quotes" </> Quote.matchers)
+        , map Tables (s "components" </> s "tables" </> Table.matchers)
         ]
