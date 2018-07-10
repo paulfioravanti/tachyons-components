@@ -172,4 +172,5 @@ matchers =
             (s "components" </> s "marketing" </> Marketing.matchers)
         , map Navs (s "components" </> s "nav" </> Nav.matchers)
         , map Pages (s "components" </> s "pages" </> Page.matchers)
+        , map Quotes (s "components" </> s "quotes" </> Quote.matchers)
         ]
