@@ -18,6 +18,7 @@ import List_
 import Marketing
 import Nav
 import Navigation exposing (Location)
+import Page
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
 
@@ -42,6 +43,7 @@ type Route
     | Marketing Marketing.Route
     | Navs Nav.Route
     | NotFound
+    | Pages Page.Route
 
 
 fromLocation : Location -> Route
@@ -79,7 +81,14 @@ toPath route =
             "/components/definition-lists/" ++ Utils.pathify subRoute ++ "/"
 
         ErrorPages subRoute ->
-            "/components/error-pages/" ++ Utils.pathify subRoute ++ "/"
+            let
+                errorRoute =
+                    if subRoute == ErrorPage.fourOhFourRoute then
+                        "404"
+                    else
+                        Utils.pathify subRoute
+            in
+                "/components/error-pages/" ++ errorRoute ++ "/"
 
         Footers subRoute ->
             "/components/footers/" ++ Utils.pathify subRoute ++ "/"
@@ -110,6 +119,16 @@ toPath route =
 
         NotFound ->
             "/not-found/"
+
+        Pages subRoute ->
+            let
+                pageRoute =
+                    if subRoute == Page.fourByFourMixedGridRoute then
+                        "4x4-mixed-grid"
+                    else
+                        Utils.pathify subRoute
+            in
+                "/components/pages/" ++ pageRoute ++ "/"
 
 
 matchers : Parser (Route -> a) a
@@ -147,4 +166,5 @@ matchers =
             Marketing
             (s "components" </> s "marketing" </> Marketing.matchers)
         , map Navs (s "components" </> s "nav" </> Nav.matchers)
+        , map Pages (s "components" </> s "pages" </> Page.matchers)
         ]

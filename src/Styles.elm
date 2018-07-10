@@ -17,6 +17,7 @@ import Link
 import List_
 import Marketing
 import Nav
+import Page
 import Route
     exposing
         ( Route
@@ -39,6 +40,7 @@ import Route
             , Marketing
             , Navs
             , NotFound
+            , Pages
             )
         )
 
@@ -109,6 +111,9 @@ bodyClasses route =
 
                 NotFound ->
                     defaultStyles
+
+                Pages subRoute ->
+                    Page.bodyClasses subRoute
     in
         styles
             |> String.join " "

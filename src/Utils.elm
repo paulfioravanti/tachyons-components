@@ -1,6 +1,5 @@
 module Utils exposing (componentsLink, pathify, routeFor, toPath)
 
-import ErrorPage
 import Html exposing (Html, a, text)
 import Html.Attributes exposing (class, href, title)
 import Html.Events exposing (onWithOptions)
@@ -29,22 +28,9 @@ componentsLink msg link styles =
 
 pathify : a -> String
 pathify stringifiable =
-    let
-        string =
-            stringifiable
-                |> toString
-
-        -- This looks like the single exception to the rule, but
-        -- if there ends up being more, a better solution will
-        -- likely be needed.
-        fourOhFourRoute =
-            toString ErrorPage.fourOhFourRoute
-    in
-        if string == fourOhFourRoute then
-            "404"
-        else
-            string
-                |> toPath
+    stringifiable
+        |> toString
+        |> toPath
 
 
 routeFor : a -> Parser (a -> b) b

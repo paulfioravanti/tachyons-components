@@ -21,6 +21,7 @@ import Marketing
 import Model exposing (Model)
 import Nav
 import NotFound
+import Page
 import PageFooter
 import Route
     exposing
@@ -44,6 +45,7 @@ import Route
             , Marketing
             , Navs
             , NotFound
+            , Pages
             )
         )
 
@@ -111,3 +113,6 @@ view changeLocationMsg model =
 
             NotFound ->
                 NotFound.view
+
+            Pages subRoute ->
+                Page.view subRoute footer
