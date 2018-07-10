@@ -34,6 +34,7 @@ import Header
 import Layout
 import Link
 import List_
+import Marketing
 import Route
     exposing
         ( Route
@@ -53,6 +54,7 @@ import Route
             , Links
             , ListComponents
             , Lists
+            , Marketing
             , NotFound
             )
         )
@@ -230,6 +232,9 @@ sectionContentLinkImage route =
 
                 Lists subRoute ->
                     List_.sectionContentLinkImageFormatting subRoute
+
+                Marketing subRoute ->
+                    Marketing.sectionContentLinkImageFormatting subRoute
 
                 NotFound ->
                     defaultFormatting
