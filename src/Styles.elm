@@ -14,6 +14,7 @@ import Form
 import Header
 import Layout
 import Link
+import List_
 import Route
     exposing
         ( Route
@@ -32,6 +33,7 @@ import Route
             , Layouts
             , Links
             , ListComponents
+            , Lists
             , NotFound
             )
         )
@@ -91,6 +93,9 @@ bodyClasses route =
 
                 ListComponents ->
                     defaultStyles
+
+                Lists subRoute ->
+                    List_.bodyClasses subRoute
 
                 NotFound ->
                     defaultStyles
