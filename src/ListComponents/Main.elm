@@ -16,6 +16,7 @@ import ListComponents.Footers as Footers
 import ListComponents.Forms as Forms
 import ListComponents.Headers as Headers
 import ListComponents.Layouts as Layouts
+import ListComponents.Links as Links
 import Route exposing (Route)
 import Styles
 import Utils
@@ -38,6 +39,7 @@ view changeLocationMsg =
             , Forms.view
             , Headers.view
             , Layouts.view
+            , Links.view
             ]
                 |> List.map (\componentView -> componentView changeLocationMsg)
     in

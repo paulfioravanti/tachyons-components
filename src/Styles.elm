@@ -13,6 +13,7 @@ import Footer
 import Form
 import Header
 import Layout
+import Link
 import Route
     exposing
         ( Route
@@ -29,6 +30,7 @@ import Route
             , Forms
             , Headers
             , Layouts
+            , Links
             , ListComponents
             , NotFound
             )
@@ -83,6 +85,9 @@ bodyClasses route =
 
                 Layouts subRoute ->
                     Layout.bodyClasses subRoute
+
+                Links subRoute ->
+                    Link.bodyClasses subRoute
 
                 ListComponents ->
                     defaultStyles
