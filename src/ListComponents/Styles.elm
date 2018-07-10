@@ -37,6 +37,7 @@ import List_
 import Marketing
 import Nav
 import Page
+import Quote
 import Route
     exposing
         ( Route
@@ -60,6 +61,7 @@ import Route
             , Navs
             , NotFound
             , Pages
+            , Quotes
             )
         )
 import Styles
@@ -248,6 +250,9 @@ sectionContentLinkImage route =
 
                 Pages subRoute ->
                     Page.sectionContentLinkImageFormatting subRoute
+
+                Quotes subRoute ->
+                    Quote.sectionContentLinkImageFormatting subRoute
     in
         imageFormatting
             ++ [ "aspect-ratio--object"

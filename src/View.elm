@@ -23,6 +23,7 @@ import Nav
 import NotFound
 import Page
 import PageFooter
+import Quote
 import Route
     exposing
         ( Route
@@ -46,6 +47,7 @@ import Route
             , Navs
             , NotFound
             , Pages
+            , Quotes
             )
         )
 
@@ -116,3 +118,6 @@ view changeLocationMsg model =
 
             Pages subRoute ->
                 Page.view subRoute footer
+
+            Quotes subRoute ->
+                Quote.view subRoute footer

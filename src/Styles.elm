@@ -18,6 +18,7 @@ import List_
 import Marketing
 import Nav
 import Page
+import Quote
 import Route
     exposing
         ( Route
@@ -41,6 +42,7 @@ import Route
             , Navs
             , NotFound
             , Pages
+            , Quotes
             )
         )
 
@@ -114,6 +116,9 @@ bodyClasses route =
 
                 Pages subRoute ->
                     Page.bodyClasses subRoute
+
+                Quotes subRoute ->
+                    Quote.bodyClasses subRoute
     in
         styles
             |> String.join " "

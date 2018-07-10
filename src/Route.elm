@@ -19,6 +19,7 @@ import Marketing
 import Nav
 import Navigation exposing (Location)
 import Page
+import Quote
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
 
@@ -44,6 +45,7 @@ type Route
     | Navs Nav.Route
     | NotFound
     | Pages Page.Route
+    | Quotes Quote.Route
 
 
 fromLocation : Location -> Route
@@ -129,6 +131,9 @@ toPath route =
                         Utils.pathify subRoute
             in
                 "/components/pages/" ++ pageRoute ++ "/"
+
+        Quotes subRoute ->
+            "/components/quotes/" ++ Utils.pathify subRoute ++ "/"
 
 
 matchers : Parser (Route -> a) a
