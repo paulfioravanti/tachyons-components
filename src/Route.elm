@@ -21,6 +21,7 @@ import Navigation exposing (Location)
 import Page
 import Quote
 import Table
+import Text
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
 
@@ -48,6 +49,7 @@ type Route
     | Pages Page.Route
     | Quotes Quote.Route
     | Tables Table.Route
+    | Texts Text.Route
 
 
 fromLocation : Location -> Route
@@ -140,6 +142,9 @@ toPath route =
         Tables subRoute ->
             "/components/tables/" ++ Utils.pathify subRoute ++ "/"
 
+        Texts subRoute ->
+            "/components/text/" ++ Utils.pathify subRoute ++ "/"
+
 
 matchers : Parser (Route -> a) a
 matchers =
@@ -179,4 +184,5 @@ matchers =
         , map Pages (s "components" </> s "pages" </> Page.matchers)
         , map Quotes (s "components" </> s "quotes" </> Quote.matchers)
         , map Tables (s "components" </> s "tables" </> Table.matchers)
+        , map Texts (s "components" </> s "text" </> Text.matchers)
         ]

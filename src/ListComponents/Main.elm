@@ -23,6 +23,7 @@ import ListComponents.Navs as Navs
 import ListComponents.Pages as Pages
 import ListComponents.Quotes as Quotes
 import ListComponents.Tables as Tables
+import ListComponents.Texts as Texts
 import Route exposing (Route)
 import Styles
 import Utils
@@ -52,6 +53,7 @@ view changeLocationMsg =
             , Pages.view
             , Quotes.view
             , Tables.view
+            , Texts.view
             ]
                 |> List.map (\componentView -> componentView changeLocationMsg)
     in

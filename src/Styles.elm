@@ -44,9 +44,11 @@ import Route
             , Pages
             , Quotes
             , Tables
+            , Texts
             )
         )
 import Table
+import Text
 
 
 bodyClasses : Route -> String
@@ -124,6 +126,9 @@ bodyClasses route =
 
                 Tables subRoute ->
                     Table.bodyClasses subRoute
+
+                Texts subRoute ->
+                    Text.bodyClasses subRoute
     in
         styles
             |> String.join " "
