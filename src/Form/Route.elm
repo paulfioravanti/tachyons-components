@@ -1,6 +1,6 @@
 module Form.Route exposing (Route(..), matchers)
 
-import UrlParser exposing (Parser, map, s)
+import UrlParser exposing (Parser)
 import Utils
 
 
