@@ -16,6 +16,7 @@ import Layout
 import Link
 import List_
 import Marketing
+import Nav
 import Navigation exposing (Location)
 import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
 import Utils
@@ -39,6 +40,7 @@ type Route
     | ListComponents
     | Lists List_.Route
     | Marketing Marketing.Route
+    | Navs Nav.Route
     | NotFound
 
 
@@ -103,6 +105,9 @@ toPath route =
         Marketing subRoute ->
             "/components/marketing/" ++ Utils.pathify subRoute ++ "/"
 
+        Navs subRoute ->
+            "/components/nav/" ++ Utils.pathify subRoute ++ "/"
+
         NotFound ->
             "/not-found/"
 
@@ -141,4 +146,5 @@ matchers =
         , map
             Marketing
             (s "components" </> s "marketing" </> Marketing.matchers)
+        , map Navs (s "components" </> s "nav" </> Nav.matchers)
         ]

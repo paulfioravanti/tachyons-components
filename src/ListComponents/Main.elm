@@ -19,6 +19,7 @@ import ListComponents.Layouts as Layouts
 import ListComponents.Links as Links
 import ListComponents.Lists as Lists
 import ListComponents.Marketing as Marketing
+import ListComponents.Navs as Navs
 import Route exposing (Route)
 import Styles
 import Utils
@@ -44,6 +45,7 @@ view changeLocationMsg =
             , Links.view
             , Lists.view
             , Marketing.view
+            , Navs.view
             ]
                 |> List.map (\componentView -> componentView changeLocationMsg)
     in

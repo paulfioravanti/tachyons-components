@@ -16,6 +16,7 @@ import Layout
 import Link
 import List_
 import Marketing
+import Nav
 import Route
     exposing
         ( Route
@@ -36,6 +37,7 @@ import Route
             , ListComponents
             , Lists
             , Marketing
+            , Navs
             , NotFound
             )
         )
@@ -101,6 +103,9 @@ bodyClasses route =
 
                 Marketing subRoute ->
                     Marketing.bodyClasses subRoute
+
+                Navs subRoute ->
+                    Nav.bodyClasses subRoute
 
                 NotFound ->
                     defaultStyles
