@@ -4,7 +4,7 @@ import Footer.CenteredIconsHoverGlow.Styles as Styles
 import Footer.SvgLogo as SvgLogo
 import Html exposing (Html, a, div, footer, span, text)
 import Html.Attributes exposing (attribute, class, href, style, title)
-import Svg exposing (Svg, g, path, svg)
+import Svg exposing (path, svg)
 import Svg.Attributes
     exposing
         ( clipRule
