@@ -2,12 +2,12 @@ module Avatar.RoundedMedium.View exposing (view)
 
 import Avatar.RoundedMedium.Styles as Styles
 import Html exposing (Html, div, img)
-import Html.Attributes exposing (alt, class, src)
+import Html.Attributes exposing (alt, attribute, class, src)
 
 
-view : Html msg -> Html msg
-view footer =
-    div []
+view : Html msg
+view =
+    div [ attribute "data-name" "component" ]
         [ div [ class Styles.avatar ]
             [ img
                 [ class Styles.image
@@ -16,5 +16,4 @@ view footer =
                 ]
                 []
             ]
-        , footer
         ]

@@ -3,21 +3,20 @@ module Article.PhotoEssay.View exposing (view)
 import Article.PhotoEssay.Article as Article exposing (Article)
 import Article.PhotoEssay.Styles as Styles
 import Html exposing (Html, article, div, h1, img, header, p, span, text)
-import Html.Attributes exposing (alt, class, src, style)
+import Html.Attributes exposing (alt, attribute, class, src, style)
 
 
-view : Html msg -> Html msg
-view footer =
+view : Html msg
+view =
     let
         articleExample =
             Article.example
     in
-        div []
+        div [ attribute "data-name" "component" ]
             [ article [ class Styles.article ]
                 [ heading articleExample
                 , content articleExample
                 ]
-            , footer
             ]
 
 

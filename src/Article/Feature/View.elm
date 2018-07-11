@@ -16,21 +16,20 @@ import Html
         , p
         , text
         )
-import Html.Attributes exposing (class, style)
+import Html.Attributes exposing (attribute, class, style)
 
 
-view : Html msg -> Html msg
-view footer =
+view : Html msg
+view =
     let
         feature =
             Feature.example
     in
-        div []
+        div [ attribute "data-name" "component" ]
             [ article [ class Styles.article ]
                 [ hero feature
                 , content feature
                 ]
-            , footer
             ]
 
 

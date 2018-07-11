@@ -7,15 +7,14 @@ import Svg exposing (path, svg, title)
 import Svg.Attributes exposing (d, viewBox)
 
 
-view : Html msg -> Html msg
-view footer =
-    div []
+view : Html msg
+view =
+    div [ attribute "data-name" "component" ]
         [ div [ class Styles.banner ]
             [ icon
             , span [ class Styles.heading ]
                 [ text "Some info that you want to call attention to." ]
             ]
-        , footer
         ]
 
 

@@ -2,12 +2,12 @@ module Banner.SingleCta.View exposing (view)
 
 import Banner.SingleCta.Styles as Styles
 import Html exposing (Html, a, article, div, h2, p, section, text)
-import Html.Attributes exposing (class, href)
+import Html.Attributes exposing (attribute, class, href)
 
 
-view : Html msg -> Html msg
-view footer =
-    div []
+view : Html msg
+view =
+    div [ attribute "data-name" "component" ]
         [ section [ class Styles.section ]
             [ article [ class Styles.article ]
                 [ div [ class Styles.container ]
@@ -16,7 +16,6 @@ view footer =
                     ]
                 ]
             ]
-        , footer
         ]
 
 

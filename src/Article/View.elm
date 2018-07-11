@@ -30,38 +30,38 @@ import Article.TitleTextImage.View as TitleTextImage
 import Html exposing (Html)
 
 
-view : Route -> Html msg -> Html msg
-view route footer =
+view : Route -> Html msg
+view route =
     case route of
         Feature ->
-            Feature.view footer
+            Feature.view
 
         FullBleedBackground ->
-            FullBleedBackground.view footer
+            FullBleedBackground.view
 
         HeadlineTitleText ->
-            HeadlineTitleText.view footer
+            HeadlineTitleText.view
 
         LargeTitleText ->
-            LargeTitleText.view footer
+            LargeTitleText.view
 
         LeftTitle ->
-            LeftTitle.view footer
+            LeftTitle.view
 
         LeftTitleTopBorder ->
-            LeftTitleTopBorder.view footer
+            LeftTitleTopBorder.view
 
         PhotoEssay ->
-            PhotoEssay.view footer
+            PhotoEssay.view
 
         SingleColumnLargeTitle ->
-            SingleColumnLargeTitle.view footer
+            SingleColumnLargeTitle.view
 
         TitleHighlightHeaderCover ->
-            TitleHighlightHeaderCover.view footer
+            TitleHighlightHeaderCover.view
 
         TitleText ->
-            TitleText.view footer
+            TitleText.view
 
         TitleTextImage ->
-            TitleTextImage.view footer
+            TitleTextImage.view

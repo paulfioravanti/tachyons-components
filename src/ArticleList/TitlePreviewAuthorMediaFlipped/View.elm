@@ -16,15 +16,14 @@ import Html
         , text
         , time
         )
-import Html.Attributes exposing (alt, class, src)
+import Html.Attributes exposing (alt, attribute, class, src)
 
 
-view : Html msg -> Html msg
-view footer =
-    div []
+view : Html msg
+view =
+    div [ attribute "data-name" "component" ]
         [ section [ class Styles.section ]
             (pageHeading :: List.map newsArticle Article.list)
-        , footer
         ]
 
 

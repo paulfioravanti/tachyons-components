@@ -39,6 +39,6 @@ titlePreviewAuthorMediaFlippedRoute =
     Route.TitlePreviewAuthorMediaFlipped
 
 
-view : Route -> Html msg -> Html msg
-view route footer =
-    View.view route footer
+view : Route -> Html msg
+view route =
+    View.view route

@@ -7,14 +7,13 @@ import Svg exposing (path, svg, title)
 import Svg.Attributes exposing (d, viewBox)
 
 
-view : Html msg -> Html msg
-view footer =
-    div []
+view : Html msg
+view =
+    div [ attribute "data-name" "component" ]
         [ div [ class Styles.container ]
             [ previousButton
             , nextButton
             ]
-        , footer
         ]
 
 

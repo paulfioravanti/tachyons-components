@@ -17,8 +17,8 @@ import Html
 import Html.Attributes exposing (attribute, class, style)
 
 
-view : Html msg -> Html msg
-view footer =
+view : Html msg
+view =
     let
         articleExample =
             Article.example
@@ -32,7 +32,7 @@ view footer =
               )
             ]
     in
-        div []
+        div [ attribute "data-name" "component" ]
             [ article
                 [ attribute "data-name" "article-full-bleed-background" ]
                 [ div
@@ -45,7 +45,6 @@ view footer =
                         ]
                     ]
                 ]
-            , footer
             ]
 
 

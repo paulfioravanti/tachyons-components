@@ -5,8 +5,8 @@ import Collection.Albums.View as Albums
 import Html exposing (Html)
 
 
-view : Route -> Html msg -> Html msg
-view route footer =
+view : Route -> Html msg
+view route =
     case route of
         Albums ->
-            Albums.view footer
+            Albums.view

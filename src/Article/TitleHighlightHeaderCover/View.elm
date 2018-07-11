@@ -17,21 +17,20 @@ import Html
         , text
         , time
         )
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (attribute, class)
 
 
-view : Html msg -> Html msg
-view footer =
+view : Html msg
+view =
     let
         articleExample =
             Article.example
     in
-        div []
+        div [ attribute "data-name" "component" ]
             [ article []
                 [ heading articleExample
                 , content articleExample
                 ]
-            , footer
             ]
 
 

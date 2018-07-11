@@ -3,21 +3,20 @@ module Article.LeftTitle.View exposing (view)
 import Article.LeftTitle.Article as Article exposing (Article)
 import Article.LeftTitle.Styles as Styles
 import Html exposing (Html, article, div, h1, header, p, span, text)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (attribute, class)
 
 
-view : Html msg -> Html msg
-view footer =
+view : Html msg
+view =
     let
         articleExample =
             Article.example
     in
-        div []
+        div [ attribute "data-name" "component" ]
             [ article [ class Styles.article ]
                 [ heading articleExample
                 , content articleExample
                 ]
-            , footer
             ]
 
 

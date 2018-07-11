@@ -51,6 +51,6 @@ singleCtaRoute =
     Route.SingleCta
 
 
-view : Route -> Html msg -> Html msg
-view route footer =
-    View.view route footer
+view : Route -> Html msg
+view route =
+    View.view route

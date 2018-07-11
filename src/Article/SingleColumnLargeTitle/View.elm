@@ -7,21 +7,20 @@ import Article.SingleColumnLargeTitle.Article as Article
         )
 import Article.SingleColumnLargeTitle.Styles as Styles
 import Html exposing (Html, article, div, h1, img, header, p, text, time)
-import Html.Attributes exposing (alt, class, src)
+import Html.Attributes exposing (alt, attribute, class, src)
 
 
-view : Html msg -> Html msg
-view footer =
+view : Html msg
+view =
     let
         articleExample =
             Article.example
     in
-        div []
+        div [ attribute "data-name" "component" ]
             [ article [ class Styles.article ]
                 [ heading articleExample
                 , content articleExample
                 ]
-            , footer
             ]
 
 

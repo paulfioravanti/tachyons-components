@@ -12,7 +12,7 @@ import ErrorPage
 import Footer
 import Form
 import Header
-import Html exposing (Html)
+import Html exposing (Html, main_)
 import Layout
 import Link
 import List_
@@ -59,75 +59,78 @@ import Text
 view : (Route -> msg) -> Model -> Html msg
 view changeLocationMsg model =
     let
-        footer =
-            PageFooter.view (changeLocationMsg ListComponents)
+        componentView =
+            case model of
+                ArticleLists subRoute ->
+                    ArticleList.view subRoute
+
+                Articles subRoute ->
+                    Article.view subRoute
+
+                Avatars subRoute ->
+                    Avatar.view subRoute
+
+                Banners subRoute ->
+                    Banner.view subRoute
+
+                Buttons subRoute ->
+                    Button.view subRoute
+
+                Cards subRoute ->
+                    Card.view subRoute
+
+                Collections subRoute ->
+                    Collection.view subRoute
+
+                DefinitionLists subRoute ->
+                    DefinitionList.view subRoute
+
+                ErrorPages subRoute ->
+                    ErrorPage.view subRoute
+
+                Footers subRoute ->
+                    Footer.view subRoute
+
+                Forms subRoute ->
+                    Form.view subRoute
+
+                Headers subRoute ->
+                    Header.view subRoute
+
+                Layouts subRoute ->
+                    Layout.view subRoute
+
+                Links subRoute ->
+                    Link.view subRoute
+
+                ListComponents ->
+                    ListComponents.view changeLocationMsg
+
+                Lists subRoute ->
+                    List_.view subRoute
+
+                Marketing subRoute ->
+                    Marketing.view subRoute
+
+                Navs subRoute ->
+                    Nav.view subRoute
+
+                NotFound ->
+                    NotFound.view
+
+                Pages subRoute ->
+                    Page.view subRoute
+
+                Quotes subRoute ->
+                    Quote.view subRoute
+
+                Tables subRoute ->
+                    Table.view subRoute
+
+                Texts subRoute ->
+                    Text.view subRoute
     in
-        case model of
-            ArticleLists subRoute ->
-                ArticleList.view subRoute footer
-
-            Articles subRoute ->
-                Article.view subRoute footer
-
-            Avatars subRoute ->
-                Avatar.view subRoute footer
-
-            Banners subRoute ->
-                Banner.view subRoute footer
-
-            Buttons subRoute ->
-                Button.view subRoute footer
-
-            Cards subRoute ->
-                Card.view subRoute footer
-
-            Collections subRoute ->
-                Collection.view subRoute footer
-
-            DefinitionLists subRoute ->
-                DefinitionList.view subRoute footer
-
-            ErrorPages subRoute ->
-                ErrorPage.view subRoute footer
-
-            Footers subRoute ->
-                Footer.view subRoute footer
-
-            Forms subRoute ->
-                Form.view subRoute footer
-
-            Headers subRoute ->
-                Header.view subRoute footer
-
-            Layouts subRoute ->
-                Layout.view subRoute footer
-
-            Links subRoute ->
-                Link.view subRoute footer
-
-            ListComponents ->
-                ListComponents.view changeLocationMsg footer
-
-            Lists subRoute ->
-                List_.view subRoute footer
-
-            Marketing subRoute ->
-                Marketing.view subRoute footer
-
-            Navs subRoute ->
-                Nav.view subRoute footer
-
-            NotFound ->
-                NotFound.view
-
-            Pages subRoute ->
-                Page.view subRoute footer
-
-            Quotes subRoute ->
-                Quote.view subRoute footer
-
-            Tables subRoute ->
-                Table.view subRoute footer
-
-            Texts subRoute ->
-                Text.view subRoute footer
+        main_ []
+            [ componentView
+            , PageFooter.view (changeLocationMsg ListComponents)
+            ]

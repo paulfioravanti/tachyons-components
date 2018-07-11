@@ -5,8 +5,8 @@ import Layout.AspectRatio16x9.View as AspectRatio16x9
 import Html exposing (Html)
 
 
-view : Route -> Html msg -> Html msg
-view route footer =
+view : Route -> Html msg
+view route =
     case route of
         AspectRatio16x9 ->
-            AspectRatio16x9.view footer
+            AspectRatio16x9.view

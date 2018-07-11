@@ -2,11 +2,11 @@ module Banner.Basic.View exposing (view)
 
 import Banner.Basic.Styles as Styles
 import Html exposing (Html, a, article, div, h1, h2, p, text)
-import Html.Attributes exposing (class, href)
+import Html.Attributes exposing (attribute, class, href)
 
 
-view : Html msg -> Html msg
-view footer =
+view : Html msg
+view =
     let
         subHeading =
             """
@@ -14,7 +14,7 @@ view footer =
             needs to be longer for testing sake.
             """
     in
-        div []
+        div [ attribute "data-name" "component" ]
             [ article [ class Styles.article ]
                 [ h1 [ class Styles.heading ]
                     [ text "This is a tagline. For x." ]
@@ -29,5 +29,4 @@ view footer =
                         [ text "Learn More" ]
                     ]
                 ]
-            , footer
             ]

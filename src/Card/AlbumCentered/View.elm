@@ -2,11 +2,11 @@ module Card.AlbumCentered.View exposing (view)
 
 import Card.AlbumCentered.Styles as Styles
 import Html exposing (Html, a, div, dd, dl, dt, img, text)
-import Html.Attributes exposing (alt, class, href, src, title)
+import Html.Attributes exposing (alt, attribute, class, href, src, title)
 
 
-view : Html msg -> Html msg
-view footer =
+view : Html msg
+view =
     let
         iTunesLink =
             "https://geo.itunes.apple.com/us/album/blonde/"
@@ -16,7 +16,7 @@ view footer =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/"
                 ++ "Blonde-Frank_Ocean.jpeg"
     in
-        div []
+        div [ attribute "data-name" "component" ]
             [ a
                 [ class Styles.link
                 , title "Frank Ocean's Blonde on Apple Music"
@@ -39,5 +39,4 @@ view footer =
                         [ text "Frank Ocean" ]
                     ]
                 ]
-            , footer
             ]

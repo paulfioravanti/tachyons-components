@@ -2,16 +2,15 @@ module Article.TitleTextImage.View exposing (view)
 
 import Article.TitleTextImage.Styles as Styles
 import Html exposing (Html, article, div, h1, img, p, text)
-import Html.Attributes exposing (alt, class, src)
+import Html.Attributes exposing (alt, attribute, class, src)
 import LoremIpsum
 
 
-view : Html msg -> Html msg
-view footer =
-    div []
+view : Html msg
+view =
+    div [ attribute "data-name" "component" ]
         [ article [ class Styles.article ]
             (heading :: image :: List.map paragraph paragraphs)
-        , footer
         ]
 
 

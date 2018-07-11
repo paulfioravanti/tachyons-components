@@ -22,26 +22,26 @@ import Avatar.Square.View as Square
 import Html exposing (Html)
 
 
-view : Route -> Html msg -> Html msg
-view route footer =
+view : Route -> Html msg
+view route =
     case route of
         Circle ->
-            Circle.view footer
+            Circle.view
 
         CircleBorder ->
-            CircleBorder.view footer
+            CircleBorder.view
 
         DoubleRing ->
-            DoubleRing.view footer
+            DoubleRing.view
 
         RoundedLarge ->
-            RoundedLarge.view footer
+            RoundedLarge.view
 
         RoundedMedium ->
-            RoundedMedium.view footer
+            RoundedMedium.view
 
         RoundedSmall ->
-            RoundedSmall.view footer
+            RoundedSmall.view
 
         Square ->
-            Square.view footer
+            Square.view

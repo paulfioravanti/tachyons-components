@@ -5,8 +5,8 @@ import Quote.LeftBorder.View as LeftBorder
 import Html exposing (Html)
 
 
-view : Route -> Html msg -> Html msg
-view route footer =
+view : Route -> Html msg
+view route =
     case route of
         LeftBorder ->
-            LeftBorder.view footer
+            LeftBorder.view

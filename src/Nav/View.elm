@@ -5,8 +5,8 @@ import Nav.FixedSemiTransparent.View as FixedSemiTransparent
 import Html exposing (Html)
 
 
-view : Route -> Html msg -> Html msg
-view route footer =
+view : Route -> Html msg
+view route =
     case route of
         FixedSemiTransparent ->
-            FixedSemiTransparent.view footer
+            FixedSemiTransparent.view

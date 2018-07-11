@@ -6,10 +6,9 @@ import ListComponents.Main as Main
 import Route exposing (Route(ListComponents))
 
 
-view : (Route -> msg) -> Html msg -> Html msg
-view changeLocationMsg footer =
+view : (Route -> msg) -> Html msg
+view changeLocationMsg =
     div []
         [ Header.view (changeLocationMsg ListComponents)
         , Main.view changeLocationMsg
-        , footer
         ]

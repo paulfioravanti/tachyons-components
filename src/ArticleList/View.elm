@@ -12,11 +12,11 @@ import ArticleList.TitlePreviewAuthorMediaFlipped.View as TitlePreviewAuthorMedi
 import Html exposing (Html)
 
 
-view : Route -> Html msg -> Html msg
-view route footer =
+view : Route -> Html msg
+view route =
     case route of
         TitlePreviewAuthorMedia ->
-            TitlePreviewAuthorMedia.view footer
+            TitlePreviewAuthorMedia.view
 
         TitlePreviewAuthorMediaFlipped ->
-            TitlePreviewAuthorMediaFlipped.view footer
+            TitlePreviewAuthorMediaFlipped.view
