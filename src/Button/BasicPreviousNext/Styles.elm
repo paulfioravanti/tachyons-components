@@ -1,33 +1,63 @@
 module Button.BasicPreviousNext.Styles
     exposing
         ( container
-        , next
-        , previous
+        , nextButton
+        , nextLabel
+        , previousButton
+        , previousLabel
         , svg
         )
 
 
 container : String
 container =
-    [ "bg-washed-green"
+    [ "flex"
+    , "items-center"
+    , "justify-center"
+    , "pa4"
     ]
         |> String.join " "
 
 
-next : String
-next =
-    [ "bg-washed-green"
-    ]
+nextButton : String
+nextButton =
+    button
         |> String.join " "
 
 
-previous : String
-previous =
-    [ "bg-washed-green"
-    ]
+nextLabel : String
+nextLabel =
+    "pr1"
+
+
+previousButton : String
+previousButton =
+    "mr4"
+        :: button
         |> String.join " "
+
+
+previousLabel : String
+previousLabel =
+    "pl1"
 
 
 svg : String
 svg =
     "w1"
+
+
+button : List String
+button =
+    [ "ba"
+    , "bg-animate"
+    , "black"
+    , "border-box"
+    , "f5"
+    , "hover-bg-black"
+    , "hover-white"
+    , "inline-flex"
+    , "items-center"
+    , "no-underline"
+    , "pa3"
+    ]
