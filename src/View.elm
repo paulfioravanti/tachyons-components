@@ -12,7 +12,7 @@ import ErrorPage
 import Footer
 import Form
 import Header
-import Html exposing (Html, main_)
+import Html exposing (Html, div, main_)
 import Layout
 import Link
 import List_
@@ -59,6 +59,9 @@ import Text
 view : (Route -> msg) -> Model -> Html msg
 view changeLocationMsg model =
     let
+        footer =
+            PageFooter.view (changeLocationMsg ListComponents)
+
         page =
             case model of
                 ArticleLists subRoute ->
@@ -104,7 +107,7 @@ view changeLocationMsg model =
                     Link.view subRoute
 
                 ListComponents ->
-                    ListComponents.view changeLocationMsg
+                    ListComponents.view changeLocationMsg footer
 
                 Lists subRoute ->
                     List_.view subRoute
@@ -130,7 +133,16 @@ view changeLocationMsg model =
                 Texts subRoute ->
                     Text.view subRoute
     in
-        main_ []
-            [ page
-            , PageFooter.view (changeLocationMsg ListComponents)
-            ]
+        case model of
+            ListComponents ->
+                page
+
+            NotFound ->
+                page
+
+            _ ->
+                div []
+                    [ main_ []
+                        [ page ]
+                    , footer
+                    ]
