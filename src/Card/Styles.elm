@@ -13,8 +13,8 @@ bodyClasses route =
             ]
     in
         case route of
-            _ ->
-                defaultFormatting
+            AlbumCentered ->
+                "pt5" :: defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
