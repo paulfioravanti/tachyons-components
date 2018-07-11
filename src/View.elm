@@ -59,7 +59,7 @@ import Text
 view : (Route -> msg) -> Model -> Html msg
 view changeLocationMsg model =
     let
-        componentView =
+        page =
             case model of
                 ArticleLists subRoute ->
                     ArticleList.view subRoute
@@ -131,6 +131,6 @@ view changeLocationMsg model =
                     Text.view subRoute
     in
         main_ []
-            [ componentView
+            [ page
             , PageFooter.view (changeLocationMsg ListComponents)
             ]
