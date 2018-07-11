@@ -60,23 +60,6 @@ nextButton =
             ]
 
 
-button : String -> String -> String -> String -> String -> Html msg
-button linkStyles iconName iconPath labelStyles labelText =
-    a [ class linkStyles, href "#0" ]
-        [ svg
-            [ Svg.Attributes.class Styles.svg
-            , attribute "data-icon" iconName
-            , viewBox "0 0 32 32"
-            , style [ ( "fill", "currentColor" ) ]
-            ]
-            [ title [] [ text (iconName ++ " icon") ]
-            , path [ d iconPath ] []
-            ]
-        , span [ class labelStyles ]
-            [ text labelText ]
-        ]
-
-
 svgTag : String -> String -> Html msg
 svgTag iconName iconPath =
     svg
