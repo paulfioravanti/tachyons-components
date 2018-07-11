@@ -1,4 +1,4 @@
-module SvgLogo
+module Footer.SvgLogo
     exposing
         ( codePen
         , facebook
@@ -7,6 +7,7 @@ module SvgLogo
         , linkedIn
         , medium
         , soundCloud
+        , twitter
         , youtube
         )
 
