@@ -2,8 +2,8 @@ module Button.BasicRoundedExtraSmall.View exposing (view)
 
 import Button.BasicRoundedExtraSmall.Styles as Styles
 import Button.Colour as Colour
-import Html exposing (Html, a, div, h1, span, text)
-import Html.Attributes exposing (attribute, class, href, style)
+import Html exposing (Html, a, div, h1, text)
+import Html.Attributes exposing (attribute, class, href)
 
 
 view : Html msg
