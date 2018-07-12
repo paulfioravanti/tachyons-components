@@ -17,8 +17,8 @@ bodyClasses route =
             ]
     in
         case route of
-            _ ->
-                defaultFormatting
+            FourByFourMixedGrid ->
+                [ "black-80", "helvetica" ] ++ defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
