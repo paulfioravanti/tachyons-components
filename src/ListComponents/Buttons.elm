@@ -44,6 +44,11 @@ view changeLocationMsg =
                     "Centered Icons"
                     changeLocationMsg
                     (Buttons Button.centeredIconsRoute)
+                , Utils.component
+                    "buttons/pill-grow/"
+                    "Pill Grow"
+                    changeLocationMsg
+                    (Buttons Button.pillGrowRoute)
                 ]
             ]
         ]

@@ -9,6 +9,7 @@ module Button
         , bodyClasses
         , centeredIconsRoute
         , matchers
+        , pillGrowRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -62,6 +63,11 @@ centeredIconsRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+pillGrowRoute : Route
+pillGrowRoute =
+    Route.PillGrow
 
 
 sectionContentLinkImageFormatting : Route -> List String

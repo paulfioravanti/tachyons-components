@@ -9,6 +9,7 @@ import Button.Route
             , BasicRoundedSmall
             , BasicRounded
             , CenteredIcons
+            , PillGrow
             )
         )
 
@@ -54,6 +55,9 @@ sectionContentLinkImageFormatting route =
                     []
 
                 CenteredIcons ->
+                    []
+
+                PillGrow ->
                     []
     in
         defaultFormatting :: componentSpecificFormatting

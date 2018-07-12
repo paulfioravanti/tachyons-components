@@ -11,6 +11,7 @@ type Route
     | BasicRoundedSmall
     | BasicRounded
     | CenteredIcons
+    | PillGrow
 
 
 matchers : Parser (Route -> a) a
@@ -20,6 +21,7 @@ matchers =
     , BasicRoundedSmall
     , BasicRounded
     , CenteredIcons
+    , PillGrow
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
