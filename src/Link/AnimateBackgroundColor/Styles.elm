@@ -1,11 +1,28 @@
 module Link.AnimateBackgroundColor.Styles
     exposing
-        ( container
+        ( link
+        , linkWrapper
         )
 
 
-container : String
-container =
-    [ ""
+link : String
+link =
+    [ "black"
+    , "bg-animate"
+    , "bg-white"
+    , "dib"
+    , "f4"
+    , "fw7"
+    , "hover-bg-light-blue"
+    , "no-underline"
+    , "pa2"
+    ]
+        |> String.join " "
+
+
+linkWrapper : String
+linkWrapper =
+    [ "lh-copy"
+    , "pa4"
     ]
         |> String.join " "
