@@ -1,11 +1,19 @@
 module Text.LargeParagraph.Styles
     exposing
-        ( container
+        ( main_
+        , paragraph
         )
 
 
-container : String
-container =
-    [ ""
+main_ : String
+main_ =
+    "pa3 pa5-ns"
+
+
+paragraph : String
+paragraph =
+    [ "f4"
+    , "lh-copy"
+    , "measure"
     ]
         |> String.join " "
