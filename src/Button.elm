@@ -3,6 +3,7 @@ module Button
         ( Route
         , basicPreviousNextRoute
         , basicRoundedExtraSmallRoute
+        , basicRoundedSmallRoute
         , bodyClasses
         , matchers
         , sectionContentLinkImageFormatting
@@ -28,6 +29,11 @@ basicPreviousNextRoute =
 basicRoundedExtraSmallRoute : Route
 basicRoundedExtraSmallRoute =
     Route.BasicRoundedExtraSmall
+
+
+basicRoundedSmallRoute : Route
+basicRoundedSmallRoute =
+    Route.BasicRoundedSmall
 
 
 bodyClasses : Route -> List String

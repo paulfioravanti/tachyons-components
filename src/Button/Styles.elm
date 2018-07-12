@@ -5,6 +5,7 @@ import Button.Route
         ( Route
             ( BasicPreviousNext
             , BasicRoundedExtraSmall
+            , BasicRoundedSmall
             )
         )
 
@@ -35,6 +36,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 BasicRoundedExtraSmall ->
+                    []
+
+                BasicRoundedSmall ->
                     []
     in
         defaultFormatting :: componentSpecificFormatting

@@ -7,12 +7,13 @@ import Utils
 type Route
     = BasicPreviousNext
     | BasicRoundedExtraSmall
+    | BasicRoundedSmall
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ BasicPreviousNext
-    , BasicRoundedExtraSmall
+    , BasicRoundedSmall
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
