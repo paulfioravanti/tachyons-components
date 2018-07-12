@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Basic Previous Next"
                     changeLocationMsg
                     (Buttons Button.basicPreviousNextRoute)
+                , Utils.component
+                    "buttons/basic-rounded-extra-small/"
+                    "Basic Rounded Extra Small"
+                    changeLocationMsg
+                    (Buttons Button.basicRoundedExtraSmallRoute)
                 ]
             ]
         ]

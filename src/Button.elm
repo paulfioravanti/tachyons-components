@@ -2,6 +2,7 @@ module Button
     exposing
         ( Route
         , basicPreviousNextRoute
+        , basicRoundedExtraSmallRoute
         , bodyClasses
         , matchers
         , sectionContentLinkImageFormatting
@@ -22,6 +23,11 @@ type alias Route =
 basicPreviousNextRoute : Route
 basicPreviousNextRoute =
     Route.BasicPreviousNext
+
+
+basicRoundedExtraSmallRoute : Route
+basicRoundedExtraSmallRoute =
+    Route.BasicRoundedExtraSmall
 
 
 bodyClasses : Route -> List String
