@@ -1,7 +1,7 @@
 module Footer.CenteredIconsHoverGlow.View exposing (view)
 
 import Footer.CenteredIconsHoverGlow.Styles as Styles
-import Footer.SvgLogo as SvgLogo
+import SvgLogo
 import Html exposing (Html, a, div, footer, span, text)
 import Html.Attributes exposing (attribute, class, href, style, title)
 import Svg exposing (path, svg)

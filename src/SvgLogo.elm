@@ -1,4 +1,4 @@
-module Footer.SvgLogo
+module SvgLogo
     exposing
         ( codePen
         , facebook
