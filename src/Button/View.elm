@@ -6,11 +6,13 @@ import Button.Route
             ( BasicPreviousNext
             , BasicRoundedExtraSmall
             , BasicRoundedSmall
+            , BasicRounded
             )
         )
 import Button.BasicPreviousNext.View as BasicPreviousNext
 import Button.BasicRoundedExtraSmall.View as BasicRoundedExtraSmall
 import Button.BasicRoundedSmall.View as BasicRoundedSmall
+import Button.BasicRounded.View as BasicRounded
 import Html exposing (Html)
 
 
@@ -25,3 +27,6 @@ view route =
 
         BasicRoundedSmall ->
             BasicRoundedSmall.view
+
+        BasicRounded ->
+            BasicRounded.view

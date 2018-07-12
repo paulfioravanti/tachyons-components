@@ -8,12 +8,14 @@ type Route
     = BasicPreviousNext
     | BasicRoundedExtraSmall
     | BasicRoundedSmall
+    | BasicRounded
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ BasicPreviousNext
     , BasicRoundedSmall
+    , BasicRounded
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
