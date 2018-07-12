@@ -49,6 +49,11 @@ view changeLocationMsg =
                     "Pill Grow"
                     changeLocationMsg
                     (Buttons Button.pillGrowRoute)
+                , Utils.component
+                    "buttons/pill/"
+                    "Pill"
+                    changeLocationMsg
+                    (Buttons Button.pillRoute)
                 ]
             ]
         ]

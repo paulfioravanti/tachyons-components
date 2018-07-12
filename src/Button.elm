@@ -10,6 +10,7 @@ module Button
         , centeredIconsRoute
         , matchers
         , pillGrowRoute
+        , pillRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -68,6 +69,11 @@ matchers =
 pillGrowRoute : Route
 pillGrowRoute =
     Route.PillGrow
+
+
+pillRoute : Route
+pillRoute =
+    Route.Pill
 
 
 sectionContentLinkImageFormatting : Route -> List String

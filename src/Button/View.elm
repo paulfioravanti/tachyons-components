@@ -9,6 +9,7 @@ import Button.Route
             , BasicRoundedSmall
             , BasicRounded
             , CenteredIcons
+            , Pill
             , PillGrow
             )
         )
@@ -18,6 +19,7 @@ import Button.BasicRoundedExtraSmall.View as BasicRoundedExtraSmall
 import Button.BasicRoundedSmall.View as BasicRoundedSmall
 import Button.BasicRounded.View as BasicRounded
 import Button.CenteredIcons.View as CenteredIcons
+import Button.Pill.View as Pill
 import Button.PillGrow.View as PillGrow
 import Html exposing (Html)
 
@@ -42,6 +44,9 @@ view route =
 
         CenteredIcons ->
             CenteredIcons.view
+
+        Pill ->
+            Pill.view
 
         PillGrow ->
             PillGrow.view

@@ -11,6 +11,7 @@ type Route
     | BasicRoundedSmall
     | BasicRounded
     | CenteredIcons
+    | Pill
     | PillGrow
 
 
@@ -21,6 +22,7 @@ matchers =
     , BasicRoundedSmall
     , BasicRounded
     , CenteredIcons
+    , Pill
     , PillGrow
     ]
         |> List.map Utils.routeFor

@@ -1,17 +1,6 @@
 module Button.Styles exposing (bodyClasses, sectionContentLinkImageFormatting)
 
-import Button.Route
-    exposing
-        ( Route
-            ( Basic
-            , BasicPreviousNext
-            , BasicRoundedExtraSmall
-            , BasicRoundedSmall
-            , BasicRounded
-            , CenteredIcons
-            , PillGrow
-            )
-        )
+import Button.Route exposing (Route(BasicPreviousNext, CenteredIcons))
 
 
 bodyClasses : Route -> List String
@@ -39,25 +28,10 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                Basic ->
-                    []
-
                 BasicPreviousNext ->
                     [ "contain" ]
 
-                BasicRoundedExtraSmall ->
-                    []
-
-                BasicRoundedSmall ->
-                    []
-
-                BasicRounded ->
-                    []
-
-                CenteredIcons ->
-                    []
-
-                PillGrow ->
+                _ ->
                     []
     in
         defaultFormatting :: componentSpecificFormatting
