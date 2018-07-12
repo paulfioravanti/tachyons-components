@@ -7,6 +7,7 @@ module Button
         , basicRoundedSmallRoute
         , basicRoute
         , bodyClasses
+        , centeredIconsRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -51,6 +52,11 @@ basicRoute =
 bodyClasses : Route -> List String
 bodyClasses route =
     Styles.bodyClasses route
+
+
+centeredIconsRoute : Route
+centeredIconsRoute =
+    Route.CenteredIcons
 
 
 matchers : Parser (Route -> a) a

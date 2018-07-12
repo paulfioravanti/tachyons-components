@@ -39,6 +39,11 @@ view changeLocationMsg =
                     "Basic"
                     changeLocationMsg
                     (Buttons Button.basicRoute)
+                , Utils.component
+                    "buttons/centered-icons/"
+                    "Centered Icons"
+                    changeLocationMsg
+                    (Buttons Button.centeredIconsRoute)
                 ]
             ]
         ]

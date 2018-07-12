@@ -8,6 +8,7 @@ import Button.Route
             , BasicRoundedExtraSmall
             , BasicRoundedSmall
             , BasicRounded
+            , CenteredIcons
             )
         )
 
@@ -22,6 +23,9 @@ bodyClasses route =
             ]
     in
         case route of
+            CenteredIcons ->
+                defaultFormatting
+
             _ ->
                 "pt5" :: defaultFormatting
 
@@ -47,6 +51,9 @@ sectionContentLinkImageFormatting route =
                     []
 
                 BasicRounded ->
+                    []
+
+                CenteredIcons ->
                     []
     in
         defaultFormatting :: componentSpecificFormatting

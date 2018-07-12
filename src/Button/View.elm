@@ -8,6 +8,7 @@ import Button.Route
             , BasicRoundedExtraSmall
             , BasicRoundedSmall
             , BasicRounded
+            , CenteredIcons
             )
         )
 import Button.Basic.View as Basic
@@ -15,6 +16,7 @@ import Button.BasicPreviousNext.View as BasicPreviousNext
 import Button.BasicRoundedExtraSmall.View as BasicRoundedExtraSmall
 import Button.BasicRoundedSmall.View as BasicRoundedSmall
 import Button.BasicRounded.View as BasicRounded
+import Button.CenteredIcons.View as CenteredIcons
 import Html exposing (Html)
 
 
@@ -35,3 +37,6 @@ view route =
 
         BasicRounded ->
             BasicRounded.view
+
+        CenteredIcons ->
+            CenteredIcons.view

@@ -10,6 +10,7 @@ type Route
     | BasicRoundedExtraSmall
     | BasicRoundedSmall
     | BasicRounded
+    | CenteredIcons
 
 
 matchers : Parser (Route -> a) a
@@ -18,6 +19,7 @@ matchers =
     , BasicPreviousNext
     , BasicRoundedSmall
     , BasicRounded
+    , CenteredIcons
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
