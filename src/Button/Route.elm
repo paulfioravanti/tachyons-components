@@ -5,7 +5,8 @@ import Utils
 
 
 type Route
-    = BasicPreviousNext
+    = Basic
+    | BasicPreviousNext
     | BasicRoundedExtraSmall
     | BasicRoundedSmall
     | BasicRounded
@@ -13,7 +14,8 @@ type Route
 
 matchers : Parser (Route -> a) a
 matchers =
-    [ BasicPreviousNext
+    [ Basic
+    , BasicPreviousNext
     , BasicRoundedSmall
     , BasicRounded
     ]

@@ -34,6 +34,11 @@ view changeLocationMsg =
                     "Basic Rounded"
                     changeLocationMsg
                     (Buttons Button.basicRoundedRoute)
+                , Utils.component
+                    "buttons/basic/"
+                    "Basic"
+                    changeLocationMsg
+                    (Buttons Button.basicRoute)
                 ]
             ]
         ]

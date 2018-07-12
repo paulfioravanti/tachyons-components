@@ -3,12 +3,14 @@ module Button.View exposing (view)
 import Button.Route
     exposing
         ( Route
-            ( BasicPreviousNext
+            ( Basic
+            , BasicPreviousNext
             , BasicRoundedExtraSmall
             , BasicRoundedSmall
             , BasicRounded
             )
         )
+import Button.Basic.View as Basic
 import Button.BasicPreviousNext.View as BasicPreviousNext
 import Button.BasicRoundedExtraSmall.View as BasicRoundedExtraSmall
 import Button.BasicRoundedSmall.View as BasicRoundedSmall
@@ -19,6 +21,9 @@ import Html exposing (Html)
 view : Route -> Html msg
 view route =
     case route of
+        Basic ->
+            Basic.view
+
         BasicPreviousNext ->
             BasicPreviousNext.view
 

@@ -3,7 +3,8 @@ module Button.Styles exposing (bodyClasses, sectionContentLinkImageFormatting)
 import Button.Route
     exposing
         ( Route
-            ( BasicPreviousNext
+            ( Basic
+            , BasicPreviousNext
             , BasicRoundedExtraSmall
             , BasicRoundedSmall
             , BasicRounded
@@ -33,6 +34,9 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
+                Basic ->
+                    []
+
                 BasicPreviousNext ->
                     [ "contain" ]
 

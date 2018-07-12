@@ -5,6 +5,7 @@ module Button
         , basicRoundedExtraSmallRoute
         , basicRoundedRoute
         , basicRoundedSmallRoute
+        , basicRoute
         , bodyClasses
         , matchers
         , sectionContentLinkImageFormatting
@@ -40,6 +41,11 @@ basicRoundedRoute =
 basicRoundedSmallRoute : Route
 basicRoundedSmallRoute =
     Route.BasicRoundedSmall
+
+
+basicRoute : Route
+basicRoute =
+    Route.Basic
 
 
 bodyClasses : Route -> List String
