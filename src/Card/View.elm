@@ -10,6 +10,7 @@ import Card.Route
             , ProductCard
             , ProfileCard
             , ProfileCardTitleSubtitle
+            , SuggestedProfile
             )
         )
 import Card.AlbumCentered.View as AlbumCentered
@@ -19,6 +20,7 @@ import Card.NewsCard.View as NewsCard
 import Card.ProductCard.View as ProductCard
 import Card.ProfileCard.View as ProfileCard
 import Card.ProfileCardTitleSubtitle.View as ProfileCardTitleSubtitle
+import Card.SuggestedProfile.View as SuggestedProfile
 import Html exposing (Html)
 
 
@@ -45,3 +47,6 @@ view route =
 
         ProfileCard ->
             ProfileCard.view
+
+        SuggestedProfile ->
+            SuggestedProfile.view

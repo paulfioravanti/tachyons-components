@@ -12,6 +12,7 @@ type Route
     | ProductCard
     | ProfileCard
     | ProfileCardTitleSubtitle
+    | SuggestedProfile
 
 
 matchers : Parser (Route -> a) a
@@ -23,6 +24,7 @@ matchers =
     , ProductCard
     , ProfileCard
     , ProfileCardTitleSubtitle
+    , SuggestedProfile
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
