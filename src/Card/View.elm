@@ -8,6 +8,7 @@ import Card.Route
             , BasicTextCard
             , NewsCard
             , ProductCard
+            , ProfileCardTitleSubtitle
             )
         )
 import Card.AlbumCentered.View as AlbumCentered
@@ -15,6 +16,7 @@ import Card.AlbumLeft.View as AlbumLeft
 import Card.BasicTextCard.View as BasicTextCard
 import Card.NewsCard.View as NewsCard
 import Card.ProductCard.View as ProductCard
+import Card.ProfileCardTitleSubtitle.View as ProfileCardTitleSubtitle
 import Html exposing (Html)
 
 
@@ -35,3 +37,6 @@ view route =
 
         ProductCard ->
             ProductCard.view
+
+        ProfileCardTitleSubtitle ->
+            ProfileCardTitleSubtitle.view

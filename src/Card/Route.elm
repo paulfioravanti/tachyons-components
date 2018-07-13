@@ -10,6 +10,7 @@ type Route
     | BasicTextCard
     | NewsCard
     | ProductCard
+    | ProfileCardTitleSubtitle
 
 
 matchers : Parser (Route -> a) a
@@ -19,6 +20,7 @@ matchers =
     , BasicTextCard
     , NewsCard
     , ProductCard
+    , ProfileCardTitleSubtitle
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

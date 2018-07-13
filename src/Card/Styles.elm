@@ -8,6 +8,7 @@ import Card.Route
             , BasicTextCard
             , NewsCard
             , ProductCard
+            , ProfileCardTitleSubtitle
             )
         )
 
@@ -17,6 +18,12 @@ bodyClasses route =
     let
         defaultFormatting =
             [ "bg-white"
+            , "sans-serif"
+            , "w-100"
+            ]
+
+        nearWhiteBackground =
+            [ "bg-near-white"
             , "sans-serif"
             , "w-100"
             ]
@@ -32,13 +39,13 @@ bodyClasses route =
                 defaultFormatting
 
             NewsCard ->
-                [ "bg-near-white"
-                , "sans-serif"
-                , "w-100"
-                ]
+                nearWhiteBackground
 
             ProductCard ->
                 defaultFormatting
+
+            ProfileCardTitleSubtitle ->
+                nearWhiteBackground
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -62,6 +69,9 @@ sectionContentLinkImageFormatting route =
                     []
 
                 ProductCard ->
+                    []
+
+                ProfileCardTitleSubtitle ->
                     []
     in
         defaultFormatting :: componentSpecificFormatting

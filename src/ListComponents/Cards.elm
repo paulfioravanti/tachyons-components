@@ -39,6 +39,11 @@ view changeLocationMsg =
                     "Product Card"
                     changeLocationMsg
                     (Cards Card.productCardRoute)
+                , Utils.component
+                    "cards/profile-card-title-subtitle/"
+                    "Profile Card Title Subtitle"
+                    changeLocationMsg
+                    (Cards Card.profileCardTitleSubtitleRoute)
                 ]
             ]
         ]
