@@ -7,6 +7,7 @@ import Card.Route
             , AlbumLeft
             , BasicTextCard
             , NewsCard
+            , ProductCard
             )
         )
 
@@ -36,6 +37,9 @@ bodyClasses route =
                 , "w-100"
                 ]
 
+            ProductCard ->
+                defaultFormatting
+
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
@@ -55,6 +59,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 NewsCard ->
+                    []
+
+                ProductCard ->
                     []
     in
         defaultFormatting :: componentSpecificFormatting

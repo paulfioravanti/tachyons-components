@@ -34,6 +34,11 @@ view changeLocationMsg =
                     "News Card"
                     changeLocationMsg
                     (Cards Card.newsCardRoute)
+                , Utils.component
+                    "cards/product-card/"
+                    "Product Card"
+                    changeLocationMsg
+                    (Cards Card.productCardRoute)
                 ]
             ]
         ]

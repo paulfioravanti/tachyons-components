@@ -7,6 +7,7 @@ module Card
         , bodyClasses
         , matchers
         , newsCardRoute
+        , productCardRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -50,6 +51,11 @@ matchers =
 newsCardRoute : Route
 newsCardRoute =
     Route.NewsCard
+
+
+productCardRoute : Route
+productCardRoute =
+    Route.ProductCard
 
 
 sectionContentLinkImageFormatting : Route -> List String
