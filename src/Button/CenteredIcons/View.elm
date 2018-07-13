@@ -3,7 +3,7 @@ module Button.CenteredIcons.View exposing (view)
 import Button.CenteredIcons.Styles as Styles
 import SvgLogo
 import Html exposing (Html, a, div, footer, span, text)
-import Html.Attributes exposing (attribute, class, href, style, title)
+import Html.Attributes exposing (attribute, class, href, title)
 import Svg exposing (path, svg)
 import Svg.Attributes
     exposing

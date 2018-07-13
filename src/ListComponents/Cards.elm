@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Album Left"
                     changeLocationMsg
                     (Cards Card.albumLeftRoute)
+                , Utils.component
+                    "cards/basic-text-card/"
+                    "Basic Text Card"
+                    changeLocationMsg
+                    (Cards Card.basicTextCardRoute)
                 ]
             ]
         ]

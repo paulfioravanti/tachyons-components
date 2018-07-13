@@ -3,6 +3,7 @@ module Card
         ( Route
         , albumCenteredRoute
         , albumLeftRoute
+        , basicTextCardRoute
         , bodyClasses
         , matchers
         , sectionContentLinkImageFormatting
@@ -28,6 +29,11 @@ albumCenteredRoute =
 albumLeftRoute : Route
 albumLeftRoute =
     Route.AlbumLeft
+
+
+basicTextCardRoute : Route
+basicTextCardRoute =
+    Route.BasicTextCard
 
 
 bodyClasses : Route -> List String

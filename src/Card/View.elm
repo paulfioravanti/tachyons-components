@@ -5,10 +5,12 @@ import Card.Route
         ( Route
             ( AlbumCentered
             , AlbumLeft
+            , BasicTextCard
             )
         )
 import Card.AlbumCentered.View as AlbumCentered
 import Card.AlbumLeft.View as AlbumLeft
+import Card.BasicTextCard.View as BasicTextCard
 import Html exposing (Html)
 
 
@@ -20,3 +22,6 @@ view route =
 
         AlbumLeft ->
             AlbumLeft.view
+
+        BasicTextCard ->
+            BasicTextCard.view

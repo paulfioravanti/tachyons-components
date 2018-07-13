@@ -5,6 +5,7 @@ import Card.Route
         ( Route
             ( AlbumCentered
             , AlbumLeft
+            , BasicTextCard
             )
         )
 
@@ -25,6 +26,9 @@ bodyClasses route =
             AlbumLeft ->
                 "pt5" :: defaultFormatting
 
+            BasicTextCard ->
+                defaultFormatting
+
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
@@ -39,5 +43,8 @@ sectionContentLinkImageFormatting route =
 
                 AlbumLeft ->
                     []
+
+                BasicTextCard ->
+                    [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting
