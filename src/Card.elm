@@ -12,6 +12,7 @@ module Card
         , profileCardTitleSubtitleRoute
         , sectionContentLinkImageFormatting
         , suggestedProfileRoute
+        , textCardRoute
         , view
         )
 
@@ -79,6 +80,11 @@ sectionContentLinkImageFormatting route =
 suggestedProfileRoute : Route
 suggestedProfileRoute =
     Route.SuggestedProfile
+
+
+textCardRoute : Route
+textCardRoute =
+    Route.TextCard
 
 
 view : Route -> Html msg

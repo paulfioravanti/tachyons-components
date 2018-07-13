@@ -54,6 +54,11 @@ view changeLocationMsg =
                     "Suggested Profile"
                     changeLocationMsg
                     (Cards Card.suggestedProfileRoute)
+                , Utils.component
+                    "cards/text-card/"
+                    "Text Card"
+                    changeLocationMsg
+                    (Cards Card.textCardRoute)
                 ]
             ]
         ]

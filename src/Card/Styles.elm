@@ -11,6 +11,7 @@ import Card.Route
             , ProfileCard
             , ProfileCardTitleSubtitle
             , SuggestedProfile
+            , TextCard
             )
         )
 
@@ -55,6 +56,9 @@ bodyClasses route =
             SuggestedProfile ->
                 defaultFormatting
 
+            TextCard ->
+                defaultFormatting
+
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
@@ -87,5 +91,8 @@ sectionContentLinkImageFormatting route =
 
                 SuggestedProfile ->
                     []
+
+                TextCard ->
+                    [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting

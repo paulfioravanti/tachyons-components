@@ -11,6 +11,7 @@ import Card.Route
             , ProfileCard
             , ProfileCardTitleSubtitle
             , SuggestedProfile
+            , TextCard
             )
         )
 import Card.AlbumCentered.View as AlbumCentered
@@ -21,6 +22,7 @@ import Card.ProductCard.View as ProductCard
 import Card.ProfileCard.View as ProfileCard
 import Card.ProfileCardTitleSubtitle.View as ProfileCardTitleSubtitle
 import Card.SuggestedProfile.View as SuggestedProfile
+import Card.TextCard.View as TextCard
 import Html exposing (Html)
 
 
@@ -50,3 +52,6 @@ view route =
 
         SuggestedProfile ->
             SuggestedProfile.view
+
+        TextCard ->
+            TextCard.view
