@@ -1,6 +1,12 @@
 module Card.Styles exposing (bodyClasses, sectionContentLinkImageFormatting)
 
-import Card.Route exposing (Route(AlbumCentered))
+import Card.Route
+    exposing
+        ( Route
+            ( AlbumCentered
+            , AlbumLeft
+            )
+        )
 
 
 bodyClasses : Route -> List String
@@ -16,6 +22,9 @@ bodyClasses route =
             AlbumCentered ->
                 "pt5" :: defaultFormatting
 
+            AlbumLeft ->
+                "pt5" :: defaultFormatting
+
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
@@ -26,6 +35,9 @@ sectionContentLinkImageFormatting route =
         componentSpecificFormatting =
             case route of
                 AlbumCentered ->
+                    []
+
+                AlbumLeft ->
                     []
     in
         defaultFormatting :: componentSpecificFormatting

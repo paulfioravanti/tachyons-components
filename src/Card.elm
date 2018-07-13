@@ -2,6 +2,7 @@ module Card
     exposing
         ( Route
         , albumCenteredRoute
+        , albumLeftRoute
         , bodyClasses
         , matchers
         , sectionContentLinkImageFormatting
@@ -22,6 +23,11 @@ type alias Route =
 albumCenteredRoute : Route
 albumCenteredRoute =
     Route.AlbumCentered
+
+
+albumLeftRoute : Route
+albumLeftRoute =
+    Route.AlbumLeft
 
 
 bodyClasses : Route -> List String

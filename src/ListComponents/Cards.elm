@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Album Centered"
                     changeLocationMsg
                     (Cards Card.albumCenteredRoute)
+                , Utils.component
+                    "cards/album-left/"
+                    "Album Left"
+                    changeLocationMsg
+                    (Cards Card.albumLeftRoute)
                 ]
             ]
         ]

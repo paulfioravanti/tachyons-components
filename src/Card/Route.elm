@@ -6,11 +6,13 @@ import Utils
 
 type Route
     = AlbumCentered
+    | AlbumLeft
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ AlbumCentered
+    , AlbumLeft
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
