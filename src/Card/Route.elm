@@ -10,6 +10,7 @@ type Route
     | BasicTextCard
     | NewsCard
     | ProductCard
+    | ProfileCard
     | ProfileCardTitleSubtitle
 
 
@@ -20,6 +21,7 @@ matchers =
     , BasicTextCard
     , NewsCard
     , ProductCard
+    , ProfileCard
     , ProfileCardTitleSubtitle
     ]
         |> List.map Utils.routeFor

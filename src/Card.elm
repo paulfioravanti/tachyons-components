@@ -8,6 +8,7 @@ module Card
         , matchers
         , newsCardRoute
         , productCardRoute
+        , profileCardRoute
         , profileCardTitleSubtitleRoute
         , sectionContentLinkImageFormatting
         , view
@@ -57,6 +58,11 @@ newsCardRoute =
 productCardRoute : Route
 productCardRoute =
     Route.ProductCard
+
+
+profileCardRoute : Route
+profileCardRoute =
+    Route.ProfileCard
 
 
 profileCardTitleSubtitleRoute : Route

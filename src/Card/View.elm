@@ -8,6 +8,7 @@ import Card.Route
             , BasicTextCard
             , NewsCard
             , ProductCard
+            , ProfileCard
             , ProfileCardTitleSubtitle
             )
         )
@@ -16,6 +17,7 @@ import Card.AlbumLeft.View as AlbumLeft
 import Card.BasicTextCard.View as BasicTextCard
 import Card.NewsCard.View as NewsCard
 import Card.ProductCard.View as ProductCard
+import Card.ProfileCard.View as ProfileCard
 import Card.ProfileCardTitleSubtitle.View as ProfileCardTitleSubtitle
 import Html exposing (Html)
 
@@ -40,3 +42,6 @@ view route =
 
         ProfileCardTitleSubtitle ->
             ProfileCardTitleSubtitle.view
+
+        ProfileCard ->
+            ProfileCard.view

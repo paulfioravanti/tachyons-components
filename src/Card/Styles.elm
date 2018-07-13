@@ -8,6 +8,7 @@ import Card.Route
             , BasicTextCard
             , NewsCard
             , ProductCard
+            , ProfileCard
             , ProfileCardTitleSubtitle
             )
         )
@@ -44,6 +45,9 @@ bodyClasses route =
             ProductCard ->
                 defaultFormatting
 
+            ProfileCard ->
+                nearWhiteBackground
+
             ProfileCardTitleSubtitle ->
                 nearWhiteBackground
 
@@ -69,6 +73,9 @@ sectionContentLinkImageFormatting route =
                     []
 
                 ProductCard ->
+                    []
+
+                ProfileCard ->
                     []
 
                 ProfileCardTitleSubtitle ->

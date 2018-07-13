@@ -44,6 +44,11 @@ view changeLocationMsg =
                     "Profile Card Title Subtitle"
                     changeLocationMsg
                     (Cards Card.profileCardTitleSubtitleRoute)
+                , Utils.component
+                    "cards/profile-card/"
+                    "Profile Card"
+                    changeLocationMsg
+                    (Cards Card.profileCardRoute)
                 ]
             ]
         ]
