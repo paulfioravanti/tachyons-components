@@ -1,7 +1,7 @@
 module Card.NewsCard.View exposing (view)
 
 import Card.NewsCard.Styles as Styles
-import Html exposing (Html, a, article, div, h1, img, p, small, text, time)
+import Html exposing (Html, a, article, div, h1, img, small, text, time)
 import Html.Attributes exposing (alt, attribute, class, href, src)
 
 

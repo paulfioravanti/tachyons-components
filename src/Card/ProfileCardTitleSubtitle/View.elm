@@ -1,8 +1,8 @@
 module Card.ProfileCardTitleSubtitle.View exposing (view)
 
 import Card.ProfileCardTitleSubtitle.Styles as Styles
-import Html exposing (Html, a, article, div, h1, h2, img, p, small, text, time)
-import Html.Attributes exposing (alt, attribute, class, href, src)
+import Html exposing (Html, article, div, h1, h2, img, text)
+import Html.Attributes exposing (alt, attribute, class, src)
 
 
 view : Html msg

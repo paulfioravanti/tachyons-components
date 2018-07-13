@@ -1,8 +1,8 @@
 module Card.ProfileCard.View exposing (view)
 
 import Card.ProfileCard.Styles as Styles
-import Html exposing (Html, a, article, div, h1, h2, hr, img, p, small, text, time)
-import Html.Attributes exposing (alt, attribute, class, href, src)
+import Html exposing (Html, article, div, h1, hr, img, p, text)
+import Html.Attributes exposing (alt, attribute, class, src)
 
 
 view : Html msg
