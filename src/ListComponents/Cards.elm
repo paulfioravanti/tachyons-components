@@ -29,6 +29,11 @@ view changeLocationMsg =
                     "Basic Text Card"
                     changeLocationMsg
                     (Cards Card.basicTextCardRoute)
+                , Utils.component
+                    "cards/news-card/"
+                    "News Card"
+                    changeLocationMsg
+                    (Cards Card.newsCardRoute)
                 ]
             ]
         ]

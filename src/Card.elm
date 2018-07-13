@@ -6,6 +6,7 @@ module Card
         , basicTextCardRoute
         , bodyClasses
         , matchers
+        , newsCardRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -44,6 +45,11 @@ bodyClasses route =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+newsCardRoute : Route
+newsCardRoute =
+    Route.NewsCard
 
 
 sectionContentLinkImageFormatting : Route -> List String
