@@ -1,7 +1,7 @@
 module Card.SuggestedProfile.View exposing (view)
 
 import Card.SuggestedProfile.Styles as Styles
-import Html exposing (Html, a, article, div, h1, h2, img, p, section, text)
+import Html exposing (Html, a, article, div, img, p, section, text)
 import Html.Attributes exposing (alt, attribute, class, href, src)
 
 
