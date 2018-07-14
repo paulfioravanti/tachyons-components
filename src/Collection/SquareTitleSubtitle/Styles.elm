@@ -12,64 +12,64 @@ module Collection.SquareTitleSubtitle.Styles
 
 article : String
 article =
-    [ "fl"
-    , "pa2-ns"
-    , "w-100 w-50-m w-25-ns"
-    ]
-        |> String.join " "
+    """
+    fl
+    pa2-ns
+    w-100 w-50-m w-25-ns
+    """
 
 
 image : String
 image =
-    [ "aspect-ratio--object"
-    , "bg-center"
-    , "cover"
-    , "db"
-    ]
-        |> String.join " "
+    """
+    aspect-ratio--object
+    bg-center
+    cover
+    db
+    """
 
 
 imageWrapper : String
 imageWrapper =
-    [ "aspect-ratio"
-    , "aspect-ratio--1x1"
-    ]
-        |> String.join " "
+    """
+    aspect-ratio
+    aspect-ratio--1x1
+    """
 
 
 link : String
 link =
-    [ "db"
-    , "link"
-    , "pb3"
-    , "ph2 ph0-ns"
-    ]
-        |> String.join " "
+    """
+    db
+    link
+    pb3
+    ph2 ph0-ns
+    """
 
 
 section : String
 section =
-    [ "cf"
-    , "pa2-ns"
-    , "w-100"
-    ]
-        |> String.join " "
+    """
+    cf
+    pa2-ns
+    w-100
+    """
 
 
 title : String
 title =
-    [ "black-90"
-    , "f5 f4-ns"
-    , "mb0"
-    ]
-        |> String.join " "
+    """
+    black-90
+    f5 f4-ns
+    mb0
+    """
 
 
 subtitle : String
 subtitle =
-    [ "black-60"
-    , "f5 f6-ns"
-    , "fw4"
-    , "mt2"
-    ]
-        |> String.join " "
+    """
+    black-60
+    f5 f6-ns
+    fw4
+    mt2
+    """
