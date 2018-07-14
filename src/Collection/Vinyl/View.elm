@@ -2,7 +2,7 @@ module Collection.Vinyl.View exposing (view)
 
 import Collection.Vinyl.Styles as Styles
 import Collection.Vinyl.Album as Album exposing (Album)
-import Html exposing (Html, a, article, div, h3, img, section, span, text)
+import Html exposing (Html, a, article, div, span)
 import Html.Attributes exposing (attribute, class, href, style)
 
 

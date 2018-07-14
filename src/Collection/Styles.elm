@@ -7,11 +7,8 @@ module Collection.Styles
 import Collection.Route
     exposing
         ( Route
-            ( Albums
-            , Movies
-            , Posters
+            ( Posters
             , PostersDim
-            , SquareTitleSubtitle
             )
         )
 
