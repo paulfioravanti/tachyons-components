@@ -5,10 +5,12 @@ import Collection.Route
         ( Route
             ( Albums
             , Movies
+            , PostersDim
             )
         )
 import Collection.Albums.View as Albums
 import Collection.Movies.View as Movies
+import Collection.PostersDim.View as PostersDim
 import Html exposing (Html)
 
 
@@ -20,3 +22,6 @@ view route =
 
         Movies ->
             Movies.view
+
+        PostersDim ->
+            PostersDim.view

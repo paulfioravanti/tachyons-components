@@ -9,6 +9,7 @@ import Collection.Route
         ( Route
             ( Albums
             , Movies
+            , PostersDim
             )
         )
 
@@ -23,6 +24,12 @@ bodyClasses route =
             ]
     in
         case route of
+            PostersDim ->
+                [ "bg-black"
+                , "sans-serif"
+                , "w-100"
+                ]
+
             _ ->
                 defaultFormatting
 
@@ -39,6 +46,9 @@ sectionContentLinkImageFormatting route =
                     [ "cover" ]
 
                 Movies ->
+                    [ "cover" ]
+
+                PostersDim ->
                     [ "cover" ]
     in
         defaultFormatting :: componentSpecificFormatting
