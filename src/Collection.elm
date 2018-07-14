@@ -6,6 +6,7 @@ module Collection
         , matchers
         , moviesRoute
         , postersDimRoute
+        , postersRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -44,6 +45,11 @@ moviesRoute =
 postersDimRoute : Route
 postersDimRoute =
     Route.PostersDim
+
+
+postersRoute : Route
+postersRoute =
+    Route.Posters
 
 
 sectionContentLinkImageFormatting : Route -> List String

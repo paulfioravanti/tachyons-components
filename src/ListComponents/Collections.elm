@@ -29,6 +29,11 @@ view changeLocationMsg =
                     "Posters Dim"
                     changeLocationMsg
                     (Collections Collection.postersDimRoute)
+                , Utils.component
+                    "collections/posters/"
+                    "Posters"
+                    changeLocationMsg
+                    (Collections Collection.postersRoute)
                 ]
             ]
         ]

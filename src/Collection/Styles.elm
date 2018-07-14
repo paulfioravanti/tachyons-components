@@ -9,6 +9,7 @@ import Collection.Route
         ( Route
             ( Albums
             , Movies
+            , Posters
             , PostersDim
             )
         )
@@ -24,6 +25,12 @@ bodyClasses route =
             ]
     in
         case route of
+            Posters ->
+                [ "bg-black-10"
+                , "sans-serif"
+                , "w-100"
+                ]
+
             PostersDim ->
                 [ "bg-black"
                 , "sans-serif"
@@ -46,6 +53,9 @@ sectionContentLinkImageFormatting route =
                     [ "cover" ]
 
                 Movies ->
+                    [ "cover" ]
+
+                Posters ->
                     [ "cover" ]
 
                 PostersDim ->
