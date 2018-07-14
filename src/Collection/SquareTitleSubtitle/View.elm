@@ -2,8 +2,8 @@ module Collection.SquareTitleSubtitle.View exposing (view)
 
 import Collection.SquareTitleSubtitle.Styles as Styles
 import Collection.SquareTitleSubtitle.Image as Image
-import Html exposing (Html, a, article, div, h3, main_, img, section, text)
-import Html.Attributes exposing (attribute, class, href, src, style)
+import Html exposing (Html, a, article, div, h3, img, section, text)
+import Html.Attributes exposing (attribute, class, href, style)
 
 
 view : Html msg
