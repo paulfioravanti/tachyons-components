@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Albums"
                     changeLocationMsg
                     (Collections Collection.albumsRoute)
+                , Utils.component
+                    "collections/movies/"
+                    "Movies"
+                    changeLocationMsg
+                    (Collections Collection.moviesRoute)
                 ]
             ]
         ]

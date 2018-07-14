@@ -4,7 +4,13 @@ module Collection.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Collection.Route exposing (Route(Albums))
+import Collection.Route
+    exposing
+        ( Route
+            ( Albums
+            , Movies
+            )
+        )
 
 
 bodyClasses : Route -> List String
@@ -30,6 +36,9 @@ sectionContentLinkImageFormatting route =
         componentSpecificFormatting =
             case route of
                 Albums ->
+                    [ "cover" ]
+
+                Movies ->
                     [ "cover" ]
     in
         defaultFormatting :: componentSpecificFormatting

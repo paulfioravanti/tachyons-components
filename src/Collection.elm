@@ -4,6 +4,7 @@ module Collection
         , albumsRoute
         , bodyClasses
         , matchers
+        , moviesRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -32,6 +33,11 @@ bodyClasses route =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+moviesRoute : Route
+moviesRoute =
+    Route.Movies
 
 
 sectionContentLinkImageFormatting : Route -> List String
