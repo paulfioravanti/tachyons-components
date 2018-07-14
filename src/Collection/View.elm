@@ -8,6 +8,7 @@ import Collection.Route
             , Posters
             , PostersDim
             , SquareTitleSubtitle
+            , Vinyl
             )
         )
 import Collection.Albums.View as Albums
@@ -15,6 +16,7 @@ import Collection.Movies.View as Movies
 import Collection.Posters.View as Posters
 import Collection.PostersDim.View as PostersDim
 import Collection.SquareTitleSubtitle.View as SquareTitleSubtitle
+import Collection.Vinyl.View as Vinyl
 import Html exposing (Html)
 
 
@@ -35,3 +37,6 @@ view route =
 
         SquareTitleSubtitle ->
             SquareTitleSubtitle.view
+
+        Vinyl ->
+            Vinyl.view

@@ -10,6 +10,7 @@ module Collection
         , sectionContentLinkImageFormatting
         , squareTitleSubtitleRoute
         , view
+        , vinylRoute
         )
 
 import Collection.Route as Route exposing (Route)
@@ -66,3 +67,8 @@ squareTitleSubtitleRoute =
 view : Route -> Html msg
 view route =
     View.view route
+
+
+vinylRoute : Route
+vinylRoute =
+    Route.Vinyl

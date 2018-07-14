@@ -39,6 +39,11 @@ view changeLocationMsg =
                     "Square Title Subtitle"
                     changeLocationMsg
                     (Collections Collection.squareTitleSubtitleRoute)
+                , Utils.component
+                    "collections/vinyl/"
+                    "Vinyl"
+                    changeLocationMsg
+                    (Collections Collection.vinylRoute)
                 ]
             ]
         ]

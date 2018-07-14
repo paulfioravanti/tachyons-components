@@ -50,19 +50,7 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                Albums ->
-                    [ "cover" ]
-
-                Movies ->
-                    [ "cover" ]
-
-                Posters ->
-                    [ "cover" ]
-
-                PostersDim ->
-                    [ "cover" ]
-
-                SquareTitleSubtitle ->
+                _ ->
                     [ "cover" ]
     in
         defaultFormatting :: componentSpecificFormatting
