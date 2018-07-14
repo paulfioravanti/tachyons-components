@@ -34,6 +34,11 @@ view changeLocationMsg =
                     "Posters"
                     changeLocationMsg
                     (Collections Collection.postersRoute)
+                , Utils.component
+                    "collections/square-title-subtitle/"
+                    "Square Title Subtitle"
+                    changeLocationMsg
+                    (Collections Collection.squareTitleSubtitleRoute)
                 ]
             ]
         ]

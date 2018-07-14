@@ -11,6 +11,7 @@ import Collection.Route
             , Movies
             , Posters
             , PostersDim
+            , SquareTitleSubtitle
             )
         )
 
@@ -59,6 +60,9 @@ sectionContentLinkImageFormatting route =
                     [ "cover" ]
 
                 PostersDim ->
+                    [ "cover" ]
+
+                SquareTitleSubtitle ->
                     [ "cover" ]
     in
         defaultFormatting :: componentSpecificFormatting

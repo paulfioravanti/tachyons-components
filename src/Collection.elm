@@ -8,6 +8,7 @@ module Collection
         , postersDimRoute
         , postersRoute
         , sectionContentLinkImageFormatting
+        , squareTitleSubtitleRoute
         , view
         )
 
@@ -55,6 +56,11 @@ postersRoute =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+squareTitleSubtitleRoute : Route
+squareTitleSubtitleRoute =
+    Route.SquareTitleSubtitle
 
 
 view : Route -> Html msg

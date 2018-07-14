@@ -7,12 +7,14 @@ import Collection.Route
             , Movies
             , Posters
             , PostersDim
+            , SquareTitleSubtitle
             )
         )
 import Collection.Albums.View as Albums
 import Collection.Movies.View as Movies
 import Collection.Posters.View as Posters
 import Collection.PostersDim.View as PostersDim
+import Collection.SquareTitleSubtitle.View as SquareTitleSubtitle
 import Html exposing (Html)
 
 
@@ -30,3 +32,6 @@ view route =
 
         PostersDim ->
             PostersDim.view
+
+        SquareTitleSubtitle ->
+            SquareTitleSubtitle.view

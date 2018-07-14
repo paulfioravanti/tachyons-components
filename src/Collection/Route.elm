@@ -9,6 +9,7 @@ type Route
     | Movies
     | Posters
     | PostersDim
+    | SquareTitleSubtitle
 
 
 matchers : Parser (Route -> a) a
@@ -17,6 +18,7 @@ matchers =
     , Movies
     , Posters
     , PostersDim
+    , SquareTitleSubtitle
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
