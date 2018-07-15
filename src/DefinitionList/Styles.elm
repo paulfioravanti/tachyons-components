@@ -4,7 +4,7 @@ module DefinitionList.Styles
         , sectionContentLinkImageFormatting
         )
 
-import DefinitionList.Route exposing (Route(Inline, Simple))
+import DefinitionList.Route exposing (Route)
 
 
 bodyClasses : Route -> List String

@@ -1,7 +1,7 @@
 module DefinitionList.Simple.View exposing (view)
 
 import DefinitionList.Simple.Styles as Styles
-import Html exposing (Html, div, dd, dl, dt, h4, text)
+import Html exposing (Html, div, dd, dl, dt, text)
 import Html.Attributes exposing (attribute, class)
 
 
