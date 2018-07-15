@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Centered Icons Hover Glow"
                     changeLocationMsg
                     (Footers Footer.centeredIconsHoverGlowRoute)
+                , Utils.component
+                    "footers/inline-text/"
+                    "Inline Text"
+                    changeLocationMsg
+                    (Footers Footer.inlineTextRoute)
                 ]
             ]
         ]

@@ -3,6 +3,7 @@ module Footer
         ( Route
         , bodyClasses
         , centeredIconsHoverGlowRoute
+        , inlineTextRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -27,6 +28,11 @@ bodyClasses route =
 centeredIconsHoverGlowRoute : Route
 centeredIconsHoverGlowRoute =
     Route.CenteredIconsHoverGlow
+
+
+inlineTextRoute : Route
+inlineTextRoute =
+    Route.InlineText
 
 
 matchers : Parser (Route -> a) a

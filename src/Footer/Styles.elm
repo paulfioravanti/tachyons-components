@@ -4,7 +4,13 @@ module Footer.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Footer.Route exposing (Route(CenteredIconsHoverGlow))
+import Footer.Route
+    exposing
+        ( Route
+            ( CenteredIconsHoverGlow
+            , InlineText
+            )
+        )
 
 
 bodyClasses : Route -> List String
@@ -30,6 +36,9 @@ sectionContentLinkImageFormatting route =
         componentSpecificFormatting =
             case route of
                 CenteredIconsHoverGlow ->
+                    [ "cover" ]
+
+                InlineText ->
                     [ "cover" ]
     in
         defaultFormatting :: componentSpecificFormatting
