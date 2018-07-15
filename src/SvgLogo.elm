@@ -10,7 +10,7 @@ module SvgLogo
         , linkedIn
         , medium
         , slackLogo
-        , slackMiddleSquare
+        , slackLogoMiddleSquare
         , soundCloud
         , stackOverflow
         , tumblr
