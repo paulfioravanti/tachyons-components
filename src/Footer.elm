@@ -6,6 +6,7 @@ module Footer
         , inlineTextRoute
         , matchers
         , sectionContentLinkImageFormatting
+        , simpleLargeTypeRoute
         , view
         )
 
@@ -43,6 +44,11 @@ matchers =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+simpleLargeTypeRoute : Route
+simpleLargeTypeRoute =
+    Route.SimpleLargeType
 
 
 view : Route -> Html msg

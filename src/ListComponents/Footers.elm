@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Inline Text"
                     changeLocationMsg
                     (Footers Footer.inlineTextRoute)
+                , Utils.component
+                    "footers/simple-large-type/"
+                    "Simple Large Type"
+                    changeLocationMsg
+                    (Footers Footer.simpleLargeTypeRoute)
                 ]
             ]
         ]

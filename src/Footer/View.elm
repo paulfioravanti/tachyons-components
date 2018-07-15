@@ -5,10 +5,12 @@ import Footer.Route
         ( Route
             ( CenteredIconsHoverGlow
             , InlineText
+            , SimpleLargeType
             )
         )
 import Footer.CenteredIconsHoverGlow.View as CenteredIconsHoverGlow
 import Footer.InlineText.View as InlineText
+import Footer.SimpleLargeType.View as SimpleLargeType
 import Html exposing (Html)
 
 
@@ -20,3 +22,6 @@ view route =
 
         InlineText ->
             InlineText.view
+
+        SimpleLargeType ->
+            SimpleLargeType.view
