@@ -7,6 +7,7 @@ module Footer
         , matchers
         , sectionContentLinkImageFormatting
         , simpleLargeTypeRoute
+        , smallPrintRoute
         , view
         )
 
@@ -49,6 +50,11 @@ sectionContentLinkImageFormatting route =
 simpleLargeTypeRoute : Route
 simpleLargeTypeRoute =
     Route.SimpleLargeType
+
+
+smallPrintRoute : Route
+smallPrintRoute =
+    Route.SmallPrint
 
 
 view : Route -> Html msg

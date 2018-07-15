@@ -6,11 +6,13 @@ import Footer.Route
             ( CenteredIconsHoverGlow
             , InlineText
             , SimpleLargeType
+            , SmallPrint
             )
         )
 import Footer.CenteredIconsHoverGlow.View as CenteredIconsHoverGlow
 import Footer.InlineText.View as InlineText
 import Footer.SimpleLargeType.View as SimpleLargeType
+import Footer.SmallPrint.View as SmallPrint
 import Html exposing (Html)
 
 
@@ -25,3 +27,6 @@ view route =
 
         SimpleLargeType ->
             SimpleLargeType.view
+
+        SmallPrint ->
+            SmallPrint.view

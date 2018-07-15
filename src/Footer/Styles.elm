@@ -10,6 +10,7 @@ import Footer.Route
             ( CenteredIconsHoverGlow
             , InlineText
             , SimpleLargeType
+            , SmallPrint
             )
         )
 
@@ -30,25 +31,23 @@ bodyClasses route =
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
-    let
-        defaultFormatting =
-            "bg-center"
+    case route of
+        CenteredIconsHoverGlow ->
+            [ "bg-center"
+            , "cover"
+            ]
 
-        componentSpecificFormatting =
-            case route of
-                CenteredIconsHoverGlow ->
-                    [ "bg-center"
-                    , "cover"
-                    ]
+        InlineText ->
+            [ "bg-center"
+            , "cover"
+            ]
 
-                InlineText ->
-                    [ "bg-center"
-                    , "cover"
-                    ]
+        SimpleLargeType ->
+            [ "bg-left"
+            , "cover"
+            ]
 
-                SimpleLargeType ->
-                    [ "bg-left"
-                    , "cover"
-                    ]
-    in
-        defaultFormatting :: componentSpecificFormatting
+        SmallPrint ->
+            [ "bg-center"
+            , "contain"
+            ]

@@ -29,6 +29,11 @@ view changeLocationMsg =
                     "Simple Large Type"
                     changeLocationMsg
                     (Footers Footer.simpleLargeTypeRoute)
+                , Utils.component
+                    "footers/small-print/"
+                    "Small Print"
+                    changeLocationMsg
+                    (Footers Footer.smallPrintRoute)
                 ]
             ]
         ]
