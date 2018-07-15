@@ -1,9 +1,8 @@
 module Footer.InlineText.View exposing (view)
 
 import Footer.InlineText.Styles as Styles
-import SvgLogo
 import Html exposing (Html, a, div, footer, p, span, text)
-import Html.Attributes exposing (attribute, class, href, style, title)
+import Html.Attributes exposing (attribute, class, href)
 
 
 view : Html msg
