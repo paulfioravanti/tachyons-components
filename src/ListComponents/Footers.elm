@@ -34,6 +34,11 @@ view changeLocationMsg =
                     "Small Print"
                     changeLocationMsg
                     (Footers Footer.smallPrintRoute)
+                , Utils.component
+                    "footers/social-circles/"
+                    "Social Circles"
+                    changeLocationMsg
+                    (Footers Footer.socialCirclesRoute)
                 ]
             ]
         ]

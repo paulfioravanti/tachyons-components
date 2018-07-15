@@ -7,12 +7,14 @@ import Footer.Route
             , InlineText
             , SimpleLargeType
             , SmallPrint
+            , SocialCircles
             )
         )
 import Footer.CenteredIconsHoverGlow.View as CenteredIconsHoverGlow
 import Footer.InlineText.View as InlineText
 import Footer.SimpleLargeType.View as SimpleLargeType
 import Footer.SmallPrint.View as SmallPrint
+import Footer.SocialCircles.View as SocialCircles
 import Html exposing (Html)
 
 
@@ -30,3 +32,6 @@ view route =
 
         SmallPrint ->
             SmallPrint.view
+
+        SocialCircles ->
+            SocialCircles.view

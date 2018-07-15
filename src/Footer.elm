@@ -8,6 +8,7 @@ module Footer
         , sectionContentLinkImageFormatting
         , simpleLargeTypeRoute
         , smallPrintRoute
+        , socialCirclesRoute
         , view
         )
 
@@ -55,6 +56,11 @@ simpleLargeTypeRoute =
 smallPrintRoute : Route
 smallPrintRoute =
     Route.SmallPrint
+
+
+socialCirclesRoute : Route
+socialCirclesRoute =
+    Route.SocialCircles
 
 
 view : Route -> Html msg
