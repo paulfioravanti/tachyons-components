@@ -4,7 +4,7 @@ module DefinitionList.Styles
         , sectionContentLinkImageFormatting
         )
 
-import DefinitionList.Route exposing (Route(Inline))
+import DefinitionList.Route exposing (Route(Inline, Simple))
 
 
 bodyClasses : Route -> List String
@@ -29,7 +29,7 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                Inline ->
+                _ ->
                     []
     in
         defaultFormatting :: componentSpecificFormatting

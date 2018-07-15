@@ -5,6 +5,7 @@ module DefinitionList
         , inlineRoute
         , matchers
         , sectionContentLinkImageFormatting
+        , simpleRoute
         , view
         )
 
@@ -37,6 +38,11 @@ matchers =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+simpleRoute : Route
+simpleRoute =
+    Route.Simple
 
 
 view : Route -> Html msg

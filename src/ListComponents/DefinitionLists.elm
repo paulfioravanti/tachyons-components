@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Inline"
                     changeLocationMsg
                     (DefinitionLists DefinitionList.inlineRoute)
+                , Utils.component
+                    "definition-lists/simple/"
+                    "Simple"
+                    changeLocationMsg
+                    (DefinitionLists DefinitionList.simpleRoute)
                 ]
             ]
         ]
