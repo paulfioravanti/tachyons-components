@@ -34,6 +34,4 @@ definition ( term, description ) acc =
             dd [ class Styles.description ]
                 [ text description ]
     in
-        acc
-            |> (::) definitionDescription
-            |> (::) definitionTerm
+        definitionTerm :: definitionDescription :: acc
