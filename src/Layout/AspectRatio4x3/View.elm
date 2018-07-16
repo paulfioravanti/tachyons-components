@@ -1,8 +1,8 @@
-module Layout.AspectRatio3x4.View exposing (view)
+module Layout.AspectRatio4x3.View exposing (view)
 
 import Html exposing (Html, article, div)
 import Html.Attributes exposing (attribute, class, style)
-import Layout.AspectRatio3x4.Styles as Styles
+import Layout.AspectRatio4x3.Styles as Styles
 
 
 view : Html msg

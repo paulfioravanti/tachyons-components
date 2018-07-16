@@ -10,6 +10,7 @@ import Layout.Route
             ( AspectRatio16x9
             , AspectRatio1x1
             , AspectRatio3x4
+            , AspectRatio4x3
             )
         )
 
@@ -43,6 +44,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 AspectRatio3x4 ->
+                    [ "contain" ]
+
+                AspectRatio4x3 ->
                     [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting
