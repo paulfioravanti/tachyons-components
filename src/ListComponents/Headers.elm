@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Rounded Avatar Title Subtitle"
                     changeLocationMsg
                     (Headers Header.roundedAvatarTitleSubtitleRoute)
+                , Utils.component
+                    "headers/startup-hero/"
+                    "Startup Hero"
+                    changeLocationMsg
+                    (Headers Header.startupHeroRoute)
                 ]
             ]
         ]

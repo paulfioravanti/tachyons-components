@@ -9,6 +9,7 @@ import Header.Route
         ( Route
             ( CircleAvatarTitleSubtitle
             , RoundedAvatarTitleSubtitle
+            , StartupHero
             )
         )
 
@@ -40,5 +41,8 @@ sectionContentLinkImageFormatting route =
 
                 RoundedAvatarTitleSubtitle ->
                     []
+
+                StartupHero ->
+                    [ "cover" ]
     in
         defaultFormatting :: componentSpecificFormatting

@@ -5,10 +5,12 @@ import Header.Route
         ( Route
             ( CircleAvatarTitleSubtitle
             , RoundedAvatarTitleSubtitle
+            , StartupHero
             )
         )
 import Header.CircleAvatarTitleSubtitle.View as CircleAvatarTitleSubtitle
 import Header.RoundedAvatarTitleSubtitle.View as RoundedAvatarTitleSubtitle
+import Header.StartupHero.View as StartupHero
 import Html exposing (Html)
 
 
@@ -20,3 +22,6 @@ view route =
 
         RoundedAvatarTitleSubtitle ->
             RoundedAvatarTitleSubtitle.view
+
+        StartupHero ->
+            StartupHero.view

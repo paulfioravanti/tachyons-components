@@ -6,6 +6,7 @@ module Header
         , matchers
         , roundedAvatarTitleSubtitleRoute
         , sectionContentLinkImageFormatting
+        , startupHeroRoute
         , view
         )
 
@@ -43,6 +44,11 @@ roundedAvatarTitleSubtitleRoute =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+startupHeroRoute : Route
+startupHeroRoute =
+    Route.StartupHero
 
 
 view : Route -> Html msg
