@@ -1,7 +1,6 @@
 module Layout
     exposing
         ( Route
-        , bodyClasses
         , aspectRatio16x9Route
         , aspectRatio1x1Route
         , aspectRatio3x4Route
@@ -13,6 +12,8 @@ module Layout
         , aspectRatio7x5Route
         , aspectRatio8x5Route
         , aspectRatio9x16Route
+        , bodyClasses
+        , centeredContainerRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -87,6 +88,11 @@ aspectRatio9x16Route =
 bodyClasses : Route -> List String
 bodyClasses route =
     Styles.bodyClasses route
+
+
+centeredContainerRoute : Route
+centeredContainerRoute =
+    Route.CenteredContainer
 
 
 matchers : Parser (Route -> a) a

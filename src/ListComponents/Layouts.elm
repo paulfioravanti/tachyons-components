@@ -69,6 +69,11 @@ view changeLocationMsg =
                     "Aspect Ratio 9x16"
                     changeLocationMsg
                     (Layouts Layout.aspectRatio9x16Route)
+                , Utils.component
+                    "layout/centered-container/"
+                    "Centered Container"
+                    changeLocationMsg
+                    (Layouts Layout.centeredContainerRoute)
                 ]
             ]
         ]
