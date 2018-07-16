@@ -11,6 +11,7 @@ import Layout.Route
             , AspectRatio5x7
             , AspectRatio5x8
             , AspectRatio6x4
+            , AspectRatio7x5
             )
         )
 import Layout.AspectRatio16x9.View as AspectRatio16x9
@@ -21,6 +22,7 @@ import Layout.AspectRatio4x6.View as AspectRatio4x6
 import Layout.AspectRatio5x7.View as AspectRatio5x7
 import Layout.AspectRatio5x8.View as AspectRatio5x8
 import Layout.AspectRatio6x4.View as AspectRatio6x4
+import Layout.AspectRatio7x5.View as AspectRatio7x5
 import Html exposing (Html)
 
 
@@ -50,3 +52,6 @@ view route =
 
         AspectRatio6x4 ->
             AspectRatio6x4.view
+
+        AspectRatio7x5 ->
+            AspectRatio7x5.view

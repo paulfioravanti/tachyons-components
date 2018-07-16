@@ -13,6 +13,7 @@ type Route
     | AspectRatio5x7
     | AspectRatio5x8
     | AspectRatio6x4
+    | AspectRatio7x5
 
 
 matchers : Parser (Route -> a) a
@@ -25,6 +26,7 @@ matchers =
     , AspectRatio5x7
     , AspectRatio5x8
     , AspectRatio6x4
+    , AspectRatio7x5
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
