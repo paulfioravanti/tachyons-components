@@ -4,6 +4,7 @@ module Header
         , bodyClasses
         , circleAvatarTitleSubtitleRoute
         , matchers
+        , roundedAvatarTitleSubtitleRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -32,6 +33,11 @@ circleAvatarTitleSubtitleRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+roundedAvatarTitleSubtitleRoute : Route
+roundedAvatarTitleSubtitleRoute =
+    Route.RoundedAvatarTitleSubtitle
 
 
 sectionContentLinkImageFormatting : Route -> List String

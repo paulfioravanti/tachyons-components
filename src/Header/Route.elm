@@ -6,11 +6,13 @@ import Utils
 
 type Route
     = CircleAvatarTitleSubtitle
+    | RoundedAvatarTitleSubtitle
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ CircleAvatarTitleSubtitle
+    , RoundedAvatarTitleSubtitle
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

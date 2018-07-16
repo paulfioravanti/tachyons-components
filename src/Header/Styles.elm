@@ -4,7 +4,13 @@ module Header.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Header.Route exposing (Route(CircleAvatarTitleSubtitle))
+import Header.Route
+    exposing
+        ( Route
+            ( CircleAvatarTitleSubtitle
+            , RoundedAvatarTitleSubtitle
+            )
+        )
 
 
 bodyClasses : Route -> List String
@@ -30,6 +36,9 @@ sectionContentLinkImageFormatting route =
         componentSpecificFormatting =
             case route of
                 CircleAvatarTitleSubtitle ->
+                    []
+
+                RoundedAvatarTitleSubtitle ->
                     []
     in
         defaultFormatting :: componentSpecificFormatting

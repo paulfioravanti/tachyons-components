@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Circle Avatar Title Subtitle"
                     changeLocationMsg
                     (Headers Header.circleAvatarTitleSubtitleRoute)
+                , Utils.component
+                    "headers/rounded-avatar-title-subtitle/"
+                    "Rounded Avatar Title Subtitle"
+                    changeLocationMsg
+                    (Headers Header.roundedAvatarTitleSubtitleRoute)
                 ]
             ]
         ]
