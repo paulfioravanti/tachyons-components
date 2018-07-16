@@ -9,6 +9,7 @@ type Route
     | InlineText
     | SimpleLargeType
     | SmallPrint
+    | Social
     | SocialCircles
     | SocialSimple
     | SocialSimpleText
@@ -21,6 +22,7 @@ matchers =
     , InlineText
     , SimpleLargeType
     , SmallPrint
+    , Social
     , SocialCircles
     , SocialSimple
     , SocialSimpleText

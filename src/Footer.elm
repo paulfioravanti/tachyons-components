@@ -9,6 +9,7 @@ module Footer
         , simpleLargeTypeRoute
         , smallPrintRoute
         , socialCirclesRoute
+        , socialRoute
         , socialSimpleRoute
         , socialSimpleTextRoute
         , socialTextRoute
@@ -64,6 +65,11 @@ smallPrintRoute =
 socialCirclesRoute : Route
 socialCirclesRoute =
     Route.SocialCircles
+
+
+socialRoute : Route
+socialRoute =
+    Route.Social
 
 
 socialSimpleRoute : Route
