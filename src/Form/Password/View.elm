@@ -1,7 +1,7 @@
 module Form.Password.View exposing (view)
 
 import Form.Password.Styles as Styles
-import Html exposing (Html, div, form, input, label, small, span, text)
+import Html exposing (Html, div, form, input, label, small, text)
 import Html.Attributes exposing (attribute, class, for, id, type_)
 
 
