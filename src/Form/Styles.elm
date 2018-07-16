@@ -12,6 +12,7 @@ import Form.Route
             , NewsletterSubscription
             , Password
             , SignIn
+            , SignUp
             )
         )
 
@@ -50,6 +51,11 @@ sectionContentLinkImageFormatting route =
             ]
 
         SignIn ->
+            [ "bg-center"
+            , "contain"
+            ]
+
+        SignUp ->
             [ "bg-center"
             , "contain"
             ]

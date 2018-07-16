@@ -9,6 +9,7 @@ module Form
         , passwordRoute
         , sectionContentLinkImageFormatting
         , signInRoute
+        , signUpRoute
         , view
         )
 
@@ -61,6 +62,11 @@ sectionContentLinkImageFormatting route =
 signInRoute : Route
 signInRoute =
     Route.SignIn
+
+
+signUpRoute : Route
+signUpRoute =
+    Route.SignUp
 
 
 view : Route -> Html msg

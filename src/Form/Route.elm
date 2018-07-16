@@ -10,6 +10,7 @@ type Route
     | NewsletterSubscription
     | Password
     | SignIn
+    | SignUp
 
 
 matchers : Parser (Route -> a) a
@@ -19,6 +20,7 @@ matchers =
     , NewsletterSubscription
     , Password
     , SignIn
+    , SignUp
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
