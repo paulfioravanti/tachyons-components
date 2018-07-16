@@ -6,6 +6,7 @@ module Form
         , inputTextLabelRoute
         , matchers
         , newsletterSubscriptionRoute
+        , passwordRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -44,6 +45,11 @@ matchers =
 newsletterSubscriptionRoute : Route
 newsletterSubscriptionRoute =
     Route.NewsletterSubscription
+
+
+passwordRoute : Route
+passwordRoute =
+    Route.Password
 
 
 sectionContentLinkImageFormatting : Route -> List String

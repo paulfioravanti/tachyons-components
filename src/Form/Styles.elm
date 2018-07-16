@@ -10,6 +10,7 @@ import Form.Route
             ( CheckboxList
             , InputTextLabel
             , NewsletterSubscription
+            , Password
             )
         )
 
@@ -38,6 +39,11 @@ sectionContentLinkImageFormatting route =
             [ "bg-left" ]
 
         NewsletterSubscription ->
+            [ "bg-center"
+            , "contain"
+            ]
+
+        Password ->
             [ "bg-center"
             , "contain"
             ]

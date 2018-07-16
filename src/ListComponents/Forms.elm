@@ -29,6 +29,11 @@ view changeLocationMsg =
                     "Newsletter Subscription"
                     changeLocationMsg
                     (Forms Form.newsletterSubscriptionRoute)
+                , Utils.component
+                    "forms/password/"
+                    "Password"
+                    changeLocationMsg
+                    (Forms Form.passwordRoute)
                 ]
             ]
         ]

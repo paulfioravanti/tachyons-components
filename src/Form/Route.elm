@@ -8,6 +8,7 @@ type Route
     = CheckboxList
     | InputTextLabel
     | NewsletterSubscription
+    | Password
 
 
 matchers : Parser (Route -> a) a
@@ -15,6 +16,7 @@ matchers =
     [ CheckboxList
     , InputTextLabel
     , NewsletterSubscription
+    , Password
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

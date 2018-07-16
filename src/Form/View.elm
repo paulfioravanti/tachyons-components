@@ -6,11 +6,13 @@ import Form.Route
             ( CheckboxList
             , InputTextLabel
             , NewsletterSubscription
+            , Password
             )
         )
 import Form.CheckboxList.View as CheckboxList
 import Form.InputTextLabel.View as InputTextLabel
 import Form.NewsletterSubscription.View as NewsletterSubscription
+import Form.Password.View as Password
 import Html exposing (Html)
 
 
@@ -25,3 +27,6 @@ view route =
 
         NewsletterSubscription ->
             NewsletterSubscription.view
+
+        Password ->
+            Password.view
