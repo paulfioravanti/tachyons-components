@@ -28,11 +28,10 @@ import Html.Attributes
         , title
         , type_
         )
-import Svg exposing (path, svg)
+import Svg exposing (svg)
 import Svg.Attributes
     exposing
         ( clipRule
-        , d
         , fillRule
         , strokeLinejoin
         , strokeMiterlimit
