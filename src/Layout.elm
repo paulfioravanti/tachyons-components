@@ -3,6 +3,7 @@ module Layout
         ( Route
         , bodyClasses
         , aspectRatio16x9Route
+        , aspectRatio1x1Route
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -22,6 +23,11 @@ type alias Route =
 aspectRatio16x9Route : Route
 aspectRatio16x9Route =
     Route.AspectRatio16x9
+
+
+aspectRatio1x1Route : Route
+aspectRatio1x1Route =
+    Route.AspectRatio1x1
 
 
 bodyClasses : Route -> List String

@@ -4,7 +4,13 @@ module Layout.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Layout.Route exposing (Route(AspectRatio16x9))
+import Layout.Route
+    exposing
+        ( Route
+            ( AspectRatio16x9
+            , AspectRatio1x1
+            )
+        )
 
 
 bodyClasses : Route -> List String
@@ -30,6 +36,9 @@ sectionContentLinkImageFormatting route =
         componentSpecificFormatting =
             case route of
                 AspectRatio16x9 ->
+                    [ "contain" ]
+
+                AspectRatio1x1 ->
                     [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting
