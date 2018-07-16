@@ -4,7 +4,13 @@ module Form.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Form.Route exposing (Route(CheckboxList))
+import Form.Route
+    exposing
+        ( Route
+            ( CheckboxList
+            , InputTextLabel
+            )
+        )
 
 
 bodyClasses : Route -> List String
@@ -23,13 +29,9 @@ bodyClasses route =
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
-    let
-        defaultFormatting =
-            "bg-center"
+    case route of
+        CheckboxList ->
+            [ "bg-center" ]
 
-        componentSpecificFormatting =
-            case route of
-                CheckboxList ->
-                    []
-    in
-        defaultFormatting :: componentSpecificFormatting
+        InputTextLabel ->
+            [ "bg-left" ]

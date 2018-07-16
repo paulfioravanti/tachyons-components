@@ -3,6 +3,7 @@ module Form
         ( Route
         , bodyClasses
         , checkboxListRoute
+        , inputTextLabelRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -27,6 +28,11 @@ bodyClasses route =
 checkboxListRoute : Route
 checkboxListRoute =
     Route.CheckboxList
+
+
+inputTextLabelRoute : Route
+inputTextLabelRoute =
+    Route.InputTextLabel
 
 
 matchers : Parser (Route -> a) a

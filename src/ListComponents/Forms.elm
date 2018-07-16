@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Checkbox List"
                     changeLocationMsg
                     (Forms Form.checkboxListRoute)
+                , Utils.component
+                    "forms/input-text-label/"
+                    "Input Text Label"
+                    changeLocationMsg
+                    (Forms Form.inputTextLabelRoute)
                 ]
             ]
         ]
