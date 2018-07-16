@@ -9,6 +9,7 @@ module Layout
         , aspectRatio4x6Route
         , aspectRatio5x7Route
         , aspectRatio5x8Route
+        , aspectRatio6x4Route
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -58,6 +59,11 @@ aspectRatio5x7Route =
 aspectRatio5x8Route : Route
 aspectRatio5x8Route =
     Route.AspectRatio5x8
+
+
+aspectRatio6x4Route : Route
+aspectRatio6x4Route =
+    Route.AspectRatio6x4
 
 
 bodyClasses : Route -> List String
