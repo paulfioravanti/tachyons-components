@@ -10,6 +10,7 @@ import Footer.Route
             , SocialCircles
             , SocialSimple
             , SocialSimpleText
+            , SocialText
             )
         )
 import Footer.CenteredIconsHoverGlow.View as CenteredIconsHoverGlow
@@ -19,6 +20,7 @@ import Footer.SmallPrint.View as SmallPrint
 import Footer.SocialCircles.View as SocialCircles
 import Footer.SocialSimple.View as SocialSimple
 import Footer.SocialSimpleText.View as SocialSimpleText
+import Footer.SocialText.View as SocialText
 import Html exposing (Html)
 
 
@@ -45,3 +47,6 @@ view route =
 
         SocialSimpleText ->
             SocialSimpleText.view
+
+        SocialText ->
+            SocialText.view

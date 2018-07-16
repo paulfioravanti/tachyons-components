@@ -49,6 +49,11 @@ view changeLocationMsg =
                     "Social Simple"
                     changeLocationMsg
                     (Footers Footer.socialSimpleRoute)
+                , Utils.component
+                    "footers/social-text/"
+                    "Social Text"
+                    changeLocationMsg
+                    (Footers Footer.socialTextRoute)
                 ]
             ]
         ]

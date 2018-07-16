@@ -11,6 +11,7 @@ module Footer
         , socialCirclesRoute
         , socialSimpleRoute
         , socialSimpleTextRoute
+        , socialTextRoute
         , view
         )
 
@@ -73,6 +74,11 @@ socialSimpleRoute =
 socialSimpleTextRoute : Route
 socialSimpleTextRoute =
     Route.SocialSimpleText
+
+
+socialTextRoute : Route
+socialTextRoute =
+    Route.SocialText
 
 
 view : Route -> Html msg
