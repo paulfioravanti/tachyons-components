@@ -5,6 +5,7 @@ module Form
         , checkboxListRoute
         , inputTextLabelRoute
         , matchers
+        , newsletterSubscriptionRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -38,6 +39,11 @@ inputTextLabelRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+newsletterSubscriptionRoute : Route
+newsletterSubscriptionRoute =
+    Route.NewsletterSubscription
 
 
 sectionContentLinkImageFormatting : Route -> List String

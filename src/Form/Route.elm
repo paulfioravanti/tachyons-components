@@ -7,12 +7,14 @@ import Utils
 type Route
     = CheckboxList
     | InputTextLabel
+    | NewsletterSubscription
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ CheckboxList
     , InputTextLabel
+    , NewsletterSubscription
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

@@ -5,10 +5,12 @@ import Form.Route
         ( Route
             ( CheckboxList
             , InputTextLabel
+            , NewsletterSubscription
             )
         )
 import Form.CheckboxList.View as CheckboxList
 import Form.InputTextLabel.View as InputTextLabel
+import Form.NewsletterSubscription.View as NewsletterSubscription
 import Html exposing (Html)
 
 
@@ -20,3 +22,6 @@ view route =
 
         InputTextLabel ->
             InputTextLabel.view
+
+        NewsletterSubscription ->
+            NewsletterSubscription.view

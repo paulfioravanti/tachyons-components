@@ -9,6 +9,7 @@ import Form.Route
         ( Route
             ( CheckboxList
             , InputTextLabel
+            , NewsletterSubscription
             )
         )
 
@@ -35,3 +36,8 @@ sectionContentLinkImageFormatting route =
 
         InputTextLabel ->
             [ "bg-left" ]
+
+        NewsletterSubscription ->
+            [ "bg-center"
+            , "contain"
+            ]

@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Input Text Label"
                     changeLocationMsg
                     (Forms Form.inputTextLabelRoute)
+                , Utils.component
+                    "forms/newsletter-subscription/"
+                    "Newsletter Subscription"
+                    changeLocationMsg
+                    (Forms Form.newsletterSubscriptionRoute)
                 ]
             ]
         ]
