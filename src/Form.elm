@@ -8,6 +8,7 @@ module Form
         , newsletterSubscriptionRoute
         , passwordRoute
         , sectionContentLinkImageFormatting
+        , signInRoute
         , view
         )
 
@@ -55,6 +56,11 @@ passwordRoute =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+signInRoute : Route
+signInRoute =
+    Route.SignIn
 
 
 view : Route -> Html msg

@@ -34,6 +34,11 @@ view changeLocationMsg =
                     "Password"
                     changeLocationMsg
                     (Forms Form.passwordRoute)
+                , Utils.component
+                    "forms/sign-in/"
+                    "Sign In"
+                    changeLocationMsg
+                    (Forms Form.signInRoute)
                 ]
             ]
         ]

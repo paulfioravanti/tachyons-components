@@ -7,12 +7,14 @@ import Form.Route
             , InputTextLabel
             , NewsletterSubscription
             , Password
+            , SignIn
             )
         )
 import Form.CheckboxList.View as CheckboxList
 import Form.InputTextLabel.View as InputTextLabel
 import Form.NewsletterSubscription.View as NewsletterSubscription
 import Form.Password.View as Password
+import Form.SignIn.View as SignIn
 import Html exposing (Html)
 
 
@@ -30,3 +32,6 @@ view route =
 
         Password ->
             Password.view
+
+        SignIn ->
+            SignIn.view
