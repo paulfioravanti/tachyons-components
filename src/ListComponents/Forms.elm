@@ -44,6 +44,11 @@ view changeLocationMsg =
                     "Sign Up"
                     changeLocationMsg
                     (Forms Form.signUpRoute)
+                , Utils.component
+                    "forms/textarea-label/"
+                    "Textarea Label"
+                    changeLocationMsg
+                    (Forms Form.textareaLabelRoute)
                 ]
             ]
         ]

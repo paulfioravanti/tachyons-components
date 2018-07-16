@@ -13,6 +13,7 @@ import Form.Route
             , Password
             , SignIn
             , SignUp
+            , TextareaLabel
             )
         )
 
@@ -56,6 +57,11 @@ sectionContentLinkImageFormatting route =
             ]
 
         SignUp ->
+            [ "bg-center"
+            , "contain"
+            ]
+
+        TextareaLabel ->
             [ "bg-center"
             , "contain"
             ]

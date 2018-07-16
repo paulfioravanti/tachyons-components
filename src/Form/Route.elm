@@ -11,6 +11,7 @@ type Route
     | Password
     | SignIn
     | SignUp
+    | TextareaLabel
 
 
 matchers : Parser (Route -> a) a
@@ -21,6 +22,7 @@ matchers =
     , Password
     , SignIn
     , SignUp
+    , TextareaLabel
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

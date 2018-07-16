@@ -9,6 +9,7 @@ import Form.Route
             , Password
             , SignIn
             , SignUp
+            , TextareaLabel
             )
         )
 import Form.CheckboxList.View as CheckboxList
@@ -17,6 +18,7 @@ import Form.NewsletterSubscription.View as NewsletterSubscription
 import Form.Password.View as Password
 import Form.SignIn.View as SignIn
 import Form.SignUp.View as SignUp
+import Form.TextareaLabel.View as TextareaLabel
 import Html exposing (Html)
 
 
@@ -40,3 +42,6 @@ view route =
 
         SignUp ->
             SignUp.view
+
+        TextareaLabel ->
+            TextareaLabel.view

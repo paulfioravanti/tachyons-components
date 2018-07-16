@@ -10,6 +10,7 @@ module Form
         , sectionContentLinkImageFormatting
         , signInRoute
         , signUpRoute
+        , textareaLabelRoute
         , view
         )
 
@@ -67,6 +68,11 @@ signInRoute =
 signUpRoute : Route
 signUpRoute =
     Route.SignUp
+
+
+textareaLabelRoute : Route
+textareaLabelRoute =
+    Route.TextareaLabel
 
 
 view : Route -> Html msg
