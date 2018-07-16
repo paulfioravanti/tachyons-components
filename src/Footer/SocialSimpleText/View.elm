@@ -23,28 +23,24 @@ view =
     in
         div [ attribute "data-name" "component" ]
             [ footer [ class Styles.footer ]
-                (List.foldr iconLinks [] logos)
+                (List.map iconLink logos)
             ]
 
 
-iconLinks : Logo msg -> List (Html msg) -> List (Html msg)
-iconLinks { path, name, url } acc =
-    let
-        link =
-            a [ class Styles.link, href url, title name ]
-                [ svg
-                    [ attribute "data-icon" name
-                    , viewBox "0 0 16 16"
-                    , style [ ( "fill", "currentcolor" ) ]
-                    , fillRule "evenodd"
-                    , clipRule "evenodd"
-                    , strokeLinejoin "round"
-                    , strokeMiterlimit "1.414"
-                    , Svg.Attributes.class Styles.svg
-                    ]
-                    [ path ]
-                , span [ class Styles.title ]
-                    [ text name ]
-                ]
-    in
-        link :: acc
+iconLink : Logo msg -> Html msg
+iconLink { path, name, url } =
+    a [ class Styles.link, href url, title name ]
+        [ svg
+            [ attribute "data-icon" name
+            , viewBox "0 0 16 16"
+            , style [ ( "fill", "currentcolor" ) ]
+            , fillRule "evenodd"
+            , clipRule "evenodd"
+            , strokeLinejoin "round"
+            , strokeMiterlimit "1.414"
+            , Svg.Attributes.class Styles.svg
+            ]
+            [ path ]
+        , span [ class Styles.title ]
+            [ text name ]
+        ]
