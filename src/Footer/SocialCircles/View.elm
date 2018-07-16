@@ -20,25 +20,21 @@ view =
     in
         div [ attribute "data-name" "component" ]
             [ footer [ class Styles.footer ]
-                (List.foldr iconLinks [] logos)
+                (List.map iconLink logos)
             ]
 
 
-iconLinks : ( String, String ) -> List (Html msg) -> List (Html msg)
-iconLinks ( iconPath, iconName ) acc =
-    let
-        link =
-            a [ class Styles.link, href "#", title "" ]
-                [ svg
-                    [ attribute "data-icon" iconName
-                    , viewBox "0 0 32 32"
-                    , style [ ( "fill", "currentcolor" ) ]
-                    ]
-                    [ Svg.title []
-                        [ text (iconName ++ " icon") ]
-                    , path [ d iconPath ]
-                        []
-                    ]
-                ]
-    in
-        link :: acc
+iconLink : ( String, String ) -> Html msg
+iconLink ( iconPath, iconName ) =
+    a [ class Styles.link, href "#", title "" ]
+        [ svg
+            [ attribute "data-icon" iconName
+            , viewBox "0 0 32 32"
+            , style [ ( "fill", "currentcolor" ) ]
+            ]
+            [ Svg.title []
+                [ text (iconName ++ " icon") ]
+            , path [ d iconPath ]
+                []
+            ]
+        ]
