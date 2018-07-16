@@ -74,6 +74,11 @@ view changeLocationMsg =
                     "Centered Container"
                     changeLocationMsg
                     (Layouts Layout.centeredContainerRoute)
+                , Utils.component
+                    "layout/five-column-collapse-alternate/"
+                    "Five Column Collapse Alternate"
+                    changeLocationMsg
+                    (Layouts Layout.fiveColumnCollapseAlternateRoute)
                 ]
             ]
         ]

@@ -14,6 +14,7 @@ module Layout
         , aspectRatio9x16Route
         , bodyClasses
         , centeredContainerRoute
+        , fiveColumnCollapseAlternateRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -93,6 +94,11 @@ bodyClasses route =
 centeredContainerRoute : Route
 centeredContainerRoute =
     Route.CenteredContainer
+
+
+fiveColumnCollapseAlternateRoute : Route
+fiveColumnCollapseAlternateRoute =
+    Route.FiveColumnCollapseAlternate
 
 
 matchers : Parser (Route -> a) a
