@@ -16,6 +16,7 @@ import Footer.Route
             , SocialSimple
             , SocialSimpleText
             , SocialText
+            , Studios
             )
         )
 
@@ -75,3 +76,8 @@ sectionContentLinkImageFormatting route =
 
         SocialText ->
             [ "bg-center" ]
+
+        Studios ->
+            [ "bg-center"
+            , "contain"
+            ]

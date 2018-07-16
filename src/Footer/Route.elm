@@ -14,6 +14,7 @@ type Route
     | SocialSimple
     | SocialSimpleText
     | SocialText
+    | Studios
 
 
 matchers : Parser (Route -> a) a
@@ -27,6 +28,7 @@ matchers =
     , SocialSimple
     , SocialSimpleText
     , SocialText
+    , Studios
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

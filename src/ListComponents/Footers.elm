@@ -59,6 +59,11 @@ view changeLocationMsg =
                     "Social"
                     changeLocationMsg
                     (Footers Footer.socialRoute)
+                , Utils.component
+                    "footers/studios/"
+                    "Studios"
+                    changeLocationMsg
+                    (Footers Footer.studiosRoute)
                 ]
             ]
         ]
