@@ -16,6 +16,7 @@ import Layout.Route
             , AspectRatio5x8
             , AspectRatio6x4
             , AspectRatio7x5
+            , AspectRatio8x5
             )
         )
 
@@ -67,6 +68,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 AspectRatio7x5 ->
+                    [ "contain" ]
+
+                AspectRatio8x5 ->
                     [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting

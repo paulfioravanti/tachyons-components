@@ -59,6 +59,11 @@ view changeLocationMsg =
                     "Aspect Ratio 7x5"
                     changeLocationMsg
                     (Layouts Layout.aspectRatio7x5Route)
+                , Utils.component
+                    "layout/aspect-ratio-8x5/"
+                    "Aspect Ratio 8x5"
+                    changeLocationMsg
+                    (Layouts Layout.aspectRatio8x5Route)
                 ]
             ]
         ]
