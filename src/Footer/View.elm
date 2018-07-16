@@ -8,6 +8,7 @@ import Footer.Route
             , SimpleLargeType
             , SmallPrint
             , SocialCircles
+            , SocialSimple
             , SocialSimpleText
             )
         )
@@ -16,6 +17,7 @@ import Footer.InlineText.View as InlineText
 import Footer.SimpleLargeType.View as SimpleLargeType
 import Footer.SmallPrint.View as SmallPrint
 import Footer.SocialCircles.View as SocialCircles
+import Footer.SocialSimple.View as SocialSimple
 import Footer.SocialSimpleText.View as SocialSimpleText
 import Html exposing (Html)
 
@@ -37,6 +39,9 @@ view route =
 
         SocialCircles ->
             SocialCircles.view
+
+        SocialSimple ->
+            SocialSimple.view
 
         SocialSimpleText ->
             SocialSimpleText.view

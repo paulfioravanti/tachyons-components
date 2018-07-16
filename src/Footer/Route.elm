@@ -10,6 +10,7 @@ type Route
     | SimpleLargeType
     | SmallPrint
     | SocialCircles
+    | SocialSimple
     | SocialSimpleText
 
 
@@ -20,6 +21,7 @@ matchers =
     , SimpleLargeType
     , SmallPrint
     , SocialCircles
+    , SocialSimple
     , SocialSimpleText
     ]
         |> List.map Utils.routeFor

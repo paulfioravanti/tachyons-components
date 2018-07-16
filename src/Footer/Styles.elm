@@ -12,6 +12,7 @@ import Footer.Route
             , SimpleLargeType
             , SmallPrint
             , SocialCircles
+            , SocialSimple
             , SocialSimpleText
             )
         )
@@ -58,6 +59,9 @@ sectionContentLinkImageFormatting route =
             [ "bg-center"
             , "contain"
             ]
+
+        SocialSimple ->
+            [ "bg-center" ]
 
         SocialSimpleText ->
             [ "bg-center" ]
