@@ -20,6 +20,7 @@ import Layout.Route
             , AspectRatio9x16
             , CenteredContainer
             , FiveColumnCollapseAlternate
+            , FiveColumnCollapseAsymmetrical
             )
         )
 
@@ -83,6 +84,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 FiveColumnCollapseAlternate ->
+                    [ "contain" ]
+
+                FiveColumnCollapseAsymmetrical ->
                     [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting
