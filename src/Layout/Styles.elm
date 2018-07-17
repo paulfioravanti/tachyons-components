@@ -19,6 +19,7 @@ import Layout.Route
             , AspectRatio8x5
             , AspectRatio9x16
             , CenteredContainer
+            , FiveColumn
             , FiveColumnCollapseAlternate
             , FiveColumnCollapseAsymmetrical
             , FiveColumnCollapseMixed
@@ -83,6 +84,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 CenteredContainer ->
+                    [ "contain" ]
+
+                FiveColumn ->
                     [ "contain" ]
 
                 FiveColumnCollapseAlternate ->

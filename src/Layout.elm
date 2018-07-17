@@ -18,6 +18,7 @@ module Layout
         , fiveColumnCollapseAsymmetricalRoute
         , fiveColumnCollapseMixedRoute
         , fiveColumnCollapseOneRoute
+        , fiveColumnRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -117,6 +118,11 @@ fiveColumnCollapseMixedRoute =
 fiveColumnCollapseOneRoute : Route
 fiveColumnCollapseOneRoute =
     Route.FiveColumnCollapseOne
+
+
+fiveColumnRoute : Route
+fiveColumnRoute =
+    Route.FiveColumn
 
 
 matchers : Parser (Route -> a) a

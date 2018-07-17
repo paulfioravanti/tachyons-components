@@ -17,6 +17,7 @@ type Route
     | AspectRatio8x5
     | AspectRatio9x16
     | CenteredContainer
+    | FiveColumn
     | FiveColumnCollapseAlternate
     | FiveColumnCollapseAsymmetrical
     | FiveColumnCollapseMixed
@@ -37,6 +38,7 @@ matchers =
     , AspectRatio8x5
     , AspectRatio9x16
     , CenteredContainer
+    , FiveColumn
     , FiveColumnCollapseAlternate
     , FiveColumnCollapseAsymmetrical
     , FiveColumnCollapseMixed
