@@ -189,6 +189,11 @@ view changeLocationMsg =
                     "Full Bleed Square"
                     changeLocationMsg
                     (Layouts Layout.fullBleedSquareRoute)
+                , Utils.component
+                    "layout/full-screen-centered-title/"
+                    "Full Screen Centered Title"
+                    changeLocationMsg
+                    (Layouts Layout.fullScreenCenteredTitleRoute)
                 ]
             ]
         ]

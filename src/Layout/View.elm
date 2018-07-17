@@ -39,6 +39,7 @@ import Layout.Route
             , FullBleed_8x5
             , FullBleed_9x16
             , FullBleedSquare
+            , FullScreenCenteredTitle
             )
         )
 import Layout.AspectRatio_16x9.View as AspectRatio_16x9
@@ -76,6 +77,7 @@ import Layout.FullBleed_7x5.View as FullBleed_7x5
 import Layout.FullBleed_8x5.View as FullBleed_8x5
 import Layout.FullBleed_9x16.View as FullBleed_9x16
 import Layout.FullBleedSquare.View as FullBleedSquare
+import Layout.FullScreenCenteredTitle.View as FullScreenCenteredTitle
 
 
 view : Route -> Html msg
@@ -185,3 +187,6 @@ view route =
 
         FullBleedSquare ->
             FullBleedSquare.view
+
+        FullScreenCenteredTitle ->
+            FullScreenCenteredTitle.view
