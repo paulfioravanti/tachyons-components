@@ -89,6 +89,11 @@ view changeLocationMsg =
                     "Five Column Collapse Mixed"
                     changeLocationMsg
                     (Layouts Layout.fiveColumnCollapseMixedRoute)
+                , Utils.component
+                    "layout/five-column-collapse-one/"
+                    "Five Column Collapse One"
+                    changeLocationMsg
+                    (Layouts Layout.fiveColumnCollapseOneRoute)
                 ]
             ]
         ]
