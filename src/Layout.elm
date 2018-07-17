@@ -22,6 +22,7 @@ module Layout
         , fixedTableLayoutGridMixedRowsRoute
         , fixedTableLayoutGridRoute
         , flagObjectBottomRoute
+        , flagObjectCollapseRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -141,6 +142,11 @@ fixedTableLayoutGridRoute =
 flagObjectBottomRoute : Route
 flagObjectBottomRoute =
     Route.FlagObjectBottom
+
+
+flagObjectCollapseRoute : Route
+flagObjectCollapseRoute =
+    Route.FlagObjectCollapse
 
 
 matchers : Parser (Route -> a) a
