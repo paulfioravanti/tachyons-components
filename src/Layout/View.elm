@@ -32,6 +32,7 @@ import Layout.Route
             , FullBleed_16x9
             , FullBleed_4x6
             , FullBleed_5x7
+            , FullBleed_5x8
             )
         )
 import Layout.AspectRatio_16x9.View as AspectRatio_16x9
@@ -63,6 +64,7 @@ import Layout.FourColumnCollapseTwoCollapseOne.View as FourColumnCollapseTwoColl
 import Layout.FullBleed_16x9.View as FullBleed_16x9
 import Layout.FullBleed_4x6.View as FullBleed_4x6
 import Layout.FullBleed_5x7.View as FullBleed_5x7
+import Layout.FullBleed_5x8.View as FullBleed_5x8
 import Html exposing (Html)
 
 
@@ -155,3 +157,6 @@ view route =
 
         FullBleed_5x7 ->
             FullBleed_5x7.view
+
+        FullBleed_5x8 ->
+            FullBleed_5x8.view

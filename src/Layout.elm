@@ -31,6 +31,7 @@ module Layout
         , fullBleed16x9Route
         , fullBleed4x6Route
         , fullBleed5x7Route
+        , fullBleed5x8Route
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -195,6 +196,11 @@ fullBleed4x6Route =
 fullBleed5x7Route : Route
 fullBleed5x7Route =
     Route.FullBleed_5x7
+
+
+fullBleed5x8Route : Route
+fullBleed5x8Route =
+    Route.FullBleed_5x8
 
 
 matchers : Parser (Route -> a) a
