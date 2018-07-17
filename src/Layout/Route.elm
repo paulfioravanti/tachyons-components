@@ -35,6 +35,7 @@ type Route
     | FullBleed_4x6
     | FullBleed_5x7
     | FullBleed_5x8
+    | FullBleed_6x4
 
 
 matchers : Parser (Route -> a) a
@@ -69,6 +70,7 @@ matchers =
     , FullBleed_4x6
     , FullBleed_5x7
     , FullBleed_5x8
+    , FullBleed_6x4
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
