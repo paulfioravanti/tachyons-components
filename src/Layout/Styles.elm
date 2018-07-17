@@ -7,30 +7,6 @@ module Layout.Styles
 import Layout.Route
     exposing
         ( Route
-            ( AspectRatio16x9
-            , AspectRatio1x1
-            , AspectRatio3x4
-            , AspectRatio4x3
-            , AspectRatio4x6
-            , AspectRatio5x7
-            , AspectRatio5x8
-            , AspectRatio6x4
-            , AspectRatio7x5
-            , AspectRatio8x5
-            , AspectRatio9x16
-            , CenteredContainer
-            , FiveColumn
-            , FiveColumnCollapseAlternate
-            , FiveColumnCollapseAsymmetrical
-            , FiveColumnCollapseMixed
-            , FiveColumnCollapseOne
-            , FixedTableLayoutGridMixedRows
-            , FixedTableLayoutGrid
-            , FlagObject
-            , FlagObjectBottom
-            , FlagObjectCollapse
-            , FlagObjectTop
-            )
         )
 
 
@@ -56,73 +32,7 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                AspectRatio16x9 ->
-                    [ "contain" ]
-
-                AspectRatio1x1 ->
-                    [ "contain" ]
-
-                AspectRatio3x4 ->
-                    [ "contain" ]
-
-                AspectRatio4x3 ->
-                    [ "contain" ]
-
-                AspectRatio4x6 ->
-                    [ "contain" ]
-
-                AspectRatio5x7 ->
-                    [ "contain" ]
-
-                AspectRatio5x8 ->
-                    [ "contain" ]
-
-                AspectRatio6x4 ->
-                    [ "contain" ]
-
-                AspectRatio7x5 ->
-                    [ "contain" ]
-
-                AspectRatio8x5 ->
-                    [ "contain" ]
-
-                AspectRatio9x16 ->
-                    [ "contain" ]
-
-                CenteredContainer ->
-                    [ "contain" ]
-
-                FiveColumn ->
-                    [ "contain" ]
-
-                FiveColumnCollapseAlternate ->
-                    [ "contain" ]
-
-                FiveColumnCollapseAsymmetrical ->
-                    [ "contain" ]
-
-                FiveColumnCollapseMixed ->
-                    [ "contain" ]
-
-                FiveColumnCollapseOne ->
-                    [ "contain" ]
-
-                FixedTableLayoutGridMixedRows ->
-                    [ "contain" ]
-
-                FixedTableLayoutGrid ->
-                    [ "contain" ]
-
-                FlagObject ->
-                    [ "contain" ]
-
-                FlagObjectBottom ->
-                    [ "contain" ]
-
-                FlagObjectCollapse ->
-                    [ "contain" ]
-
-                FlagObjectTop ->
+                _ ->
                     [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting

@@ -28,6 +28,7 @@ type Route
     | FlagObjectBottom
     | FlagObjectCollapse
     | FlagObjectTop
+    | FourColumnCollapseTwoCollapseOne
 
 
 matchers : Parser (Route -> a) a
@@ -55,6 +56,7 @@ matchers =
     , FlagObjectBottom
     , FlagObjectCollapse
     , FlagObjectTop
+    , FourColumnCollapseTwoCollapseOne
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

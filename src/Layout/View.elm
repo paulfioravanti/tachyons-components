@@ -26,6 +26,7 @@ import Layout.Route
             , FlagObjectBottom
             , FlagObjectCollapse
             , FlagObjectTop
+            , FourColumnCollapseTwoCollapseOne
             )
         )
 import Layout.AspectRatio16x9.View as AspectRatio16x9
@@ -51,6 +52,7 @@ import Layout.FlagObject.View as FlagObject
 import Layout.FlagObjectBottom.View as FlagObjectBottom
 import Layout.FlagObjectCollapse.View as FlagObjectCollapse
 import Layout.FlagObjectTop.View as FlagObjectTop
+import Layout.FourColumnCollapseTwoCollapseOne.View as FourColumnCollapseTwoCollapseOne
 import Html exposing (Html)
 
 
@@ -125,3 +127,6 @@ view route =
 
         FlagObjectTop ->
             FlagObjectTop.view
+
+        FourColumnCollapseTwoCollapseOne ->
+            FourColumnCollapseTwoCollapseOne.view

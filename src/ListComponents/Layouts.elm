@@ -129,6 +129,11 @@ view changeLocationMsg =
                     "Flag Object"
                     changeLocationMsg
                     (Layouts Layout.flagObjectRoute)
+                , Utils.component
+                    "layout/four-column-collapse-two-collapse-one/"
+                    "Four Column Collapse Two Collapse One"
+                    changeLocationMsg
+                    (Layouts Layout.fourColumnCollapseTwoCollapseOneRoute)
                 ]
             ]
         ]
