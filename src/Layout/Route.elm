@@ -42,6 +42,7 @@ type Route
     | FullBleedSquare
     | FullScreenCenteredTitle
     | HorizontalAspectRatios
+    | ThreeColumn
     | ThreeColumnCollapseOne
 
 
@@ -84,6 +85,7 @@ matchers =
     , FullBleedSquare
     , FullScreenCenteredTitle
     , HorizontalAspectRatios
+    , ThreeColumn
     , ThreeColumnCollapseOne
     ]
         |> List.map Utils.routeFor

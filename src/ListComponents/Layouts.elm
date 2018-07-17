@@ -204,6 +204,11 @@ view changeLocationMsg =
                     "Three Column Collapse One"
                     changeLocationMsg
                     (Layouts Layout.threeColumnCollapseOneRoute)
+                , Utils.component
+                    "layout/three-column/"
+                    "Three Column"
+                    changeLocationMsg
+                    (Layouts Layout.threeColumnRoute)
                 ]
             ]
         ]

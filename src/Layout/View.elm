@@ -41,6 +41,7 @@ import Layout.Route
             , FullBleedSquare
             , FullScreenCenteredTitle
             , HorizontalAspectRatios
+            , ThreeColumn
             , ThreeColumnCollapseOne
             )
         )
@@ -81,6 +82,7 @@ import Layout.FullBleed_9x16.View as FullBleed_9x16
 import Layout.FullBleedSquare.View as FullBleedSquare
 import Layout.FullScreenCenteredTitle.View as FullScreenCenteredTitle
 import Layout.HorizontalAspectRatios.View as HorizontalAspectRatios
+import Layout.ThreeColumn.View as ThreeColumn
 import Layout.ThreeColumnCollapseOne.View as ThreeColumnCollapseOne
 
 
@@ -197,6 +199,9 @@ view route =
 
         HorizontalAspectRatios ->
             HorizontalAspectRatios.view
+
+        ThreeColumn ->
+            ThreeColumn.view
 
         ThreeColumnCollapseOne ->
             ThreeColumnCollapseOne.view

@@ -42,6 +42,7 @@ module Layout
         , matchers
         , sectionContentLinkImageFormatting
         , threeColumnCollapseOneRoute
+        , threeColumnRoute
         , view
         )
 
@@ -259,6 +260,11 @@ sectionContentLinkImageFormatting route =
 threeColumnCollapseOneRoute : Route
 threeColumnCollapseOneRoute =
     Route.ThreeColumnCollapseOne
+
+
+threeColumnRoute : Route
+threeColumnRoute =
+    Route.ThreeColumn
 
 
 view : Route -> Html msg
