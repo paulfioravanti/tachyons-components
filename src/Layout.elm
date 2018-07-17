@@ -23,6 +23,7 @@ module Layout
         , fixedTableLayoutGridRoute
         , flagObjectBottomRoute
         , flagObjectCollapseRoute
+        , flagObjectRoute
         , flagObjectTopRoute
         , matchers
         , sectionContentLinkImageFormatting
@@ -148,6 +149,11 @@ flagObjectBottomRoute =
 flagObjectCollapseRoute : Route
 flagObjectCollapseRoute =
     Route.FlagObjectCollapse
+
+
+flagObjectRoute : Route
+flagObjectRoute =
+    Route.FlagObject
 
 
 flagObjectTopRoute : Route

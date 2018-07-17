@@ -26,6 +26,7 @@ import Layout.Route
             , FiveColumnCollapseOne
             , FixedTableLayoutGridMixedRows
             , FixedTableLayoutGrid
+            , FlagObject
             , FlagObjectBottom
             , FlagObjectCollapse
             , FlagObjectTop
@@ -110,6 +111,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 FixedTableLayoutGrid ->
+                    [ "contain" ]
+
+                FlagObject ->
                     [ "contain" ]
 
                 FlagObjectBottom ->

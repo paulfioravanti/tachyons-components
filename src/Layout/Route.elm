@@ -24,6 +24,7 @@ type Route
     | FiveColumnCollapseOne
     | FixedTableLayoutGridMixedRows
     | FixedTableLayoutGrid
+    | FlagObject
     | FlagObjectBottom
     | FlagObjectCollapse
     | FlagObjectTop
@@ -50,6 +51,7 @@ matchers =
     , FiveColumnCollapseOne
     , FixedTableLayoutGridMixedRows
     , FixedTableLayoutGrid
+    , FlagObject
     , FlagObjectBottom
     , FlagObjectCollapse
     , FlagObjectTop

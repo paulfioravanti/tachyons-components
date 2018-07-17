@@ -124,6 +124,11 @@ view changeLocationMsg =
                     "Flag Object Top"
                     changeLocationMsg
                     (Layouts Layout.flagObjectTopRoute)
+                , Utils.component
+                    "layout/flag-object/"
+                    "Flag Object"
+                    changeLocationMsg
+                    (Layouts Layout.flagObjectRoute)
                 ]
             ]
         ]

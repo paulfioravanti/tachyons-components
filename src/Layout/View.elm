@@ -22,6 +22,7 @@ import Layout.Route
             , FiveColumnCollapseOne
             , FixedTableLayoutGridMixedRows
             , FixedTableLayoutGrid
+            , FlagObject
             , FlagObjectBottom
             , FlagObjectCollapse
             , FlagObjectTop
@@ -46,6 +47,7 @@ import Layout.FiveColumnCollapseMixed.View as FiveColumnCollapseMixed
 import Layout.FiveColumnCollapseOne.View as FiveColumnCollapseOne
 import Layout.FixedTableLayoutGridMixedRows.View as FixedTableLayoutGridMixedRows
 import Layout.FixedTableLayoutGrid.View as FixedTableLayoutGrid
+import Layout.FlagObject.View as FlagObject
 import Layout.FlagObjectBottom.View as FlagObjectBottom
 import Layout.FlagObjectCollapse.View as FlagObjectCollapse
 import Layout.FlagObjectTop.View as FlagObjectTop
@@ -111,6 +113,9 @@ view route =
 
         FixedTableLayoutGrid ->
             FixedTableLayoutGrid.view
+
+        FlagObject ->
+            FlagObject.view
 
         FlagObjectBottom ->
             FlagObjectBottom.view
