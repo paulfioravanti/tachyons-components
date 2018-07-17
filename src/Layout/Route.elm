@@ -5,17 +5,17 @@ import Utils
 
 
 type Route
-    = AspectRatio16x9
-    | AspectRatio1x1
-    | AspectRatio3x4
-    | AspectRatio4x3
-    | AspectRatio4x6
-    | AspectRatio5x7
-    | AspectRatio5x8
-    | AspectRatio6x4
-    | AspectRatio7x5
-    | AspectRatio8x5
-    | AspectRatio9x16
+    = AspectRatio_16x9
+    | AspectRatio_1x1
+    | AspectRatio_3x4
+    | AspectRatio_4x3
+    | AspectRatio_4x6
+    | AspectRatio_5x7
+    | AspectRatio_5x8
+    | AspectRatio_6x4
+    | AspectRatio_7x5
+    | AspectRatio_8x5
+    | AspectRatio_9x16
     | CenteredContainer
     | FiveColumn
     | FiveColumnCollapseAlternate
@@ -31,22 +31,23 @@ type Route
     | FourColumn
     | FourColumnCollapseTwo
     | FourColumnCollapseTwoCollapseOne
-    | FullBleed16x9
+    | FullBleed_16x9
+    | FullBleed_4x6
 
 
 matchers : Parser (Route -> a) a
 matchers =
-    [ AspectRatio16x9
-    , AspectRatio1x1
-    , AspectRatio3x4
-    , AspectRatio4x3
-    , AspectRatio4x6
-    , AspectRatio5x7
-    , AspectRatio5x8
-    , AspectRatio6x4
-    , AspectRatio7x5
-    , AspectRatio8x5
-    , AspectRatio9x16
+    [ AspectRatio_16x9
+    , AspectRatio_1x1
+    , AspectRatio_3x4
+    , AspectRatio_4x3
+    , AspectRatio_4x6
+    , AspectRatio_5x7
+    , AspectRatio_5x8
+    , AspectRatio_6x4
+    , AspectRatio_7x5
+    , AspectRatio_8x5
+    , AspectRatio_9x16
     , CenteredContainer
     , FiveColumn
     , FiveColumnCollapseAlternate
@@ -62,7 +63,8 @@ matchers =
     , FourColumn
     , FourColumnCollapseTwo
     , FourColumnCollapseTwoCollapseOne
-    , FullBleed16x9
+    , FullBleed_16x9
+    , FullBleed_4x6
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

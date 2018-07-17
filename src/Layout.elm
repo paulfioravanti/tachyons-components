@@ -29,6 +29,7 @@ module Layout
         , fourColumnCollapseTwoRoute
         , fourColumnRoute
         , fullBleed16x9Route
+        , fullBleed4x6Route
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -47,57 +48,57 @@ type alias Route =
 
 aspectRatio16x9Route : Route
 aspectRatio16x9Route =
-    Route.AspectRatio16x9
+    Route.AspectRatio_16x9
 
 
 aspectRatio1x1Route : Route
 aspectRatio1x1Route =
-    Route.AspectRatio1x1
+    Route.AspectRatio_1x1
 
 
 aspectRatio3x4Route : Route
 aspectRatio3x4Route =
-    Route.AspectRatio3x4
+    Route.AspectRatio_3x4
 
 
 aspectRatio4x3Route : Route
 aspectRatio4x3Route =
-    Route.AspectRatio4x3
+    Route.AspectRatio_4x3
 
 
 aspectRatio4x6Route : Route
 aspectRatio4x6Route =
-    Route.AspectRatio4x6
+    Route.AspectRatio_4x6
 
 
 aspectRatio5x7Route : Route
 aspectRatio5x7Route =
-    Route.AspectRatio5x7
+    Route.AspectRatio_5x7
 
 
 aspectRatio5x8Route : Route
 aspectRatio5x8Route =
-    Route.AspectRatio5x8
+    Route.AspectRatio_5x8
 
 
 aspectRatio6x4Route : Route
 aspectRatio6x4Route =
-    Route.AspectRatio6x4
+    Route.AspectRatio_6x4
 
 
 aspectRatio7x5Route : Route
 aspectRatio7x5Route =
-    Route.AspectRatio7x5
+    Route.AspectRatio_7x5
 
 
 aspectRatio8x5Route : Route
 aspectRatio8x5Route =
-    Route.AspectRatio8x5
+    Route.AspectRatio_8x5
 
 
 aspectRatio9x16Route : Route
 aspectRatio9x16Route =
-    Route.AspectRatio9x16
+    Route.AspectRatio_9x16
 
 
 bodyClasses : Route -> List String
@@ -182,7 +183,12 @@ fourColumnRoute =
 
 fullBleed16x9Route : Route
 fullBleed16x9Route =
-    Route.FullBleed16x9
+    Route.FullBleed_16x9
+
+
+fullBleed4x6Route : Route
+fullBleed4x6Route =
+    Route.FullBleed_4x6
 
 
 matchers : Parser (Route -> a) a

@@ -149,6 +149,11 @@ view changeLocationMsg =
                     "Full Bleed 16x9"
                     changeLocationMsg
                     (Layouts Layout.fullBleed16x9Route)
+                , Utils.component
+                    "layout/full-bleed-4x6/"
+                    "Full Bleed 4x6"
+                    changeLocationMsg
+                    (Layouts Layout.fullBleed4x6Route)
                 ]
             ]
         ]
