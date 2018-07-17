@@ -43,6 +43,7 @@ import Layout.Route
             , HorizontalAspectRatios
             , ThreeColumn
             , ThreeColumnCollapseOne
+            , TwoColumn
             , TwoColumnCollapseOne
             )
         )
@@ -85,6 +86,7 @@ import Layout.FullScreenCenteredTitle.View as FullScreenCenteredTitle
 import Layout.HorizontalAspectRatios.View as HorizontalAspectRatios
 import Layout.ThreeColumn.View as ThreeColumn
 import Layout.ThreeColumnCollapseOne.View as ThreeColumnCollapseOne
+import Layout.TwoColumn.View as TwoColumn
 import Layout.TwoColumnCollapseOne.View as TwoColumnCollapseOne
 
 
@@ -207,6 +209,9 @@ view route =
 
         ThreeColumnCollapseOne ->
             ThreeColumnCollapseOne.view
+
+        TwoColumn ->
+            TwoColumn.view
 
         TwoColumnCollapseOne ->
             TwoColumnCollapseOne.view

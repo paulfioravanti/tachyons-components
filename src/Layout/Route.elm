@@ -44,6 +44,7 @@ type Route
     | HorizontalAspectRatios
     | ThreeColumn
     | ThreeColumnCollapseOne
+    | TwoColumn
     | TwoColumnCollapseOne
 
 
@@ -88,6 +89,7 @@ matchers =
     , HorizontalAspectRatios
     , ThreeColumn
     , ThreeColumnCollapseOne
+    , TwoColumn
     , TwoColumnCollapseOne
     ]
         |> List.map Utils.routeFor

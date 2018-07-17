@@ -44,6 +44,7 @@ module Layout
         , threeColumnCollapseOneRoute
         , threeColumnRoute
         , twoColumnCollapseOneRoute
+        , twoColumnRoute
         , view
         )
 
@@ -271,6 +272,11 @@ threeColumnRoute =
 twoColumnCollapseOneRoute : Route
 twoColumnCollapseOneRoute =
     Route.TwoColumnCollapseOne
+
+
+twoColumnRoute : Route
+twoColumnRoute =
+    Route.TwoColumn
 
 
 view : Route -> Html msg
