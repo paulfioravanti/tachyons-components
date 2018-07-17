@@ -21,6 +21,7 @@ module Layout
         , fiveColumnRoute
         , fixedTableLayoutGridMixedRowsRoute
         , fixedTableLayoutGridRoute
+        , flagObjectBottomRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -135,6 +136,11 @@ fixedTableLayoutGridMixedRowsRoute =
 fixedTableLayoutGridRoute : Route
 fixedTableLayoutGridRoute =
     Route.FixedTableLayoutGrid
+
+
+flagObjectBottomRoute : Route
+flagObjectBottomRoute =
+    Route.FlagObjectBottom
 
 
 matchers : Parser (Route -> a) a

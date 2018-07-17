@@ -109,6 +109,11 @@ view changeLocationMsg =
                     "Fixed Table Layout Grid"
                     changeLocationMsg
                     (Layouts Layout.fixedTableLayoutGridRoute)
+                , Utils.component
+                    "layout/flag-object-bottom/"
+                    "Flag Object Bottom"
+                    changeLocationMsg
+                    (Layouts Layout.flagObjectBottomRoute)
                 ]
             ]
         ]

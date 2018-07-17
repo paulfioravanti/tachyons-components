@@ -26,6 +26,7 @@ import Layout.Route
             , FiveColumnCollapseOne
             , FixedTableLayoutGridMixedRows
             , FixedTableLayoutGrid
+            , FlagObjectBottom
             )
         )
 
@@ -107,6 +108,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 FixedTableLayoutGrid ->
+                    [ "contain" ]
+
+                FlagObjectBottom ->
                     [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting

@@ -22,6 +22,7 @@ import Layout.Route
             , FiveColumnCollapseOne
             , FixedTableLayoutGridMixedRows
             , FixedTableLayoutGrid
+            , FlagObjectBottom
             )
         )
 import Layout.AspectRatio16x9.View as AspectRatio16x9
@@ -43,6 +44,7 @@ import Layout.FiveColumnCollapseMixed.View as FiveColumnCollapseMixed
 import Layout.FiveColumnCollapseOne.View as FiveColumnCollapseOne
 import Layout.FixedTableLayoutGridMixedRows.View as FixedTableLayoutGridMixedRows
 import Layout.FixedTableLayoutGrid.View as FixedTableLayoutGrid
+import Layout.FlagObjectBottom.View as FlagObjectBottom
 import Html exposing (Html)
 
 
@@ -105,3 +107,6 @@ view route =
 
         FixedTableLayoutGrid ->
             FixedTableLayoutGrid.view
+
+        FlagObjectBottom ->
+            FlagObjectBottom.view
