@@ -3,7 +3,6 @@ module Layout.FullScreenCenteredTitle.View exposing (view)
 import Html exposing (Html, article, div, h1, text)
 import Html.Attributes exposing (attribute, class)
 import Layout.FullScreenCenteredTitle.Styles as Styles
-import Layout.Image as Image
 
 
 view : Html msg

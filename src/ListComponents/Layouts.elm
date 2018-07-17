@@ -199,6 +199,11 @@ view changeLocationMsg =
                     "Horizontal Aspect Ratios"
                     changeLocationMsg
                     (Layouts Layout.horizontalAspectRatiosRoute)
+                , Utils.component
+                    "layout/three-column-collapse-one/"
+                    "Three Column Collapse One"
+                    changeLocationMsg
+                    (Layouts Layout.threeColumnCollapseOneRoute)
                 ]
             ]
         ]

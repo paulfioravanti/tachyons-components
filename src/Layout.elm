@@ -41,6 +41,7 @@ module Layout
         , horizontalAspectRatiosRoute
         , matchers
         , sectionContentLinkImageFormatting
+        , threeColumnCollapseOneRoute
         , view
         )
 
@@ -253,6 +254,11 @@ matchers =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+threeColumnCollapseOneRoute : Route
+threeColumnCollapseOneRoute =
+    Route.ThreeColumnCollapseOne
 
 
 view : Route -> Html msg

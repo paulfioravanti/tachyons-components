@@ -42,6 +42,7 @@ type Route
     | FullBleedSquare
     | FullScreenCenteredTitle
     | HorizontalAspectRatios
+    | ThreeColumnCollapseOne
 
 
 matchers : Parser (Route -> a) a
@@ -83,6 +84,7 @@ matchers =
     , FullBleedSquare
     , FullScreenCenteredTitle
     , HorizontalAspectRatios
+    , ThreeColumnCollapseOne
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
