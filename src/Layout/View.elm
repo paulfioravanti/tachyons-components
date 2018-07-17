@@ -26,6 +26,7 @@ import Layout.Route
             , FlagObjectBottom
             , FlagObjectCollapse
             , FlagObjectTop
+            , FourColumnCollapseTwo
             , FourColumnCollapseTwoCollapseOne
             )
         )
@@ -52,6 +53,7 @@ import Layout.FlagObject.View as FlagObject
 import Layout.FlagObjectBottom.View as FlagObjectBottom
 import Layout.FlagObjectCollapse.View as FlagObjectCollapse
 import Layout.FlagObjectTop.View as FlagObjectTop
+import Layout.FourColumnCollapseTwo.View as FourColumnCollapseTwo
 import Layout.FourColumnCollapseTwoCollapseOne.View as FourColumnCollapseTwoCollapseOne
 import Html exposing (Html)
 
@@ -130,3 +132,6 @@ view route =
 
         FourColumnCollapseTwoCollapseOne ->
             FourColumnCollapseTwoCollapseOne.view
+
+        FourColumnCollapseTwo ->
+            FourColumnCollapseTwo.view

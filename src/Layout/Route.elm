@@ -28,6 +28,7 @@ type Route
     | FlagObjectBottom
     | FlagObjectCollapse
     | FlagObjectTop
+    | FourColumnCollapseTwo
     | FourColumnCollapseTwoCollapseOne
 
 
@@ -56,6 +57,7 @@ matchers =
     , FlagObjectBottom
     , FlagObjectCollapse
     , FlagObjectTop
+    , FourColumnCollapseTwo
     , FourColumnCollapseTwoCollapseOne
     ]
         |> List.map Utils.routeFor
