@@ -38,6 +38,7 @@ module Layout
         , fullBleed9x16Route
         , fullBleedSquareRoute
         , fullScreenCenteredTitleRoute
+        , horizontalAspectRatiosRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -237,6 +238,11 @@ fullBleedSquareRoute =
 fullScreenCenteredTitleRoute : Route
 fullScreenCenteredTitleRoute =
     Route.FullScreenCenteredTitle
+
+
+horizontalAspectRatiosRoute : Route
+horizontalAspectRatiosRoute =
+    Route.HorizontalAspectRatios
 
 
 matchers : Parser (Route -> a) a

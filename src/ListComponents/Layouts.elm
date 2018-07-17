@@ -194,6 +194,11 @@ view changeLocationMsg =
                     "Full Screen Centered Title"
                     changeLocationMsg
                     (Layouts Layout.fullScreenCenteredTitleRoute)
+                , Utils.component
+                    "layout/horizontal-aspect-ratios/"
+                    "Horizontal Aspect Ratios"
+                    changeLocationMsg
+                    (Layouts Layout.horizontalAspectRatiosRoute)
                 ]
             ]
         ]

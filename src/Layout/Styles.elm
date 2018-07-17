@@ -6,7 +6,10 @@ module Layout.Styles
 
 import Layout.Route
     exposing
-        ( Route(FullScreenCenteredTitle)
+        ( Route
+            ( FullScreenCenteredTitle
+            , HorizontalAspectRatios
+            )
         )
 
 
@@ -33,6 +36,9 @@ sectionContentLinkImageFormatting route =
         componentSpecificFormatting =
             case route of
                 FullScreenCenteredTitle ->
+                    [ "cover" ]
+
+                HorizontalAspectRatios ->
                     [ "cover" ]
 
                 _ ->
