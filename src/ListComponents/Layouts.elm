@@ -119,6 +119,11 @@ view changeLocationMsg =
                     "Flag Object Collapse"
                     changeLocationMsg
                     (Layouts Layout.flagObjectCollapseRoute)
+                , Utils.component
+                    "layout/flag-object-top/"
+                    "Flag Object Top"
+                    changeLocationMsg
+                    (Layouts Layout.flagObjectTopRoute)
                 ]
             ]
         ]
