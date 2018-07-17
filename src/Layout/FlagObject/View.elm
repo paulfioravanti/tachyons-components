@@ -1,7 +1,7 @@
 module Layout.FlagObject.View exposing (view)
 
-import Html exposing (Html, article, div, h1, img, p, section, text)
-import Html.Attributes exposing (alt, attribute, class, src, style)
+import Html exposing (Html, div, img, p, text)
+import Html.Attributes exposing (alt, attribute, class, src)
 import Layout.FlagObject.Styles as Styles
 
 

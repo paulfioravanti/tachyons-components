@@ -1,7 +1,7 @@
 module Layout.FullBleed16x9.View exposing (view)
 
-import Html exposing (Html, article, div, h1, img, main_, p, section, text)
-import Html.Attributes exposing (alt, attribute, class, src, style)
+import Html exposing (Html, div, main_)
+import Html.Attributes exposing (attribute, class, style)
 import Layout.FullBleed16x9.Styles as Styles
 import Layout.Image as Image
 

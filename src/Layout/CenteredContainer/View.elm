@@ -1,7 +1,7 @@
 module Layout.CenteredContainer.View exposing (view)
 
-import Html exposing (Html, article, div, h1, p, section, text)
-import Html.Attributes exposing (attribute, class, style)
+import Html exposing (Html, div, h1, p, section, text)
+import Html.Attributes exposing (attribute, class)
 import Layout.CenteredContainer.Styles as Styles
 
 

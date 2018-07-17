@@ -1,7 +1,7 @@
 module Layout.FourColumn.View exposing (view)
 
-import Html exposing (Html, article, div, h1, img, p, section, text)
-import Html.Attributes exposing (alt, attribute, class, src, style)
+import Html exposing (Html, div, section, text)
+import Html.Attributes exposing (attribute, class)
 import Layout.FourColumn.Styles as Styles
 
 
