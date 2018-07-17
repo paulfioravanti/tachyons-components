@@ -44,6 +44,7 @@ type Route
     | HorizontalAspectRatios
     | ThreeColumn
     | ThreeColumnCollapseOne
+    | TwoColumnCollapseOne
 
 
 matchers : Parser (Route -> a) a
@@ -87,6 +88,7 @@ matchers =
     , HorizontalAspectRatios
     , ThreeColumn
     , ThreeColumnCollapseOne
+    , TwoColumnCollapseOne
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
