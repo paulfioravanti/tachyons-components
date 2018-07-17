@@ -104,6 +104,11 @@ view changeLocationMsg =
                     "Fixed Table Layout Mixed Rows"
                     changeLocationMsg
                     (Layouts Layout.fixedTableLayoutGridMixedRowsRoute)
+                , Utils.component
+                    "layout/fixed-table-layout-grid/"
+                    "Fixed Table Layout Grid"
+                    changeLocationMsg
+                    (Layouts Layout.fixedTableLayoutGridRoute)
                 ]
             ]
         ]

@@ -1,0 +1,53 @@
+module Layout.FixedTableLayoutGrid.View exposing (view)
+
+import Html exposing (Html, article, div, h1, p, section, text)
+import Html.Attributes exposing (attribute, class, style)
+import Layout.FixedTableLayoutGrid.Styles as Styles
+
+
+view : Html msg
+view =
+    div [ attribute "data-name" "component" ]
+        [ div [ class Styles.row ]
+            [ div [ class Styles.lightDarkCol ]
+                [ text "1" ]
+            , div [ class Styles.lightLightCol ]
+                [ text "2" ]
+            , div [ class Styles.lightDarkCol ]
+                [ text "3" ]
+            ]
+        , div [ class Styles.row ]
+            [ div [ class Styles.darkDarkCol ]
+                [ text "1" ]
+            , div [ class Styles.darkLightCol ]
+                [ text "2" ]
+            , div [ class Styles.darkDarkCol ]
+                [ text "3" ]
+            , div [ class Styles.darkLightCol ]
+                [ text "4" ]
+            , div [ class Styles.darkDarkCol ]
+                [ text "5" ]
+            , div [ class Styles.darkLightCol ]
+                [ text "6" ]
+            , div [ class Styles.darkDarkCol ]
+                [ text "7" ]
+            , div [ class Styles.darkLightCol ]
+                [ text "8" ]
+            , div [ class Styles.darkDarkCol ]
+                [ text "9" ]
+            ]
+        , div [ class Styles.row ]
+            [ div [ class Styles.lightDarkCol ]
+                [ text "1" ]
+            , div [ class Styles.lightLightCol ]
+                [ text "2" ]
+            , div [ class Styles.lightDarkCol ]
+                [ text "3" ]
+            , div [ class Styles.lightDarkCol ]
+                [ text "4" ]
+            , div [ class Styles.lightLightCol ]
+                [ text "5" ]
+            , div [ class Styles.lightDarkCol ]
+                [ text "6" ]
+            ]
+        ]

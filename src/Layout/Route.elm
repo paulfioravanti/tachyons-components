@@ -23,6 +23,7 @@ type Route
     | FiveColumnCollapseMixed
     | FiveColumnCollapseOne
     | FixedTableLayoutGridMixedRows
+    | FixedTableLayoutGrid
 
 
 matchers : Parser (Route -> a) a
@@ -45,6 +46,7 @@ matchers =
     , FiveColumnCollapseMixed
     , FiveColumnCollapseOne
     , FixedTableLayoutGridMixedRows
+    , FixedTableLayoutGrid
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
