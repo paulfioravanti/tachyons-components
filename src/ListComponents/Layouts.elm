@@ -139,6 +139,11 @@ view changeLocationMsg =
                     "Four Column Collapse Two"
                     changeLocationMsg
                     (Layouts Layout.fourColumnCollapseTwoRoute)
+                , Utils.component
+                    "layout/four-column/"
+                    "Four Column"
+                    changeLocationMsg
+                    (Layouts Layout.fourColumnRoute)
                 ]
             ]
         ]

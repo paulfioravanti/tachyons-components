@@ -28,6 +28,7 @@ type Route
     | FlagObjectBottom
     | FlagObjectCollapse
     | FlagObjectTop
+    | FourColumn
     | FourColumnCollapseTwo
     | FourColumnCollapseTwoCollapseOne
 
@@ -57,6 +58,7 @@ matchers =
     , FlagObjectBottom
     , FlagObjectCollapse
     , FlagObjectTop
+    , FourColumn
     , FourColumnCollapseTwo
     , FourColumnCollapseTwoCollapseOne
     ]

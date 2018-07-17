@@ -27,6 +27,7 @@ module Layout
         , flagObjectTopRoute
         , fourColumnCollapseTwoCollapseOneRoute
         , fourColumnCollapseTwoRoute
+        , fourColumnRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -171,6 +172,11 @@ fourColumnCollapseTwoCollapseOneRoute =
 fourColumnCollapseTwoRoute : Route
 fourColumnCollapseTwoRoute =
     Route.FourColumnCollapseTwo
+
+
+fourColumnRoute : Route
+fourColumnRoute =
+    Route.FourColumn
 
 
 matchers : Parser (Route -> a) a
