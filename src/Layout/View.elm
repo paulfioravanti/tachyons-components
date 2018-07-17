@@ -29,6 +29,7 @@ import Layout.Route
             , FourColumn
             , FourColumnCollapseTwo
             , FourColumnCollapseTwoCollapseOne
+            , FullBleed16x9
             )
         )
 import Layout.AspectRatio16x9.View as AspectRatio16x9
@@ -57,6 +58,7 @@ import Layout.FlagObjectTop.View as FlagObjectTop
 import Layout.FourColumn.View as FourColumn
 import Layout.FourColumnCollapseTwo.View as FourColumnCollapseTwo
 import Layout.FourColumnCollapseTwoCollapseOne.View as FourColumnCollapseTwoCollapseOne
+import Layout.FullBleed16x9.View as FullBleed16x9
 import Html exposing (Html)
 
 
@@ -140,3 +142,6 @@ view route =
 
         FourColumnCollapseTwo ->
             FourColumnCollapseTwo.view
+
+        FullBleed16x9 ->
+            FullBleed16x9.view

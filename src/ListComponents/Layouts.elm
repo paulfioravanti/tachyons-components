@@ -144,6 +144,11 @@ view changeLocationMsg =
                     "Four Column"
                     changeLocationMsg
                     (Layouts Layout.fourColumnRoute)
+                , Utils.component
+                    "layout/full-bleed-16x9/"
+                    "Full Bleed 16x9"
+                    changeLocationMsg
+                    (Layouts Layout.fullBleed16x9Route)
                 ]
             ]
         ]

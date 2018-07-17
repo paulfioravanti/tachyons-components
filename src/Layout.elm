@@ -28,6 +28,7 @@ module Layout
         , fourColumnCollapseTwoCollapseOneRoute
         , fourColumnCollapseTwoRoute
         , fourColumnRoute
+        , fullBleed16x9Route
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -177,6 +178,11 @@ fourColumnCollapseTwoRoute =
 fourColumnRoute : Route
 fourColumnRoute =
     Route.FourColumn
+
+
+fullBleed16x9Route : Route
+fullBleed16x9Route =
+    Route.FullBleed16x9
 
 
 matchers : Parser (Route -> a) a
