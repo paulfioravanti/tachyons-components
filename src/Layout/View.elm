@@ -34,6 +34,7 @@ import Layout.Route
             , FullBleed_5x7
             , FullBleed_5x8
             , FullBleed_6x4
+            , FullBleed_7x5
             )
         )
 import Layout.AspectRatio_16x9.View as AspectRatio_16x9
@@ -67,6 +68,7 @@ import Layout.FullBleed_4x6.View as FullBleed_4x6
 import Layout.FullBleed_5x7.View as FullBleed_5x7
 import Layout.FullBleed_5x8.View as FullBleed_5x8
 import Layout.FullBleed_6x4.View as FullBleed_6x4
+import Layout.FullBleed_7x5.View as FullBleed_7x5
 import Html exposing (Html)
 
 
@@ -165,3 +167,6 @@ view route =
 
         FullBleed_6x4 ->
             FullBleed_6x4.view
+
+        FullBleed_7x5 ->
+            FullBleed_7x5.view
