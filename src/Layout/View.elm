@@ -20,6 +20,7 @@ import Layout.Route
             , FiveColumnCollapseAsymmetrical
             , FiveColumnCollapseMixed
             , FiveColumnCollapseOne
+            , FixedTableLayoutGridMixedRows
             )
         )
 import Layout.AspectRatio16x9.View as AspectRatio16x9
@@ -39,6 +40,7 @@ import Layout.FiveColumnCollapseAlternate.View as FiveColumnCollapseAlternate
 import Layout.FiveColumnCollapseAsymmetrical.View as FiveColumnCollapseAsymmetrical
 import Layout.FiveColumnCollapseMixed.View as FiveColumnCollapseMixed
 import Layout.FiveColumnCollapseOne.View as FiveColumnCollapseOne
+import Layout.FixedTableLayoutGridMixedRows.View as FixedTableLayoutGridMixedRows
 import Html exposing (Html)
 
 
@@ -95,3 +97,6 @@ view route =
 
         FiveColumnCollapseOne ->
             FiveColumnCollapseOne.view
+
+        FixedTableLayoutGridMixedRows ->
+            FixedTableLayoutGridMixedRows.view

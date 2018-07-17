@@ -99,6 +99,11 @@ view changeLocationMsg =
                     "Five Column"
                     changeLocationMsg
                     (Layouts Layout.fiveColumnRoute)
+                , Utils.component
+                    "layout/fixed-table-layout-grid-mixed-rows/"
+                    "Fixed Table Layout Mixed Rows"
+                    changeLocationMsg
+                    (Layouts Layout.fixedTableLayoutGridMixedRowsRoute)
                 ]
             ]
         ]

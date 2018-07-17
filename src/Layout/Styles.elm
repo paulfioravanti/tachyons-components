@@ -24,6 +24,7 @@ import Layout.Route
             , FiveColumnCollapseAsymmetrical
             , FiveColumnCollapseMixed
             , FiveColumnCollapseOne
+            , FixedTableLayoutGridMixedRows
             )
         )
 
@@ -99,6 +100,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 FiveColumnCollapseOne ->
+                    [ "contain" ]
+
+                FixedTableLayoutGridMixedRows ->
                     [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting

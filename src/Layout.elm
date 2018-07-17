@@ -19,6 +19,7 @@ module Layout
         , fiveColumnCollapseMixedRoute
         , fiveColumnCollapseOneRoute
         , fiveColumnRoute
+        , fixedTableLayoutGridMixedRowsRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -123,6 +124,11 @@ fiveColumnCollapseOneRoute =
 fiveColumnRoute : Route
 fiveColumnRoute =
     Route.FiveColumn
+
+
+fixedTableLayoutGridMixedRowsRoute : Route
+fixedTableLayoutGridMixedRowsRoute =
+    Route.FixedTableLayoutGridMixedRows
 
 
 matchers : Parser (Route -> a) a
