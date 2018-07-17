@@ -19,6 +19,7 @@ type Route
     | CenteredContainer
     | FiveColumnCollapseAlternate
     | FiveColumnCollapseAsymmetrical
+    | FiveColumnCollapseMixed
 
 
 matchers : Parser (Route -> a) a
@@ -37,6 +38,7 @@ matchers =
     , CenteredContainer
     , FiveColumnCollapseAlternate
     , FiveColumnCollapseAsymmetrical
+    , FiveColumnCollapseMixed
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

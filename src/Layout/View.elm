@@ -17,6 +17,7 @@ import Layout.Route
             , CenteredContainer
             , FiveColumnCollapseAlternate
             , FiveColumnCollapseAsymmetrical
+            , FiveColumnCollapseMixed
             )
         )
 import Layout.AspectRatio16x9.View as AspectRatio16x9
@@ -33,6 +34,7 @@ import Layout.AspectRatio9x16.View as AspectRatio9x16
 import Layout.CenteredContainer.View as CenteredContainer
 import Layout.FiveColumnCollapseAlternate.View as FiveColumnCollapseAlternate
 import Layout.FiveColumnCollapseAsymmetrical.View as FiveColumnCollapseAsymmetrical
+import Layout.FiveColumnCollapseMixed.View as FiveColumnCollapseMixed
 import Html exposing (Html)
 
 
@@ -80,3 +82,6 @@ view route =
 
         FiveColumnCollapseAsymmetrical ->
             FiveColumnCollapseAsymmetrical.view
+
+        FiveColumnCollapseMixed ->
+            FiveColumnCollapseMixed.view
