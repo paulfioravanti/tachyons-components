@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Animate Color"
                     changeLocationMsg
                     (Links Link.animateColorRoute)
+                , Utils.component
+                    "links/dim-no-underline/"
+                    "Dim No Underline"
+                    changeLocationMsg
+                    (Links Link.dimNoUnderlineRoute)
                 ]
             ]
         ]

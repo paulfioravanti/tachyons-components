@@ -4,6 +4,7 @@ module Link
         , animateBackgroundColorRoute
         , animateColorRoute
         , bodyClasses
+        , dimNoUnderlineRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -33,6 +34,11 @@ animateColorRoute =
 bodyClasses : Route -> List String
 bodyClasses route =
     Styles.bodyClasses route
+
+
+dimNoUnderlineRoute : Route
+dimNoUnderlineRoute =
+    Route.DimNoUnderline
 
 
 matchers : Parser (Route -> a) a

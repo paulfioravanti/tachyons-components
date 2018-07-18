@@ -4,7 +4,7 @@ module Link.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Link.Route exposing (Route(AnimateBackgroundColor))
+import Link.Route exposing (Route)
 
 
 bodyClasses : Route -> List String
