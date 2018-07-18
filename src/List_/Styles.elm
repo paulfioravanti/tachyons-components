@@ -8,6 +8,7 @@ import List_.Route
     exposing
         ( Route
             ( Hashtags
+            , LargeLinksInline
             )
         )
 
@@ -35,6 +36,9 @@ sectionContentLinkImageFormatting route =
         componentSpecificFormatting =
             case route of
                 Hashtags ->
+                    [ "cover" ]
+
+                LargeLinksInline ->
                     [ "cover" ]
 
                 _ ->

@@ -54,6 +54,11 @@ view changeLocationMsg =
                     "Items Image Title Price"
                     changeLocationMsg
                     (Lists List_.itemsImageTitlePriceRoute)
+                , Utils.component
+                    "lists/large-links-inline/"
+                    "Large Links Inline"
+                    changeLocationMsg
+                    (Lists List_.largeLinksInlineRoute)
                 ]
             ]
         ]

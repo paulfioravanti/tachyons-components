@@ -10,6 +10,7 @@ module List_
         , followerNotificationsRoute
         , hashtagsRoute
         , itemsImageTitlePriceRoute
+        , largeLinksInlineRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -69,6 +70,11 @@ hashtagsRoute =
 itemsImageTitlePriceRoute : Route
 itemsImageTitlePriceRoute =
     Route.ItemsImageTitlePrice
+
+
+largeLinksInlineRoute : Route
+largeLinksInlineRoute =
+    Route.LargeLinksInline
 
 
 matchers : Parser (Route -> a) a

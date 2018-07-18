@@ -9,6 +9,7 @@ import List_.FollowerNotifications.View as FollowerNotifications
 import List_.FollowerNotificationsRoundedSquareAvatar.View as FollowerNotificationsRoundedSquareAvatar
 import List_.Hashtags.View as Hashtags
 import List_.ItemsImageTitlePrice.View as ItemsImageTitlePrice
+import List_.LargeLinksInline.View as LargeLinksInline
 import List_.Route
     exposing
         ( Route
@@ -20,6 +21,7 @@ import List_.Route
             , FollowerNotificationsRoundedSquareAvatar
             , Hashtags
             , ItemsImageTitlePrice
+            , LargeLinksInline
             )
         )
 
@@ -50,3 +52,6 @@ view route =
 
         ItemsImageTitlePrice ->
             ItemsImageTitlePrice.view
+
+        LargeLinksInline ->
+            LargeLinksInline.view
