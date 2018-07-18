@@ -7,6 +7,7 @@ import List_.BorderTight.View as BorderTight
 import List_.ContactPhone.View as ContactPhone
 import List_.FollowerNotifications.View as FollowerNotifications
 import List_.FollowerNotificationsRoundedSquareAvatar.View as FollowerNotificationsRoundedSquareAvatar
+import List_.Hashtags.View as Hashtags
 import List_.Route
     exposing
         ( Route
@@ -16,6 +17,7 @@ import List_.Route
             , ContactPhone
             , FollowerNotifications
             , FollowerNotificationsRoundedSquareAvatar
+            , Hashtags
             )
         )
 
@@ -40,3 +42,6 @@ view route =
 
         FollowerNotificationsRoundedSquareAvatar ->
             FollowerNotificationsRoundedSquareAvatar.view
+
+        Hashtags ->
+            Hashtags.view

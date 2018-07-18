@@ -11,6 +11,7 @@ type Route
     | ContactPhone
     | FollowerNotifications
     | FollowerNotificationsRoundedSquareAvatar
+    | Hashtags
 
 
 matchers : Parser (Route -> a) a
@@ -21,6 +22,7 @@ matchers =
     , ContactPhone
     , FollowerNotifications
     , FollowerNotificationsRoundedSquareAvatar
+    , Hashtags
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

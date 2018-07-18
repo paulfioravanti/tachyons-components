@@ -44,6 +44,11 @@ view changeLocationMsg =
                     "Follower Notifications"
                     changeLocationMsg
                     (Lists List_.followerNotificationsRoute)
+                , Utils.component
+                    "lists/hashtags/"
+                    "Hashtags"
+                    changeLocationMsg
+                    (Lists List_.hashtagsRoute)
                 ]
             ]
         ]

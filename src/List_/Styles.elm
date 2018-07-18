@@ -4,7 +4,12 @@ module List_.Styles
         , sectionContentLinkImageFormatting
         )
 
-import List_.Route exposing (Route)
+import List_.Route
+    exposing
+        ( Route
+            ( Hashtags
+            )
+        )
 
 
 bodyClasses : Route -> List String
@@ -29,6 +34,9 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
+                Hashtags ->
+                    [ "cover" ]
+
                 _ ->
                     [ "contain" ]
     in

@@ -8,6 +8,7 @@ module List_
         , contactPhoneRoute
         , followerNotificationsRoundedSquareAvatarRoute
         , followerNotificationsRoute
+        , hashtagsRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -57,6 +58,11 @@ followerNotificationsRoundedSquareAvatarRoute =
 followerNotificationsRoute : Route
 followerNotificationsRoute =
     Route.FollowerNotifications
+
+
+hashtagsRoute : Route
+hashtagsRoute =
+    Route.Hashtags
 
 
 matchers : Parser (Route -> a) a
