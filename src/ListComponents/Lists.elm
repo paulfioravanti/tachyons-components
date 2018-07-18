@@ -64,6 +64,11 @@ view changeLocationMsg =
                     "Links Animate Color"
                     changeLocationMsg
                     (Lists List_.linksAnimateColorRoute)
+                , Utils.component
+                    "lists/links-inline/"
+                    "Links Inline"
+                    changeLocationMsg
+                    (Lists List_.linksInlineRoute)
                 ]
             ]
         ]

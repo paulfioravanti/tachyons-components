@@ -15,6 +15,7 @@ type Route
     | ItemsImageTitlePrice
     | LargeLinksInline
     | LinksAnimateColor
+    | LinksInline
 
 
 matchers : Parser (Route -> a) a
@@ -29,6 +30,7 @@ matchers =
     , ItemsImageTitlePrice
     , LargeLinksInline
     , LinksAnimateColor
+    , LinksInline
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
