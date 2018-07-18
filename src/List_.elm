@@ -3,6 +3,7 @@ module List_
         ( Route
         , blockItemDottedBorderRoute
         , bodyClasses
+        , borderSpacedRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -27,6 +28,11 @@ blockItemDottedBorderRoute =
 bodyClasses : Route -> List String
 bodyClasses route =
     Styles.bodyClasses route
+
+
+borderSpacedRoute : Route
+borderSpacedRoute =
+    Route.BorderSpaced
 
 
 matchers : Parser (Route -> a) a

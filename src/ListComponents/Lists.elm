@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Block Item Dotted Border"
                     changeLocationMsg
                     (Lists List_.blockItemDottedBorderRoute)
+                , Utils.component
+                    "lists/border-spaced/"
+                    "Border Spaced"
+                    changeLocationMsg
+                    (Lists List_.borderSpacedRoute)
                 ]
             ]
         ]

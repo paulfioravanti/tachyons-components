@@ -4,7 +4,7 @@ module List_.Styles
         , sectionContentLinkImageFormatting
         )
 
-import List_.Route exposing (Route(BlockItemDottedBorder))
+import List_.Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -29,7 +29,7 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                BlockItemDottedBorder ->
+                _ ->
                     [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting

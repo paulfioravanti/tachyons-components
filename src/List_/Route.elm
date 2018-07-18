@@ -6,11 +6,13 @@ import Utils
 
 type Route
     = BlockItemDottedBorder
+    | BorderSpaced
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ BlockItemDottedBorder
+    , BorderSpaced
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
