@@ -4,6 +4,7 @@ module List_
         , blockItemDottedBorderRoute
         , bodyClasses
         , borderSpacedRoute
+        , borderTightRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -33,6 +34,11 @@ bodyClasses route =
 borderSpacedRoute : Route
 borderSpacedRoute =
     Route.BorderSpaced
+
+
+borderTightRoute : Route
+borderTightRoute =
+    Route.BorderTight
 
 
 matchers : Parser (Route -> a) a

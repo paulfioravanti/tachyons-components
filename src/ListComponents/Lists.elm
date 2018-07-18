@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Border Spaced"
                     changeLocationMsg
                     (Lists List_.borderSpacedRoute)
+                , Utils.component
+                    "lists/border-tight/"
+                    "Border Tight"
+                    changeLocationMsg
+                    (Lists List_.borderTightRoute)
                 ]
             ]
         ]
