@@ -23,13 +23,6 @@ bodyClasses route =
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
-    let
-        defaultFormatting =
-            "bg-center"
-
-        componentSpecificFormatting =
-            case route of
-                AnimateBackgroundColor ->
-                    []
-    in
-        defaultFormatting :: componentSpecificFormatting
+    case route of
+        _ ->
+            [ "bg-center" ]

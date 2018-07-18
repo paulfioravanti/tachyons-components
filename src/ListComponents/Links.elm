@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Animate Background Color"
                     changeLocationMsg
                     (Links Link.animateBackgroundColorRoute)
+                , Utils.component
+                    "links/animate-color/"
+                    "Animate Color"
+                    changeLocationMsg
+                    (Links Link.animateColorRoute)
                 ]
             ]
         ]

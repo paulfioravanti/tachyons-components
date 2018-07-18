@@ -2,6 +2,7 @@ module Link
     exposing
         ( Route
         , animateBackgroundColorRoute
+        , animateColorRoute
         , bodyClasses
         , matchers
         , sectionContentLinkImageFormatting
@@ -22,6 +23,11 @@ type alias Route =
 animateBackgroundColorRoute : Route
 animateBackgroundColorRoute =
     Route.AnimateBackgroundColor
+
+
+animateColorRoute : Route
+animateColorRoute =
+    Route.AnimateColor
 
 
 bodyClasses : Route -> List String
