@@ -5,6 +5,7 @@ module List_
         , bodyClasses
         , borderSpacedRoute
         , borderTightRoute
+        , contactPhoneRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -39,6 +40,11 @@ borderSpacedRoute =
 borderTightRoute : Route
 borderTightRoute =
     Route.BorderTight
+
+
+contactPhoneRoute : Route
+contactPhoneRoute =
+    Route.ContactPhone
 
 
 matchers : Parser (Route -> a) a

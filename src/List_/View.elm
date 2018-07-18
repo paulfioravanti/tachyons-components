@@ -4,12 +4,14 @@ import Html exposing (Html)
 import List_.BlockItemDottedBorder.View as BlockItemDottedBorder
 import List_.BorderSpaced.View as BorderSpaced
 import List_.BorderTight.View as BorderTight
+import List_.ContactPhone.View as ContactPhone
 import List_.Route
     exposing
         ( Route
             ( BlockItemDottedBorder
             , BorderSpaced
             , BorderTight
+            , ContactPhone
             )
         )
 
@@ -25,3 +27,6 @@ view route =
 
         BorderTight ->
             BorderTight.view
+
+        ContactPhone ->
+            ContactPhone.view

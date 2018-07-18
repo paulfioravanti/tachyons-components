@@ -29,6 +29,11 @@ view changeLocationMsg =
                     "Border Tight"
                     changeLocationMsg
                     (Lists List_.borderTightRoute)
+                , Utils.component
+                    "lists/contact-phone/"
+                    "Contact Phone"
+                    changeLocationMsg
+                    (Lists List_.contactPhoneRoute)
                 ]
             ]
         ]

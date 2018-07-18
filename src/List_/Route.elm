@@ -8,6 +8,7 @@ type Route
     = BlockItemDottedBorder
     | BorderSpaced
     | BorderTight
+    | ContactPhone
 
 
 matchers : Parser (Route -> a) a
@@ -15,6 +16,7 @@ matchers =
     [ BlockItemDottedBorder
     , BorderSpaced
     , BorderTight
+    , ContactPhone
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
