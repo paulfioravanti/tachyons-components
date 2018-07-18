@@ -29,6 +29,11 @@ view changeLocationMsg =
                     "Dim No Underline"
                     changeLocationMsg
                     (Links Link.dimNoUnderlineRoute)
+                , Utils.component
+                    "links/underline-on-hover/"
+                    "Underline On Hover"
+                    changeLocationMsg
+                    (Links Link.underlineOnHoverRoute)
                 ]
             ]
         ]

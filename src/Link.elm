@@ -7,6 +7,7 @@ module Link
         , dimNoUnderlineRoute
         , matchers
         , sectionContentLinkImageFormatting
+        , underlineOnHoverRoute
         , view
         )
 
@@ -49,6 +50,11 @@ matchers =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+underlineOnHoverRoute : Route
+underlineOnHoverRoute =
+    Route.UnderlineOnHover
 
 
 view : Route -> Html msg

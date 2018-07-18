@@ -9,8 +9,10 @@ import Link.Route
             ( AnimateBackgroundColor
             , AnimateColor
             , DimNoUnderline
+            , UnderlineOnHover
             )
         )
+import Link.UnderlineOnHover.View as UnderlineOnHover
 import Html exposing (Html)
 
 
@@ -25,3 +27,6 @@ view route =
 
         DimNoUnderline ->
             DimNoUnderline.view
+
+        UnderlineOnHover ->
+            UnderlineOnHover.view
