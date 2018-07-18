@@ -28,10 +28,12 @@ import List_.Route
             , LinksAnimateColor
             , LinksInline
             , LinksWithBordersInline
+            , SlabStat
             , SlabStatLarge
             , SlabStatSmall
             )
         )
+import List_.SlabStat.View as SlabStat
 import List_.SlabStatLarge.View as SlabStatLarge
 import List_.SlabStatSmall.View as SlabStatSmall
 
@@ -74,6 +76,9 @@ view route =
 
         LinksWithBordersInline ->
             LinksWithBordersInline.view
+
+        SlabStat ->
+            SlabStat.view
 
         SlabStatLarge ->
             SlabStatLarge.view

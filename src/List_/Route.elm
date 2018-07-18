@@ -17,6 +17,7 @@ type Route
     | LinksAnimateColor
     | LinksInline
     | LinksWithBordersInline
+    | SlabStat
     | SlabStatLarge
     | SlabStatSmall
 
@@ -35,6 +36,7 @@ matchers =
     , LinksAnimateColor
     , LinksInline
     , LinksWithBordersInline
+    , SlabStat
     , SlabStatLarge
     , SlabStatSmall
     ]

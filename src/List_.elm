@@ -17,6 +17,7 @@ module List_
         , matchers
         , sectionContentLinkImageFormatting
         , slabStatLargeRoute
+        , slabStatRoute
         , slabStatSmallRoute
         , view
         )
@@ -110,6 +111,11 @@ sectionContentLinkImageFormatting route =
 slabStatLargeRoute : Route
 slabStatLargeRoute =
     Route.SlabStatLarge
+
+
+slabStatRoute : Route
+slabStatRoute =
+    Route.SlabStat
 
 
 slabStatSmallRoute : Route
