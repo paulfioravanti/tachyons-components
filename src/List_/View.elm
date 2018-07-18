@@ -31,11 +31,13 @@ import List_.Route
             , SlabStat
             , SlabStatLarge
             , SlabStatSmall
+            , TitleText
             )
         )
 import List_.SlabStat.View as SlabStat
 import List_.SlabStatLarge.View as SlabStatLarge
 import List_.SlabStatSmall.View as SlabStatSmall
+import List_.TitleText.View as TitleText
 
 
 view : Route -> Html msg
@@ -85,3 +87,6 @@ view route =
 
         SlabStatSmall ->
             SlabStatSmall.view
+
+        TitleText ->
+            TitleText.view

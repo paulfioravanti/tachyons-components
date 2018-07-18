@@ -20,6 +20,7 @@ type Route
     | SlabStat
     | SlabStatLarge
     | SlabStatSmall
+    | TitleText
 
 
 matchers : Parser (Route -> a) a
@@ -39,6 +40,7 @@ matchers =
     , SlabStat
     , SlabStatLarge
     , SlabStatSmall
+    , TitleText
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

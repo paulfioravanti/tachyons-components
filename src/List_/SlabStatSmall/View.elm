@@ -1,7 +1,7 @@
 module List_.SlabStatSmall.View exposing (view)
 
-import Html exposing (Html, a, article, div, dd, dl, h3, li, ul, text)
-import Html.Attributes exposing (attribute, class, href)
+import Html exposing (Html, article, div, dd, dl, h3, text)
+import Html.Attributes exposing (attribute, class)
 import List_.SlabStatSmall.Styles as Styles
 import List_.Stat as Stat exposing (Stat)
 

@@ -19,6 +19,7 @@ module List_
         , slabStatLargeRoute
         , slabStatRoute
         , slabStatSmallRoute
+        , titleTextRoute
         , view
         )
 
@@ -121,6 +122,11 @@ slabStatRoute =
 slabStatSmallRoute : Route
 slabStatSmallRoute =
     Route.SlabStatSmall
+
+
+titleTextRoute : Route
+titleTextRoute =
+    Route.TitleText
 
 
 view : Route -> Html msg

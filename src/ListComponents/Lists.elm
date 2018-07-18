@@ -89,6 +89,11 @@ view changeLocationMsg =
                     "Slab Stat"
                     changeLocationMsg
                     (Lists List_.slabStatRoute)
+                , Utils.component
+                    "lists/title-text/"
+                    "Title Text"
+                    changeLocationMsg
+                    (Lists List_.titleTextRoute)
                 ]
             ]
         ]

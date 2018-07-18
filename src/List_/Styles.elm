@@ -11,6 +11,7 @@ import List_.Route
             , LargeLinksInline
             , LinksInline
             , LinksWithBordersInline
+            , TitleText
             )
         )
 
@@ -47,6 +48,9 @@ sectionContentLinkImageFormatting route =
                     [ "cover" ]
 
                 LinksWithBordersInline ->
+                    [ "cover" ]
+
+                TitleText ->
                     [ "cover" ]
 
                 _ ->
