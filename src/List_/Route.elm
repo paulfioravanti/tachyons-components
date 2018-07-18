@@ -18,6 +18,7 @@ type Route
     | LinksInline
     | LinksWithBordersInline
     | SlabStatLarge
+    | SlabStatSmall
 
 
 matchers : Parser (Route -> a) a
@@ -35,6 +36,7 @@ matchers =
     , LinksInline
     , LinksWithBordersInline
     , SlabStatLarge
+    , SlabStatSmall
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

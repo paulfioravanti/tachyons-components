@@ -29,9 +29,11 @@ import List_.Route
             , LinksInline
             , LinksWithBordersInline
             , SlabStatLarge
+            , SlabStatSmall
             )
         )
 import List_.SlabStatLarge.View as SlabStatLarge
+import List_.SlabStatSmall.View as SlabStatSmall
 
 
 view : Route -> Html msg
@@ -75,3 +77,6 @@ view route =
 
         SlabStatLarge ->
             SlabStatLarge.view
+
+        SlabStatSmall ->
+            SlabStatSmall.view
