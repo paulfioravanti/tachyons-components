@@ -12,6 +12,7 @@ import List_.ItemsImageTitlePrice.View as ItemsImageTitlePrice
 import List_.LargeLinksInline.View as LargeLinksInline
 import List_.LinksAnimateColor.View as LinksAnimateColor
 import List_.LinksInline.View as LinksInline
+import List_.LinksWithBordersInline.View as LinksWithBordersInline
 import List_.Route
     exposing
         ( Route
@@ -26,6 +27,7 @@ import List_.Route
             , LargeLinksInline
             , LinksAnimateColor
             , LinksInline
+            , LinksWithBordersInline
             )
         )
 
@@ -65,3 +67,6 @@ view route =
 
         LinksInline ->
             LinksInline.view
+
+        LinksWithBordersInline ->
+            LinksWithBordersInline.view

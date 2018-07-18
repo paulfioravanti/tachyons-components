@@ -69,6 +69,11 @@ view changeLocationMsg =
                     "Links Inline"
                     changeLocationMsg
                     (Lists List_.linksInlineRoute)
+                , Utils.component
+                    "lists/links-with-borders-inline/"
+                    "Links With Borders Inline"
+                    changeLocationMsg
+                    (Lists List_.linksWithBordersInlineRoute)
                 ]
             ]
         ]

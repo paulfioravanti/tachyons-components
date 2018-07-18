@@ -10,6 +10,7 @@ import List_.Route
             ( Hashtags
             , LargeLinksInline
             , LinksInline
+            , LinksWithBordersInline
             )
         )
 
@@ -43,6 +44,9 @@ sectionContentLinkImageFormatting route =
                     [ "cover" ]
 
                 LinksInline ->
+                    [ "cover" ]
+
+                LinksWithBordersInline ->
                     [ "cover" ]
 
                 _ ->
