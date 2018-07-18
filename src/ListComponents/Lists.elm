@@ -34,6 +34,11 @@ view changeLocationMsg =
                     "Contact Phone"
                     changeLocationMsg
                     (Lists List_.contactPhoneRoute)
+                , Utils.component
+                    "lists/follower-notifications-rounded-square-avatar/"
+                    "Follower Notifications Rounded Square Avatar"
+                    changeLocationMsg
+                    (Lists List_.followerNotificationsRoundedSquareAvatarRoute)
                 ]
             ]
         ]

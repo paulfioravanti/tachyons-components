@@ -9,6 +9,7 @@ type Route
     | BorderSpaced
     | BorderTight
     | ContactPhone
+    | FollowerNotificationsRoundedSquareAvatar
 
 
 matchers : Parser (Route -> a) a
@@ -17,6 +18,7 @@ matchers =
     , BorderSpaced
     , BorderTight
     , ContactPhone
+    , FollowerNotificationsRoundedSquareAvatar
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

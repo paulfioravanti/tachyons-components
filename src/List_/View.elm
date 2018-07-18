@@ -5,6 +5,7 @@ import List_.BlockItemDottedBorder.View as BlockItemDottedBorder
 import List_.BorderSpaced.View as BorderSpaced
 import List_.BorderTight.View as BorderTight
 import List_.ContactPhone.View as ContactPhone
+import List_.FollowerNotificationsRoundedSquareAvatar.View as FollowerNotificationsRoundedSquareAvatar
 import List_.Route
     exposing
         ( Route
@@ -12,6 +13,7 @@ import List_.Route
             , BorderSpaced
             , BorderTight
             , ContactPhone
+            , FollowerNotificationsRoundedSquareAvatar
             )
         )
 
@@ -30,3 +32,6 @@ view route =
 
         ContactPhone ->
             ContactPhone.view
+
+        FollowerNotificationsRoundedSquareAvatar ->
+            FollowerNotificationsRoundedSquareAvatar.view
