@@ -1,6 +1,6 @@
 module List_.LinksAnimateColor.View exposing (view)
 
-import Html exposing (Html, a, div, li, ul, section, text)
+import Html exposing (Html, a, div, section, text)
 import Html.Attributes exposing (attribute, class, href)
 import List_.LinksAnimateColor.Styles as Styles
 import List_.LinksAnimateColor.Link as Link exposing (Link)
