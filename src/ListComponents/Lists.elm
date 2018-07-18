@@ -39,6 +39,11 @@ view changeLocationMsg =
                     "Follower Notifications Rounded Square Avatar"
                     changeLocationMsg
                     (Lists List_.followerNotificationsRoundedSquareAvatarRoute)
+                , Utils.component
+                    "lists/follower-notifications/"
+                    "Follower Notifications"
+                    changeLocationMsg
+                    (Lists List_.followerNotificationsRoute)
                 ]
             ]
         ]

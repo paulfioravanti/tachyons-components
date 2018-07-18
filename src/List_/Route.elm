@@ -9,6 +9,7 @@ type Route
     | BorderSpaced
     | BorderTight
     | ContactPhone
+    | FollowerNotifications
     | FollowerNotificationsRoundedSquareAvatar
 
 
@@ -18,6 +19,7 @@ matchers =
     , BorderSpaced
     , BorderTight
     , ContactPhone
+    , FollowerNotifications
     , FollowerNotificationsRoundedSquareAvatar
     ]
         |> List.map Utils.routeFor
