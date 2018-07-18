@@ -11,6 +11,7 @@ module List_
         , hashtagsRoute
         , itemsImageTitlePriceRoute
         , largeLinksInlineRoute
+        , linksAnimateColorRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -75,6 +76,11 @@ itemsImageTitlePriceRoute =
 largeLinksInlineRoute : Route
 largeLinksInlineRoute =
     Route.LargeLinksInline
+
+
+linksAnimateColorRoute : Route
+linksAnimateColorRoute =
+    Route.LinksAnimateColor
 
 
 matchers : Parser (Route -> a) a

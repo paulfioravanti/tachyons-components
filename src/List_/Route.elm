@@ -14,6 +14,7 @@ type Route
     | Hashtags
     | ItemsImageTitlePrice
     | LargeLinksInline
+    | LinksAnimateColor
 
 
 matchers : Parser (Route -> a) a
@@ -27,6 +28,7 @@ matchers =
     , Hashtags
     , ItemsImageTitlePrice
     , LargeLinksInline
+    , LinksAnimateColor
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
