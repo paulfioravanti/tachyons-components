@@ -17,6 +17,7 @@ type Route
     | LinksAnimateColor
     | LinksInline
     | LinksWithBordersInline
+    | SlabStatLarge
 
 
 matchers : Parser (Route -> a) a
@@ -33,6 +34,7 @@ matchers =
     , LinksAnimateColor
     , LinksInline
     , LinksWithBordersInline
+    , SlabStatLarge
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

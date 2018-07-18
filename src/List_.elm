@@ -16,6 +16,7 @@ module List_
         , linksWithBordersInlineRoute
         , matchers
         , sectionContentLinkImageFormatting
+        , slabStatLargeRoute
         , view
         )
 
@@ -103,6 +104,11 @@ matchers =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+slabStatLargeRoute : Route
+slabStatLargeRoute =
+    Route.SlabStatLarge
 
 
 view : Route -> Html msg

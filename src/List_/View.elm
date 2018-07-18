@@ -28,8 +28,10 @@ import List_.Route
             , LinksAnimateColor
             , LinksInline
             , LinksWithBordersInline
+            , SlabStatLarge
             )
         )
+import List_.SlabStatLarge.View as SlabStatLarge
 
 
 view : Route -> Html msg
@@ -70,3 +72,6 @@ view route =
 
         LinksWithBordersInline ->
             LinksWithBordersInline.view
+
+        SlabStatLarge ->
+            SlabStatLarge.view

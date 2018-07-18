@@ -74,6 +74,11 @@ view changeLocationMsg =
                     "Links With Borders Inline"
                     changeLocationMsg
                     (Lists List_.linksWithBordersInlineRoute)
+                , Utils.component
+                    "lists/slab-stat-large/"
+                    "Slab Stat Large"
+                    changeLocationMsg
+                    (Lists List_.slabStatLargeRoute)
                 ]
             ]
         ]
