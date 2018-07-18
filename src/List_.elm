@@ -9,6 +9,7 @@ module List_
         , followerNotificationsRoundedSquareAvatarRoute
         , followerNotificationsRoute
         , hashtagsRoute
+        , itemsImageTitlePriceRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -63,6 +64,11 @@ followerNotificationsRoute =
 hashtagsRoute : Route
 hashtagsRoute =
     Route.Hashtags
+
+
+itemsImageTitlePriceRoute : Route
+itemsImageTitlePriceRoute =
+    Route.ItemsImageTitlePrice
 
 
 matchers : Parser (Route -> a) a

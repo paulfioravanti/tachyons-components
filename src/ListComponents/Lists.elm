@@ -49,6 +49,11 @@ view changeLocationMsg =
                     "Hashtags"
                     changeLocationMsg
                     (Lists List_.hashtagsRoute)
+                , Utils.component
+                    "lists/items-image-title-price/"
+                    "Items Image Title Price"
+                    changeLocationMsg
+                    (Lists List_.itemsImageTitlePriceRoute)
                 ]
             ]
         ]
