@@ -4,7 +4,13 @@ module Nav.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Nav.Route exposing (Route(FixedSemiTransparent))
+import Nav.Route
+    exposing
+        ( Route
+            ( FixedSemiTransparent
+            , LargeTitleLinkList
+            )
+        )
 
 
 bodyClasses : Route -> List String
@@ -31,5 +37,11 @@ sectionContentLinkImageFormatting route =
             case route of
                 FixedSemiTransparent ->
                     [ "cover" ]
+
+                LargeTitleLinkList ->
+                    [ "contain" ]
+
+        -- _ ->
+        --     []
     in
         defaultFormatting :: componentSpecificFormatting

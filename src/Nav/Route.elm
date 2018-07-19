@@ -6,11 +6,13 @@ import Utils
 
 type Route
     = FixedSemiTransparent
+    | LargeTitleLinkList
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ FixedSemiTransparent
+    , LargeTitleLinkList
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

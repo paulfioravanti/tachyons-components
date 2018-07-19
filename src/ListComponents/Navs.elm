@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Fixed Semi Transparent"
                     changeLocationMsg
                     (Navs Nav.fixedSemiTransparentRoute)
+                , Utils.component
+                    "nav/large-title-link-list/"
+                    "Large Title Link List"
+                    changeLocationMsg
+                    (Navs Nav.largeTitleLinkListRoute)
                 ]
             ]
         ]

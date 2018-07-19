@@ -3,6 +3,7 @@ module Nav
         ( Route
         , bodyClasses
         , fixedSemiTransparentRoute
+        , largeTitleLinkListRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -27,6 +28,11 @@ bodyClasses route =
 fixedSemiTransparentRoute : Route
 fixedSemiTransparentRoute =
     Route.FixedSemiTransparent
+
+
+largeTitleLinkListRoute : Route
+largeTitleLinkListRoute =
+    Route.LargeTitleLinkList
 
 
 matchers : Parser (Route -> a) a
