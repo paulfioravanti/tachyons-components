@@ -44,6 +44,11 @@ view changeLocationMsg =
                     "Logo Titles Links Centered"
                     changeLocationMsg
                     (Navs Nav.logoTitlesLinksCenteredRoute)
+                , Utils.component
+                    "nav/minimal-sign-up/"
+                    "Minimal Sign Up"
+                    changeLocationMsg
+                    (Navs Nav.minimalSignUpRoute)
                 ]
             ]
         ]

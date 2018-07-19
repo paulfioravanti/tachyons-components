@@ -11,6 +11,7 @@ import Nav.Route
             , LargeTitleLinkList
             , LogoLinksInline
             , LogoLinksInlineCollapse
+            , MinimalSignUp
             )
         )
 
@@ -25,6 +26,12 @@ bodyClasses route =
             ]
     in
         case route of
+            MinimalSignUp ->
+                [ "bg-near-black"
+                , "sans-serif"
+                , "w-100"
+                ]
+
             _ ->
                 defaultFormatting
 
@@ -47,6 +54,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 LogoLinksInlineCollapse ->
+                    [ "contain" ]
+
+                MinimalSignUp ->
                     [ "contain" ]
 
                 _ ->

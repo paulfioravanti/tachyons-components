@@ -9,6 +9,7 @@ module Nav
         , logoLinksInlineRoute
         , logoTitlesLinksCenteredRoute
         , matchers
+        , minimalSignUpRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -62,6 +63,11 @@ logoTitlesLinksCenteredRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+minimalSignUpRoute : Route
+minimalSignUpRoute =
+    Route.MinimalSignUp
 
 
 sectionContentLinkImageFormatting : Route -> List String

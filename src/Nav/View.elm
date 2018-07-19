@@ -7,6 +7,7 @@ import Nav.ListOverflow.View as ListOverflow
 import Nav.LogoLinksInline.View as LogoLinksInline
 import Nav.LogoLinksInlineCollapse.View as LogoLinksInlineCollapse
 import Nav.LogoTitlesLinksCentered.View as LogoTitlesLinksCentered
+import Nav.MinimalSignUp.View as MinimalSignUp
 import Nav.Route
     exposing
         ( Route
@@ -16,6 +17,7 @@ import Nav.Route
             , LogoLinksInline
             , LogoLinksInlineCollapse
             , LogoTitlesLinksCentered
+            , MinimalSignUp
             )
         )
 
@@ -40,3 +42,6 @@ view route =
 
         LogoTitlesLinksCentered ->
             LogoTitlesLinksCentered.view
+
+        MinimalSignUp ->
+            MinimalSignUp.view
