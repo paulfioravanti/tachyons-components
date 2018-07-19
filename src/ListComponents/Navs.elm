@@ -29,6 +29,11 @@ view changeLocationMsg =
                     "List Overflow"
                     changeLocationMsg
                     (Navs Nav.listOverflowRoute)
+                , Utils.component
+                    "nav/logo-links-inline-collapse/"
+                    "Logo Links Inline Collapse"
+                    changeLocationMsg
+                    (Navs Nav.logoLinksInlineCollapseRoute)
                 ]
             ]
         ]

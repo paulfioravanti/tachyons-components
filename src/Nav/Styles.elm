@@ -9,6 +9,7 @@ import Nav.Route
         ( Route
             ( FixedSemiTransparent
             , LargeTitleLinkList
+            , LogoLinksInlineCollapse
             )
         )
 
@@ -39,6 +40,9 @@ sectionContentLinkImageFormatting route =
                     [ "cover" ]
 
                 LargeTitleLinkList ->
+                    [ "contain" ]
+
+                LogoLinksInlineCollapse ->
                     [ "contain" ]
 
                 _ ->

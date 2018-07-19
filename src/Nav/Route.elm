@@ -8,6 +8,7 @@ type Route
     = FixedSemiTransparent
     | LargeTitleLinkList
     | ListOverflow
+    | LogoLinksInlineCollapse
 
 
 matchers : Parser (Route -> a) a
@@ -15,6 +16,7 @@ matchers =
     [ FixedSemiTransparent
     , LargeTitleLinkList
     , ListOverflow
+    , LogoLinksInlineCollapse
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

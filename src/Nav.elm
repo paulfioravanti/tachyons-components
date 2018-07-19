@@ -5,6 +5,7 @@ module Nav
         , fixedSemiTransparentRoute
         , largeTitleLinkListRoute
         , listOverflowRoute
+        , logoLinksInlineCollapseRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -39,6 +40,11 @@ largeTitleLinkListRoute =
 listOverflowRoute : Route
 listOverflowRoute =
     Route.ListOverflow
+
+
+logoLinksInlineCollapseRoute : Route
+logoLinksInlineCollapseRoute =
+    Route.LogoLinksInlineCollapse
 
 
 matchers : Parser (Route -> a) a
