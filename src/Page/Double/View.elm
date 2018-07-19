@@ -3,14 +3,10 @@ module Page.Double.View exposing (view)
 import Html
     exposing
         ( Html
-        , article
         , div
         , h1
-        , h2
-        , header
         , main_
         , p
-        , section
         , span
         , text
         )
