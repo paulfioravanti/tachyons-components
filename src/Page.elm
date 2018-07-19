@@ -5,6 +5,7 @@ module Page
         , doubleRoute
         , fourByFourMixedGridRoute
         , matchers
+        , portfolioProjectRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -38,6 +39,11 @@ fourByFourMixedGridRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+portfolioProjectRoute : Route
+portfolioProjectRoute =
+    Route.PortfolioProject
 
 
 sectionContentLinkImageFormatting : Route -> List String

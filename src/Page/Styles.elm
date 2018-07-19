@@ -9,6 +9,7 @@ import Page.Route
         ( Route
             ( Double
             , FourByFourMixedGrid
+            , PortfolioProject
             )
         )
 
@@ -43,5 +44,8 @@ sectionContentLinkImageFormatting route =
 
                 FourByFourMixedGrid ->
                     [ "cover" ]
+
+                PortfolioProject ->
+                    [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting

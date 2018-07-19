@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Double"
                     changeLocationMsg
                     (Pages Page.doubleRoute)
+                , Utils.component
+                    "pages/portfolio-project/"
+                    "Portfolio Project"
+                    changeLocationMsg
+                    (Pages Page.portfolioProjectRoute)
                 ]
             ]
         ]
