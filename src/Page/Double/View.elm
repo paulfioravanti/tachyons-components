@@ -1,15 +1,6 @@
 module Page.Double.View exposing (view)
 
-import Html
-    exposing
-        ( Html
-        , div
-        , h1
-        , main_
-        , p
-        , span
-        , text
-        )
+import Html exposing (Html, div, h1, main_, p, span, text)
 import Html.Attributes exposing (attribute, class, style)
 import Page.Double.Styles as Styles
 
