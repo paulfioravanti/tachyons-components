@@ -1,6 +1,6 @@
 module Nav.ListOverflow.View exposing (view)
 
-import Html exposing (Html, a, div, header, nav, text)
+import Html exposing (Html, a, div, nav, text)
 import Html.Attributes exposing (attribute, class, href, title)
 import Nav.ListOverflow.Styles as Styles
 

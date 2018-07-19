@@ -1,6 +1,6 @@
 module Nav.LargeTitleLinkList.View exposing (view)
 
-import Html exposing (Html, a, div, header, nav, text)
+import Html exposing (Html, a, div, nav, text)
 import Html.Attributes exposing (attribute, class, href, title)
 import Nav.LargeTitleLinkList.Styles as Styles
 
@@ -24,14 +24,14 @@ homeLink =
 navLinks : Html msg
 navLinks =
     let
-        navLinks =
+        navLinkNames =
             [ "Home", "About", "Store" ]
 
         lastNavLink =
             navLink Styles.lastNavLink "Contact" []
     in
         div [ class Styles.navLinks ]
-            (List.foldr (navLink Styles.navLink) lastNavLink navLinks)
+            (List.foldr (navLink Styles.navLink) lastNavLink navLinkNames)
 
 
 navLink : String -> String -> List (Html msg) -> List (Html msg)
