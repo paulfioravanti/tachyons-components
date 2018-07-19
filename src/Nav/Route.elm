@@ -8,6 +8,7 @@ type Route
     = FixedSemiTransparent
     | LargeTitleLinkList
     | ListOverflow
+    | LogoLinksInline
     | LogoLinksInlineCollapse
 
 
@@ -16,6 +17,7 @@ matchers =
     [ FixedSemiTransparent
     , LargeTitleLinkList
     , ListOverflow
+    , LogoLinksInline
     , LogoLinksInlineCollapse
     ]
         |> List.map Utils.routeFor

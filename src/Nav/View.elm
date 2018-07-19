@@ -4,6 +4,7 @@ import Html exposing (Html)
 import Nav.FixedSemiTransparent.View as FixedSemiTransparent
 import Nav.LargeTitleLinkList.View as LargeTitleLinkList
 import Nav.ListOverflow.View as ListOverflow
+import Nav.LogoLinksInline.View as LogoLinksInline
 import Nav.LogoLinksInlineCollapse.View as LogoLinksInlineCollapse
 import Nav.Route
     exposing
@@ -11,6 +12,7 @@ import Nav.Route
             ( FixedSemiTransparent
             , LargeTitleLinkList
             , ListOverflow
+            , LogoLinksInline
             , LogoLinksInlineCollapse
             )
         )
@@ -27,6 +29,9 @@ view route =
 
         ListOverflow ->
             ListOverflow.view
+
+        LogoLinksInline ->
+            LogoLinksInline.view
 
         LogoLinksInlineCollapse ->
             LogoLinksInlineCollapse.view

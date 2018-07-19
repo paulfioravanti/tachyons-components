@@ -34,6 +34,11 @@ view changeLocationMsg =
                     "Logo Links Inline Collapse"
                     changeLocationMsg
                     (Navs Nav.logoLinksInlineCollapseRoute)
+                , Utils.component
+                    "nav/logo-links-inline/"
+                    "Logo Links Inline"
+                    changeLocationMsg
+                    (Navs Nav.logoLinksInlineRoute)
                 ]
             ]
         ]
