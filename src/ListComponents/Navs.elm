@@ -24,6 +24,11 @@ view changeLocationMsg =
                     "Large Title Link List"
                     changeLocationMsg
                     (Navs Nav.largeTitleLinkListRoute)
+                , Utils.component
+                    "nav/list-overflow/"
+                    "List Overflow"
+                    changeLocationMsg
+                    (Navs Nav.listOverflowRoute)
                 ]
             ]
         ]

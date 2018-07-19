@@ -4,6 +4,7 @@ module Nav
         , bodyClasses
         , fixedSemiTransparentRoute
         , largeTitleLinkListRoute
+        , listOverflowRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -33,6 +34,11 @@ fixedSemiTransparentRoute =
 largeTitleLinkListRoute : Route
 largeTitleLinkListRoute =
     Route.LargeTitleLinkList
+
+
+listOverflowRoute : Route
+listOverflowRoute =
+    Route.ListOverflow
 
 
 matchers : Parser (Route -> a) a

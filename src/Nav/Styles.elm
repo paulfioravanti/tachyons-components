@@ -41,7 +41,7 @@ sectionContentLinkImageFormatting route =
                 LargeTitleLinkList ->
                     [ "contain" ]
 
-        -- _ ->
-        --     []
+                _ ->
+                    []
     in
         defaultFormatting :: componentSpecificFormatting
