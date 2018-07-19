@@ -18,8 +18,10 @@ import Nav.Route
             , LogoLinksInlineCollapse
             , LogoTitlesLinksCentered
             , MinimalSignUp
+            , TitleLinkList
             )
         )
+import Nav.TitleLinkList.View as TitleLinkList
 
 
 view : Route -> Html msg
@@ -45,3 +47,6 @@ view route =
 
         MinimalSignUp ->
             MinimalSignUp.view
+
+        TitleLinkList ->
+            TitleLinkList.view

@@ -12,6 +12,7 @@ import Nav.Route
             , LogoLinksInline
             , LogoLinksInlineCollapse
             , MinimalSignUp
+            , TitleLinkList
             )
         )
 
@@ -57,6 +58,9 @@ sectionContentLinkImageFormatting route =
                     [ "contain" ]
 
                 MinimalSignUp ->
+                    [ "contain" ]
+
+                TitleLinkList ->
                     [ "contain" ]
 
                 _ ->

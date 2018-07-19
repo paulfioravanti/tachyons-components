@@ -11,6 +11,7 @@ module Nav
         , matchers
         , minimalSignUpRoute
         , sectionContentLinkImageFormatting
+        , titleLinkListRoute
         , view
         )
 
@@ -73,6 +74,11 @@ minimalSignUpRoute =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+titleLinkListRoute : Route
+titleLinkListRoute =
+    Route.TitleLinkList
 
 
 view : Route -> Html msg

@@ -12,6 +12,7 @@ type Route
     | LogoLinksInlineCollapse
     | LogoTitlesLinksCentered
     | MinimalSignUp
+    | TitleLinkList
 
 
 matchers : Parser (Route -> a) a
@@ -23,6 +24,7 @@ matchers =
     , LogoLinksInlineCollapse
     , LogoTitlesLinksCentered
     , MinimalSignUp
+    , TitleLinkList
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

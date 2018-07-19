@@ -49,6 +49,11 @@ view changeLocationMsg =
                     "Minimal Sign Up"
                     changeLocationMsg
                     (Navs Nav.minimalSignUpRoute)
+                , Utils.component
+                    "nav/title-link-list/"
+                    "Title Link List"
+                    changeLocationMsg
+                    (Navs Nav.titleLinkListRoute)
                 ]
             ]
         ]
