@@ -1,6 +1,20 @@
 module Page.PortfolioProject.View exposing (view)
 
-import Html exposing (Html, a, article, blockquote, div, h1, h2, header, iframe, img, main_, p, section, span, text)
+import Html
+    exposing
+        ( Html
+        , a
+        , article
+        , blockquote
+        , div
+        , h1
+        , iframe
+        , img
+        , main_
+        , p
+        , section
+        , text
+        )
 import Html.Attributes exposing (attribute, class, href, src, style)
 import Page.PortfolioProject.Project as Project exposing (Project)
 import Page.PortfolioProject.Styles as Styles
@@ -174,7 +188,7 @@ otherProjects =
             ]
         , a [ class Styles.otherProjectsMiddleRowImageWrapper ]
             [ div
-                [ class (Styles.otherProjectsMiddleRowImage)
+                [ class Styles.otherProjectsMiddleRowImage
                 , href "#0"
                 , style
                     [ ( "backgroundImage"
@@ -186,7 +200,7 @@ otherProjects =
             ]
         , a [ class Styles.otherProjectsLastRowImageWrapper ]
             [ div
-                [ class (Styles.otherProjectsLastRowImage)
+                [ class Styles.otherProjectsLastRowImage
                 , href "#0"
                 , style
                     [ ( "backgroundImage"
@@ -198,7 +212,7 @@ otherProjects =
             ]
         , a [ class Styles.otherProjectsLastRowImageWrapper ]
             [ div
-                [ class (Styles.otherProjectsLastRowImage)
+                [ class Styles.otherProjectsLastRowImage
                 , href "#0"
                 , style
                     [ ( "backgroundImage"
