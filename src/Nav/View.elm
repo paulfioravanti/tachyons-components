@@ -6,6 +6,7 @@ import Nav.LargeTitleLinkList.View as LargeTitleLinkList
 import Nav.ListOverflow.View as ListOverflow
 import Nav.LogoLinksInline.View as LogoLinksInline
 import Nav.LogoLinksInlineCollapse.View as LogoLinksInlineCollapse
+import Nav.LogoTitlesLinksCentered.View as LogoTitlesLinksCentered
 import Nav.Route
     exposing
         ( Route
@@ -14,6 +15,7 @@ import Nav.Route
             , ListOverflow
             , LogoLinksInline
             , LogoLinksInlineCollapse
+            , LogoTitlesLinksCentered
             )
         )
 
@@ -35,3 +37,6 @@ view route =
 
         LogoLinksInlineCollapse ->
             LogoLinksInlineCollapse.view
+
+        LogoTitlesLinksCentered ->
+            LogoTitlesLinksCentered.view

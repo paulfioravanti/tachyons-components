@@ -7,6 +7,7 @@ module Nav
         , listOverflowRoute
         , logoLinksInlineCollapseRoute
         , logoLinksInlineRoute
+        , logoTitlesLinksCenteredRoute
         , matchers
         , sectionContentLinkImageFormatting
         , view
@@ -51,6 +52,11 @@ logoLinksInlineCollapseRoute =
 logoLinksInlineRoute : Route
 logoLinksInlineRoute =
     Route.LogoLinksInline
+
+
+logoTitlesLinksCenteredRoute : Route
+logoTitlesLinksCenteredRoute =
+    Route.LogoTitlesLinksCentered
 
 
 matchers : Parser (Route -> a) a

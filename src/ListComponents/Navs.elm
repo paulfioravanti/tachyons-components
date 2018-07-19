@@ -39,6 +39,11 @@ view changeLocationMsg =
                     "Logo Links Inline"
                     changeLocationMsg
                     (Navs Nav.logoLinksInlineRoute)
+                , Utils.component
+                    "nav/logo-titles-links-centered/"
+                    "Logo Titles Links Centered"
+                    changeLocationMsg
+                    (Navs Nav.logoTitlesLinksCenteredRoute)
                 ]
             ]
         ]

@@ -10,6 +10,7 @@ type Route
     | ListOverflow
     | LogoLinksInline
     | LogoLinksInlineCollapse
+    | LogoTitlesLinksCentered
 
 
 matchers : Parser (Route -> a) a
@@ -19,6 +20,7 @@ matchers =
     , ListOverflow
     , LogoLinksInline
     , LogoLinksInlineCollapse
+    , LogoTitlesLinksCentered
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
