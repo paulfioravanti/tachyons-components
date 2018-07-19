@@ -4,7 +4,13 @@ module Page.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Page.Route exposing (Route(FourByFourMixedGrid))
+import Page.Route
+    exposing
+        ( Route
+            ( Double
+            , FourByFourMixedGrid
+            )
+        )
 
 
 bodyClasses : Route -> List String
@@ -20,6 +26,9 @@ bodyClasses route =
             FourByFourMixedGrid ->
                 [ "black-80", "helvetica" ] ++ defaultFormatting
 
+            _ ->
+                defaultFormatting
+
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
@@ -29,6 +38,9 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
+                Double ->
+                    [ "cover" ]
+
                 FourByFourMixedGrid ->
                     [ "cover" ]
     in

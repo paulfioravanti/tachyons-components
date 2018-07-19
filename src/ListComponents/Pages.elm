@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "4x4 Mixed Grid"
                     changeLocationMsg
                     (Pages Page.fourByFourMixedGridRoute)
+                , Utils.component
+                    "pages/double/"
+                    "Double"
+                    changeLocationMsg
+                    (Pages Page.doubleRoute)
                 ]
             ]
         ]

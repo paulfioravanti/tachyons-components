@@ -2,6 +2,7 @@ module Page
     exposing
         ( Route
         , bodyClasses
+        , doubleRoute
         , fourByFourMixedGridRoute
         , matchers
         , sectionContentLinkImageFormatting
@@ -22,6 +23,11 @@ type alias Route =
 bodyClasses : Route -> List String
 bodyClasses route =
     Styles.bodyClasses route
+
+
+doubleRoute : Route
+doubleRoute =
+    Route.Double
 
 
 fourByFourMixedGridRoute : Route
