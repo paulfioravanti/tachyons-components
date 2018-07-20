@@ -1,12 +1,12 @@
 # Tachyons Components
 
-This is my attempt to (mostly) re-create the [Tachyons Components][]
+This is my attempt to re-create the code examples on the [Tachyons Components][]
 documentation pages using [Elm][].
 
 The purpose is simply for web interface coding practice using [Tachyons][] and
 Elm.
 
-Currently a work in progress, but you can see the results at:
+Currently deployed at:
 
 - Heroku: <https://tachyons-components.herokuapp.com/>
 
