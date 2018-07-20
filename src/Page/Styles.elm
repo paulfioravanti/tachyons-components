@@ -10,6 +10,7 @@ import Page.Route
             ( Double
             , FourByFourMixedGrid
             , PortfolioProject
+            , SwissCoverFiveColumns
             )
         )
 
@@ -26,6 +27,14 @@ bodyClasses route =
         case route of
             FourByFourMixedGrid ->
                 [ "black-80", "helvetica" ] ++ defaultFormatting
+
+            SwissCoverFiveColumns ->
+                [ "bg-dark-gray"
+                , "helvetica"
+                , "sans-serif"
+                , "w-100"
+                , "white"
+                ]
 
             _ ->
                 defaultFormatting
@@ -47,5 +56,8 @@ sectionContentLinkImageFormatting route =
 
                 PortfolioProject ->
                     [ "contain" ]
+
+                SwissCoverFiveColumns ->
+                    [ "cover" ]
     in
         defaultFormatting :: componentSpecificFormatting

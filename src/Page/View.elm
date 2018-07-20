@@ -10,8 +10,10 @@ import Page.Route
             ( Double
             , FourByFourMixedGrid
             , PortfolioProject
+            , SwissCoverFiveColumns
             )
         )
+import Page.SwissCoverFiveColumns.View as SwissCoverFiveColumns
 
 
 view : Route -> Html msg
@@ -25,3 +27,6 @@ view route =
 
         PortfolioProject ->
             PortfolioProject.view
+
+        SwissCoverFiveColumns ->
+            SwissCoverFiveColumns.view

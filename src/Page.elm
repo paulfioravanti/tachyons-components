@@ -7,6 +7,7 @@ module Page
         , matchers
         , portfolioProjectRoute
         , sectionContentLinkImageFormatting
+        , swissCoverFiveColumnsRoute
         , view
         )
 
@@ -49,6 +50,11 @@ portfolioProjectRoute =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+swissCoverFiveColumnsRoute : Route
+swissCoverFiveColumnsRoute =
+    Route.SwissCoverFiveColumns
 
 
 view : Route -> Html msg

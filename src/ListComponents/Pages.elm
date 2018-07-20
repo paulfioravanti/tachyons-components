@@ -29,6 +29,11 @@ view changeLocationMsg =
                     "Portfolio Project"
                     changeLocationMsg
                     (Pages Page.portfolioProjectRoute)
+                , Utils.component
+                    "pages/swiss-cover-five-columns/"
+                    "Swiss Cover Five Columns"
+                    changeLocationMsg
+                    (Pages Page.swissCoverFiveColumnsRoute)
                 ]
             ]
         ]
