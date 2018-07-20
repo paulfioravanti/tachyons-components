@@ -4,6 +4,7 @@ module Text
         , bodyClasses
         , largeParagraphRoute
         , matchers
+        , narrowParagraphRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -32,6 +33,11 @@ largeParagraphRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+narrowParagraphRoute : Route
+narrowParagraphRoute =
+    Route.NarrowParagraph
 
 
 sectionContentLinkImageFormatting : Route -> List String

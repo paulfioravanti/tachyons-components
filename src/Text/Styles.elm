@@ -4,7 +4,7 @@ module Text.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Text.Route exposing (Route(LargeParagraph))
+import Text.Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -29,7 +29,7 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                LargeParagraph ->
+                _ ->
                     [ "contain" ]
     in
         defaultFormatting :: componentSpecificFormatting

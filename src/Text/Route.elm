@@ -6,11 +6,13 @@ import Utils
 
 type Route
     = LargeParagraph
+    | NarrowParagraph
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ LargeParagraph
+    , NarrowParagraph
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf
