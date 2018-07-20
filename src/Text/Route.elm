@@ -8,6 +8,7 @@ type Route
     = LargeParagraph
     | NarrowParagraph
     | Paragraph
+    | SmallNarrowParagraph
 
 
 matchers : Parser (Route -> a) a
@@ -15,6 +16,7 @@ matchers =
     [ LargeParagraph
     , NarrowParagraph
     , Paragraph
+    , SmallNarrowParagraph
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

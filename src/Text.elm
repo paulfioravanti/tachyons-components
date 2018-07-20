@@ -7,6 +7,7 @@ module Text
         , narrowParagraphRoute
         , paragraphRoute
         , sectionContentLinkImageFormatting
+        , smallNarrowParagraphRoute
         , view
         )
 
@@ -49,6 +50,11 @@ paragraphRoute =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+smallNarrowParagraphRoute : Route
+smallNarrowParagraphRoute =
+    Route.SmallNarrowParagraph
 
 
 view : Route -> Html msg
