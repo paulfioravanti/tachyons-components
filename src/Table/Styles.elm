@@ -4,7 +4,7 @@ module Table.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Table.Route exposing (Route(Basic))
+import Table.Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -29,7 +29,7 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                Basic ->
+                _ ->
                     [ "cover" ]
     in
         defaultFormatting :: componentSpecificFormatting

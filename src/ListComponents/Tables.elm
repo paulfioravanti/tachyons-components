@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Basic"
                     changeLocationMsg
                     (Tables Table.basicRoute)
+                , Utils.component
+                    "tables/striped-dark/"
+                    "Striped Dark"
+                    changeLocationMsg
+                    (Tables Table.stripedDarkRoute)
                 ]
             ]
         ]

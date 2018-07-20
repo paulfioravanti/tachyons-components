@@ -5,6 +5,7 @@ module Table
         , bodyClasses
         , matchers
         , sectionContentLinkImageFormatting
+        , stripedDarkRoute
         , view
         )
 
@@ -37,6 +38,11 @@ matchers =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     Styles.sectionContentLinkImageFormatting route
+
+
+stripedDarkRoute : Route
+stripedDarkRoute =
+    Route.StripedDark
 
 
 view : Route -> Html msg
