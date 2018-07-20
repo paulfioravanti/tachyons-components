@@ -44,6 +44,11 @@ view changeLocationMsg =
                     "Title Subtitle Centered"
                     changeLocationMsg
                     (Texts Text.titleSubtitleCenteredRoute)
+                , Utils.component
+                    "text/wide-paragraph/"
+                    "Wide Paragraph"
+                    changeLocationMsg
+                    (Texts Text.wideParagraphRoute)
                 ]
             ]
         ]

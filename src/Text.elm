@@ -11,6 +11,7 @@ module Text
         , smallParagraphRoute
         , titleSubtitleCenteredRoute
         , view
+        , wideParagraphRoute
         )
 
 import Text.Route as Route exposing (Route)
@@ -72,3 +73,8 @@ titleSubtitleCenteredRoute =
 view : Route -> Html msg
 view route =
     View.view route
+
+
+wideParagraphRoute : Route
+wideParagraphRoute =
+    Route.WideParagraph
