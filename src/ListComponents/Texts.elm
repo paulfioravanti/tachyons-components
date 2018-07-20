@@ -34,6 +34,11 @@ view changeLocationMsg =
                     "Small Narrow Paragraph"
                     changeLocationMsg
                     (Texts Text.smallNarrowParagraphRoute)
+                , Utils.component
+                    "text/small-paragraph/"
+                    "Small Paragraph"
+                    changeLocationMsg
+                    (Texts Text.smallParagraphRoute)
                 ]
             ]
         ]

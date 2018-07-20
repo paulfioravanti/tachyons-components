@@ -11,9 +11,11 @@ import Text.Route
             , NarrowParagraph
             , Paragraph
             , SmallNarrowParagraph
+            , SmallParagraph
             )
         )
 import Text.SmallNarrowParagraph.View as SmallNarrowParagraph
+import Text.SmallParagraph.View as SmallParagraph
 
 
 view : Route -> Html msg
@@ -30,3 +32,6 @@ view route =
 
         SmallNarrowParagraph ->
             SmallNarrowParagraph.view
+
+        SmallParagraph ->
+            SmallParagraph.view
