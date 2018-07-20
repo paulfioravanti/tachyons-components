@@ -10,6 +10,7 @@ type Route
     | Paragraph
     | SmallNarrowParagraph
     | SmallParagraph
+    | TitleSubtitleCentered
 
 
 matchers : Parser (Route -> a) a
@@ -19,6 +20,7 @@ matchers =
     , Paragraph
     , SmallNarrowParagraph
     , SmallParagraph
+    , TitleSubtitleCentered
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

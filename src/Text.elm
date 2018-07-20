@@ -9,6 +9,7 @@ module Text
         , sectionContentLinkImageFormatting
         , smallNarrowParagraphRoute
         , smallParagraphRoute
+        , titleSubtitleCenteredRoute
         , view
         )
 
@@ -61,6 +62,11 @@ smallNarrowParagraphRoute =
 smallParagraphRoute : Route
 smallParagraphRoute =
     Route.SmallParagraph
+
+
+titleSubtitleCenteredRoute : Route
+titleSubtitleCenteredRoute =
+    Route.TitleSubtitleCentered
 
 
 view : Route -> Html msg

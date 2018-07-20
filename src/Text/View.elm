@@ -12,10 +12,12 @@ import Text.Route
             , Paragraph
             , SmallNarrowParagraph
             , SmallParagraph
+            , TitleSubtitleCentered
             )
         )
 import Text.SmallNarrowParagraph.View as SmallNarrowParagraph
 import Text.SmallParagraph.View as SmallParagraph
+import Text.TitleSubtitleCentered.View as TitleSubtitleCentered
 
 
 view : Route -> Html msg
@@ -35,3 +37,6 @@ view route =
 
         SmallParagraph ->
             SmallParagraph.view
+
+        TitleSubtitleCentered ->
+            TitleSubtitleCentered.view

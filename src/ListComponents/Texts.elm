@@ -39,6 +39,11 @@ view changeLocationMsg =
                     "Small Paragraph"
                     changeLocationMsg
                     (Texts Text.smallParagraphRoute)
+                , Utils.component
+                    "text/title-subtitle-centered/"
+                    "Title Subtitle Centered"
+                    changeLocationMsg
+                    (Texts Text.titleSubtitleCenteredRoute)
                 ]
             ]
         ]
