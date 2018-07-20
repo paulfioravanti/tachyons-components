@@ -32,12 +32,12 @@ userTable =
 tableHeadings : Html msg
 tableHeadings =
     let
-        tableHeadings =
+        headings =
             [ "Name", "Username", "Email", "ID" ]
     in
         thead []
             [ tr [ class Styles.stripe ]
-                (List.map tableHeading tableHeadings)
+                (List.map tableHeading headings)
             ]
 
 
