@@ -3,11 +3,13 @@ module Text.View exposing (view)
 import Html exposing (Html)
 import Text.LargeParagraph.View as LargeParagraph
 import Text.NarrowParagraph.View as NarrowParagraph
+import Text.Paragraph.View as Paragraph
 import Text.Route
     exposing
         ( Route
             ( LargeParagraph
             , NarrowParagraph
+            , Paragraph
             )
         )
 
@@ -20,3 +22,6 @@ view route =
 
         NarrowParagraph ->
             NarrowParagraph.view
+
+        Paragraph ->
+            Paragraph.view

@@ -5,6 +5,7 @@ module Text
         , largeParagraphRoute
         , matchers
         , narrowParagraphRoute
+        , paragraphRoute
         , sectionContentLinkImageFormatting
         , view
         )
@@ -38,6 +39,11 @@ matchers =
 narrowParagraphRoute : Route
 narrowParagraphRoute =
     Route.NarrowParagraph
+
+
+paragraphRoute : Route
+paragraphRoute =
+    Route.Paragraph
 
 
 sectionContentLinkImageFormatting : Route -> List String
