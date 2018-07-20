@@ -4,7 +4,7 @@ module Quote.Styles
         , sectionContentLinkImageFormatting
         )
 
-import Quote.Route exposing (Route(LeftBorder))
+import Quote.Route exposing (Route(LeftBorder, PullQuote))
 
 
 bodyClasses : Route -> List String
@@ -26,3 +26,8 @@ sectionContentLinkImageFormatting route =
     case route of
         LeftBorder ->
             [ "bg-left" ]
+
+        PullQuote ->
+            [ "bg-center"
+            , "contain"
+            ]

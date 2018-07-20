@@ -5,6 +5,7 @@ module Quote
         , leftBorderRoute
         , matchers
         , sectionContentLinkImageFormatting
+        , pullQuoteRoute
         , view
         )
 
@@ -32,6 +33,11 @@ leftBorderRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+pullQuoteRoute : Route
+pullQuoteRoute =
+    Route.PullQuote
 
 
 sectionContentLinkImageFormatting : Route -> List String

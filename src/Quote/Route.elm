@@ -6,11 +6,13 @@ import Utils
 
 type Route
     = LeftBorder
+    | PullQuote
 
 
 matchers : Parser (Route -> a) a
 matchers =
     [ LeftBorder
+    , PullQuote
     ]
         |> List.map Utils.routeFor
         |> UrlParser.oneOf

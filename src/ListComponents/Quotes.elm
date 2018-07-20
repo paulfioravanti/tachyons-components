@@ -19,6 +19,11 @@ view changeLocationMsg =
                     "Left Border"
                     changeLocationMsg
                     (Quotes Quote.leftBorderRoute)
+                , Utils.component
+                    "quotes/pull-quote/"
+                    "Pull Quote"
+                    changeLocationMsg
+                    (Quotes Quote.pullQuoteRoute)
                 ]
             ]
         ]
