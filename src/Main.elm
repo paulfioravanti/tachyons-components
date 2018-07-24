@@ -12,34 +12,29 @@ import View
 
 main : Program Never Model Msg
 main =
-    let
-        changeLocationMsg =
-            ChangeLocation
-    in
-        Navigation.program
-            UrlChange
-            { init = init
-            , update = Update.update
-            , view = View.view changeLocationMsg
-            , subscriptions = always Sub.none
-            }
+    Navigation.program
+        UrlChange
+        { init = init
+        , update = Update.update
+        , view = View.view ChangeLocation
+        , subscriptions = always Sub.none
+        }
 
 
 init : Location -> ( Model, Cmd Msg )
 init location =
     let
         route =
-            location
-                |> Route.fromLocation
+            Route.fromLocation location
+
+        setBodyClasses =
+            route
+                |> Styles.bodyClasses
+                |> Ports.setBodyClasses
 
         setUrl =
             route
                 |> Route.toPath
                 |> Navigation.newUrl
     in
-        ( route
-        , Cmd.batch
-            [ Ports.setBodyClasses (Styles.bodyClasses route)
-            , setUrl
-            ]
-        )
+        ( route, Cmd.batch [ setBodyClasses, setUrl ] )
