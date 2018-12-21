@@ -1,25 +1,24 @@
-module ListComponents.Styles
-    exposing
-        ( anchor
-        , header
-        , headerContent
-        , main_
-        , mainHeader
-        , nav
-        , navLink
-        , sectionContent
-        , sectionContentLink
-        , sectionContentLinkContent
-        , sectionContentLinkImage
-        , sectionContentTitle
-        , sectionContentWrapper
-        , sectionHeader
-        , sectionTitle
-        , title
-        , titleLink
-        , versionNumber
-        , versionNumberWrapper
-        )
+module ListComponents.Styles exposing
+    ( anchor
+    , header
+    , headerContent
+    , mainHeader
+    , main_
+    , nav
+    , navLink
+    , sectionContent
+    , sectionContentLink
+    , sectionContentLinkContent
+    , sectionContentLinkImage
+    , sectionContentTitle
+    , sectionContentWrapper
+    , sectionHeader
+    , sectionTitle
+    , title
+    , titleLink
+    , versionNumber
+    , versionNumberWrapper
+    )
 
 import Article
 import Banner
@@ -38,34 +37,7 @@ import Marketing
 import Nav
 import Page
 import Quote
-import Route
-    exposing
-        ( Route
-            ( ArticleLists
-            , Articles
-            , Avatars
-            , Banners
-            , Buttons
-            , Cards
-            , Collections
-            , DefinitionLists
-            , ErrorPages
-            , Footers
-            , Forms
-            , Headers
-            , Layouts
-            , Links
-            , ListComponents
-            , Lists
-            , Marketing
-            , Navs
-            , NotFound
-            , Pages
-            , Quotes
-            , Tables
-            , Texts
-            )
-        )
+import Route exposing (Route)
 import Styles
 import Table
 import Text
@@ -195,80 +167,80 @@ sectionContentLinkImage route =
 
         imageFormatting =
             case route of
-                ArticleLists _ ->
+                Route.ArticleLists _ ->
                     defaultFormatting
 
-                Articles subRoute ->
+                Route.Articles subRoute ->
                     Article.sectionContentLinkImageFormatting subRoute
 
-                Avatars _ ->
+                Route.Avatars _ ->
                     [ "bg-center" ]
 
-                Banners subRoute ->
+                Route.Banners subRoute ->
                     Banner.sectionContentLinkImageFormatting subRoute
 
-                Buttons subRoute ->
+                Route.Buttons subRoute ->
                     Button.sectionContentLinkImageFormatting subRoute
 
-                Cards subRoute ->
+                Route.Cards subRoute ->
                     Card.sectionContentLinkImageFormatting subRoute
 
-                Collections subRoute ->
+                Route.Collections subRoute ->
                     Collection.sectionContentLinkImageFormatting subRoute
 
-                DefinitionLists subRoute ->
+                Route.DefinitionLists subRoute ->
                     DefinitionList.sectionContentLinkImageFormatting subRoute
 
-                ErrorPages subRoute ->
+                Route.ErrorPages subRoute ->
                     ErrorPage.sectionContentLinkImageFormatting subRoute
 
-                Footers subRoute ->
+                Route.Footers subRoute ->
                     Footer.sectionContentLinkImageFormatting subRoute
 
-                Forms subRoute ->
+                Route.Forms subRoute ->
                     Form.sectionContentLinkImageFormatting subRoute
 
-                Headers subRoute ->
+                Route.Headers subRoute ->
                     Header.sectionContentLinkImageFormatting subRoute
 
-                Layouts subRoute ->
+                Route.Layouts subRoute ->
                     Layout.sectionContentLinkImageFormatting subRoute
 
-                Links subRoute ->
+                Route.Links subRoute ->
                     Link.sectionContentLinkImageFormatting subRoute
 
-                ListComponents ->
+                Route.ListComponents ->
                     defaultFormatting
 
-                Lists subRoute ->
+                Route.Lists subRoute ->
                     List_.sectionContentLinkImageFormatting subRoute
 
-                Marketing subRoute ->
+                Route.Marketing subRoute ->
                     Marketing.sectionContentLinkImageFormatting subRoute
 
-                Navs subRoute ->
+                Route.Navs subRoute ->
                     Nav.sectionContentLinkImageFormatting subRoute
 
-                NotFound ->
+                Route.NotFound ->
                     defaultFormatting
 
-                Pages subRoute ->
+                Route.Pages subRoute ->
                     Page.sectionContentLinkImageFormatting subRoute
 
-                Quotes subRoute ->
+                Route.Quotes subRoute ->
                     Quote.sectionContentLinkImageFormatting subRoute
 
-                Tables subRoute ->
+                Route.Tables subRoute ->
                     Table.sectionContentLinkImageFormatting subRoute
 
-                Texts subRoute ->
+                Route.Texts subRoute ->
                     Text.sectionContentLinkImageFormatting subRoute
     in
-        imageFormatting
-            ++ [ "aspect-ratio--object"
-               , "lazyload"
-               ]
-            |> String.join " "
+    imageFormatting
+        ++ [ "aspect-ratio--object"
+           , "lazyload"
+           ]
+        |> String.join " "
 
 
 sectionContentTitle : String

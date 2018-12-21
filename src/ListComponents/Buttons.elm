@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Buttons))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Buttons"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,43 +17,35 @@ view changeLocationMsg =
                 [ Utils.component
                     "buttons/basic-previous-next/"
                     "Basic Previous Next"
-                    changeLocationMsg
-                    (Buttons Button.basicPreviousNextRoute)
+                    (Route.Buttons Button.basicPreviousNextRoute)
                 , Utils.component
                     "buttons/basic-rounded-extra-small/"
                     "Basic Rounded Extra Small"
-                    changeLocationMsg
-                    (Buttons Button.basicRoundedExtraSmallRoute)
+                    (Route.Buttons Button.basicRoundedExtraSmallRoute)
                 , Utils.component
                     "buttons/basic-rounded-small/"
                     "Basic Rounded Small"
-                    changeLocationMsg
-                    (Buttons Button.basicRoundedSmallRoute)
+                    (Route.Buttons Button.basicRoundedSmallRoute)
                 , Utils.component
                     "buttons/basic-rounded/"
                     "Basic Rounded"
-                    changeLocationMsg
-                    (Buttons Button.basicRoundedRoute)
+                    (Route.Buttons Button.basicRoundedRoute)
                 , Utils.component
                     "buttons/basic/"
                     "Basic"
-                    changeLocationMsg
-                    (Buttons Button.basicRoute)
+                    (Route.Buttons Button.basicRoute)
                 , Utils.component
                     "buttons/centered-icons/"
                     "Centered Icons"
-                    changeLocationMsg
-                    (Buttons Button.centeredIconsRoute)
+                    (Route.Buttons Button.centeredIconsRoute)
                 , Utils.component
                     "buttons/pill-grow/"
                     "Pill Grow"
-                    changeLocationMsg
-                    (Buttons Button.pillGrowRoute)
+                    (Route.Buttons Button.pillGrowRoute)
                 , Utils.component
                     "buttons/pill/"
                     "Pill"
-                    changeLocationMsg
-                    (Buttons Button.pillRoute)
+                    (Route.Buttons Button.pillRoute)
                 ]
             ]
         ]

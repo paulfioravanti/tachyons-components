@@ -1,25 +1,24 @@
-module SvgLogo
-    exposing
-        ( codePen
-        , dribble
-        , facebook
-        , facebook2
-        , github
-        , github2
-        , instagram
-        , linkedIn
-        , medium
-        , slackLogo
-        , slackLogoMiddleSquare
-        , soundCloud
-        , stackOverflow
-        , tumblr
-        , twitter
-        , twitter2
-        , youtube
-        )
+module SvgLogo exposing
+    ( codePen
+    , dribble
+    , facebook
+    , facebook2
+    , github
+    , github2
+    , instagram
+    , linkedIn
+    , medium
+    , slackLogo
+    , slackLogoMiddleSquare
+    , soundCloud
+    , stackOverflow
+    , tumblr
+    , twitter
+    , twitter2
+    , youtube
+    )
 
-{-| Some SVG Icons are from https://simpleicons.org
+{-| Some SVG Icons are from <https://simpleicons.org>
 -}
 
 

@@ -1,8 +1,7 @@
-module Table.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Table.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
 import Table.Route exposing (Route)
 
@@ -16,9 +15,9 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            _ ->
-                defaultFormatting
+    case route of
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -32,4 +31,4 @@ sectionContentLinkImageFormatting route =
                 _ ->
                     [ "cover" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

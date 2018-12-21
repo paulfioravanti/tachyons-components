@@ -21,14 +21,14 @@ view =
             , [ text "Swiss Institute for Art Research" ]
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ main_ [ class Styles.main_ ]
-                [ header
-                , div [ class Styles.columns ]
-                    (List.map column columnTexts)
-                , image
-                ]
+    div [ attribute "data-name" "component" ]
+        [ main_ [ class Styles.main_ ]
+            [ header
+            , div [ class Styles.columns ]
+                (List.map column columnTexts)
+            , image
             ]
+        ]
 
 
 header : Html msg

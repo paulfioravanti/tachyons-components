@@ -12,10 +12,10 @@ view =
         imageIds =
             Image.ids
     in
-        div [ attribute "data-name" "component" ]
-            [ main_ [ class Styles.main_ ]
-                (List.map image imageIds)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ main_ [ class Styles.main_ ]
+            (List.map image imageIds)
+        ]
 
 
 image : String -> Html msg
@@ -24,11 +24,7 @@ image id =
         [ div [ class Styles.aspectRatio ]
             [ div
                 [ class Styles.image
-                , style
-                    [ ( "backgroundImage"
-                      , "url(http://mrmrs.github.io/images/00" ++ id ++ ".jpg)"
-                      )
-                    ]
+                , style "backgroundImage" ("url(http://mrmrs.github.io/images/00" ++ id ++ ".jpg)")
                 ]
                 []
             ]

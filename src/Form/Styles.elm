@@ -1,21 +1,9 @@
-module Form.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Form.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
-import Form.Route
-    exposing
-        ( Route
-            ( CheckboxList
-            , InputTextLabel
-            , NewsletterSubscription
-            , Password
-            , SignIn
-            , SignUp
-            , TextareaLabel
-            )
-        )
+import Form.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -27,41 +15,41 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            _ ->
-                defaultFormatting
+    case route of
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     case route of
-        CheckboxList ->
+        Route.CheckboxList ->
             [ "bg-center" ]
 
-        InputTextLabel ->
+        Route.InputTextLabel ->
             [ "bg-left" ]
 
-        NewsletterSubscription ->
+        Route.NewsletterSubscription ->
             [ "bg-center"
             , "contain"
             ]
 
-        Password ->
+        Route.Password ->
             [ "bg-center"
             , "contain"
             ]
 
-        SignIn ->
+        Route.SignIn ->
             [ "bg-center"
             , "contain"
             ]
 
-        SignUp ->
+        Route.SignUp ->
             [ "bg-center"
             , "contain"
             ]
 
-        TextareaLabel ->
+        Route.TextareaLabel ->
             [ "bg-center"
             , "contain"
             ]

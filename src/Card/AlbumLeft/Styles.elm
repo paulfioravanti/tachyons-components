@@ -1,12 +1,11 @@
-module Card.AlbumLeft.Styles
-    exposing
-        ( artistDescription
-        , descriptionList
-        , image
-        , link
-        , term
-        , titleDescription
-        )
+module Card.AlbumLeft.Styles exposing
+    ( artistDescription
+    , descriptionList
+    , image
+    , link
+    , term
+    , titleDescription
+    )
 
 
 artistDescription : String

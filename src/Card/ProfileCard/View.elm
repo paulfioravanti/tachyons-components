@@ -40,5 +40,5 @@ description =
             of them.
             """
     in
-        p [ class Styles.description ]
-            [ text copy ]
+    p [ class Styles.description ]
+        [ text copy ]

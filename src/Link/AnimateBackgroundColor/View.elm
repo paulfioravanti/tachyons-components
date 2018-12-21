@@ -1,8 +1,8 @@
 module Link.AnimateBackgroundColor.View exposing (view)
 
-import Link.AnimateBackgroundColor.Styles as Styles
 import Html exposing (Html, a, div, text)
 import Html.Attributes exposing (attribute, class, href)
+import Link.AnimateBackgroundColor.Styles as Styles
 
 
 view : Html msg

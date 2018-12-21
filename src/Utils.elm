@@ -1,35 +1,28 @@
 module Utils exposing (componentsLink, pathify, routeFor, toPath)
 
+import Debug
 import Html exposing (Html, a, text)
 import Html.Attributes exposing (class, href, title)
-import Html.Events exposing (onWithOptions)
+import Html.Events exposing (custom)
 import Json.Decode as Decode
 import String.Extra
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
-componentsLink : msg -> String -> String -> Html msg
-componentsLink msg link styles =
-    let
-        clickOptions =
-            onWithOptions
-                "click"
-                { preventDefault = True, stopPropagation = False }
-                (Decode.succeed msg)
-    in
-        a
-            [ class styles
-            , href link
-            , title "Components"
-            , clickOptions
-            ]
-            [ text "Components" ]
+componentsLink : String -> String -> Html msg
+componentsLink link styles =
+    a
+        [ class styles
+        , href link
+        , title "Components"
+        ]
+        [ text "Components" ]
 
 
 pathify : a -> String
 pathify stringifiable =
     stringifiable
-        |> toString
+        |> Debug.toString
         |> toPath
 
 
@@ -37,8 +30,8 @@ routeFor : a -> Parser (a -> b) b
 routeFor route =
     route
         |> pathify
-        |> UrlParser.s
-        |> UrlParser.map route
+        |> Url.Parser.s
+        |> Url.Parser.map route
 
 
 toPath : String -> String

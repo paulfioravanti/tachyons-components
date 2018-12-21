@@ -1,9 +1,8 @@
-module Text.TitleSubtitleCentered.Styles
-    exposing
-        ( header
-        , subtitle
-        , title
-        )
+module Text.TitleSubtitleCentered.Styles exposing
+    ( header
+    , subtitle
+    , title
+    )
 
 
 header : String

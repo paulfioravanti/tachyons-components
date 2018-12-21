@@ -1,25 +1,20 @@
 module PageFooter.View exposing (view)
 
+import Html exposing (Html, a, br, div, footer, p, small, text)
+import Html.Attributes exposing (class, href, title)
 import PageFooter.Badges as Badges
 import PageFooter.CallsToAction as CallsToAction
 import PageFooter.Styles as Styles
-import Html exposing (Html, a, br, div, footer, p, small, text)
-import Html.Attributes
-    exposing
-        ( class
-        , href
-        , title
-        )
-import Route exposing (Route(ListComponents))
+import Route exposing (Route)
 import Styles
 import Utils
 
 
-view : msg -> Html msg
-view msg =
+view : Html msg
+view =
     footer [ class Styles.footer ]
         [ div [ class Styles.centerContent ]
-            [ links msg
+            [ links
             , Badges.view
             , CallsToAction.view
             , offerOfHelp
@@ -28,14 +23,13 @@ view msg =
         ]
 
 
-links : msg -> Html msg
-links msg =
+links : Html msg
+links =
     div [ class Styles.footerLinks ]
         [ link "http://tachyons.io/" "Home" "Home"
         , link "http://tachyons.io/docs" "Docs" "Docs"
         , Utils.componentsLink
-            msg
-            (Route.toPath ListComponents)
+            (Route.toPath Route.ListComponents)
             Styles.footerLink
         , link
             "http://tachyons.io/gallery"
@@ -70,8 +64,8 @@ offerOfHelp =
                 ++ "our slack channel. We're here to try and help make "
                 ++ "designing in the browser fun."
     in
-        p [ class Styles.offerOfHelp ]
-            [ text content ]
+    p [ class Styles.offerOfHelp ]
+        [ text content ]
 
 
 tachyonsDefinition : Html msg
@@ -85,9 +79,9 @@ tachyonsDefinition =
         meaning =
             "ταχύς or tachys, meaning \"swift, quick, fast, rapid\""
     in
-        small [ class Styles.tachyonsDefinition ]
-            [ text definition
-            , br [] []
-            , br [] []
-            , text meaning
-            ]
+    small [ class Styles.tachyonsDefinition ]
+        [ text definition
+        , br [] []
+        , br [] []
+        , text meaning
+        ]

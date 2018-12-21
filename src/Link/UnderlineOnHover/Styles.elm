@@ -1,8 +1,7 @@
-module Link.UnderlineOnHover.Styles
-    exposing
-        ( link
-        , links
-        )
+module Link.UnderlineOnHover.Styles exposing
+    ( link
+    , links
+    )
 
 
 link : String -> String

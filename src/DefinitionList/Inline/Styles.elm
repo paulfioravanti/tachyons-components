@@ -1,11 +1,10 @@
-module DefinitionList.Inline.Styles
-    exposing
-        ( description
-        , descriptionList
-        , glossary
-        , heading
-        , term
-        )
+module DefinitionList.Inline.Styles exposing
+    ( description
+    , descriptionList
+    , glossary
+    , heading
+    , term
+    )
 
 
 description : String

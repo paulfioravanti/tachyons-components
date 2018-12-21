@@ -1,24 +1,23 @@
-module Collection.Vinyl.Album
-    exposing
-        ( Album
-        , beyonce
-        , boniver
-        , clamscasino
-        , coloranything
-        , dannybrown
-        , flume
-        , glassanimals
-        , goldpanda
-        , humanenergy
-        , justice
-        , kaytranada
-        , moodyman
-        , moonshapedpool
-        , paak
-        , solange
-        , strangerthings
-        , untitledunmastered
-        )
+module Collection.Vinyl.Album exposing
+    ( Album
+    , beyonce
+    , boniver
+    , clamscasino
+    , coloranything
+    , dannybrown
+    , flume
+    , glassanimals
+    , goldpanda
+    , humanenergy
+    , justice
+    , kaytranada
+    , moodyman
+    , moonshapedpool
+    , paak
+    , solange
+    , strangerthings
+    , untitledunmastered
+    )
 
 
 type alias Album =
@@ -36,10 +35,10 @@ paak =
                 ++ "ref=sr_1_1_twi_lp__3?s=music&ie=UTF8&qid=1480422041&"
                 ++ "sr=1-1&keywords=paak&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/paak.jpg"
-        , label = "Malibu -  Anderson Paak"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/paak.jpg"
+    , label = "Malibu -  Anderson Paak"
+    }
 
 
 boniver : Album
@@ -50,10 +49,10 @@ boniver =
                 ++ "ref=sr_tnr_p_6_195212011_1_twi_lp__3?s=music&ie=UTF8&"
                 ++ "qid=1480422776&sr=1-6&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/boniver.jpg"
-        , label = "22 Million - Bon Iver"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/boniver.jpg"
+    , label = "22 Million - Bon Iver"
+    }
 
 
 glassanimals : Album
@@ -64,10 +63,10 @@ glassanimals =
                 ++ "ref=tmm_vnl_swatch_0?_encoding=UTF8&qid=1480421224&"
                 ++ "sr=8-1&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/glassanimals.jpg"
-        , label = "How Be Human Being LP"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/glassanimals.jpg"
+    , label = "How Be Human Being LP"
+    }
 
 
 strangerthings : Album
@@ -79,10 +78,10 @@ strangerthings =
                 ++ "ie=UTF8&qid=1480423240&sr=1-1&keywords=stranger+things&"
                 ++ "tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/strangerthings.jpg"
-        , label = "Stranger Things Netflix Original Soundtrack"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/strangerthings.jpg"
+    , label = "Stranger Things Netflix Original Soundtrack"
+    }
 
 
 moodyman : Album
@@ -94,10 +93,10 @@ moodyman =
                 ++ "qid=1480371894&sr=1-1&keywords=dj+kicks+moodymann&"
                 ++ "tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/moodyman.jpg"
-        , label = "Moodymann - DJ Kicks"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/moodyman.jpg"
+    , label = "Moodymann - DJ Kicks"
+    }
 
 
 humanenergy : Album
@@ -108,10 +107,10 @@ humanenergy =
                 ++ "ref=sr_1_1_twi_lp__3?s=music&ie=UTF8&qid=1480371226&"
                 ++ "sr=1-1&keywords=human+energy&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/humanenergy.jpg"
-        , label = "Human Energy - Machinedrum"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/humanenergy.jpg"
+    , label = "Human Energy - Machinedrum"
+    }
 
 
 dannybrown : Album
@@ -122,10 +121,10 @@ dannybrown =
                 ++ "dp/B01M9F0LSQ/ref=sr_1_2?ie=UTF8&qid=1480421198&sr=8-2&"
                 ++ "keywords=danny+brown+vinyl&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/dannybrown.jpg"
-        , label = "Danny Brown Atrocity Exhibition Exclusive"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/dannybrown.jpg"
+    , label = "Danny Brown Atrocity Exhibition Exclusive"
+    }
 
 
 clamscasino : Album
@@ -136,10 +135,10 @@ clamscasino =
                 ++ "ref=sr_1_2_twi_lp__1?s=music&ie=UTF8&qid=1480371183&"
                 ++ "sr=1-2&keywords=clams+casino&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/clamscasino.jpg"
-        , label = "32 Levels Clams Casino"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/clamscasino.jpg"
+    , label = "32 Levels Clams Casino"
+    }
 
 
 goldpanda : Album
@@ -150,10 +149,10 @@ goldpanda =
                 ++ "ref=sr_1_1_twi_lp__3?s=music&ie=UTF8&qid=1480371123&sr=1-1&"
                 ++ "keywords=good+luck+gold+panda&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/goldpanda.jpg"
-        , label = "Good Luck Do Your Best"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/goldpanda.jpg"
+    , label = "Good Luck Do Your Best"
+    }
 
 
 coloranything : Album
@@ -164,10 +163,10 @@ coloranything =
                 ++ "ref=sr_1_1_twi_lp__3?s=music&ie=UTF8&qid=1480371036&"
                 ++ "sr=1-1&keywords=color+in+anything&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/colouranything.jpg"
-        , label = "Colour Anything 2"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/colouranything.jpg"
+    , label = "Colour Anything 2"
+    }
 
 
 moonshapedpool : Album
@@ -178,10 +177,10 @@ moonshapedpool =
                 ++ "B01FDF12UI/ref=sr_1_1_twi_lp__3?s=music&ie=UTF8&qid=1480370971&"
                 ++ "sr=1-1&keywords=moon+shaped+pool&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/moonshapedpool.jpg"
-        , label = "Moon Shaped Pool 2"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/moonshapedpool.jpg"
+    , label = "Moon Shaped Pool 2"
+    }
 
 
 untitledunmastered : Album
@@ -193,10 +192,10 @@ untitledunmastered =
                 ++ "qid=1480370912&sr=1-3&keywords=kendrick+lamar&"
                 ++ "tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/untitledunmastered.jpg"
-        , label = "Untitled Unmastered - Kendrick Lamar"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/untitledunmastered.jpg"
+    , label = "Untitled Unmastered - Kendrick Lamar"
+    }
 
 
 solange : Album
@@ -208,10 +207,10 @@ solange =
                 ++ "qid=1480422087&sr=1-1&keywords=solange+seat+at+the+table&"
                 ++ "tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/solange.jpg"
-        , label = "Seat at Table Solange"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/solange.jpg"
+    , label = "Seat at Table Solange"
+    }
 
 
 flume : Album
@@ -222,10 +221,10 @@ flume =
                 ++ "ref=sr_1_1_twi_lp__3?s=music&ie=UTF8&qid=1480422133&"
                 ++ "sr=1-1&keywords=flume&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/flume.jpg"
-        , label = "Skin - Flume"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/flume.jpg"
+    , label = "Skin - Flume"
+    }
 
 
 justice : Album
@@ -236,10 +235,10 @@ justice =
                 ++ "ref=sr_1_1?s=music&ie=UTF8&qid=1480422119&sr=1-1&"
                 ++ "keywords=justice&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/justice.jpg"
-        , label = "Woman - Justice"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/justice.jpg"
+    , label = "Woman - Justice"
+    }
 
 
 kaytranada : Album
@@ -250,10 +249,10 @@ kaytranada =
                 ++ "ref=sr_1_1_twi_lp__3?s=music&ie=UTF8&qid=1480422105&"
                 ++ "sr=1-1&keywords=kaytranada+vinyl&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/kaytranada.jpg"
-        , label = "Kaytranada"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/kaytranada.jpg"
+    , label = "Kaytranada"
+    }
 
 
 beyonce : Album
@@ -264,7 +263,7 @@ beyonce =
                 ++ "ref=sr_1_2_twi_lp__3?s=music&ie=UTF8&qid=1480422067&"
                 ++ "sr=1-2&keywords=beyonce&tag=mrmrs01-20"
     in
-        { amazonUrl = amazonUrl
-        , imageUrl = "http://mrmrs.github.io/photos/beyonce.jpg"
-        , label = "Beyoncé"
-        }
+    { amazonUrl = amazonUrl
+    , imageUrl = "http://mrmrs.github.io/photos/beyonce.jpg"
+    , label = "Beyoncé"
+    }

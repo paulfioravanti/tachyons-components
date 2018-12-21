@@ -1,21 +1,20 @@
-module Link
-    exposing
-        ( Route
-        , animateBackgroundColorRoute
-        , animateColorRoute
-        , bodyClasses
-        , dimNoUnderlineRoute
-        , matchers
-        , sectionContentLinkImageFormatting
-        , underlineOnHoverRoute
-        , view
-        )
+module Link exposing
+    ( Route
+    , animateBackgroundColorRoute
+    , animateColorRoute
+    , bodyClasses
+    , dimNoUnderlineRoute
+    , matchers
+    , sectionContentLinkImageFormatting
+    , underlineOnHoverRoute
+    , view
+    )
 
+import Html exposing (Html)
 import Link.Route as Route exposing (Route)
 import Link.Styles as Styles
 import Link.View as View
-import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

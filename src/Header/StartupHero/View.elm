@@ -13,11 +13,7 @@ view =
         [ header [ class Styles.header ]
             [ div
                 [ class Styles.backgroundImage
-                , style
-                    [ ( "backgroundImage"
-                      , "url(http://mrmrs.github.io/photos/u/011.jpg)"
-                      )
-                    ]
+                , style "backgroundImage" "url(http://mrmrs.github.io/photos/u/011.jpg)"
                 ]
                 [ div [ class Styles.content ]
                     [ navigation
@@ -59,19 +55,19 @@ logo =
             A4.5 4.5 0 0 1 23 12
             """
     in
-        div [ class Styles.logo ]
-            [ a [ href "/", class Styles.logoLink ]
-                [ svg
-                    [ Svg.Attributes.class Styles.svg
-                    , attribute "data-icon" "skull"
-                    , viewBox "0 0 32 32"
-                    , style [ ( "fill", "currentColor" ) ]
-                    ]
-                    [ title [] [ text "skull icon" ]
-                    , path [ d logoPath ] []
-                    ]
+    div [ class Styles.logo ]
+        [ a [ href "/", class Styles.logoLink ]
+            [ svg
+                [ Svg.Attributes.class Styles.svg
+                , attribute "data-icon" "skull"
+                , viewBox "0 0 32 32"
+                , style "fill" "currentColor"
+                ]
+                [ title [] [ text "skull icon" ]
+                , path [ d logoPath ] []
                 ]
             ]
+        ]
 
 
 navLinks : Html msg
@@ -99,15 +95,15 @@ hero =
             new startup even more
             """
     in
-        div [ class Styles.hero ]
-            [ h1 [ class Styles.heading ]
-                [ text "This is your super impressive headline" ]
-            , h2 [ class Styles.subheading ]
-                [ text subheading ]
-            , a [ class Styles.primaryCta, href "/" ]
-                [ text "Call to Action" ]
-            , span [ class Styles.span ]
-                [ text "or" ]
-            , a [ class Styles.secondaryCta, href "/" ]
-                [ text "Secondary call to action" ]
-            ]
+    div [ class Styles.hero ]
+        [ h1 [ class Styles.heading ]
+            [ text "This is your super impressive headline" ]
+        , h2 [ class Styles.subheading ]
+            [ text subheading ]
+        , a [ class Styles.primaryCta, href "/" ]
+            [ text "Call to Action" ]
+        , span [ class Styles.span ]
+            [ text "or" ]
+        , a [ class Styles.secondaryCta, href "/" ]
+            [ text "Secondary call to action" ]
+        ]

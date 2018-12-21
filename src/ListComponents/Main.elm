@@ -1,10 +1,9 @@
 module ListComponents.Main exposing (view)
 
-import Html exposing (Html, header, main_, a, div, section, text)
+import Html exposing (Html, a, div, header, main_, section, text)
 import Html.Attributes exposing (class, href)
-import ListComponents.Styles as Styles
-import ListComponents.Articles as Articles
 import ListComponents.ArticleLists as ArticleLists
+import ListComponents.Articles as Articles
 import ListComponents.Avatars as Avatars
 import ListComponents.Banners as Banners
 import ListComponents.Buttons as Buttons
@@ -22,6 +21,7 @@ import ListComponents.Marketing as Marketing
 import ListComponents.Navs as Navs
 import ListComponents.Pages as Pages
 import ListComponents.Quotes as Quotes
+import ListComponents.Styles as Styles
 import ListComponents.Tables as Tables
 import ListComponents.Texts as Texts
 import Route exposing (Route)
@@ -29,8 +29,8 @@ import Styles
 import Utils
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     let
         views =
             [ ArticleLists.view
@@ -55,13 +55,12 @@ view changeLocationMsg =
             , Tables.view
             , Texts.view
             ]
-                |> List.map (\componentView -> componentView changeLocationMsg)
     in
-        main_ [ class Styles.main_ ]
-            [ mainHeader
-            , section []
-                views
-            ]
+    main_ [ class Styles.main_ ]
+        [ mainHeader
+        , section []
+            views
+        ]
 
 
 mainHeader : Html msg
@@ -92,10 +91,10 @@ mainHeader =
             ]
                 |> List.map anchorLink
     in
-        header [ class Styles.mainHeader ]
-            [ div [ class Styles.centerContent ]
-                anchorLinks
-            ]
+    header [ class Styles.mainHeader ]
+        [ div [ class Styles.centerContent ]
+            anchorLinks
+        ]
 
 
 anchorLink : String -> Html msg
@@ -106,5 +105,5 @@ anchorLink linkText =
                 |> Utils.toPath
                 |> (++) "#"
     in
-        a [ class Styles.anchor, href anchor ]
-            [ text linkText ]
+    a [ class Styles.anchor, href anchor ]
+        [ text linkText ]

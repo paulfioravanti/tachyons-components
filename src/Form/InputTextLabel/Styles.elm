@@ -1,12 +1,11 @@
-module Form.InputTextLabel.Styles
-    exposing
-        ( form
-        , nameField
-        , nameHelperText
-        , nameInput
-        , nameLabel
-        , nameLabelConstraint
-        )
+module Form.InputTextLabel.Styles exposing
+    ( form
+    , nameField
+    , nameHelperText
+    , nameInput
+    , nameLabel
+    , nameLabelConstraint
+    )
 
 
 form : String

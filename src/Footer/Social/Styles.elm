@@ -1,10 +1,9 @@
-module Footer.Social.Styles
-    exposing
-        ( footer
-        , link
-        , footerLink
-        , footerLinks
-        )
+module Footer.Social.Styles exposing
+    ( footer
+    , footerLink
+    , footerLinks
+    , link
+    )
 
 
 footer : String

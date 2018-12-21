@@ -1,10 +1,9 @@
-module List_.BorderSpaced.Styles
-    exposing
-        ( article
-        , heading
-        , li
-        , ul
-        )
+module List_.BorderSpaced.Styles exposing
+    ( article
+    , heading
+    , li
+    , ul
+    )
 
 
 article : String

@@ -26,33 +26,29 @@ view =
         project =
             Project.example
     in
-        div [ attribute "data-name" "component" ]
-            [ main_ []
-                [ article [ class Styles.article ]
-                    [ heroImage
-                    , div [ class Styles.projectContent ]
-                        [ header project
-                        , headerImages
-                        , projectPart1 project
-                        , blockquoteImage
-                        , blockquoteContent project
-                        , projectPart2 project
-                        ]
+    div [ attribute "data-name" "component" ]
+        [ main_ []
+            [ article [ class Styles.article ]
+                [ heroImage
+                , div [ class Styles.projectContent ]
+                    [ header project
+                    , headerImages
+                    , projectPart1 project
+                    , blockquoteImage
+                    , blockquoteContent project
+                    , projectPart2 project
                     ]
-                , otherProjects
                 ]
+            , otherProjects
             ]
+        ]
 
 
 heroImage : Html msg
 heroImage =
     div
         [ class Styles.image1
-        , style
-            [ ( "backgroundImage"
-              , "url(http://mrmrs.github.io/photos/001.jpg"
-              )
-            ]
+        , style "backgroundImage" "url(http://mrmrs.github.io/photos/001.jpg"
         ]
         []
 
@@ -76,8 +72,8 @@ headerImages =
             , ( Styles.headerImage3, "4" )
             ]
     in
-        div [ class Styles.headerImages ]
-            (List.map headerImage images)
+    div [ class Styles.headerImages ]
+        (List.map headerImage images)
 
 
 headerImage : ( String, String ) -> Html msg
@@ -85,11 +81,7 @@ headerImage ( styles, imageId ) =
     div [ class styles ]
         [ div
             [ class Styles.headerImage
-            , style
-                [ ( "backgroundImage"
-                  , "url(http://mrmrs.github.io/photos/00" ++ imageId ++ ".jpg"
-                  )
-                ]
+            , style "backgroundImage" ("url(http://mrmrs.github.io/photos/00" ++ imageId ++ ".jpg")
             ]
             []
         ]
@@ -154,11 +146,7 @@ otherProjects =
             [ div
                 [ class (Styles.otherProjectsFirstRowImage "center")
                 , href "#0"
-                , style
-                    [ ( "backgroundImage"
-                      , "url(https://s3-us-west-2.amazonaws.com/prnt/hw-080411-cargo_960.jpg"
-                      )
-                    ]
+                , style "backgroundImage" "url(https://s3-us-west-2.amazonaws.com/prnt/hw-080411-cargo_960.jpg"
                 ]
                 []
             ]
@@ -166,11 +154,7 @@ otherProjects =
             [ div
                 [ class (Styles.otherProjectsFirstRowImage "top")
                 , href "#0"
-                , style
-                    [ ( "backgroundImage"
-                      , "url(https://s3-us-west-2.amazonaws.com/prnt/hwspringtour-cargo_960-1.jpg)"
-                      )
-                    ]
+                , style "backgroundImage" "url(https://s3-us-west-2.amazonaws.com/prnt/hwspringtour-cargo_960-1.jpg)"
                 ]
                 []
             ]
@@ -178,11 +162,7 @@ otherProjects =
             [ div
                 [ class (Styles.otherProjectsFirstRowImage "top")
                 , href "#0"
-                , style
-                    [ ( "backgroundImage"
-                      , "url(https://s3-us-west-2.amazonaws.com/prnt/cc010611.s_960.jpg)"
-                      )
-                    ]
+                , style "backgroundImage" "url(https://s3-us-west-2.amazonaws.com/prnt/cc010611.s_960.jpg)"
                 ]
                 []
             ]
@@ -190,11 +170,7 @@ otherProjects =
             [ div
                 [ class Styles.otherProjectsMiddleRowImage
                 , href "#0"
-                , style
-                    [ ( "backgroundImage"
-                      , "url(https://s3-us-west-2.amazonaws.com/prnt/adam-stern-031209_960-2.jpg)"
-                      )
-                    ]
+                , style "backgroundImage" "url(https://s3-us-west-2.amazonaws.com/prnt/adam-stern-031209_960-2.jpg)"
                 ]
                 []
             ]
@@ -202,11 +178,7 @@ otherProjects =
             [ div
                 [ class Styles.otherProjectsLastRowImage
                 , href "#0"
-                , style
-                    [ ( "backgroundImage"
-                      , "url(https://s3-us-west-2.amazonaws.com/prnt/zh170311.4.cargo_960.jpg)"
-                      )
-                    ]
+                , style "backgroundImage" "url(https://s3-us-west-2.amazonaws.com/prnt/zh170311.4.cargo_960.jpg)"
                 ]
                 []
             ]
@@ -214,11 +186,7 @@ otherProjects =
             [ div
                 [ class Styles.otherProjectsLastRowImage
                 , href "#0"
-                , style
-                    [ ( "backgroundImage"
-                      , "url(https://s3-us-west-2.amazonaws.com/prnt/hw090911_960.jpg)"
-                      )
-                    ]
+                , style "backgroundImage" "url(https://s3-us-west-2.amazonaws.com/prnt/hw090911_960.jpg)"
                 ]
                 []
             ]

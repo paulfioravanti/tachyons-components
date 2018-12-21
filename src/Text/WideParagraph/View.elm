@@ -16,9 +16,9 @@ view =
             becomes a product without purpose.
             """
     in
-        div [ attribute "data-name" "component" ]
-            [ main_ [ class Styles.main_ ]
-                [ p [ class Styles.paragraph ]
-                    [ text copy ]
-                ]
+    div [ attribute "data-name" "component" ]
+        [ main_ [ class Styles.main_ ]
+            [ p [ class Styles.paragraph ]
+                [ text copy ]
             ]
+        ]

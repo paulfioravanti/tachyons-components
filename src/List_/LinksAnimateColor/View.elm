@@ -2,8 +2,8 @@ module List_.LinksAnimateColor.View exposing (view)
 
 import Html exposing (Html, a, div, section, text)
 import Html.Attributes exposing (attribute, class, href)
-import List_.LinksAnimateColor.Styles as Styles
 import List_.LinksAnimateColor.Link as Link exposing (Link)
+import List_.LinksAnimateColor.Styles as Styles
 
 
 view : Html msg
@@ -12,10 +12,10 @@ view =
         links =
             Link.list
     in
-        div [ attribute "data-name" "component" ]
-            [ section [ class Styles.section ]
-                (List.map wordLink links)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ section [ class Styles.section ]
+            (List.map wordLink links)
+        ]
 
 
 wordLink : Link -> Html msg

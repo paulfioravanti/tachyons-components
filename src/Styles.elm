@@ -19,34 +19,7 @@ import Marketing
 import Nav
 import Page
 import Quote
-import Route
-    exposing
-        ( Route
-            ( ArticleLists
-            , Articles
-            , Avatars
-            , Banners
-            , Buttons
-            , Cards
-            , Collections
-            , DefinitionLists
-            , ErrorPages
-            , Footers
-            , Forms
-            , Headers
-            , Layouts
-            , Links
-            , ListComponents
-            , Lists
-            , Marketing
-            , Navs
-            , NotFound
-            , Pages
-            , Quotes
-            , Tables
-            , Texts
-            )
-        )
+import Route exposing (Route)
 import Table
 import Text
 
@@ -61,77 +34,77 @@ bodyClasses route =
 
         styles =
             case route of
-                ArticleLists subRoute ->
+                Route.ArticleLists subRoute ->
                     ArticleList.bodyClasses subRoute
 
-                Articles subRoute ->
+                Route.Articles subRoute ->
                     Article.bodyClasses subRoute
 
-                Avatars subRoute ->
+                Route.Avatars subRoute ->
                     Avatar.bodyClasses subRoute
 
-                Banners subRoute ->
+                Route.Banners subRoute ->
                     Banner.bodyClasses subRoute
 
-                Buttons subRoute ->
+                Route.Buttons subRoute ->
                     Button.bodyClasses subRoute
 
-                Cards subRoute ->
+                Route.Cards subRoute ->
                     Card.bodyClasses subRoute
 
-                Collections subRoute ->
+                Route.Collections subRoute ->
                     Collection.bodyClasses subRoute
 
-                DefinitionLists subRoute ->
+                Route.DefinitionLists subRoute ->
                     DefinitionList.bodyClasses subRoute
 
-                ErrorPages subRoute ->
+                Route.ErrorPages subRoute ->
                     ErrorPage.bodyClasses subRoute
 
-                Footers subRoute ->
+                Route.Footers subRoute ->
                     Footer.bodyClasses subRoute
 
-                Forms subRoute ->
+                Route.Forms subRoute ->
                     Form.bodyClasses subRoute
 
-                Headers subRoute ->
+                Route.Headers subRoute ->
                     Header.bodyClasses subRoute
 
-                Layouts subRoute ->
+                Route.Layouts subRoute ->
                     Layout.bodyClasses subRoute
 
-                Links subRoute ->
+                Route.Links subRoute ->
                     Link.bodyClasses subRoute
 
-                ListComponents ->
+                Route.ListComponents ->
                     defaultStyles
 
-                Lists subRoute ->
+                Route.Lists subRoute ->
                     List_.bodyClasses subRoute
 
-                Marketing subRoute ->
+                Route.Marketing subRoute ->
                     Marketing.bodyClasses subRoute
 
-                Navs subRoute ->
+                Route.Navs subRoute ->
                     Nav.bodyClasses subRoute
 
-                NotFound ->
+                Route.NotFound ->
                     defaultStyles
 
-                Pages subRoute ->
+                Route.Pages subRoute ->
                     Page.bodyClasses subRoute
 
-                Quotes subRoute ->
+                Route.Quotes subRoute ->
                     Quote.bodyClasses subRoute
 
-                Tables subRoute ->
+                Route.Tables subRoute ->
                     Table.bodyClasses subRoute
 
-                Texts subRoute ->
+                Route.Texts subRoute ->
                     Text.bodyClasses subRoute
     in
-        styles
-            |> String.join " "
+    styles
+        |> String.join " "
 
 
 centerContent : String

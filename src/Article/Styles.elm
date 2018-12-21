@@ -1,13 +1,6 @@
 module Article.Styles exposing (bodyClasses, sectionContentLinkImageFormatting)
 
-import Article.Route
-    exposing
-        ( Route
-            ( Feature
-            , PhotoEssay
-            , TitleHighlightHeaderCover
-            )
-        )
+import Article.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -23,17 +16,17 @@ bodyClasses route =
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     case route of
-        Feature ->
+        Route.Feature ->
             [ "cover"
             , "bg-center"
             ]
 
-        PhotoEssay ->
+        Route.PhotoEssay ->
             [ "cover"
             , "bg-center"
             ]
 
-        TitleHighlightHeaderCover ->
+        Route.TitleHighlightHeaderCover ->
             [ "bg-center" ]
 
         _ ->

@@ -1,18 +1,17 @@
-module ErrorPage
-    exposing
-        ( Route
-        , bodyClasses
-        , fourOhFourRoute
-        , matchers
-        , sectionContentLinkImageFormatting
-        , view
-        )
+module ErrorPage exposing
+    ( Route
+    , bodyClasses
+    , fourOhFourRoute
+    , matchers
+    , sectionContentLinkImageFormatting
+    , view
+    )
 
 import ErrorPage.Route as Route exposing (Route)
 import ErrorPage.Styles as Styles
 import ErrorPage.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

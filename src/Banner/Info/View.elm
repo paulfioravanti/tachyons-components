@@ -36,12 +36,12 @@ icon =
             A 3 3 0 0 0 16 6
             """
     in
-        svg
-            [ Svg.Attributes.class Styles.svg
-            , style [ ( "fill", "currentColor" ) ]
-            , attribute "data-icon" "info"
-            , viewBox "0 0 32 32"
-            ]
-            [ title [] [ text "info icon" ]
-            , path [ d iconPath ] []
-            ]
+    svg
+        [ Svg.Attributes.class Styles.svg
+        , style "fill" "currentColor"
+        , attribute "data-icon" "info"
+        , viewBox "0 0 32 32"
+        ]
+        [ title [] [ text "info icon" ]
+        , path [ d iconPath ] []
+        ]

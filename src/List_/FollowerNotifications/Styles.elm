@@ -1,16 +1,15 @@
-module List_.FollowerNotifications.Styles
-    exposing
-        ( article
-        , follow
-        , followButton
-        , followForm
-        , handle
-        , image
-        , imageWrapper
-        , info
-        , main_
-        , name
-        )
+module List_.FollowerNotifications.Styles exposing
+    ( article
+    , follow
+    , followButton
+    , followForm
+    , handle
+    , image
+    , imageWrapper
+    , info
+    , main_
+    , name
+    )
 
 
 article : String

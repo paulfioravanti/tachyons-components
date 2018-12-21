@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(DefinitionLists))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Definition Lists"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,13 +17,11 @@ view changeLocationMsg =
                 [ Utils.component
                     "definition-lists/inline/"
                     "Inline"
-                    changeLocationMsg
-                    (DefinitionLists DefinitionList.inlineRoute)
+                    (Route.DefinitionLists DefinitionList.inlineRoute)
                 , Utils.component
                     "definition-lists/simple/"
                     "Simple"
-                    changeLocationMsg
-                    (DefinitionLists DefinitionList.simpleRoute)
+                    (Route.DefinitionLists DefinitionList.simpleRoute)
                 ]
             ]
         ]

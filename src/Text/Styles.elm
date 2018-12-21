@@ -1,8 +1,7 @@
-module Text.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Text.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
 import Text.Route exposing (Route)
 
@@ -16,9 +15,9 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            _ ->
-                defaultFormatting
+    case route of
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -32,4 +31,4 @@ sectionContentLinkImageFormatting route =
                 _ ->
                     [ "contain" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

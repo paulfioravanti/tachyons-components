@@ -1,9 +1,9 @@
 module PageFooter exposing (view)
 
-import PageFooter.View as View
 import Html exposing (Html)
+import PageFooter.View as View
 
 
-view : msg -> Html msg
-view msg =
-    View.view msg
+view : Html msg
+view =
+    View.view

@@ -1,52 +1,40 @@
 module Button.View exposing (view)
 
-import Button.Route
-    exposing
-        ( Route
-            ( Basic
-            , BasicPreviousNext
-            , BasicRoundedExtraSmall
-            , BasicRoundedSmall
-            , BasicRounded
-            , CenteredIcons
-            , Pill
-            , PillGrow
-            )
-        )
 import Button.Basic.View as Basic
 import Button.BasicPreviousNext.View as BasicPreviousNext
+import Button.BasicRounded.View as BasicRounded
 import Button.BasicRoundedExtraSmall.View as BasicRoundedExtraSmall
 import Button.BasicRoundedSmall.View as BasicRoundedSmall
-import Button.BasicRounded.View as BasicRounded
 import Button.CenteredIcons.View as CenteredIcons
 import Button.Pill.View as Pill
 import Button.PillGrow.View as PillGrow
+import Button.Route as Route exposing (Route)
 import Html exposing (Html)
 
 
 view : Route -> Html msg
 view route =
     case route of
-        Basic ->
+        Route.Basic ->
             Basic.view
 
-        BasicPreviousNext ->
+        Route.BasicPreviousNext ->
             BasicPreviousNext.view
 
-        BasicRoundedExtraSmall ->
+        Route.BasicRoundedExtraSmall ->
             BasicRoundedExtraSmall.view
 
-        BasicRoundedSmall ->
+        Route.BasicRoundedSmall ->
             BasicRoundedSmall.view
 
-        BasicRounded ->
+        Route.BasicRounded ->
             BasicRounded.view
 
-        CenteredIcons ->
+        Route.CenteredIcons ->
             CenteredIcons.view
 
-        Pill ->
+        Route.Pill ->
             Pill.view
 
-        PillGrow ->
+        Route.PillGrow ->
             PillGrow.view

@@ -1,29 +1,28 @@
-module Footer.Studios.Styles
-    exposing
-        ( article
-        , bottomSection
-        , cityName
-        , copyright
-        , copyrightMobile
-        , copyrightText
-        , copyrightTextMobile
-        , emailAddress
-        , emailAddressLink
-        , footer
-        , heading
-        , phone
-        , section
-        , signUp
-        , signUpButton
-        , signUpField
-        , signUpText
-        , socialIconLink
-        , socialIcons
-        , streetName
-        , studios
-        , studioName
-        , svg
-        )
+module Footer.Studios.Styles exposing
+    ( article
+    , bottomSection
+    , cityName
+    , copyright
+    , copyrightMobile
+    , copyrightText
+    , copyrightTextMobile
+    , emailAddress
+    , emailAddressLink
+    , footer
+    , heading
+    , phone
+    , section
+    , signUp
+    , signUpButton
+    , signUpField
+    , signUpText
+    , socialIconLink
+    , socialIcons
+    , streetName
+    , studioName
+    , studios
+    , svg
+    )
 
 
 article : String

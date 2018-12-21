@@ -11,12 +11,12 @@ view =
         links =
             [ "Home", "About", "Store", "Contact" ]
     in
-        div [ attribute "data-name" "component" ]
-            [ header [ class Styles.header ]
-                [ nav [ class Styles.nav ]
-                    (List.map link links)
-                ]
+    div [ attribute "data-name" "component" ]
+        [ header [ class Styles.header ]
+            [ nav [ class Styles.nav ]
+                (List.map link links)
             ]
+        ]
 
 
 link : String -> Html msg

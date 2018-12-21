@@ -1,6 +1,6 @@
 module List_.SlabStatLarge.View exposing (view)
 
-import Html exposing (Html, article, div, dd, dl, h3, text)
+import Html exposing (Html, article, dd, div, dl, h3, text)
 import Html.Attributes exposing (attribute, class)
 import List_.SlabStatLarge.Styles as Styles
 import List_.Stat as Stat exposing (Stat)
@@ -12,17 +12,17 @@ view =
         stats =
             Stat.list
     in
-        div [ attribute "data-name" "component" ]
-            [ article
-                [ class Styles.article
-                , attribute "data-name" "slab-stat-large"
-                ]
-                [ h3 [ class Styles.heading ]
-                    [ text "Today" ]
-                , div [ class Styles.stats ]
-                    (List.map stat stats)
-                ]
+    div [ attribute "data-name" "component" ]
+        [ article
+            [ class Styles.article
+            , attribute "data-name" "slab-stat-large"
             ]
+            [ h3 [ class Styles.heading ]
+                [ text "Today" ]
+            , div [ class Styles.stats ]
+                (List.map stat stats)
+            ]
+        ]
 
 
 stat : Stat -> Html msg

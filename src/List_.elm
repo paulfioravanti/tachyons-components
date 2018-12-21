@@ -1,33 +1,32 @@
-module List_
-    exposing
-        ( Route
-        , blockItemDottedBorderRoute
-        , bodyClasses
-        , borderSpacedRoute
-        , borderTightRoute
-        , contactPhoneRoute
-        , followerNotificationsRoundedSquareAvatarRoute
-        , followerNotificationsRoute
-        , hashtagsRoute
-        , itemsImageTitlePriceRoute
-        , largeLinksInlineRoute
-        , linksAnimateColorRoute
-        , linksInlineRoute
-        , linksWithBordersInlineRoute
-        , matchers
-        , sectionContentLinkImageFormatting
-        , slabStatLargeRoute
-        , slabStatRoute
-        , slabStatSmallRoute
-        , titleTextRoute
-        , view
-        )
+module List_ exposing
+    ( Route
+    , blockItemDottedBorderRoute
+    , bodyClasses
+    , borderSpacedRoute
+    , borderTightRoute
+    , contactPhoneRoute
+    , followerNotificationsRoundedSquareAvatarRoute
+    , followerNotificationsRoute
+    , hashtagsRoute
+    , itemsImageTitlePriceRoute
+    , largeLinksInlineRoute
+    , linksAnimateColorRoute
+    , linksInlineRoute
+    , linksWithBordersInlineRoute
+    , matchers
+    , sectionContentLinkImageFormatting
+    , slabStatLargeRoute
+    , slabStatRoute
+    , slabStatSmallRoute
+    , titleTextRoute
+    , view
+    )
 
+import Html exposing (Html)
 import List_.Route as Route exposing (Route)
 import List_.Styles as Styles
 import List_.View as View
-import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

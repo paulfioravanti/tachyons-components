@@ -1,15 +1,14 @@
-module List_.Hashtags.Styles
-    exposing
-        ( article
-        , editLink
-        , hashtagLink
-        , hashtagMentions
-        , hashtagName
-        , heading
-        , li
-        , section
-        , ul
-        )
+module List_.Hashtags.Styles exposing
+    ( article
+    , editLink
+    , hashtagLink
+    , hashtagMentions
+    , hashtagName
+    , heading
+    , li
+    , section
+    , ul
+    )
 
 
 article : String

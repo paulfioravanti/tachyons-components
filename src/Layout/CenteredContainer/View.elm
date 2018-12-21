@@ -14,11 +14,11 @@ view =
             a centered container for your content.
             """
     in
-        div [ attribute "data-name" "component" ]
-            [ section [ class Styles.section ]
-                [ h1 [ class Styles.heading ]
-                    [ text "Centered Container" ]
-                , p [ class Styles.paragraph ]
-                    [ text paragraph ]
-                ]
+    div [ attribute "data-name" "component" ]
+        [ section [ class Styles.section ]
+            [ h1 [ class Styles.heading ]
+                [ text "Centered Container" ]
+            , p [ class Styles.paragraph ]
+                [ text paragraph ]
             ]
+        ]

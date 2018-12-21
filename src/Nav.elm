@@ -1,25 +1,24 @@
-module Nav
-    exposing
-        ( Route
-        , bodyClasses
-        , fixedSemiTransparentRoute
-        , largeTitleLinkListRoute
-        , listOverflowRoute
-        , logoLinksInlineCollapseRoute
-        , logoLinksInlineRoute
-        , logoTitlesLinksCenteredRoute
-        , matchers
-        , minimalSignUpRoute
-        , sectionContentLinkImageFormatting
-        , titleLinkListRoute
-        , view
-        )
+module Nav exposing
+    ( Route
+    , bodyClasses
+    , fixedSemiTransparentRoute
+    , largeTitleLinkListRoute
+    , listOverflowRoute
+    , logoLinksInlineCollapseRoute
+    , logoLinksInlineRoute
+    , logoTitlesLinksCenteredRoute
+    , matchers
+    , minimalSignUpRoute
+    , sectionContentLinkImageFormatting
+    , titleLinkListRoute
+    , view
+    )
 
+import Html exposing (Html)
 import Nav.Route as Route exposing (Route)
 import Nav.Styles as Styles
 import Nav.View as View
-import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

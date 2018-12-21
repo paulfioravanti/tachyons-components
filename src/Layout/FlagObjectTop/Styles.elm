@@ -1,11 +1,10 @@
-module Layout.FlagObjectTop.Styles
-    exposing
-        ( content
-        , copy
-        , copyWrapper
-        , image
-        , imageWrapper
-        )
+module Layout.FlagObjectTop.Styles exposing
+    ( content
+    , copy
+    , copyWrapper
+    , image
+    , imageWrapper
+    )
 
 
 content : String

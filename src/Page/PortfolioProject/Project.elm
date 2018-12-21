@@ -73,12 +73,12 @@ example =
             headed, from the moment it began.
             """
     in
-        { title = "Project Title #034"
-        , description = description
-        , subtitle = "The subtitle for the project"
-        , p1 = p1
-        , p2 = p2
-        , p3 = p3
-        , p4 = p4
-        , p5 = p5
-        }
+    { title = "Project Title #034"
+    , description = description
+    , subtitle = "The subtitle for the project"
+    , p1 = p1
+    , p2 = p2
+    , p3 = p3
+    , p4 = p4
+    , p5 = p5
+    }

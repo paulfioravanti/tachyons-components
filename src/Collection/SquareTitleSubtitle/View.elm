@@ -1,7 +1,7 @@
 module Collection.SquareTitleSubtitle.View exposing (view)
 
-import Collection.SquareTitleSubtitle.Styles as Styles
 import Collection.SquareTitleSubtitle.Image as Image
+import Collection.SquareTitleSubtitle.Styles as Styles
 import Html exposing (Html, a, article, div, h3, img, section, text)
 import Html.Attributes exposing (attribute, class, href, style)
 
@@ -20,11 +20,7 @@ square id =
         [ div [ class Styles.imageWrapper ]
             [ img
                 [ class Styles.image
-                , style
-                    [ ( "backgroundImage"
-                      , "url(http://mrmrs.github.io/images/00" ++ id ++ ".jpg)"
-                      )
-                    ]
+                , style "backgroundImage" ("url(http://mrmrs.github.io/images/00" ++ id ++ ".jpg)")
                 ]
                 []
             ]

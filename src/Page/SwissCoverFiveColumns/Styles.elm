@@ -1,15 +1,14 @@
-module Page.SwissCoverFiveColumns.Styles
-    exposing
-        ( br
-        , column
-        , columns
-        , header
-        , heading
-        , image
-        , main_
-        , preHeading
-        , small
-        )
+module Page.SwissCoverFiveColumns.Styles exposing
+    ( br
+    , column
+    , columns
+    , header
+    , heading
+    , image
+    , main_
+    , preHeading
+    , small
+    )
 
 
 br : String

@@ -51,5 +51,5 @@ description =
             everywhere, and touch water with paw then recoil in horror.
             """
     in
-        p [ class Styles.description ]
-            [ text paragraph ]
+    p [ class Styles.description ]
+        [ text paragraph ]

@@ -17,10 +17,10 @@ view =
             , ( "1", "1" )
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ article [ class Styles.article ]
-                (List.foldr aspectRatio [] aspectRatios)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ article [ class Styles.article ]
+            (List.foldr aspectRatio [] aspectRatios)
+        ]
 
 
 aspectRatio : ( String, String ) -> List (Html msg) -> List (Html msg)
@@ -34,13 +34,9 @@ aspectRatio ( width, height ) acc =
             div [ class (Styles.imageType width height) ]
                 [ div
                     [ class Styles.image
-                    , style
-                        [ ( "backgroundImage"
-                          , "url(http://mrmrs.github.io/photos/001.jpg)"
-                          )
-                        ]
+                    , style "backgroundImage" "url(http://mrmrs.github.io/photos/001.jpg)"
                     ]
                     []
                 ]
     in
-        title :: image :: acc
+    title :: image :: acc

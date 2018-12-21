@@ -1,6 +1,6 @@
 module List_.TitleText.View exposing (view)
 
-import Html exposing (Html, b, div, li, span, ul, text)
+import Html exposing (Html, b, div, li, span, text, ul)
 import Html.Attributes exposing (attribute, class)
 import List_.TitleText.Definition as Definition exposing (Definition)
 import List_.TitleText.Styles as Styles
@@ -12,10 +12,10 @@ view =
         definitions =
             Definition.list
     in
-        div [ attribute "data-name" "component" ]
-            [ ul [ class Styles.ul ]
-                (List.map definition definitions)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ ul [ class Styles.ul ]
+            (List.map definition definitions)
+        ]
 
 
 definition : Definition -> Html msg

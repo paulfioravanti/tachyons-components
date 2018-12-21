@@ -7,9 +7,9 @@ import Html
         ( Html
         , article
         , div
-        , header
         , h3
         , h4
+        , header
         , p
         , section
         , text
@@ -24,28 +24,25 @@ view =
             Article.example
 
         backgroundImageStyle =
-            [ ( "background"
-              , "url("
+            style
+                "background"
+                ("url("
                     ++ articleExample.backgroundImageUrl
                     ++ ") "
                     ++ "no-repeat center center fixed"
-              )
-            ]
+                )
     in
-        div [ attribute "data-name" "component" ]
-            [ article
-                [ attribute "data-name" "article-full-bleed-background" ]
-                [ div
-                    [ class Styles.backgroundImage
-                    , style backgroundImageStyle
-                    ]
-                    [ div [ class Styles.content ]
-                        [ articleHeader articleExample
-                        , articleContent articleExample
-                        ]
+    div [ attribute "data-name" "component" ]
+        [ article
+            [ attribute "data-name" "article-full-bleed-background" ]
+            [ div [ class Styles.backgroundImage, backgroundImageStyle ]
+                [ div [ class Styles.content ]
+                    [ articleHeader articleExample
+                    , articleContent articleExample
                     ]
                 ]
             ]
+        ]
 
 
 articleHeader : Article -> Html msg

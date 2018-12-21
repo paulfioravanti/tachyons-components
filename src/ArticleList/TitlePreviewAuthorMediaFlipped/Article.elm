@@ -1,8 +1,7 @@
-module ArticleList.TitlePreviewAuthorMediaFlipped.Article
-    exposing
-        ( Article
-        , list
-        )
+module ArticleList.TitlePreviewAuthorMediaFlipped.Article exposing
+    ( Article
+    , list
+    )
 
 
 type alias Article =
@@ -36,14 +35,14 @@ article1 =
             instead of transistors.
             """
     in
-        { headline = headline
-        , copy = copy
-        , imageUrl = "https://mrmrs.github.io/photos/cpu.jpg"
-        , caption =
-            "Photo of a dimly lit room with a computer interface terminal."
-        , author = "Robin Darnell"
-        , timestamp = "Nov. 21, 2016"
-        }
+    { headline = headline
+    , copy = copy
+    , imageUrl = "https://mrmrs.github.io/photos/cpu.jpg"
+    , caption =
+        "Photo of a dimly lit room with a computer interface terminal."
+    , author = "Robin Darnell"
+    , timestamp = "Nov. 21, 2016"
+    }
 
 
 article2 : Article
@@ -56,13 +55,13 @@ article2 =
             and plankton instead of hamburgers.
             """
     in
-        { headline = "A whale takes up residence in a large body of water"
-        , copy = copy
-        , imageUrl = "https://mrmrs.github.io/photos/whale.jpg"
-        , caption = "Photo of a whale's tale coming crashing out of the water."
-        , author = "Katherine Grant"
-        , timestamp = "Nov. 19, 2016"
-        }
+    { headline = "A whale takes up residence in a large body of water"
+    , copy = copy
+    , imageUrl = "https://mrmrs.github.io/photos/whale.jpg"
+    , caption = "Photo of a whale's tale coming crashing out of the water."
+    , author = "Katherine Grant"
+    , timestamp = "Nov. 19, 2016"
+    }
 
 
 article3 : Article
@@ -74,11 +73,11 @@ article3 =
             more than a five years old, shedding light on early hipster trends.
             """
     in
-        { headline =
-            "'We Couldn't Believe Our Eyes': A Lost World of Vinyl Is Found"
-        , copy = copy
-        , imageUrl = "https://mrmrs.github.io/photos/warehouse.jpg"
-        , caption = "Photo of a warehouse with stacked shelves."
-        , author = "Imelda Clancy"
-        , timestamp = "Nov. 19, 2016"
-        }
+    { headline =
+        "'We Couldn't Believe Our Eyes': A Lost World of Vinyl Is Found"
+    , copy = copy
+    , imageUrl = "https://mrmrs.github.io/photos/warehouse.jpg"
+    , caption = "Photo of a warehouse with stacked shelves."
+    , author = "Imelda Clancy"
+    , timestamp = "Nov. 19, 2016"
+    }

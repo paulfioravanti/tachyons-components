@@ -1,14 +1,13 @@
-module Form.NewsletterSubscription.Styles
-    exposing
-        ( emailInput
-        , emailLabel
-        , fieldset
-        , form
-        , formWrapper
-        , legend
-        , signUp
-        , subscribeButton
-        )
+module Form.NewsletterSubscription.Styles exposing
+    ( emailInput
+    , emailLabel
+    , fieldset
+    , form
+    , formWrapper
+    , legend
+    , signUp
+    , subscribeButton
+    )
 
 
 emailInput : String

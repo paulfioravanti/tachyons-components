@@ -1,9 +1,8 @@
-module List_.LinksWithBordersInline.Styles
-    exposing
-        ( li
-        , link
-        , ul
-        )
+module List_.LinksWithBordersInline.Styles exposing
+    ( li
+    , link
+    , ul
+    )
 
 
 li : String

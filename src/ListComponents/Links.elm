@@ -1,15 +1,15 @@
 module ListComponents.Links exposing (view)
 
-import Link
 import Html exposing (Html, div)
 import Html.Attributes exposing (class)
+import Link
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Links))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Links"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,23 +17,19 @@ view changeLocationMsg =
                 [ Utils.component
                     "links/animate-background-color/"
                     "Animate Background Color"
-                    changeLocationMsg
-                    (Links Link.animateBackgroundColorRoute)
+                    (Route.Links Link.animateBackgroundColorRoute)
                 , Utils.component
                     "links/animate-color/"
                     "Animate Color"
-                    changeLocationMsg
-                    (Links Link.animateColorRoute)
+                    (Route.Links Link.animateColorRoute)
                 , Utils.component
                     "links/dim-no-underline/"
                     "Dim No Underline"
-                    changeLocationMsg
-                    (Links Link.dimNoUnderlineRoute)
+                    (Route.Links Link.dimNoUnderlineRoute)
                 , Utils.component
                     "links/underline-on-hover/"
                     "Underline On Hover"
-                    changeLocationMsg
-                    (Links Link.underlineOnHoverRoute)
+                    (Route.Links Link.underlineOnHoverRoute)
                 ]
             ]
         ]

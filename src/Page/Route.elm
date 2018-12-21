@@ -1,6 +1,6 @@
 module Page.Route exposing (Route(..), matchers)
 
-import UrlParser exposing (Parser, map, s)
+import Url.Parser exposing (Parser, map, s)
 import Utils
 
 
@@ -20,4 +20,4 @@ matchers =
             ]
                 |> List.map Utils.routeFor
            )
-        |> UrlParser.oneOf
+        |> Url.Parser.oneOf

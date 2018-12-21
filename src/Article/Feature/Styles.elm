@@ -1,18 +1,17 @@
-module Article.Feature.Styles
-    exposing
-        ( article
-        , author
-        , backgroundImage
-        , content
-        , edition
-        , header
-        , headline
-        , heroContent
-        , heroFooter
-        , issue
-        , slogan
-        , title
-        )
+module Article.Feature.Styles exposing
+    ( article
+    , author
+    , backgroundImage
+    , content
+    , edition
+    , header
+    , headline
+    , heroContent
+    , heroFooter
+    , issue
+    , slogan
+    , title
+    )
 
 
 article : String

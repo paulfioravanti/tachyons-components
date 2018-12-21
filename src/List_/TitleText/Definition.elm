@@ -31,9 +31,9 @@ alignment =
             justified.
             """
     in
-        { term = "alignment"
-        , meaning = meaning
-        }
+    { term = "alignment"
+    , meaning = meaning
+    }
 
 
 ascender : Definition
@@ -45,9 +45,9 @@ ascender =
             above the x-height of the other lowercase letters in a face.
             """
     in
-        { term = "ascender"
-        , meaning = meaning
-        }
+    { term = "ascender"
+    , meaning = meaning
+    }
 
 
 baseline : Definition
@@ -59,9 +59,9 @@ baseline =
             a typeface rest.
             """
     in
-        { term = "baseline"
-        , meaning = meaning
-        }
+    { term = "baseline"
+    , meaning = meaning
+    }
 
 
 bodyText : Definition
@@ -74,9 +74,9 @@ bodyText =
             typically at 10- or 12-point size.
             """
     in
-        { term = "body text"
-        , meaning = meaning
-        }
+    { term = "body text"
+    , meaning = meaning
+    }
 
 
 boldface : Definition
@@ -90,9 +90,9 @@ boldface =
             emphasis in body text.
             """
     in
-        { term = "boldface"
-        , meaning = meaning
-        }
+    { term = "boldface"
+    , meaning = meaning
+    }
 
 
 bullet : Definition
@@ -104,9 +104,9 @@ bullet =
             list to show that they are individual, but related, points.
             """
     in
-        { term = "bullet"
-        , meaning = meaning
-        }
+    { term = "bullet"
+    , meaning = meaning
+    }
 
 
 capHeight : Definition
@@ -120,9 +120,9 @@ capHeight =
             type size.
             """
     in
-        { term = "cap height"
-        , meaning = meaning
-        }
+    { term = "cap height"
+    , meaning = meaning
+    }
 
 
 centered : Definition
@@ -135,6 +135,6 @@ centered =
             centered text with flush left or flush right text.
             """
     in
-        { term = "centered"
-        , meaning = meaning
-        }
+    { term = "centered"
+    , meaning = meaning
+    }

@@ -14,8 +14,8 @@ Currently deployed at:
 
 ### Dependencies
 
-- [Elm][] 0.18.0
-- [NodeJS][] 10.5.0
+- [Elm][] 0.19.0
+- [NodeJS][] 11.2.0
 
 ## Setup
 

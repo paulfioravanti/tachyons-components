@@ -20,12 +20,12 @@ view =
         lastChild =
             listItem Styles.lastChild "American Bobtail" []
     in
-        div [ attribute "data-name" "component" ]
-            [ h1 [ class Styles.heading ]
-                [ text "Cats" ]
-            , ul [ class Styles.ul ]
-                (List.foldr (listItem Styles.li) lastChild listItems)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ h1 [ class Styles.heading ]
+            [ text "Cats" ]
+        , ul [ class Styles.ul ]
+            (List.foldr (listItem Styles.li) lastChild listItems)
+        ]
 
 
 listItem : String -> String -> List (Html msg) -> List (Html msg)
@@ -35,4 +35,4 @@ listItem styles itemName acc =
             li [ class styles ]
                 [ text itemName ]
     in
-        element :: acc
+    element :: acc

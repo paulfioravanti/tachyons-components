@@ -1,25 +1,24 @@
-module Header.StartupHero.Styles
-    exposing
-        ( aboutLink
-        , backgroundImage
-        , careersLink
-        , content
-        , header
-        , heading
-        , hero
-        , howItWorksLink
-        , logo
-        , logoLink
-        , nav
-        , navLinks
-        , pricingLink
-        , primaryCta
-        , secondaryCta
-        , signUpLink
-        , span
-        , subheading
-        , svg
-        )
+module Header.StartupHero.Styles exposing
+    ( aboutLink
+    , backgroundImage
+    , careersLink
+    , content
+    , header
+    , heading
+    , hero
+    , howItWorksLink
+    , logo
+    , logoLink
+    , nav
+    , navLinks
+    , pricingLink
+    , primaryCta
+    , secondaryCta
+    , signUpLink
+    , span
+    , subheading
+    , svg
+    )
 
 
 aboutLink : String

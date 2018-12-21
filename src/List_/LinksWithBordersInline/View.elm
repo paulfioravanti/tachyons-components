@@ -1,6 +1,6 @@
 module List_.LinksWithBordersInline.View exposing (view)
 
-import Html exposing (Html, a, div, li, ul, text)
+import Html exposing (Html, a, div, li, text, ul)
 import Html.Attributes exposing (attribute, class, href)
 import List_.LinksWithBordersInline.Styles as Styles
 import List_.Word as Word
@@ -12,10 +12,10 @@ view =
         words =
             Word.list
     in
-        div [ attribute "data-name" "component" ]
-            [ ul [ class Styles.ul ]
-                (List.map wordLink words)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ ul [ class Styles.ul ]
+            (List.map wordLink words)
+        ]
 
 
 wordLink : String -> Html msg

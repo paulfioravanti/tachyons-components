@@ -1,19 +1,9 @@
-module List_.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module List_.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
-import List_.Route
-    exposing
-        ( Route
-            ( Hashtags
-            , LargeLinksInline
-            , LinksInline
-            , LinksWithBordersInline
-            , TitleText
-            )
-        )
+import List_.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -25,9 +15,9 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            _ ->
-                defaultFormatting
+    case route of
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -38,22 +28,22 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                Hashtags ->
+                Route.Hashtags ->
                     [ "cover" ]
 
-                LargeLinksInline ->
+                Route.LargeLinksInline ->
                     [ "cover" ]
 
-                LinksInline ->
+                Route.LinksInline ->
                     [ "cover" ]
 
-                LinksWithBordersInline ->
+                Route.LinksWithBordersInline ->
                     [ "cover" ]
 
-                TitleText ->
+                Route.TitleText ->
                     [ "cover" ]
 
                 _ ->
                     [ "contain" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

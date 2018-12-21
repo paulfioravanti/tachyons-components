@@ -1,8 +1,7 @@
-module Text.WideParagraph.Styles
-    exposing
-        ( main_
-        , paragraph
-        )
+module Text.WideParagraph.Styles exposing
+    ( main_
+    , paragraph
+    )
 
 
 main_ : String

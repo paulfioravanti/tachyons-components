@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Banners))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Banners"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,18 +17,15 @@ view changeLocationMsg =
                 [ Utils.component
                     "banners/basic/"
                     "Basic"
-                    changeLocationMsg
-                    (Banners Banner.basicRoute)
+                    (Route.Banners Banner.basicRoute)
                 , Utils.component
                     "banners/info/"
                     "Info"
-                    changeLocationMsg
-                    (Banners Banner.infoRoute)
+                    (Route.Banners Banner.infoRoute)
                 , Utils.component
                     "banners/single-cta/"
                     "Single Cta"
-                    changeLocationMsg
-                    (Banners Banner.singleCtaRoute)
+                    (Route.Banners Banner.singleCtaRoute)
                 ]
             ]
         ]

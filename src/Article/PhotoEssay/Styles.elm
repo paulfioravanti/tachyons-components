@@ -1,25 +1,24 @@
-module Article.PhotoEssay.Styles
-    exposing
-        ( article
-        , author
-        , backgroundImage
-        , clearfix
-        , content
-        , copy
-        , copyLead
-        , copyText
-        , header
-        , heading
-        , image
-        , image010
-        , image011
-        , image012
-        , image013
-        , lead
-        , mainContent
-        , mainCopy
-        , mainImage
-        )
+module Article.PhotoEssay.Styles exposing
+    ( article
+    , author
+    , backgroundImage
+    , clearfix
+    , content
+    , copy
+    , copyLead
+    , copyText
+    , header
+    , heading
+    , image
+    , image010
+    , image011
+    , image012
+    , image013
+    , lead
+    , mainContent
+    , mainCopy
+    , mainImage
+    )
 
 
 article : String

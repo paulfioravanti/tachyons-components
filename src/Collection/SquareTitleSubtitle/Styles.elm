@@ -1,13 +1,12 @@
-module Collection.SquareTitleSubtitle.Styles
-    exposing
-        ( article
-        , image
-        , imageWrapper
-        , link
-        , section
-        , subtitle
-        , title
-        )
+module Collection.SquareTitleSubtitle.Styles exposing
+    ( article
+    , image
+    , imageWrapper
+    , link
+    , section
+    , subtitle
+    , title
+    )
 
 
 article : String

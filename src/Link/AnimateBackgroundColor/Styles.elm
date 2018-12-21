@@ -1,8 +1,7 @@
-module Link.AnimateBackgroundColor.Styles
-    exposing
-        ( link
-        , linkWrapper
-        )
+module Link.AnimateBackgroundColor.Styles exposing
+    ( link
+    , linkWrapper
+    )
 
 
 link : String

@@ -1,10 +1,9 @@
-module Layout.ThreeColumn.Styles
-    exposing
-        ( col1
-        , col2
-        , col3
-        , columns
-        )
+module Layout.ThreeColumn.Styles exposing
+    ( col1
+    , col2
+    , col3
+    , columns
+    )
 
 
 col1 : String

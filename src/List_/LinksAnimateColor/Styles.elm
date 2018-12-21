@@ -1,8 +1,7 @@
-module List_.LinksAnimateColor.Styles
-    exposing
-        ( link
-        , section
-        )
+module List_.LinksAnimateColor.Styles exposing
+    ( link
+    , section
+    )
 
 
 link : String -> String

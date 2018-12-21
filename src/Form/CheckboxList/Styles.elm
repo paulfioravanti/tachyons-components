@@ -1,12 +1,11 @@
-module Form.CheckboxList.Styles
-    exposing
-        ( checkbox
-        , checkboxWrapper
-        , fieldset
-        , form
-        , label
-        , legend
-        )
+module Form.CheckboxList.Styles exposing
+    ( checkbox
+    , checkboxWrapper
+    , fieldset
+    , form
+    , label
+    , legend
+    )
 
 
 checkbox : String

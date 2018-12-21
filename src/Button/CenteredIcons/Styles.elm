@@ -1,10 +1,9 @@
-module Button.CenteredIcons.Styles
-    exposing
-        ( caption
-        , footer
-        , icon
-        , link
-        )
+module Button.CenteredIcons.Styles exposing
+    ( caption
+    , footer
+    , icon
+    , link
+    )
 
 
 caption : String

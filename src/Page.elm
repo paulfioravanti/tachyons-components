@@ -1,21 +1,20 @@
-module Page
-    exposing
-        ( Route
-        , bodyClasses
-        , doubleRoute
-        , fourByFourMixedGridRoute
-        , matchers
-        , portfolioProjectRoute
-        , sectionContentLinkImageFormatting
-        , swissCoverFiveColumnsRoute
-        , view
-        )
+module Page exposing
+    ( Route
+    , bodyClasses
+    , doubleRoute
+    , fourByFourMixedGridRoute
+    , matchers
+    , portfolioProjectRoute
+    , sectionContentLinkImageFormatting
+    , swissCoverFiveColumnsRoute
+    , view
+    )
 
+import Html exposing (Html)
 import Page.Route as Route exposing (Route)
 import Page.Styles as Styles
 import Page.View as View
-import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

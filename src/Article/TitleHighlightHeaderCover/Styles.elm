@@ -1,18 +1,17 @@
-module Article.TitleHighlightHeaderCover.Styles
-    exposing
-        ( author
-        , content
-        , date
-        , header
-        , headerContent
-        , lead
-        , paragraph1
-        , paragraph2
-        , quote
-        , subtitle
-        , title
-        , titleText
-        )
+module Article.TitleHighlightHeaderCover.Styles exposing
+    ( author
+    , content
+    , date
+    , header
+    , headerContent
+    , lead
+    , paragraph1
+    , paragraph2
+    , quote
+    , subtitle
+    , title
+    , titleText
+    )
 
 
 content : String

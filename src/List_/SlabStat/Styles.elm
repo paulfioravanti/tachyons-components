@@ -1,10 +1,9 @@
-module List_.SlabStat.Styles
-    exposing
-        ( article
-        , dl
-        , name
-        , value
-        )
+module List_.SlabStat.Styles exposing
+    ( article
+    , dl
+    , name
+    , value
+    )
 
 
 article : String

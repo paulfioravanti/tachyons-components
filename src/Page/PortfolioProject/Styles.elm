@@ -1,35 +1,34 @@
-module Page.PortfolioProject.Styles
-    exposing
-        ( article
-        , blockquote
-        , blockquoteImage
-        , copy
-        , description
-        , header
-        , headerImage
-        , headerImage1
-        , headerImage2
-        , headerImage3
-        , headerImages
-        , image1
-        , otherProjects
-        , otherProjectsHeading
-        , otherProjectsFirstRowImage
-        , otherProjectsFirstRowImageWrapper
-        , otherProjectsLastRowImage
-        , otherProjectsLastRowImageWrapper
-        , otherProjectsMiddleRowImage
-        , otherProjectsMiddleRowImageWrapper
-        , projectContent
-        , projectPart1
-        , projectPart2
-        , quote
-        , quoteAttribution
-        , subtitle
-        , title
-        , video
-        , videoEmbed
-        )
+module Page.PortfolioProject.Styles exposing
+    ( article
+    , blockquote
+    , blockquoteImage
+    , copy
+    , description
+    , header
+    , headerImage
+    , headerImage1
+    , headerImage2
+    , headerImage3
+    , headerImages
+    , image1
+    , otherProjects
+    , otherProjectsFirstRowImage
+    , otherProjectsFirstRowImageWrapper
+    , otherProjectsHeading
+    , otherProjectsLastRowImage
+    , otherProjectsLastRowImageWrapper
+    , otherProjectsMiddleRowImage
+    , otherProjectsMiddleRowImageWrapper
+    , projectContent
+    , projectPart1
+    , projectPart2
+    , quote
+    , quoteAttribution
+    , subtitle
+    , title
+    , video
+    , videoEmbed
+    )
 
 
 article : String

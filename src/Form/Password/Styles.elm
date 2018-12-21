@@ -1,11 +1,10 @@
-module Form.Password.Styles
-    exposing
-        ( form
-        , passwordField
-        , passwordHelperText
-        , passwordInput
-        , passwordLabel
-        )
+module Form.Password.Styles exposing
+    ( form
+    , passwordField
+    , passwordHelperText
+    , passwordInput
+    , passwordLabel
+    )
 
 
 form : String

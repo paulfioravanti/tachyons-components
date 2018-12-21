@@ -17,13 +17,13 @@ view =
             degenerate into dullness and mediocrity.
             """
     in
-        div [ attribute "data-name" "component" ]
-            [ div [ class Styles.quote ]
-                [ blockquote [ class Styles.blockquote ]
-                    [ p [ class Styles.copy ]
-                        [ text copy ]
-                    , cite [ class Styles.cite ]
-                        [ text "―Stanley Morison" ]
-                    ]
+    div [ attribute "data-name" "component" ]
+        [ div [ class Styles.quote ]
+            [ blockquote [ class Styles.blockquote ]
+                [ p [ class Styles.copy ]
+                    [ text copy ]
+                , cite [ class Styles.cite ]
+                    [ text "―Stanley Morison" ]
                 ]
             ]
+        ]

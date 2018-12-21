@@ -1,12 +1,6 @@
 module ArticleList.View exposing (view)
 
-import ArticleList.Route
-    exposing
-        ( Route
-            ( TitlePreviewAuthorMedia
-            , TitlePreviewAuthorMediaFlipped
-            )
-        )
+import ArticleList.Route as Route exposing (Route)
 import ArticleList.TitlePreviewAuthorMedia.View as TitlePreviewAuthorMedia
 import ArticleList.TitlePreviewAuthorMediaFlipped.View as TitlePreviewAuthorMediaFlipped
 import Html exposing (Html)
@@ -15,8 +9,8 @@ import Html exposing (Html)
 view : Route -> Html msg
 view route =
     case route of
-        TitlePreviewAuthorMedia ->
+        Route.TitlePreviewAuthorMedia ->
             TitlePreviewAuthorMedia.view
 
-        TitlePreviewAuthorMediaFlipped ->
+        Route.TitlePreviewAuthorMediaFlipped ->
             TitlePreviewAuthorMediaFlipped.view

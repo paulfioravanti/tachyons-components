@@ -1,20 +1,19 @@
-module Header
-    exposing
-        ( Route
-        , bodyClasses
-        , circleAvatarTitleSubtitleRoute
-        , matchers
-        , roundedAvatarTitleSubtitleRoute
-        , sectionContentLinkImageFormatting
-        , startupHeroRoute
-        , view
-        )
+module Header exposing
+    ( Route
+    , bodyClasses
+    , circleAvatarTitleSubtitleRoute
+    , matchers
+    , roundedAvatarTitleSubtitleRoute
+    , sectionContentLinkImageFormatting
+    , startupHeroRoute
+    , view
+    )
 
 import Header.Route as Route exposing (Route)
 import Header.Styles as Styles
 import Header.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

@@ -1,13 +1,12 @@
-module Article.LeftTitle.Styles
-    exposing
-        ( article
-        , author
-        , content
-        , header
-        , heading
-        , paragraph1
-        , paragraph2
-        )
+module Article.LeftTitle.Styles exposing
+    ( article
+    , author
+    , content
+    , header
+    , heading
+    , paragraph1
+    , paragraph2
+    )
 
 
 article : String

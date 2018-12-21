@@ -1,19 +1,18 @@
-module Table
-    exposing
-        ( Route
-        , basicRoute
-        , bodyClasses
-        , matchers
-        , sectionContentLinkImageFormatting
-        , stripedDarkRoute
-        , view
-        )
+module Table exposing
+    ( Route
+    , basicRoute
+    , bodyClasses
+    , matchers
+    , sectionContentLinkImageFormatting
+    , stripedDarkRoute
+    , view
+    )
 
+import Html exposing (Html)
 import Table.Route as Route exposing (Route)
 import Table.Styles as Styles
 import Table.View as View
-import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

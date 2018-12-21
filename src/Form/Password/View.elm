@@ -22,16 +22,16 @@ passwordField =
             uppercase character.
             """
     in
-        div [ class Styles.passwordField ]
-            [ label [ for "password", class Styles.passwordLabel ]
-                [ text "Password" ]
-            , input
-                [ class Styles.passwordInput
-                , id "password"
-                , type_ "password"
-                , attribute "aria-describedby" "password-desc"
-                ]
-                []
-            , small [ id "password-desc", class Styles.passwordHelperText ]
-                [ text helperText ]
+    div [ class Styles.passwordField ]
+        [ label [ for "password", class Styles.passwordLabel ]
+            [ text "Password" ]
+        , input
+            [ class Styles.passwordInput
+            , id "password"
+            , type_ "password"
+            , attribute "aria-describedby" "password-desc"
             ]
+            []
+        , small [ id "password-desc", class Styles.passwordHelperText ]
+            [ text helperText ]
+        ]

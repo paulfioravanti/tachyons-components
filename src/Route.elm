@@ -17,12 +17,12 @@ import Link
 import List_
 import Marketing
 import Nav
-import Navigation exposing (Location)
 import Page
 import Quote
 import Table
 import Text
-import UrlParser exposing (Parser, (</>), map, oneOf, s, top)
+import Url exposing (Url)
+import Url.Parser exposing ((</>), Parser, map, oneOf, s, top)
 import Utils
 
 
@@ -52,10 +52,10 @@ type Route
     | Texts Text.Route
 
 
-fromLocation : Location -> Route
-fromLocation location =
-    location
-        |> UrlParser.parsePath matchers
+fromLocation : Url -> Route
+fromLocation url =
+    url
+        |> Url.Parser.parse matchers
         |> Maybe.withDefault NotFound
 
 
@@ -91,10 +91,11 @@ toPath route =
                 errorRoute =
                     if subRoute == ErrorPage.fourOhFourRoute then
                         "404"
+
                     else
                         Utils.pathify subRoute
             in
-                "/components/error-pages/" ++ errorRoute ++ "/"
+            "/components/error-pages/" ++ errorRoute ++ "/"
 
         Footers subRoute ->
             "/components/footers/" ++ Utils.pathify subRoute ++ "/"
@@ -131,10 +132,11 @@ toPath route =
                 pageRoute =
                     if subRoute == Page.fourByFourMixedGridRoute then
                         "4x4-mixed-grid"
+
                     else
                         Utils.pathify subRoute
             in
-                "/components/pages/" ++ pageRoute ++ "/"
+            "/components/pages/" ++ pageRoute ++ "/"
 
         Quotes subRoute ->
             "/components/quotes/" ++ Utils.pathify subRoute ++ "/"

@@ -1,11 +1,10 @@
-module Card.ProfileCardTitleSubtitle.Styles
-    exposing
-        ( article
-        , content
-        , heading
-        , image
-        , subheading
-        )
+module Card.ProfileCardTitleSubtitle.Styles exposing
+    ( article
+    , content
+    , heading
+    , image
+    , subheading
+    )
 
 
 article : String

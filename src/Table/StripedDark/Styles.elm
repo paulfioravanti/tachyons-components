@@ -1,13 +1,12 @@
-module Table.StripedDark.Styles
-    exposing
-        ( container
-        , content
-        , stripe
-        , table
-        , tableBody
-        , tableData
-        , tableHeading
-        )
+module Table.StripedDark.Styles exposing
+    ( container
+    , content
+    , stripe
+    , table
+    , tableBody
+    , tableData
+    , tableHeading
+    )
 
 
 container : String

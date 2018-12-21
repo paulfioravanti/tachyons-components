@@ -1,6 +1,6 @@
 module ErrorPage.Route exposing (Route(..), matchers)
 
-import UrlParser exposing (Parser, map, s)
+import Url.Parser exposing (Parser, map, s)
 
 
 type Route
@@ -11,4 +11,4 @@ matchers : Parser (Route -> a) a
 matchers =
     [ map FourOhFour (s "404")
     ]
-        |> UrlParser.oneOf
+        |> Url.Parser.oneOf

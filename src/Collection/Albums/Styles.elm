@@ -1,15 +1,14 @@
-module Collection.Albums.Styles
-    exposing
-        ( album
-        , albums
-        , artistDescription
-        , descriptionList
-        , header
-        , image
-        , link
-        , term
-        , titleDescription
-        )
+module Collection.Albums.Styles exposing
+    ( album
+    , albums
+    , artistDescription
+    , descriptionList
+    , header
+    , image
+    , link
+    , term
+    , titleDescription
+    )
 
 
 album : String

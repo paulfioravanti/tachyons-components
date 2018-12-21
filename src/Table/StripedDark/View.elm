@@ -1,9 +1,9 @@
 module Table.StripedDark.View exposing (view)
 
-import Html exposing (Html, div, table, tbody, td, th, thead, tr, text)
+import Html exposing (Html, div, table, tbody, td, text, th, thead, tr)
 import Html.Attributes exposing (attribute, class)
-import Table.User as User exposing (User)
 import Table.StripedDark.Styles as Styles
+import Table.User as User exposing (User)
 
 
 view : Html msg
@@ -22,11 +22,11 @@ userTable =
         users =
             User.list
     in
-        table [ class Styles.table, attribute "cellSpacing" "0" ]
-            [ tableHeadings
-            , tbody [ class Styles.tableBody ]
-                (List.map tableRow users)
-            ]
+    table [ class Styles.table, attribute "cellSpacing" "0" ]
+        [ tableHeadings
+        , tbody [ class Styles.tableBody ]
+            (List.map tableRow users)
+        ]
 
 
 tableHeadings : Html msg
@@ -35,10 +35,10 @@ tableHeadings =
         headings =
             [ "Name", "Username", "Email", "ID" ]
     in
-        thead []
-            [ tr [ class Styles.stripe ]
-                (List.map tableHeading headings)
-            ]
+    thead []
+        [ tr [ class Styles.stripe ]
+            (List.map tableHeading headings)
+        ]
 
 
 tableHeading : String -> Html msg
@@ -53,8 +53,8 @@ tableRow { name, username, email, id } =
         attributes =
             [ name, username, email, id ]
     in
-        tr [ class Styles.stripe ]
-            (List.map tableData attributes)
+    tr [ class Styles.stripe ]
+        (List.map tableData attributes)
 
 
 tableData : String -> Html msg

@@ -1,7 +1,6 @@
 module Footer.CenteredIconsHoverGlow.View exposing (view)
 
 import Footer.CenteredIconsHoverGlow.Styles as Styles
-import SvgLogo
 import Html exposing (Html, a, div, footer, span, text)
 import Html.Attributes exposing (attribute, class, href, style, title)
 import Svg exposing (path, svg)
@@ -15,23 +14,21 @@ import Svg.Attributes
         , strokeMiterlimit
         , viewBox
         )
+import SvgLogo
 
 
 view : Html msg
 view =
     let
         backgroundImage =
-            [ ( "backgroundImage"
-              , "url(http://i.giphy.com/5lF3pQpdquCBy.gif)"
-              )
-            ]
+            style "backgroundImage" "url(http://i.giphy.com/5lF3pQpdquCBy.gif)"
     in
-        div [ attribute "data-name" "component" ]
-            [ footer [ class Styles.footer, style backgroundImage ]
-                [ div [ class Styles.links ]
-                    (List.map link links)
-                ]
+    div [ attribute "data-name" "component" ]
+        [ footer [ class Styles.footer, backgroundImage ]
+            [ div [ class Styles.links ]
+                (List.map link links)
             ]
+        ]
 
 
 link : ( String, String, String ) -> Html msg

@@ -1,21 +1,5 @@
 module Article.View exposing (view)
 
-import Article.Route
-    exposing
-        ( Route
-            ( Feature
-            , FullBleedBackground
-            , HeadlineTitleText
-            , LargeTitleText
-            , LeftTitle
-            , LeftTitleTopBorder
-            , PhotoEssay
-            , SingleColumnLargeTitle
-            , TitleHighlightHeaderCover
-            , TitleText
-            , TitleTextImage
-            )
-        )
 import Article.Feature.View as Feature
 import Article.FullBleedBackground.View as FullBleedBackground
 import Article.HeadlineTitleText.View as HeadlineTitleText
@@ -23,6 +7,7 @@ import Article.LargeTitleText.View as LargeTitleText
 import Article.LeftTitle.View as LeftTitle
 import Article.LeftTitleTopBorder.View as LeftTitleTopBorder
 import Article.PhotoEssay.View as PhotoEssay
+import Article.Route as Route exposing (Route)
 import Article.SingleColumnLargeTitle.View as SingleColumnLargeTitle
 import Article.TitleHighlightHeaderCover.View as TitleHighlightHeaderCover
 import Article.TitleText.View as TitleText
@@ -33,35 +18,35 @@ import Html exposing (Html)
 view : Route -> Html msg
 view route =
     case route of
-        Feature ->
+        Route.Feature ->
             Feature.view
 
-        FullBleedBackground ->
+        Route.FullBleedBackground ->
             FullBleedBackground.view
 
-        HeadlineTitleText ->
+        Route.HeadlineTitleText ->
             HeadlineTitleText.view
 
-        LargeTitleText ->
+        Route.LargeTitleText ->
             LargeTitleText.view
 
-        LeftTitle ->
+        Route.LeftTitle ->
             LeftTitle.view
 
-        LeftTitleTopBorder ->
+        Route.LeftTitleTopBorder ->
             LeftTitleTopBorder.view
 
-        PhotoEssay ->
+        Route.PhotoEssay ->
             PhotoEssay.view
 
-        SingleColumnLargeTitle ->
+        Route.SingleColumnLargeTitle ->
             SingleColumnLargeTitle.view
 
-        TitleHighlightHeaderCover ->
+        Route.TitleHighlightHeaderCover ->
             TitleHighlightHeaderCover.view
 
-        TitleText ->
+        Route.TitleText ->
             TitleText.view
 
-        TitleTextImage ->
+        Route.TitleTextImage ->
             TitleTextImage.view

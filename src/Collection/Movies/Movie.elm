@@ -47,10 +47,10 @@ batmanBegins =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/batman-begins.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Batman Begins movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Batman Begins movie"
+    }
 
 
 theDeparted : Movie
@@ -63,10 +63,10 @@ theDeparted =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/departed.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "The Departed movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "The Departed movie"
+    }
 
 
 leon : Movie
@@ -79,10 +79,10 @@ leon =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/leon.png"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Leon: The Professional movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Leon: The Professional movie"
+    }
 
 
 twelveMonkeys : Movie
@@ -95,10 +95,10 @@ twelveMonkeys =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/12monkeys.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "12 Monkeys movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "12 Monkeys movie"
+    }
 
 
 interstellar : Movie
@@ -111,10 +111,10 @@ interstellar =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/interstellar.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Interstellar movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Interstellar movie"
+    }
 
 
 lockStock : Movie
@@ -127,10 +127,10 @@ lockStock =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/lockstock.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Lock, Stock & Two Smoking Barrels movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Lock, Stock & Two Smoking Barrels movie"
+    }
 
 
 moon : Movie
@@ -143,10 +143,10 @@ moon =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/moon.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Moon movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Moon movie"
+    }
 
 
 inglouriousBasterds : Movie
@@ -160,10 +160,10 @@ inglouriousBasterds =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/"
                 ++ "inglourious_basterds.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Inglourious Basterds movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Inglourious Basterds movie"
+    }
 
 
 prometheus : Movie
@@ -176,10 +176,10 @@ prometheus =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/prometheus.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Prometheus movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Prometheus movie"
+    }
 
 
 childrenOfMen : Movie
@@ -192,10 +192,10 @@ childrenOfMen =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/children.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Children of Men movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Children of Men movie"
+    }
 
 
 thePlaceBeyondThePines : Movie
@@ -209,10 +209,10 @@ thePlaceBeyondThePines =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/"
                 ++ "place-beyond-pines.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "The Place Beyond the Pines movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "The Place Beyond the Pines movie"
+    }
 
 
 jurassicPark : Movie
@@ -225,10 +225,10 @@ jurassicPark =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/jurassicpark.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Jurassic Park movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Jurassic Park movie"
+    }
 
 
 fromDuskTillDawn : Movie
@@ -241,10 +241,10 @@ fromDuskTillDawn =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/dusktilldawn.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "From Dusk Till Dawn movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "From Dusk Till Dawn movie"
+    }
 
 
 killBillVol2 : Movie
@@ -257,10 +257,10 @@ killBillVol2 =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/kill-bill2.png"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Kill Bill: Volume 2 movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Kill Bill: Volume 2 movie"
+    }
 
 
 killBillVol1 : Movie
@@ -273,10 +273,10 @@ killBillVol1 =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/kill-bill.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Kill Bill: Volume 1 movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Kill Bill: Volume 1 movie"
+    }
 
 
 drive : Movie
@@ -289,10 +289,10 @@ drive =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/neon-drive.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Drive movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Drive movie"
+    }
 
 
 madMaxFuryRoad : Movie
@@ -305,10 +305,10 @@ madMaxFuryRoad =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/mad-max-2.png"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Mad Max: Fury Road movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Mad Max: Fury Road movie"
+    }
 
 
 sunshine : Movie
@@ -321,10 +321,10 @@ sunshine =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/sunshine.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Sunshine movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Sunshine movie"
+    }
 
 
 watchmen : Movie
@@ -337,10 +337,10 @@ watchmen =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/watchmen.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Watchmen movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Watchmen movie"
+    }
 
 
 district9 : Movie
@@ -353,10 +353,10 @@ district9 =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/district9.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "District 9 movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "District 9 movie"
+    }
 
 
 exMachina : Movie
@@ -369,10 +369,10 @@ exMachina =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/ex-machina.png"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Ex Machina movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Ex Machina movie"
+    }
 
 
 bottleRocket : Movie
@@ -385,10 +385,10 @@ bottleRocket =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/bottlerocket.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Bottle Rocket movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Bottle Rocket movie"
+    }
 
 
 theBigShort : Movie
@@ -402,10 +402,10 @@ theBigShort =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/"
                 ++ "the-big-short.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "The Big Short movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "The Big Short movie"
+    }
 
 
 primer : Movie
@@ -418,7 +418,7 @@ primer =
         imageUrl =
             "https://s3-us-west-1.amazonaws.com/tachyonsio/img/primer.jpg"
     in
-        { imageUrl = imageUrl
-        , iTunesUrl = iTunesUrl
-        , label = "Primer movie"
-        }
+    { imageUrl = imageUrl
+    , iTunesUrl = iTunesUrl
+    , label = "Primer movie"
+    }

@@ -1,27 +1,26 @@
-module Footer
-    exposing
-        ( Route
-        , bodyClasses
-        , centeredIconsHoverGlowRoute
-        , inlineTextRoute
-        , matchers
-        , sectionContentLinkImageFormatting
-        , simpleLargeTypeRoute
-        , smallPrintRoute
-        , socialCirclesRoute
-        , socialRoute
-        , socialSimpleRoute
-        , socialSimpleTextRoute
-        , socialTextRoute
-        , studiosRoute
-        , view
-        )
+module Footer exposing
+    ( Route
+    , bodyClasses
+    , centeredIconsHoverGlowRoute
+    , inlineTextRoute
+    , matchers
+    , sectionContentLinkImageFormatting
+    , simpleLargeTypeRoute
+    , smallPrintRoute
+    , socialCirclesRoute
+    , socialRoute
+    , socialSimpleRoute
+    , socialSimpleTextRoute
+    , socialTextRoute
+    , studiosRoute
+    , view
+    )
 
 import Footer.Route as Route exposing (Route)
 import Footer.Styles as Styles
 import Footer.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

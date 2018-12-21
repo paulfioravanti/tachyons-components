@@ -1,24 +1,23 @@
-module Text
-    exposing
-        ( Route
-        , bodyClasses
-        , largeParagraphRoute
-        , matchers
-        , narrowParagraphRoute
-        , paragraphRoute
-        , sectionContentLinkImageFormatting
-        , smallNarrowParagraphRoute
-        , smallParagraphRoute
-        , titleSubtitleCenteredRoute
-        , view
-        , wideParagraphRoute
-        )
+module Text exposing
+    ( Route
+    , bodyClasses
+    , largeParagraphRoute
+    , matchers
+    , narrowParagraphRoute
+    , paragraphRoute
+    , sectionContentLinkImageFormatting
+    , smallNarrowParagraphRoute
+    , smallParagraphRoute
+    , titleSubtitleCenteredRoute
+    , view
+    , wideParagraphRoute
+    )
 
+import Html exposing (Html)
 import Text.Route as Route exposing (Route)
 import Text.Styles as Styles
 import Text.View as View
-import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

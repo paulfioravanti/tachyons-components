@@ -26,11 +26,7 @@ view =
                     [ div [ class Styles.photo6 ]
                         [ div
                             [ class Styles.image6
-                            , style
-                                [ ( "backgroundImage"
-                                  , "url(http://mrmrs.github.io/photos/u/001.jpg)"
-                                  )
-                                ]
+                            , style "backgroundImage" "url(http://mrmrs.github.io/photos/u/001.jpg)"
                             ]
                             []
                         ]
@@ -41,11 +37,7 @@ view =
                     , div [ class Styles.photo9 ]
                         [ div
                             [ class Styles.image9
-                            , style
-                                [ ( "backgroundImage"
-                                  , "url(http://mrmrs.github.io/photos/u/004.jpg)"
-                                  )
-                                ]
+                            , style "backgroundImage" "url(http://mrmrs.github.io/photos/u/004.jpg)"
                             ]
                             []
                         ]
@@ -59,11 +51,7 @@ image : String -> String -> Html msg
 image id positioning =
     div
         [ class (Styles.image positioning)
-        , style
-            [ ( "backgroundImage"
-              , "url(http://mrmrs.github.io/photos/" ++ id ++ ".jpg)"
-              )
-            ]
+        , style "backgroundImage" ("url(http://mrmrs.github.io/photos/" ++ id ++ ".jpg)")
         ]
         []
 
@@ -79,20 +67,20 @@ inset =
             provided by many components in the nature of the project.
             """
     in
-        div [ class Styles.inset ]
-            [ div [ class Styles.insetContentWrapper ]
-                [ h1 [ class Styles.insetHeading ]
-                    [ text "#004" ]
-                , p [ class Styles.insetParagraph ]
-                    [ span [ class Styles.insetQuoteHeading ]
-                        [ text "Mies, my great mentor said:" ]
-                    , span [ class Styles.insetQuote ]
-                        [ text "“God is in the details.”" ]
-                    , span [ class Styles.insetDescription ]
-                        [ text description ]
-                    ]
+    div [ class Styles.inset ]
+        [ div [ class Styles.insetContentWrapper ]
+            [ h1 [ class Styles.insetHeading ]
+                [ text "#004" ]
+            , p [ class Styles.insetParagraph ]
+                [ span [ class Styles.insetQuoteHeading ]
+                    [ text "Mies, my great mentor said:" ]
+                , span [ class Styles.insetQuote ]
+                    [ text "“God is in the details.”" ]
+                , span [ class Styles.insetDescription ]
+                    [ text description ]
                 ]
             ]
+        ]
 
 
 articleCopy : Html msg
@@ -133,10 +121,10 @@ articleCopy =
             is why the grid is a useful tool, rather than a constricting device.
             """
     in
-        div [ class Styles.copyWrapper ]
-            [ p [ class Styles.copy ]
-                [ span [ class Styles.leadingSentence ]
-                    [ text leadingSentence ]
-                , text copy
-                ]
+    div [ class Styles.copyWrapper ]
+        [ p [ class Styles.copy ]
+            [ span [ class Styles.leadingSentence ]
+                [ text leadingSentence ]
+            , text copy
             ]
+        ]

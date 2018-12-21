@@ -1,7 +1,7 @@
 module Collection.Vinyl.View exposing (view)
 
-import Collection.Vinyl.Styles as Styles
 import Collection.Vinyl.Album as Album exposing (Album)
+import Collection.Vinyl.Styles as Styles
 import Html exposing (Html, a, article, div, span)
 import Html.Attributes exposing (attribute, class, href, style)
 
@@ -59,11 +59,7 @@ albumLink { amazonUrl, imageUrl, label } =
             [ class Styles.image
             , attribute "role" "img"
             , attribute "aria-label" label
-            , style
-                [ ( "backgroundImage"
-                  , "url(" ++ imageUrl ++ ")"
-                  )
-                ]
+            , style "backgroundImage" ("url(" ++ imageUrl ++ ")")
             ]
             []
         ]

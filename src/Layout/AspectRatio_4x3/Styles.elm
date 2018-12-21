@@ -1,9 +1,8 @@
-module Layout.AspectRatio_4x3.Styles
-    exposing
-        ( article
-        , backgroundImage
-        , backgroundImageWrapper
-        )
+module Layout.AspectRatio_4x3.Styles exposing
+    ( article
+    , backgroundImage
+    , backgroundImageWrapper
+    )
 
 
 article : String

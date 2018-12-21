@@ -1,17 +1,16 @@
-module ArticleList.TitlePreviewAuthorMedia.Styles
-    exposing
-        ( article
-        , articleLink
-        , articleContent
-        , articleCopy
-        , byline
-        , flexFormatting
-        , headline
-        , image
-        , photo
-        , section
-        , title
-        )
+module ArticleList.TitlePreviewAuthorMedia.Styles exposing
+    ( article
+    , articleContent
+    , articleCopy
+    , articleLink
+    , byline
+    , flexFormatting
+    , headline
+    , image
+    , photo
+    , section
+    , title
+    )
 
 import ArticleList.Styles as Styles
 

@@ -2,7 +2,7 @@ module Collection.Albums.View exposing (view)
 
 import Collection.Albums.Album as Album exposing (Album)
 import Collection.Albums.Styles as Styles
-import Html exposing (Html, a, article, div, dd, dl, dt, h2, img, text)
+import Html exposing (Html, a, article, dd, div, dl, dt, h2, img, text)
 import Html.Attributes exposing (alt, attribute, class, href, src)
 
 
@@ -12,14 +12,14 @@ view =
         albums =
             Album.list
     in
-        div [ attribute "data-name" "component" ]
-            [ article []
-                [ h2 [ class Styles.header ]
-                    [ text "Albums" ]
-                , div [ class Styles.albums ]
-                    (List.map album albums)
-                ]
+    div [ attribute "data-name" "component" ]
+        [ article []
+            [ h2 [ class Styles.header ]
+                [ text "Albums" ]
+            , div [ class Styles.albums ]
+                (List.map album albums)
             ]
+        ]
 
 
 album : Album -> Html msg

@@ -1,23 +1,22 @@
-module Collection
-    exposing
-        ( Route
-        , albumsRoute
-        , bodyClasses
-        , matchers
-        , moviesRoute
-        , postersDimRoute
-        , postersRoute
-        , sectionContentLinkImageFormatting
-        , squareTitleSubtitleRoute
-        , view
-        , vinylRoute
-        )
+module Collection exposing
+    ( Route
+    , albumsRoute
+    , bodyClasses
+    , matchers
+    , moviesRoute
+    , postersDimRoute
+    , postersRoute
+    , sectionContentLinkImageFormatting
+    , squareTitleSubtitleRoute
+    , view
+    , vinylRoute
+    )
 
 import Collection.Route as Route exposing (Route)
 import Collection.Styles as Styles
 import Collection.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

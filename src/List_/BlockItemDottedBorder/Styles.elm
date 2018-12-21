@@ -1,9 +1,8 @@
-module List_.BlockItemDottedBorder.Styles
-    exposing
-        ( list
-        , listItem
-        , listWrapper
-        )
+module List_.BlockItemDottedBorder.Styles exposing
+    ( list
+    , listItem
+    , listWrapper
+    )
 
 
 list : String

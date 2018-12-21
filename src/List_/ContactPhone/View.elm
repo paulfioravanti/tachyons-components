@@ -12,10 +12,10 @@ view =
         contacts =
             Contact.list
     in
-        div [ attribute "data-name" "component" ]
-            [ ul [ class Styles.ul ]
-                (List.map contact contacts)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ ul [ class Styles.ul ]
+            (List.map contact contacts)
+        ]
 
 
 contact : Contact -> Html msg

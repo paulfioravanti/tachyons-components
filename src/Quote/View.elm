@@ -3,14 +3,14 @@ module Quote.View exposing (view)
 import Html exposing (Html)
 import Quote.LeftBorder.View as LeftBorder
 import Quote.PullQuote.View as PullQuote
-import Quote.Route exposing (Route(LeftBorder, PullQuote))
+import Quote.Route as Route exposing (Route)
 
 
 view : Route -> Html msg
 view route =
     case route of
-        LeftBorder ->
+        Route.LeftBorder ->
             LeftBorder.view
 
-        PullQuote ->
+        Route.PullQuote ->
             PullQuote.view

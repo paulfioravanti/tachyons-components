@@ -1,9 +1,8 @@
-module Layout.FourColumnCollapseTwo.Styles
-    exposing
-        ( section
-        , image
-        , imageWrapper
-        )
+module Layout.FourColumnCollapseTwo.Styles exposing
+    ( image
+    , imageWrapper
+    , section
+    )
 
 
 section : String

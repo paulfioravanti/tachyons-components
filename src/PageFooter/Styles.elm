@@ -1,18 +1,17 @@
-module PageFooter.Styles
-    exposing
-        ( badges
-        , callsToAction
-        , callToAction
-        , callToActionSvg
-        , footer
-        , footerLink
-        , footerLinks
-        , offerOfHelp
-        , tachyonsDefinition
-        , twitterBadge
-        , twitterSvg
-        , twitterText
-        )
+module PageFooter.Styles exposing
+    ( badges
+    , callToAction
+    , callToActionSvg
+    , callsToAction
+    , footer
+    , footerLink
+    , footerLinks
+    , offerOfHelp
+    , tachyonsDefinition
+    , twitterBadge
+    , twitterSvg
+    , twitterText
+    )
 
 
 badges : String

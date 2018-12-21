@@ -1,24 +1,18 @@
 module ArticleList.Styles exposing (bodyClasses, flexFormatting, image)
 
-import ArticleList.Route
-    exposing
-        ( Route
-            ( TitlePreviewAuthorMedia
-            , TitlePreviewAuthorMediaFlipped
-            )
-        )
+import ArticleList.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
 bodyClasses route =
     case route of
-        TitlePreviewAuthorMedia ->
+        Route.TitlePreviewAuthorMedia ->
             [ "bg-near-white"
             , "sans-serif"
             , "w-100"
             ]
 
-        TitlePreviewAuthorMediaFlipped ->
+        Route.TitlePreviewAuthorMediaFlipped ->
             [ "bg-white"
             , "sans-serif"
             , "w-100"

@@ -1,23 +1,22 @@
-module Avatar
-    exposing
-        ( Route
-        , bodyClasses
-        , matchers
-        , circleRoute
-        , circleBorderRoute
-        , doubleRingRoute
-        , roundedLargeRoute
-        , roundedMediumRoute
-        , roundedSmallRoute
-        , squareRoute
-        , view
-        )
+module Avatar exposing
+    ( Route
+    , bodyClasses
+    , circleBorderRoute
+    , circleRoute
+    , doubleRingRoute
+    , matchers
+    , roundedLargeRoute
+    , roundedMediumRoute
+    , roundedSmallRoute
+    , squareRoute
+    , view
+    )
 
 import Avatar.Route as Route exposing (Route)
 import Avatar.Styles as Styles
 import Avatar.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

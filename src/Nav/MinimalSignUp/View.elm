@@ -76,14 +76,14 @@ logo =
             z
             """
     in
-        a [ class Styles.imageLink, href "#" ]
-            [ svg
-                [ Svg.Attributes.class Styles.image
-                , attribute "data-icon" "grid"
-                , viewBox "0 0 32 32"
-                , style [ ( "fill", "currentColor" ) ]
-                ]
-                [ title [] [ text "Super Normal Icon Mark" ]
-                , path [ d iconPath ] []
-                ]
+    a [ class Styles.imageLink, href "#" ]
+        [ svg
+            [ Svg.Attributes.class Styles.image
+            , attribute "data-icon" "grid"
+            , viewBox "0 0 32 32"
+            , style "fill" "currentColor"
             ]
+            [ title [] [ text "Super Normal Icon Mark" ]
+            , path [ d iconPath ] []
+            ]
+        ]

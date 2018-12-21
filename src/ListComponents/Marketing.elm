@@ -1,15 +1,15 @@
 module ListComponents.Marketing exposing (view)
 
-import Marketing
 import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Marketing))
+import Marketing
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Marketing"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,8 +17,7 @@ view changeLocationMsg =
                 [ Utils.component
                     "marketing/iphone-app/"
                     "Iphone App"
-                    changeLocationMsg
-                    (Marketing Marketing.iphoneAppRoute)
+                    (Route.Marketing Marketing.iphoneAppRoute)
                 ]
             ]
         ]

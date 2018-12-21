@@ -1,9 +1,8 @@
-module Layout.FourColumn.Styles
-    exposing
-        ( dark
-        , light
-        , section
-        )
+module Layout.FourColumn.Styles exposing
+    ( dark
+    , light
+    , section
+    )
 
 
 dark : String

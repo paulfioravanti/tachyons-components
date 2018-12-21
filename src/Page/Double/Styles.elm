@@ -1,31 +1,30 @@
-module Page.Double.Styles
-    exposing
-        ( articlePhotos
-        , clearfix
-        , copy
-        , copyWrapper
-        , main_
-        , image
-        , image6
-        , image9
-        , inset
-        , insetContentWrapper
-        , insetDescription
-        , insetHeading
-        , insetParagraph
-        , insetQuote
-        , insetQuoteHeading
-        , leadingSentence
-        , photo1
-        , photo2
-        , photo3
-        , photo4
-        , photo5
-        , photo6
-        , photo7
-        , photo8
-        , photo9
-        )
+module Page.Double.Styles exposing
+    ( articlePhotos
+    , clearfix
+    , copy
+    , copyWrapper
+    , image
+    , image6
+    , image9
+    , inset
+    , insetContentWrapper
+    , insetDescription
+    , insetHeading
+    , insetParagraph
+    , insetQuote
+    , insetQuoteHeading
+    , leadingSentence
+    , main_
+    , photo1
+    , photo2
+    , photo3
+    , photo4
+    , photo5
+    , photo6
+    , photo7
+    , photo8
+    , photo9
+    )
 
 
 articlePhotos : String

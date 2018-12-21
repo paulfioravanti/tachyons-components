@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Cards))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Cards"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,48 +17,39 @@ view changeLocationMsg =
                 [ Utils.component
                     "cards/album-centered/"
                     "Album Centered"
-                    changeLocationMsg
-                    (Cards Card.albumCenteredRoute)
+                    (Route.Cards Card.albumCenteredRoute)
                 , Utils.component
                     "cards/album-left/"
                     "Album Left"
-                    changeLocationMsg
-                    (Cards Card.albumLeftRoute)
+                    (Route.Cards Card.albumLeftRoute)
                 , Utils.component
                     "cards/basic-text-card/"
                     "Basic Text Card"
-                    changeLocationMsg
-                    (Cards Card.basicTextCardRoute)
+                    (Route.Cards Card.basicTextCardRoute)
                 , Utils.component
                     "cards/news-card/"
                     "News Card"
-                    changeLocationMsg
-                    (Cards Card.newsCardRoute)
+                    (Route.Cards Card.newsCardRoute)
                 , Utils.component
                     "cards/product-card/"
                     "Product Card"
-                    changeLocationMsg
-                    (Cards Card.productCardRoute)
+                    (Route.Cards Card.productCardRoute)
                 , Utils.component
                     "cards/profile-card-title-subtitle/"
                     "Profile Card Title Subtitle"
-                    changeLocationMsg
-                    (Cards Card.profileCardTitleSubtitleRoute)
+                    (Route.Cards Card.profileCardTitleSubtitleRoute)
                 , Utils.component
                     "cards/profile-card/"
                     "Profile Card"
-                    changeLocationMsg
-                    (Cards Card.profileCardRoute)
+                    (Route.Cards Card.profileCardRoute)
                 , Utils.component
                     "cards/suggested-profile/"
                     "Suggested Profile"
-                    changeLocationMsg
-                    (Cards Card.suggestedProfileRoute)
+                    (Route.Cards Card.suggestedProfileRoute)
                 , Utils.component
                     "cards/text-card/"
                     "Text Card"
-                    changeLocationMsg
-                    (Cards Card.textCardRoute)
+                    (Route.Cards Card.textCardRoute)
                 ]
             ]
         ]

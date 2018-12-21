@@ -52,6 +52,6 @@ example =
             correct rules are not difficult to discover.
             """
     in
-        { heading = heading
-        , paragraphs = [ p1, p2, p3, p4 ]
-        }
+    { heading = heading
+    , paragraphs = [ p1, p2, p3, p4 ]
+    }

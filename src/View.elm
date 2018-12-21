@@ -4,6 +4,7 @@ import Article
 import ArticleList
 import Avatar
 import Banner
+import Browser exposing (Document)
 import Button
 import Card
 import Collection
@@ -15,8 +16,8 @@ import Header
 import Html exposing (Html, div, main_)
 import Layout
 import Link
-import List_
 import ListComponents
+import List_
 import Marketing
 import Model exposing (Model)
 import Nav
@@ -25,124 +26,105 @@ import Page
 import PageFooter
 import Quote
 import Route
-    exposing
-        ( Route
-            ( Articles
-            , ArticleLists
-            , Avatars
-            , Banners
-            , Buttons
-            , Cards
-            , Collections
-            , DefinitionLists
-            , ErrorPages
-            , Footers
-            , Forms
-            , Headers
-            , Layouts
-            , Links
-            , ListComponents
-            , Lists
-            , Marketing
-            , Navs
-            , NotFound
-            , Pages
-            , Quotes
-            , Tables
-            , Texts
-            )
-        )
 import Table
 import Text
 
 
-view : (Route -> msg) -> Model -> Html msg
-view changeLocationMsg model =
+view : Model -> Document msg
+view model =
     let
+        title =
+            "TACHYONS - Components"
+
         footer =
-            PageFooter.view (changeLocationMsg ListComponents)
+            PageFooter.view
 
         page =
-            case model of
-                ArticleLists subRoute ->
+            case model.route of
+                Route.ArticleLists subRoute ->
                     ArticleList.view subRoute
 
-                Articles subRoute ->
+                Route.Articles subRoute ->
                     Article.view subRoute
 
-                Avatars subRoute ->
+                Route.Avatars subRoute ->
                     Avatar.view subRoute
 
-                Banners subRoute ->
+                Route.Banners subRoute ->
                     Banner.view subRoute
 
-                Buttons subRoute ->
+                Route.Buttons subRoute ->
                     Button.view subRoute
 
-                Cards subRoute ->
+                Route.Cards subRoute ->
                     Card.view subRoute
 
-                Collections subRoute ->
+                Route.Collections subRoute ->
                     Collection.view subRoute
 
-                DefinitionLists subRoute ->
+                Route.DefinitionLists subRoute ->
                     DefinitionList.view subRoute
 
-                ErrorPages subRoute ->
+                Route.ErrorPages subRoute ->
                     ErrorPage.view subRoute
 
-                Footers subRoute ->
+                Route.Footers subRoute ->
                     Footer.view subRoute
 
-                Forms subRoute ->
+                Route.Forms subRoute ->
                     Form.view subRoute
 
-                Headers subRoute ->
+                Route.Headers subRoute ->
                     Header.view subRoute
 
-                Layouts subRoute ->
+                Route.Layouts subRoute ->
                     Layout.view subRoute
 
-                Links subRoute ->
+                Route.Links subRoute ->
                     Link.view subRoute
 
-                ListComponents ->
-                    ListComponents.view changeLocationMsg footer
+                Route.ListComponents ->
+                    ListComponents.view footer
 
-                Lists subRoute ->
+                Route.Lists subRoute ->
                     List_.view subRoute
 
-                Marketing subRoute ->
+                Route.Marketing subRoute ->
                     Marketing.view subRoute
 
-                Navs subRoute ->
+                Route.Navs subRoute ->
                     Nav.view subRoute
 
-                NotFound ->
+                Route.NotFound ->
                     NotFound.view
 
-                Pages subRoute ->
+                Route.Pages subRoute ->
                     Page.view subRoute
 
-                Quotes subRoute ->
+                Route.Quotes subRoute ->
                     Quote.view subRoute
 
-                Tables subRoute ->
+                Route.Tables subRoute ->
                     Table.view subRoute
 
-                Texts subRoute ->
+                Route.Texts subRoute ->
                     Text.view subRoute
     in
-        case model of
-            ListComponents ->
-                page
+    case model.route of
+        Route.ListComponents ->
+            { title = title, body = [ page ] }
 
-            NotFound ->
-                page
+        Route.NotFound ->
+            { title = title, body = [ page ] }
 
-            _ ->
-                div []
-                    [ main_ []
-                        [ page ]
-                    , footer
+        _ ->
+            let
+                body =
+                    [ div []
+                        [ main_ []
+                            [ page ]
+                        , footer
+                        ]
                     ]
+            in
+            { title = title, body = body }

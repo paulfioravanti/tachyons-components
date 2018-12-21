@@ -1,9 +1,8 @@
-module Nav.FixedSemiTransparent.Styles
-    exposing
-        ( header
-        , nav
-        , link
-        )
+module Nav.FixedSemiTransparent.Styles exposing
+    ( header
+    , link
+    , nav
+    )
 
 
 header : String

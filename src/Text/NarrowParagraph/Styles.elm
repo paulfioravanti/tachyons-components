@@ -1,8 +1,7 @@
-module Text.NarrowParagraph.Styles
-    exposing
-        ( main_
-        , paragraph
-        )
+module Text.NarrowParagraph.Styles exposing
+    ( main_
+    , paragraph
+    )
 
 
 main_ : String

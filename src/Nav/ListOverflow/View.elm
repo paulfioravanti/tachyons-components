@@ -10,14 +10,14 @@ view =
     let
         linkNumbers =
             List.range 1 36
-                |> List.map toString
+                |> List.map String.fromInt
     in
-        div [ attribute "data-name" "component" ]
-            [ nav [ class Styles.nav ]
-                [ div [ class Styles.links ]
-                    (List.map link linkNumbers)
-                ]
+    div [ attribute "data-name" "component" ]
+        [ nav [ class Styles.nav ]
+            [ div [ class Styles.links ]
+                (List.map link linkNumbers)
             ]
+        ]
 
 
 link : String -> Html msg
@@ -26,5 +26,5 @@ link linkNumber =
         linkName =
             "Link " ++ linkNumber
     in
-        a [ class Styles.link, href "#", title linkName ]
-            [ text linkName ]
+    a [ class Styles.link, href "#", title linkName ]
+        [ text linkName ]

@@ -1,12 +1,11 @@
-module Marketing.IPhoneApp.Styles
-    exposing
-        ( copy
-        , heading
-        , image
-        , link
-        , section
-        , subheading
-        )
+module Marketing.IPhoneApp.Styles exposing
+    ( copy
+    , heading
+    , image
+    , link
+    , section
+    , subheading
+    )
 
 
 copy : String

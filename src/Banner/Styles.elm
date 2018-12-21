@@ -1,6 +1,6 @@
 module Banner.Styles exposing (bodyClasses, sectionContentLinkImageFormatting)
 
-import Banner.Route exposing (Route(Info, SingleCta))
+import Banner.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -12,12 +12,12 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            SingleCta ->
-                defaultFormatting
+    case route of
+        Route.SingleCta ->
+            defaultFormatting
 
-            _ ->
-                "pt5" :: defaultFormatting
+        _ ->
+            "pt5" :: defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -28,13 +28,13 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                Info ->
+                Route.Info ->
                     []
 
-                SingleCta ->
+                Route.SingleCta ->
                     [ "contain" ]
 
                 _ ->
                     [ "cover" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

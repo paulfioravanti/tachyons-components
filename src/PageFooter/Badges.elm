@@ -1,7 +1,5 @@
 module PageFooter.Badges exposing (view)
 
-import PageFooter.Styles as Styles
-import PageFooter.SvgPath as SvgPath
 import Html exposing (Html, a, article, iframe, span, text)
 import Html.Attributes
     exposing
@@ -13,6 +11,8 @@ import Html.Attributes
         , style
         , width
         )
+import PageFooter.Styles as Styles
+import PageFooter.SvgPath as SvgPath
 import Svg exposing (path, svg)
 import Svg.Attributes exposing (d, fill, viewBox)
 
@@ -37,14 +37,14 @@ githubButton badgeType =
                 ++ badgeType
                 ++ "&count=true"
     in
-        iframe
-            [ attribute "frameborder" "0"
-            , attribute "scrolling" "0"
-            , height 20
-            , src url
-            , width 100
-            ]
-            []
+    iframe
+        [ attribute "frameborder" "0"
+        , attribute "scrolling" "0"
+        , height 20
+        , src url
+        , width 100
+        ]
+        []
 
 
 twitterBadge : Html msg
@@ -56,22 +56,22 @@ twitterBadge =
                 ++ "designing in the browser."
                 ++ "&url=http://tachyons.io"
     in
-        a
-            [ href link
-            , class Styles.twitterBadge
-            , style [ ( "background-color", "#55acee" ) ]
+    a
+        [ href link
+        , class Styles.twitterBadge
+        , style "background-color" "#55acee"
+        ]
+        [ svg
+            [ Svg.Attributes.class Styles.twitterSvg
+            , Svg.Attributes.height "16"
+            , Svg.Attributes.width "16"
+            , fill "#fff"
+            , viewBox "0 0 32 32"
             ]
-            [ svg
-                [ Svg.Attributes.class Styles.twitterSvg
-                , Svg.Attributes.height "16"
-                , Svg.Attributes.width "16"
-                , fill "#fff"
-                , viewBox "0 0 32 32"
-                ]
-                [ path [ d SvgPath.twitterLogo ] [] ]
-            , span
-                [ class Styles.twitterText
-                , style [ ( "font-size", "12px" ) ]
-                ]
-                [ text "Tweet" ]
+            [ path [ d SvgPath.twitterLogo ] [] ]
+        , span
+            [ class Styles.twitterText
+            , style "font-size" "12px"
             ]
+            [ text "Tweet" ]
+        ]

@@ -1,12 +1,11 @@
-module Layout.FixedTableLayoutGridMixedRows.Styles
-    exposing
-        ( darkDarkCol
-        , darkLightCol
-        , lightDarkCol
-        , lightLightCol
-        , row
-        , rows
-        )
+module Layout.FixedTableLayoutGridMixedRows.Styles exposing
+    ( darkDarkCol
+    , darkLightCol
+    , lightDarkCol
+    , lightLightCol
+    , row
+    , rows
+    )
 
 
 darkDarkCol : String

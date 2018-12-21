@@ -1,13 +1,12 @@
-module Article.FullBleedBackground.Styles
-    exposing
-        ( backgroundImage
-        , content
-        , copy
-        , header
-        , section
-        , subtitle
-        , title
-        )
+module Article.FullBleedBackground.Styles exposing
+    ( backgroundImage
+    , content
+    , copy
+    , header
+    , section
+    , subtitle
+    , title
+    )
 
 
 backgroundImage : String

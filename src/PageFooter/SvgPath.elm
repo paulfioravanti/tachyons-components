@@ -1,11 +1,10 @@
-module PageFooter.SvgPath
-    exposing
-        ( gitHubLogo
-        , slackLogo
-        , slackLogoMiddleSquare
-        , twitterLogo
-        , twitterCtaLogo
-        )
+module PageFooter.SvgPath exposing
+    ( gitHubLogo
+    , slackLogo
+    , slackLogoMiddleSquare
+    , twitterCtaLogo
+    , twitterLogo
+    )
 
 
 gitHubLogo : String
@@ -48,7 +47,7 @@ slackLogoMiddleSquare =
     "M6.586 7.33l.69 2.057 2.137-.716-.69-2.056-2.137.716z"
 
 
-{-| https://github.com/jxnblk/geomicons-open/blob/master/src/twitter.js
+{-| <https://github.com/jxnblk/geomicons-open/blob/master/src/twitter.js>
 -}
 twitterLogo : String
 twitterLogo =

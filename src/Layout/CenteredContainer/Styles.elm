@@ -1,9 +1,8 @@
-module Layout.CenteredContainer.Styles
-    exposing
-        ( heading
-        , paragraph
-        , section
-        )
+module Layout.CenteredContainer.Styles exposing
+    ( heading
+    , paragraph
+    , section
+    )
 
 
 heading : String

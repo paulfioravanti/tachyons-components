@@ -9,19 +9,13 @@ view : Html msg
 view =
     let
         backgroundImage =
-            [ ( "backgroundImage"
-              , "url(http://mrmrs.github.io/photos/001.jpg)"
-              )
-            ]
+            style "backgroundImage" "url(http://mrmrs.github.io/photos/001.jpg)"
     in
-        div [ attribute "data-name" "component" ]
-            [ article [ class Styles.article ]
-                [ div [ class Styles.backgroundImageWrapper ]
-                    [ div
-                        [ class Styles.backgroundImage
-                        , style backgroundImage
-                        ]
-                        []
-                    ]
+    div [ attribute "data-name" "component" ]
+        [ article [ class Styles.article ]
+            [ div [ class Styles.backgroundImageWrapper ]
+                [ div [ class Styles.backgroundImage, backgroundImage ]
+                    []
                 ]
             ]
+        ]

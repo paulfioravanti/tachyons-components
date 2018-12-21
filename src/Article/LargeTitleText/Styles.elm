@@ -1,4 +1,4 @@
-module Article.LargeTitleText.Styles exposing (article, heading, copy)
+module Article.LargeTitleText.Styles exposing (article, copy, heading)
 
 
 article : String

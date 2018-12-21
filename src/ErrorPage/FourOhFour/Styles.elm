@@ -1,14 +1,13 @@
-module ErrorPage.FourOhFour.Styles
-    exposing
-        ( callToAction
-        , header
-        , heading
-        , link
-        , linkList
-        , linkListElement
-        , section
-        , subheading
-        )
+module ErrorPage.FourOhFour.Styles exposing
+    ( callToAction
+    , header
+    , heading
+    , link
+    , linkList
+    , linkListElement
+    , section
+    , subheading
+    )
 
 
 callToAction : String

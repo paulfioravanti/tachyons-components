@@ -26,12 +26,12 @@ view =
         articleExample =
             Article.example
     in
-        div [ attribute "data-name" "component" ]
-            [ article []
-                [ heading articleExample
-                , content articleExample
-                ]
+    div [ attribute "data-name" "component" ]
+        [ article []
+            [ heading articleExample
+            , content articleExample
             ]
+        ]
 
 
 heading : Article -> Html msg

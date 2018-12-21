@@ -1,16 +1,15 @@
-module List_.ItemsImageTitlePrice.Styles
-    exposing
-        ( author
-        , image
-        , imageWrapper
-        , info
-        , itemLink
-        , main_
-        , priceAmount
-        , priceLabel
-        , priceWrapper
-        , title
-        )
+module List_.ItemsImageTitlePrice.Styles exposing
+    ( author
+    , image
+    , imageWrapper
+    , info
+    , itemLink
+    , main_
+    , priceAmount
+    , priceLabel
+    , priceWrapper
+    , title
+    )
 
 
 author : String

@@ -14,11 +14,11 @@ view =
             you really need it.
             """
     in
-        div [ attribute "data-name" "component" ]
-            [ header [ class Styles.header ]
-                [ h1 [ class Styles.title ]
-                    [ text "This is the title" ]
-                , h2 [ class Styles.subtitle ]
-                    [ text subtitle ]
-                ]
+    div [ attribute "data-name" "component" ]
+        [ header [ class Styles.header ]
+            [ h1 [ class Styles.title ]
+                [ text "This is the title" ]
+            , h2 [ class Styles.subtitle ]
+                [ text subtitle ]
             ]
+        ]

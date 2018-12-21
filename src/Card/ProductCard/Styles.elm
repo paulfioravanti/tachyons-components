@@ -1,15 +1,14 @@
-module Card.ProductCard.Styles
-    exposing
-        ( article
-        , content
-        , description
-        , header
-        , heading
-        , headingWrapper
-        , image
-        , price
-        , priceWrapper
-        )
+module Card.ProductCard.Styles exposing
+    ( article
+    , content
+    , description
+    , header
+    , heading
+    , headingWrapper
+    , image
+    , price
+    , priceWrapper
+    )
 
 
 article : String

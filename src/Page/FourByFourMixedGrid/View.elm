@@ -27,18 +27,18 @@ view =
             , "13"
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ article [ class Styles.article ]
-                [ header [ class Styles.header ]
-                    [ h2 [ class Styles.heading ]
-                        [ text exampleArticle.heading ]
-                    ]
-                , section [ class Styles.section ]
-                    (List.map paragraph exampleArticle.paragraphs)
-                , section [ class Styles.section ]
-                    (List.map image imageIds)
+    div [ attribute "data-name" "component" ]
+        [ article [ class Styles.article ]
+            [ header [ class Styles.header ]
+                [ h2 [ class Styles.heading ]
+                    [ text exampleArticle.heading ]
                 ]
+            , section [ class Styles.section ]
+                (List.map paragraph exampleArticle.paragraphs)
+            , section [ class Styles.section ]
+                (List.map image imageIds)
             ]
+        ]
 
 
 paragraph : String -> Html msg
@@ -53,12 +53,11 @@ image : String -> Html msg
 image id =
     let
         backgroundImage =
-            [ ( "backgroundImage"
-              , "url(http://mrmrs.github.io/images/00" ++ id ++ ".jpg)"
-              )
-            ]
+            style
+                "backgroundImage"
+                ("url(http://mrmrs.github.io/images/00" ++ id ++ ".jpg)")
     in
-        div [ class Styles.content ]
-            [ div [ class Styles.imageWrapper ]
-                [ span [ class Styles.image, style backgroundImage ] [] ]
-            ]
+    div [ class Styles.content ]
+        [ div [ class Styles.imageWrapper ]
+            [ span [ class Styles.image, backgroundImage ] [] ]
+        ]

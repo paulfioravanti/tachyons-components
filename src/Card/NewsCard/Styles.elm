@@ -1,13 +1,12 @@
-module Card.NewsCard.Styles
-    exposing
-        ( article
-        , byline
-        , heading
-        , headingWrapper
-        , headline
-        , headlineWrapper
-        , image
-        )
+module Card.NewsCard.Styles exposing
+    ( article
+    , byline
+    , heading
+    , headingWrapper
+    , headline
+    , headlineWrapper
+    , image
+    )
 
 
 article : String

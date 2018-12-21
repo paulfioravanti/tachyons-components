@@ -1,19 +1,18 @@
-module Form.SignIn.Styles
-    exposing
-        ( email
-        , emailInput
-        , fieldset
-        , form
-        , label
-        , legend
-        , link
-        , links
-        , main_
-        , password
-        , passwordInput
-        , rememberMe
-        , signInButton
-        )
+module Form.SignIn.Styles exposing
+    ( email
+    , emailInput
+    , fieldset
+    , form
+    , label
+    , legend
+    , link
+    , links
+    , main_
+    , password
+    , passwordInput
+    , rememberMe
+    , signInButton
+    )
 
 
 email : String

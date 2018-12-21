@@ -1,12 +1,11 @@
-module Banner.Basic.Styles
-    exposing
-        ( article
-        , callToAction
-        , heading
-        , learnMore
-        , signUp
-        , subHeading
-        )
+module Banner.Basic.Styles exposing
+    ( article
+    , callToAction
+    , heading
+    , learnMore
+    , signUp
+    , subHeading
+    )
 
 
 article : String

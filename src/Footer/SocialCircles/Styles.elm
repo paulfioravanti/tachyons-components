@@ -1,8 +1,7 @@
-module Footer.SocialCircles.Styles
-    exposing
-        ( footer
-        , link
-        )
+module Footer.SocialCircles.Styles exposing
+    ( footer
+    , link
+    )
 
 
 footer : String

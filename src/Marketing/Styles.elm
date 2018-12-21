@@ -1,10 +1,9 @@
-module Marketing.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Marketing.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
-import Marketing.Route exposing (Route(IPhoneApp))
+import Marketing.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -16,9 +15,9 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            _ ->
-                defaultFormatting
+    case route of
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -29,7 +28,7 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                IPhoneApp ->
+                Route.IPhoneApp ->
                     [ "contain" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

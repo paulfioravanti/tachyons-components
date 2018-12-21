@@ -1,9 +1,8 @@
-module Nav.ListOverflow.Styles
-    exposing
-        ( nav
-        , link
-        , links
-        )
+module Nav.ListOverflow.Styles exposing
+    ( link
+    , links
+    , nav
+    )
 
 
 nav : String

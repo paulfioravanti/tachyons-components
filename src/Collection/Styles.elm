@@ -1,16 +1,9 @@
-module Collection.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Collection.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
-import Collection.Route
-    exposing
-        ( Route
-            ( Posters
-            , PostersDim
-            )
-        )
+import Collection.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -22,21 +15,21 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            Posters ->
-                [ "bg-black-10"
-                , "sans-serif"
-                , "w-100"
-                ]
+    case route of
+        Route.Posters ->
+            [ "bg-black-10"
+            , "sans-serif"
+            , "w-100"
+            ]
 
-            PostersDim ->
-                [ "bg-black"
-                , "sans-serif"
-                , "w-100"
-                ]
+        Route.PostersDim ->
+            [ "bg-black"
+            , "sans-serif"
+            , "w-100"
+            ]
 
-            _ ->
-                defaultFormatting
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -50,4 +43,4 @@ sectionContentLinkImageFormatting route =
                 _ ->
                     [ "cover" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

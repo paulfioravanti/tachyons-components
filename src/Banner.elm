@@ -1,20 +1,19 @@
-module Banner
-    exposing
-        ( Route
-        , basicRoute
-        , bodyClasses
-        , infoRoute
-        , matchers
-        , sectionContentLinkImageFormatting
-        , singleCtaRoute
-        , view
-        )
+module Banner exposing
+    ( Route
+    , basicRoute
+    , bodyClasses
+    , infoRoute
+    , matchers
+    , sectionContentLinkImageFormatting
+    , singleCtaRoute
+    , view
+    )
 
 import Banner.Route as Route exposing (Route)
 import Banner.Styles as Styles
 import Banner.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

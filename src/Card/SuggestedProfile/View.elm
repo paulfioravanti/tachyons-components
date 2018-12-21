@@ -34,9 +34,9 @@ image =
                 ++ "ra,triblend_tee,x2150,black_triblend,front-c,367,133"
                 ++ ",750,1000-bg,f8f8f8.u1.jpg"
     in
-        img
-            [ src url
-            , class Styles.image
-            , alt "A Photo of Jesse Grant"
-            ]
-            []
+    img
+        [ src url
+        , class Styles.image
+        , alt "A Photo of Jesse Grant"
+        ]
+        []

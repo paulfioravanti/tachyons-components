@@ -1,20 +1,9 @@
-module Nav.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Nav.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
-import Nav.Route
-    exposing
-        ( Route
-            ( FixedSemiTransparent
-            , LargeTitleLinkList
-            , LogoLinksInline
-            , LogoLinksInlineCollapse
-            , MinimalSignUp
-            , TitleLinkList
-            )
-        )
+import Nav.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -26,15 +15,15 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            MinimalSignUp ->
-                [ "bg-near-black"
-                , "sans-serif"
-                , "w-100"
-                ]
+    case route of
+        Route.MinimalSignUp ->
+            [ "bg-near-black"
+            , "sans-serif"
+            , "w-100"
+            ]
 
-            _ ->
-                defaultFormatting
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -45,25 +34,25 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                FixedSemiTransparent ->
+                Route.FixedSemiTransparent ->
                     [ "cover" ]
 
-                LargeTitleLinkList ->
+                Route.LargeTitleLinkList ->
                     [ "contain" ]
 
-                LogoLinksInline ->
+                Route.LogoLinksInline ->
                     [ "contain" ]
 
-                LogoLinksInlineCollapse ->
+                Route.LogoLinksInlineCollapse ->
                     [ "contain" ]
 
-                MinimalSignUp ->
+                Route.MinimalSignUp ->
                     [ "contain" ]
 
-                TitleLinkList ->
+                Route.TitleLinkList ->
                     [ "contain" ]
 
                 _ ->
                     []
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

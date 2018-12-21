@@ -21,10 +21,10 @@ view =
         logos =
             Logo.list
     in
-        div [ attribute "data-name" "component" ]
-            [ footer [ class Styles.footer ]
-                (List.map iconLink logos)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ footer [ class Styles.footer ]
+            (List.map iconLink logos)
+        ]
 
 
 iconLink : Logo msg -> Html msg
@@ -33,7 +33,7 @@ iconLink { path, name, url } =
         [ svg
             [ attribute "data-icon" name
             , viewBox "0 0 16 16"
-            , style [ ( "fill", "currentcolor" ) ]
+            , style "fill" "currentcolor"
             , fillRule "evenodd"
             , clipRule "evenodd"
             , strokeLinejoin "round"

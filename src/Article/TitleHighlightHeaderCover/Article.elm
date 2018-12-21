@@ -67,14 +67,14 @@ example =
             do we build better tools? What does that look like?
             """
     in
-        { date = "27 July, 2015"
-        , title = "Too many tools and frameworks"
-        , subtitle =
-            "The definitive guide to the javascript tooling landscape in 2015."
-        , author = "By Adam Morse"
-        , lead1 = lead1
-        , lead2 = lead2
-        , quote = quote
-        , paragraph1 = paragraph1
-        , paragraph2 = paragraph2
-        }
+    { date = "27 July, 2015"
+    , title = "Too many tools and frameworks"
+    , subtitle =
+        "The definitive guide to the javascript tooling landscape in 2015."
+    , author = "By Adam Morse"
+    , lead1 = lead1
+    , lead2 = lead2
+    , quote = quote
+    , paragraph1 = paragraph1
+    , paragraph2 = paragraph2
+    }

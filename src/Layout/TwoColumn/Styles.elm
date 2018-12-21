@@ -1,9 +1,8 @@
-module Layout.TwoColumn.Styles
-    exposing
-        ( col1
-        , col2
-        , columns
-        )
+module Layout.TwoColumn.Styles exposing
+    ( col1
+    , col2
+    , columns
+    )
 
 
 col1 : String

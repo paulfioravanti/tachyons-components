@@ -36,8 +36,8 @@ navLinks =
         lastNavLink =
             navLink Styles.lastNavLink "Contact" []
     in
-        div [ class Styles.navLinks ]
-            (List.foldr (navLink Styles.navLink) lastNavLink navLinkNames)
+    div [ class Styles.navLinks ]
+        (List.foldr (navLink Styles.navLink) lastNavLink navLinkNames)
 
 
 navLink : String -> String -> List (Html msg) -> List (Html msg)
@@ -47,4 +47,4 @@ navLink styles name acc =
             a [ class styles, href "#", title name ]
                 [ text name ]
     in
-        link :: acc
+    link :: acc

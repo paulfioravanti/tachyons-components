@@ -13,27 +13,7 @@ import List_.LargeLinksInline.View as LargeLinksInline
 import List_.LinksAnimateColor.View as LinksAnimateColor
 import List_.LinksInline.View as LinksInline
 import List_.LinksWithBordersInline.View as LinksWithBordersInline
-import List_.Route
-    exposing
-        ( Route
-            ( BlockItemDottedBorder
-            , BorderSpaced
-            , BorderTight
-            , ContactPhone
-            , FollowerNotifications
-            , FollowerNotificationsRoundedSquareAvatar
-            , Hashtags
-            , ItemsImageTitlePrice
-            , LargeLinksInline
-            , LinksAnimateColor
-            , LinksInline
-            , LinksWithBordersInline
-            , SlabStat
-            , SlabStatLarge
-            , SlabStatSmall
-            , TitleText
-            )
-        )
+import List_.Route as Route exposing (Route)
 import List_.SlabStat.View as SlabStat
 import List_.SlabStatLarge.View as SlabStatLarge
 import List_.SlabStatSmall.View as SlabStatSmall
@@ -43,50 +23,50 @@ import List_.TitleText.View as TitleText
 view : Route -> Html msg
 view route =
     case route of
-        BlockItemDottedBorder ->
+        Route.BlockItemDottedBorder ->
             BlockItemDottedBorder.view
 
-        BorderSpaced ->
+        Route.BorderSpaced ->
             BorderSpaced.view
 
-        BorderTight ->
+        Route.BorderTight ->
             BorderTight.view
 
-        ContactPhone ->
+        Route.ContactPhone ->
             ContactPhone.view
 
-        FollowerNotifications ->
+        Route.FollowerNotifications ->
             FollowerNotifications.view
 
-        FollowerNotificationsRoundedSquareAvatar ->
+        Route.FollowerNotificationsRoundedSquareAvatar ->
             FollowerNotificationsRoundedSquareAvatar.view
 
-        Hashtags ->
+        Route.Hashtags ->
             Hashtags.view
 
-        ItemsImageTitlePrice ->
+        Route.ItemsImageTitlePrice ->
             ItemsImageTitlePrice.view
 
-        LargeLinksInline ->
+        Route.LargeLinksInline ->
             LargeLinksInline.view
 
-        LinksAnimateColor ->
+        Route.LinksAnimateColor ->
             LinksAnimateColor.view
 
-        LinksInline ->
+        Route.LinksInline ->
             LinksInline.view
 
-        LinksWithBordersInline ->
+        Route.LinksWithBordersInline ->
             LinksWithBordersInline.view
 
-        SlabStat ->
+        Route.SlabStat ->
             SlabStat.view
 
-        SlabStatLarge ->
+        Route.SlabStatLarge ->
             SlabStatLarge.view
 
-        SlabStatSmall ->
+        Route.SlabStatSmall ->
             SlabStatSmall.view
 
-        TitleText ->
+        Route.TitleText ->
             TitleText.view

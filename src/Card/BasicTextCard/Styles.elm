@@ -1,10 +1,9 @@
-module Card.BasicTextCard.Styles
-    exposing
-        ( article
-        , content
-        , copy
-        , heading
-        )
+module Card.BasicTextCard.Styles exposing
+    ( article
+    , content
+    , copy
+    , heading
+    )
 
 
 article : String

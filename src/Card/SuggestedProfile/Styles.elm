@@ -1,14 +1,13 @@
-module Card.SuggestedProfile.Styles
-    exposing
-        ( addFriend
-        , article
-        , close
-        , image
-        , mutualFriends
-        , name
-        , profile
-        , section
-        )
+module Card.SuggestedProfile.Styles exposing
+    ( addFriend
+    , article
+    , close
+    , image
+    , mutualFriends
+    , name
+    , profile
+    , section
+    )
 
 
 addFriend : String

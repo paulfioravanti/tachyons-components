@@ -1,19 +1,18 @@
-module DefinitionList
-    exposing
-        ( Route
-        , bodyClasses
-        , inlineRoute
-        , matchers
-        , sectionContentLinkImageFormatting
-        , simpleRoute
-        , view
-        )
+module DefinitionList exposing
+    ( Route
+    , bodyClasses
+    , inlineRoute
+    , matchers
+    , sectionContentLinkImageFormatting
+    , simpleRoute
+    , view
+    )
 
 import DefinitionList.Route as Route exposing (Route)
 import DefinitionList.Styles as Styles
 import DefinitionList.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

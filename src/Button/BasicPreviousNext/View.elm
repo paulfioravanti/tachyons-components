@@ -31,11 +31,11 @@ previousButton =
             z
             """
     in
-        a [ class Styles.previousButton, href "#0" ]
-            [ svgTag "chevronLeft" chevronLeftIconPath
-            , span [ class Styles.previousLabel ]
-                [ text "Previous" ]
-            ]
+    a [ class Styles.previousButton, href "#0" ]
+        [ svgTag "chevronLeft" chevronLeftIconPath
+        , span [ class Styles.previousLabel ]
+            [ text "Previous" ]
+        ]
 
 
 nextButton : Html msg
@@ -52,11 +52,11 @@ nextButton =
             z
             """
     in
-        a [ class Styles.nextButton, href "#0" ]
-            [ span [ class Styles.nextLabel ]
-                [ text "Next" ]
-            , svgTag "chevronRight" chevronRightIconPath
-            ]
+    a [ class Styles.nextButton, href "#0" ]
+        [ span [ class Styles.nextLabel ]
+            [ text "Next" ]
+        , svgTag "chevronRight" chevronRightIconPath
+        ]
 
 
 svgTag : String -> String -> Html msg
@@ -65,7 +65,7 @@ svgTag iconName iconPath =
         [ Svg.Attributes.class Styles.svg
         , attribute "data-icon" iconName
         , viewBox "0 0 32 32"
-        , style [ ( "fill", "currentColor" ) ]
+        , style "fill" "currentColor"
         ]
         [ title [] [ text (iconName ++ " icon") ]
         , path [ d iconPath ] []

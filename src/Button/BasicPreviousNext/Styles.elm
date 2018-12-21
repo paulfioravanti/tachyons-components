@@ -1,12 +1,11 @@
-module Button.BasicPreviousNext.Styles
-    exposing
-        ( container
-        , nextButton
-        , nextLabel
-        , previousButton
-        , previousLabel
-        , svg
-        )
+module Button.BasicPreviousNext.Styles exposing
+    ( container
+    , nextButton
+    , nextLabel
+    , previousButton
+    , previousLabel
+    , svg
+    )
 
 
 container : String

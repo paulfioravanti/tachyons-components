@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Headers))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Headers"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,18 +17,15 @@ view changeLocationMsg =
                 [ Utils.component
                     "headers/circle-avatar-title-subtitle/"
                     "Circle Avatar Title Subtitle"
-                    changeLocationMsg
-                    (Headers Header.circleAvatarTitleSubtitleRoute)
+                    (Route.Headers Header.circleAvatarTitleSubtitleRoute)
                 , Utils.component
                     "headers/rounded-avatar-title-subtitle/"
                     "Rounded Avatar Title Subtitle"
-                    changeLocationMsg
-                    (Headers Header.roundedAvatarTitleSubtitleRoute)
+                    (Route.Headers Header.roundedAvatarTitleSubtitleRoute)
                 , Utils.component
                     "headers/startup-hero/"
                     "Startup Hero"
-                    changeLocationMsg
-                    (Headers Header.startupHeroRoute)
+                    (Route.Headers Header.startupHeroRoute)
                 ]
             ]
         ]

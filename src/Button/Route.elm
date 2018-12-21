@@ -1,6 +1,6 @@
 module Button.Route exposing (Route(..), matchers)
 
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 import Utils
 
 
@@ -26,4 +26,4 @@ matchers =
     , PillGrow
     ]
         |> List.map Utils.routeFor
-        |> UrlParser.oneOf
+        |> Url.Parser.oneOf

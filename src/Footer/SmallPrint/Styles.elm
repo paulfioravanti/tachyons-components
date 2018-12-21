@@ -1,11 +1,10 @@
-module Footer.SmallPrint.Styles
-    exposing
-        ( company
-        , footer
-        , link
-        , links
-        , small
-        )
+module Footer.SmallPrint.Styles exposing
+    ( company
+    , footer
+    , link
+    , links
+    , small
+    )
 
 
 company : String

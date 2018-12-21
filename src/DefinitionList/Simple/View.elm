@@ -1,7 +1,7 @@
 module DefinitionList.Simple.View exposing (view)
 
 import DefinitionList.Simple.Styles as Styles
-import Html exposing (Html, div, dd, dl, dt, text)
+import Html exposing (Html, dd, div, dl, dt, text)
 import Html.Attributes exposing (attribute, class)
 
 
@@ -17,10 +17,10 @@ view =
             , ( "Favorite Hobby", "Eating Cheese Pizza" )
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ dl [ class Styles.descriptionList ]
-                (List.foldr definition [] definitions)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ dl [ class Styles.descriptionList ]
+            (List.foldr definition [] definitions)
+        ]
 
 
 definition : ( String, String ) -> List (Html msg) -> List (Html msg)
@@ -34,4 +34,4 @@ definition ( term, description ) acc =
             dd [ class Styles.description ]
                 [ text description ]
     in
-        definitionTerm :: definitionDescription :: acc
+    definitionTerm :: definitionDescription :: acc

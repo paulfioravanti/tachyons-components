@@ -1,10 +1,9 @@
-module Quote.LeftBorder.Styles
-    exposing
-        ( blockquote
-        , cite
-        , copy
-        , quote
-        )
+module Quote.LeftBorder.Styles exposing
+    ( blockquote
+    , cite
+    , copy
+    , quote
+    )
 
 
 blockquote : String

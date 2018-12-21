@@ -1,18 +1,17 @@
-module Marketing
-    exposing
-        ( Route
-        , bodyClasses
-        , iphoneAppRoute
-        , matchers
-        , sectionContentLinkImageFormatting
-        , view
-        )
+module Marketing exposing
+    ( Route
+    , bodyClasses
+    , iphoneAppRoute
+    , matchers
+    , sectionContentLinkImageFormatting
+    , view
+    )
 
+import Html exposing (Html)
 import Marketing.Route as Route exposing (Route)
 import Marketing.Styles as Styles
 import Marketing.View as View
-import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

@@ -1,8 +1,8 @@
 module Collection.Posters.View exposing (view)
 
-import Collection.Posters.Styles as Styles
 import Collection.Posters.Poster as Poster
-import Html exposing (Html, a, div, main_, img)
+import Collection.Posters.Styles as Styles
+import Html exposing (Html, a, div, img, main_)
 import Html.Attributes exposing (attribute, class, href, src)
 
 

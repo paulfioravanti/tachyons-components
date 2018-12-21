@@ -1,10 +1,9 @@
-module Quote.PullQuote.Styles
-    exposing
-        ( article
-        , blockquote
-        , blockquoteParagraph
-        , paragraph
-        )
+module Quote.PullQuote.Styles exposing
+    ( article
+    , blockquote
+    , blockquoteParagraph
+    , paragraph
+    )
 
 
 article : String

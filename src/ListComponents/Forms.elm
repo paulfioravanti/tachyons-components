@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Forms))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Forms"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,38 +17,31 @@ view changeLocationMsg =
                 [ Utils.component
                     "forms/checkbox-list/"
                     "Checkbox List"
-                    changeLocationMsg
-                    (Forms Form.checkboxListRoute)
+                    (Route.Forms Form.checkboxListRoute)
                 , Utils.component
                     "forms/input-text-label/"
                     "Input Text Label"
-                    changeLocationMsg
-                    (Forms Form.inputTextLabelRoute)
+                    (Route.Forms Form.inputTextLabelRoute)
                 , Utils.component
                     "forms/newsletter-subscription/"
                     "Newsletter Subscription"
-                    changeLocationMsg
-                    (Forms Form.newsletterSubscriptionRoute)
+                    (Route.Forms Form.newsletterSubscriptionRoute)
                 , Utils.component
                     "forms/password/"
                     "Password"
-                    changeLocationMsg
-                    (Forms Form.passwordRoute)
+                    (Route.Forms Form.passwordRoute)
                 , Utils.component
                     "forms/sign-in/"
                     "Sign In"
-                    changeLocationMsg
-                    (Forms Form.signInRoute)
+                    (Route.Forms Form.signInRoute)
                 , Utils.component
                     "forms/sign-up/"
                     "Sign Up"
-                    changeLocationMsg
-                    (Forms Form.signUpRoute)
+                    (Route.Forms Form.signUpRoute)
                 , Utils.component
                     "forms/textarea-label/"
                     "Textarea Label"
-                    changeLocationMsg
-                    (Forms Form.textareaLabelRoute)
+                    (Route.Forms Form.textareaLabelRoute)
                 ]
             ]
         ]

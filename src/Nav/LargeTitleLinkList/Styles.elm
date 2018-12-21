@@ -1,11 +1,10 @@
-module Nav.LargeTitleLinkList.Styles
-    exposing
-        ( homeLink
-        , nav
-        , lastNavLink
-        , navLink
-        , navLinks
-        )
+module Nav.LargeTitleLinkList.Styles exposing
+    ( homeLink
+    , lastNavLink
+    , nav
+    , navLink
+    , navLinks
+    )
 
 
 homeLink : String

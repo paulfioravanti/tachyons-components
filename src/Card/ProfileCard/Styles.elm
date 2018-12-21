@@ -1,13 +1,12 @@
-module Card.ProfileCard.Styles
-    exposing
-        ( article
-        , content
-        , description
-        , heading
-        , hr
-        , image
-        , subheading
-        )
+module Card.ProfileCard.Styles exposing
+    ( article
+    , content
+    , description
+    , heading
+    , hr
+    , image
+    , subheading
+    )
 
 
 article : String

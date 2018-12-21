@@ -1,24 +1,23 @@
-module Form
-    exposing
-        ( Route
-        , bodyClasses
-        , checkboxListRoute
-        , inputTextLabelRoute
-        , matchers
-        , newsletterSubscriptionRoute
-        , passwordRoute
-        , sectionContentLinkImageFormatting
-        , signInRoute
-        , signUpRoute
-        , textareaLabelRoute
-        , view
-        )
+module Form exposing
+    ( Route
+    , bodyClasses
+    , checkboxListRoute
+    , inputTextLabelRoute
+    , matchers
+    , newsletterSubscriptionRoute
+    , passwordRoute
+    , sectionContentLinkImageFormatting
+    , signInRoute
+    , signUpRoute
+    , textareaLabelRoute
+    , view
+    )
 
 import Form.Route as Route exposing (Route)
 import Form.Styles as Styles
 import Form.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

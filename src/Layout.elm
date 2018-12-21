@@ -1,58 +1,57 @@
-module Layout
-    exposing
-        ( Route
-        , aspectRatio16x9Route
-        , aspectRatio1x1Route
-        , aspectRatio3x4Route
-        , aspectRatio4x3Route
-        , aspectRatio4x6Route
-        , aspectRatio5x7Route
-        , aspectRatio5x8Route
-        , aspectRatio6x4Route
-        , aspectRatio7x5Route
-        , aspectRatio8x5Route
-        , aspectRatio9x16Route
-        , bodyClasses
-        , centeredContainerRoute
-        , fiveColumnCollapseAlternateRoute
-        , fiveColumnCollapseAsymmetricalRoute
-        , fiveColumnCollapseMixedRoute
-        , fiveColumnCollapseOneRoute
-        , fiveColumnRoute
-        , fixedTableLayoutGridMixedRowsRoute
-        , fixedTableLayoutGridRoute
-        , flagObjectBottomRoute
-        , flagObjectCollapseRoute
-        , flagObjectRoute
-        , flagObjectTopRoute
-        , fourColumnCollapseTwoCollapseOneRoute
-        , fourColumnCollapseTwoRoute
-        , fourColumnRoute
-        , fullBleed16x9Route
-        , fullBleed4x6Route
-        , fullBleed5x7Route
-        , fullBleed5x8Route
-        , fullBleed6x4Route
-        , fullBleed7x5Route
-        , fullBleed8x5Route
-        , fullBleed9x16Route
-        , fullBleedSquareRoute
-        , fullScreenCenteredTitleRoute
-        , horizontalAspectRatiosRoute
-        , matchers
-        , sectionContentLinkImageFormatting
-        , threeColumnCollapseOneRoute
-        , threeColumnRoute
-        , twoColumnCollapseOneRoute
-        , twoColumnRoute
-        , view
-        )
+module Layout exposing
+    ( Route
+    , aspectRatio16x9Route
+    , aspectRatio1x1Route
+    , aspectRatio3x4Route
+    , aspectRatio4x3Route
+    , aspectRatio4x6Route
+    , aspectRatio5x7Route
+    , aspectRatio5x8Route
+    , aspectRatio6x4Route
+    , aspectRatio7x5Route
+    , aspectRatio8x5Route
+    , aspectRatio9x16Route
+    , bodyClasses
+    , centeredContainerRoute
+    , fiveColumnCollapseAlternateRoute
+    , fiveColumnCollapseAsymmetricalRoute
+    , fiveColumnCollapseMixedRoute
+    , fiveColumnCollapseOneRoute
+    , fiveColumnRoute
+    , fixedTableLayoutGridMixedRowsRoute
+    , fixedTableLayoutGridRoute
+    , flagObjectBottomRoute
+    , flagObjectCollapseRoute
+    , flagObjectRoute
+    , flagObjectTopRoute
+    , fourColumnCollapseTwoCollapseOneRoute
+    , fourColumnCollapseTwoRoute
+    , fourColumnRoute
+    , fullBleed16x9Route
+    , fullBleed4x6Route
+    , fullBleed5x7Route
+    , fullBleed5x8Route
+    , fullBleed6x4Route
+    , fullBleed7x5Route
+    , fullBleed8x5Route
+    , fullBleed9x16Route
+    , fullBleedSquareRoute
+    , fullScreenCenteredTitleRoute
+    , horizontalAspectRatiosRoute
+    , matchers
+    , sectionContentLinkImageFormatting
+    , threeColumnCollapseOneRoute
+    , threeColumnRoute
+    , twoColumnCollapseOneRoute
+    , twoColumnRoute
+    , view
+    )
 
+import Html exposing (Html)
 import Layout.Route as Route exposing (Route)
 import Layout.Styles as Styles
 import Layout.View as View
-import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

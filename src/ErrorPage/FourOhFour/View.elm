@@ -39,8 +39,8 @@ links =
             , ( "/help", "Help" )
             ]
     in
-        ul [ class Styles.linkList ]
-            (List.map linkListElement linkList)
+    ul [ class Styles.linkList ]
+        (List.map linkListElement linkList)
 
 
 linkListElement : ( String, String ) -> Html msg

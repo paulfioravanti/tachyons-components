@@ -1,15 +1,15 @@
 module ListComponents.Navs exposing (view)
 
-import Nav
 import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Navs))
+import Nav
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Nav"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,43 +17,35 @@ view changeLocationMsg =
                 [ Utils.component
                     "nav/fixed-semi-transparent/"
                     "Fixed Semi Transparent"
-                    changeLocationMsg
-                    (Navs Nav.fixedSemiTransparentRoute)
+                    (Route.Navs Nav.fixedSemiTransparentRoute)
                 , Utils.component
                     "nav/large-title-link-list/"
                     "Large Title Link List"
-                    changeLocationMsg
-                    (Navs Nav.largeTitleLinkListRoute)
+                    (Route.Navs Nav.largeTitleLinkListRoute)
                 , Utils.component
                     "nav/list-overflow/"
                     "List Overflow"
-                    changeLocationMsg
-                    (Navs Nav.listOverflowRoute)
+                    (Route.Navs Nav.listOverflowRoute)
                 , Utils.component
                     "nav/logo-links-inline-collapse/"
                     "Logo Links Inline Collapse"
-                    changeLocationMsg
-                    (Navs Nav.logoLinksInlineCollapseRoute)
+                    (Route.Navs Nav.logoLinksInlineCollapseRoute)
                 , Utils.component
                     "nav/logo-links-inline/"
                     "Logo Links Inline"
-                    changeLocationMsg
-                    (Navs Nav.logoLinksInlineRoute)
+                    (Route.Navs Nav.logoLinksInlineRoute)
                 , Utils.component
                     "nav/logo-titles-links-centered/"
                     "Logo Titles Links Centered"
-                    changeLocationMsg
-                    (Navs Nav.logoTitlesLinksCenteredRoute)
+                    (Route.Navs Nav.logoTitlesLinksCenteredRoute)
                 , Utils.component
                     "nav/minimal-sign-up/"
                     "Minimal Sign Up"
-                    changeLocationMsg
-                    (Navs Nav.minimalSignUpRoute)
+                    (Route.Navs Nav.minimalSignUpRoute)
                 , Utils.component
                     "nav/title-link-list/"
                     "Title Link List"
-                    changeLocationMsg
-                    (Navs Nav.titleLinkListRoute)
+                    (Route.Navs Nav.titleLinkListRoute)
                 ]
             ]
         ]

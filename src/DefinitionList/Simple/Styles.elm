@@ -1,9 +1,8 @@
-module DefinitionList.Simple.Styles
-    exposing
-        ( description
-        , descriptionList
-        , term
-        )
+module DefinitionList.Simple.Styles exposing
+    ( description
+    , descriptionList
+    , term
+    )
 
 
 description : String

@@ -1,10 +1,9 @@
-module Layout.FullBleedSquare.Styles
-    exposing
-        ( aspectRatio
-        , formatting
-        , image
-        , main_
-        )
+module Layout.FullBleedSquare.Styles exposing
+    ( aspectRatio
+    , formatting
+    , image
+    , main_
+    )
 
 
 aspectRatio : String

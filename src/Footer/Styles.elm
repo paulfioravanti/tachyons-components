@@ -1,24 +1,9 @@
-module Footer.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Footer.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
-import Footer.Route
-    exposing
-        ( Route
-            ( CenteredIconsHoverGlow
-            , InlineText
-            , SimpleLargeType
-            , SmallPrint
-            , Social
-            , SocialCircles
-            , SocialSimple
-            , SocialSimpleText
-            , SocialText
-            , Studios
-            )
-        )
+import Footer.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -30,54 +15,54 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            _ ->
-                defaultFormatting
+    case route of
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     case route of
-        CenteredIconsHoverGlow ->
+        Route.CenteredIconsHoverGlow ->
             [ "bg-center"
             , "cover"
             ]
 
-        InlineText ->
+        Route.InlineText ->
             [ "bg-center"
             , "cover"
             ]
 
-        SimpleLargeType ->
+        Route.SimpleLargeType ->
             [ "bg-left"
             , "cover"
             ]
 
-        SmallPrint ->
+        Route.SmallPrint ->
             [ "bg-center"
             , "contain"
             ]
 
-        Social ->
+        Route.Social ->
             [ "bg-center"
             , "contain"
             ]
 
-        SocialCircles ->
+        Route.SocialCircles ->
             [ "bg-center"
             , "contain"
             ]
 
-        SocialSimple ->
+        Route.SocialSimple ->
             [ "bg-center" ]
 
-        SocialSimpleText ->
+        Route.SocialSimpleText ->
             [ "bg-center" ]
 
-        SocialText ->
+        Route.SocialText ->
             [ "bg-center" ]
 
-        Studios ->
+        Route.Studios ->
             [ "bg-center"
             , "contain"
             ]

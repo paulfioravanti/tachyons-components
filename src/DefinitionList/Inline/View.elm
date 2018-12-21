@@ -1,7 +1,7 @@
 module DefinitionList.Inline.View exposing (view)
 
 import DefinitionList.Inline.Styles as Styles
-import Html exposing (Html, div, dd, dl, dt, h4, text)
+import Html exposing (Html, dd, div, dl, dt, h4, text)
 import Html.Attributes exposing (attribute, class)
 
 
@@ -18,10 +18,10 @@ view =
             , ( "Div", "Division Record" )
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ div [ class Styles.glossary ]
-                (heading :: List.map descriptionList descriptionLists)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ div [ class Styles.glossary ]
+            (heading :: List.map descriptionList descriptionLists)
+        ]
 
 
 heading : Html msg

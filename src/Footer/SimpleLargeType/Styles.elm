@@ -1,13 +1,12 @@
-module Footer.SimpleLargeType.Styles
-    exposing
-        ( centerLink
-        , company
-        , email
-        , footer
-        , leftLink
-        , links
-        , rightLink
-        )
+module Footer.SimpleLargeType.Styles exposing
+    ( centerLink
+    , company
+    , email
+    , footer
+    , leftLink
+    , links
+    , rightLink
+    )
 
 
 centerLink : String

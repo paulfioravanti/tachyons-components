@@ -1,8 +1,7 @@
-module Footer.SocialSimple.Styles
-    exposing
-        ( footer
-        , link
-        )
+module Footer.SocialSimple.Styles exposing
+    ( footer
+    , link
+    )
 
 
 footer : String

@@ -1,12 +1,11 @@
-module Nav.LogoLinksInlineCollapse.Styles
-    exposing
-        ( image
-        , imageLink
-        , lastNavLink
-        , nav
-        , navLink
-        , navLinks
-        )
+module Nav.LogoLinksInlineCollapse.Styles exposing
+    ( image
+    , imageLink
+    , lastNavLink
+    , nav
+    , navLink
+    , navLinks
+    )
 
 
 image : String

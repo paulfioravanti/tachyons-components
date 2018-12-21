@@ -2,7 +2,7 @@ module Article.PhotoEssay.View exposing (view)
 
 import Article.PhotoEssay.Article as Article exposing (Article)
 import Article.PhotoEssay.Styles as Styles
-import Html exposing (Html, article, div, h1, img, header, p, span, text)
+import Html exposing (Html, article, div, h1, header, img, p, span, text)
 import Html.Attributes exposing (alt, attribute, class, src, style)
 
 
@@ -12,31 +12,30 @@ view =
         articleExample =
             Article.example
     in
-        div [ attribute "data-name" "component" ]
-            [ article [ class Styles.article ]
-                [ heading articleExample
-                , content articleExample
-                ]
+    div [ attribute "data-name" "component" ]
+        [ article [ class Styles.article ]
+            [ heading articleExample
+            , content articleExample
             ]
+        ]
 
 
 heading : Article -> Html msg
 heading { backgroundImageUrl, title, author } =
     let
         backgroundImageStyle =
-            [ ( "background"
-              , "url(" ++ backgroundImageUrl ++ ") no-repeat center right"
-              )
-            ]
+            style
+                "background"
+                ("url(" ++ backgroundImageUrl ++ ") no-repeat center right")
     in
-        header [ class Styles.header ]
-            [ div [ class Styles.backgroundImage, style backgroundImageStyle ]
-                [ h1 [ class Styles.heading ]
-                    [ text title ]
-                , span [ class Styles.author ]
-                    [ text author ]
-                ]
+    header [ class Styles.header ]
+        [ div [ class Styles.backgroundImage, backgroundImageStyle ]
+            [ h1 [ class Styles.heading ]
+                [ text title ]
+            , span [ class Styles.author ]
+                [ text author ]
             ]
+        ]
 
 
 content : Article -> Html msg
@@ -62,17 +61,17 @@ mainContent { copyLead, copy } =
         image =
             Article.image009
     in
-        div [ class Styles.mainContent ]
-            [ div [ class Styles.mainImage ]
-                [ img [ src image.url, class Styles.image ] [] ]
-            , div [ class Styles.mainCopy ]
-                [ p [ class Styles.copyText ]
-                    [ span [ class Styles.copyLead ]
-                        [ text copyLead ]
-                    , text copy
-                    ]
+    div [ class Styles.mainContent ]
+        [ div [ class Styles.mainImage ]
+            [ img [ src image.url, class Styles.image ] [] ]
+        , div [ class Styles.mainCopy ]
+            [ p [ class Styles.copyText ]
+                [ span [ class Styles.copyLead ]
+                    [ text copyLead ]
+                , text copy
                 ]
             ]
+        ]
 
 
 image010 : Html msg
@@ -81,14 +80,14 @@ image010 =
         image =
             Article.image010
     in
-        div [ class Styles.image010 ]
-            [ img
-                [ src image.url
-                , class Styles.image
-                , alt image.caption
-                ]
-                []
+    div [ class Styles.image010 ]
+        [ img
+            [ src image.url
+            , class Styles.image
+            , alt image.caption
             ]
+            []
+        ]
 
 
 image011 : Html msg
@@ -97,14 +96,14 @@ image011 =
         image =
             Article.image011
     in
-        div [ class Styles.image011 ]
-            [ img
-                [ src image.url
-                , class Styles.image
-                , alt image.caption
-                ]
-                []
+    div [ class Styles.image011 ]
+        [ img
+            [ src image.url
+            , class Styles.image
+            , alt image.caption
             ]
+            []
+        ]
 
 
 image012 : Html msg
@@ -113,14 +112,14 @@ image012 =
         image =
             Article.image012
     in
-        div [ class Styles.image012 ]
-            [ img
-                [ src image.url
-                , class Styles.image
-                , alt image.caption
-                ]
-                []
+    div [ class Styles.image012 ]
+        [ img
+            [ src image.url
+            , class Styles.image
+            , alt image.caption
             ]
+            []
+        ]
 
 
 image013 : Html msg
@@ -129,11 +128,11 @@ image013 =
         image =
             Article.image013
     in
-        div [ class Styles.image013 ]
-            [ img
-                [ src image.url
-                , class Styles.image
-                , alt image.caption
-                ]
-                []
+    div [ class Styles.image013 ]
+        [ img
+            [ src image.url
+            , class Styles.image
+            , alt image.caption
             ]
+            []
+        ]

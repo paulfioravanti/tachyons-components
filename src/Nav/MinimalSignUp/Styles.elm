@@ -1,12 +1,11 @@
-module Nav.MinimalSignUp.Styles
-    exposing
-        ( image
-        , imageLink
-        , nav
-        , navLink
-        , navLinks
-        , signUpLink
-        )
+module Nav.MinimalSignUp.Styles exposing
+    ( image
+    , imageLink
+    , nav
+    , navLink
+    , navLinks
+    , signUpLink
+    )
 
 
 image : String

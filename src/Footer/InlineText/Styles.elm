@@ -1,12 +1,11 @@
-module Footer.InlineText.Styles
-    exposing
-        ( company
-        , email
-        , footer
-        , paragraph
-        , privacy
-        , terms
-        )
+module Footer.InlineText.Styles exposing
+    ( company
+    , email
+    , footer
+    , paragraph
+    , privacy
+    , terms
+    )
 
 
 company : String

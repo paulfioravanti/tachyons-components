@@ -1,12 +1,11 @@
-module Layout.FiveColumnCollapseMixed.Styles
-    exposing
-        ( col1
-        , col2
-        , col3
-        , col4
-        , col5
-        , columns
-        )
+module Layout.FiveColumnCollapseMixed.Styles exposing
+    ( col1
+    , col2
+    , col3
+    , col4
+    , col5
+    , columns
+    )
 
 
 col1 : String

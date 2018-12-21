@@ -18,10 +18,10 @@ view =
             , ( SvgLogo.dribble, "dribble" )
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ footer [ class Styles.footer ]
-                (List.map iconLink logos)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ footer [ class Styles.footer ]
+            (List.map iconLink logos)
+        ]
 
 
 iconLink : ( String, String ) -> Html msg
@@ -30,7 +30,7 @@ iconLink ( iconPath, iconName ) =
         [ svg
             [ attribute "data-icon" iconName
             , viewBox "0 0 32 32"
-            , style [ ( "fill", "currentcolor" ) ]
+            , style "fill" "currentcolor"
             ]
             [ Svg.title []
                 [ text (iconName ++ " icon") ]

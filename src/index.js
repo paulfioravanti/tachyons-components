@@ -1,16 +1,10 @@
 import "tachyons"
 import "lazysizes/plugins/unveilhooks/ls.unveilhooks"
 import "lazysizes"
-import { Main } from "./Main.elm"
+import { Elm } from "./Main.elm"
 
-document.addEventListener("DOMContentLoaded", () => {
-  const appContainer = document.querySelector("#root")
+const app = Elm.Main.init()
 
-  if (appContainer) {
-    const app = Main.embed(appContainer)
-
-    app.ports.setBodyClasses.subscribe((classes) => {
-      document.body.className = classes
-    })
-  }
+app.ports.setBodyClasses.subscribe((classes) => {
+  document.body.className = classes
 })

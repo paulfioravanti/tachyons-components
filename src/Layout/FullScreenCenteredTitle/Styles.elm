@@ -1,9 +1,8 @@
-module Layout.FullScreenCenteredTitle.Styles
-    exposing
-        ( article
-        , title
-        , titleWrapper
-        )
+module Layout.FullScreenCenteredTitle.Styles exposing
+    ( article
+    , title
+    , titleWrapper
+    )
 
 
 article : String

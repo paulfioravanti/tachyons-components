@@ -1,10 +1,9 @@
-module Article.TitleTextImage.Styles
-    exposing
-        ( article
-        , copy
-        , heading
-        , image
-        )
+module Article.TitleTextImage.Styles exposing
+    ( article
+    , copy
+    , heading
+    , image
+    )
 
 
 article : String

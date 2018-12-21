@@ -1,12 +1,11 @@
-module Table.Basic.Styles
-    exposing
-        ( container
-        , content
-        , table
-        , tableBody
-        , tableData
-        , tableHeading
-        )
+module Table.Basic.Styles exposing
+    ( container
+    , content
+    , table
+    , tableBody
+    , tableData
+    , tableHeading
+    )
 
 
 container : String

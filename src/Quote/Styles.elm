@@ -1,10 +1,9 @@
-module Quote.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Quote.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
-import Quote.Route exposing (Route(LeftBorder, PullQuote))
+import Quote.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -16,18 +15,18 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            _ ->
-                defaultFormatting
+    case route of
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
 sectionContentLinkImageFormatting route =
     case route of
-        LeftBorder ->
+        Route.LeftBorder ->
             [ "bg-left" ]
 
-        PullQuote ->
+        Route.PullQuote ->
             [ "bg-center"
             , "contain"
             ]

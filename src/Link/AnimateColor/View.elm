@@ -1,8 +1,8 @@
 module Link.AnimateColor.View exposing (view)
 
-import Link.AnimateColor.Styles as Styles
 import Html exposing (Html, a, div, text)
 import Html.Attributes exposing (attribute, class, href)
+import Link.AnimateColor.Styles as Styles
 
 
 view : Html msg
@@ -27,10 +27,10 @@ view =
             , "blue"
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ div [ class Styles.links ]
-                (List.map link linkColours)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ div [ class Styles.links ]
+            (List.map link linkColours)
+        ]
 
 
 link : String -> Html msg

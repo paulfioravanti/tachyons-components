@@ -1,26 +1,25 @@
-module Card
-    exposing
-        ( Route
-        , albumCenteredRoute
-        , albumLeftRoute
-        , basicTextCardRoute
-        , bodyClasses
-        , matchers
-        , newsCardRoute
-        , productCardRoute
-        , profileCardRoute
-        , profileCardTitleSubtitleRoute
-        , sectionContentLinkImageFormatting
-        , suggestedProfileRoute
-        , textCardRoute
-        , view
-        )
+module Card exposing
+    ( Route
+    , albumCenteredRoute
+    , albumLeftRoute
+    , basicTextCardRoute
+    , bodyClasses
+    , matchers
+    , newsCardRoute
+    , productCardRoute
+    , profileCardRoute
+    , profileCardTitleSubtitleRoute
+    , sectionContentLinkImageFormatting
+    , suggestedProfileRoute
+    , textCardRoute
+    , view
+    )
 
 import Card.Route as Route exposing (Route)
 import Card.Styles as Styles
 import Card.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(ErrorPages))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Error Pages"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,8 +17,7 @@ view changeLocationMsg =
                 [ Utils.component
                     "error-pages/404/"
                     "404"
-                    changeLocationMsg
-                    (ErrorPages ErrorPage.fourOhFourRoute)
+                    (Route.ErrorPages ErrorPage.fourOhFourRoute)
                 ]
             ]
         ]

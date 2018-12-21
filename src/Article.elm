@@ -1,28 +1,27 @@
-module Article
-    exposing
-        ( Route
-        , bodyClasses
-        , matchers
-        , featureRoute
-        , fullBleedBackgroundRoute
-        , headlineTitleTextRoute
-        , largeTitleTextRoute
-        , leftTitleRoute
-        , leftTitleTopBorderRoute
-        , photoEssayRoute
-        , sectionContentLinkImageFormatting
-        , singleColumnLargeTitleRoute
-        , titleHighlightHeaderCoverRoute
-        , titleTextImageRoute
-        , titleTextRoute
-        , view
-        )
+module Article exposing
+    ( Route
+    , bodyClasses
+    , featureRoute
+    , fullBleedBackgroundRoute
+    , headlineTitleTextRoute
+    , largeTitleTextRoute
+    , leftTitleRoute
+    , leftTitleTopBorderRoute
+    , matchers
+    , photoEssayRoute
+    , sectionContentLinkImageFormatting
+    , singleColumnLargeTitleRoute
+    , titleHighlightHeaderCoverRoute
+    , titleTextImageRoute
+    , titleTextRoute
+    , view
+    )
 
 import Article.Route as Route exposing (Route)
 import Article.Styles as Styles
 import Article.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

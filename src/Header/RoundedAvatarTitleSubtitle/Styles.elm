@@ -1,10 +1,9 @@
-module Header.RoundedAvatarTitleSubtitle.Styles
-    exposing
-        ( header
-        , heading
-        , image
-        , subheading
-        )
+module Header.RoundedAvatarTitleSubtitle.Styles exposing
+    ( header
+    , heading
+    , image
+    , subheading
+    )
 
 
 header : String

@@ -1,8 +1,7 @@
-module ArticleList.TitlePreviewAuthorMedia.Article
-    exposing
-        ( Article
-        , list
-        )
+module ArticleList.TitlePreviewAuthorMedia.Article exposing
+    ( Article
+    , list
+    )
 
 
 type alias Article =
@@ -35,13 +34,13 @@ article1 =
             instead of transistors.
             """
     in
-        { headline = headline
-        , copy = copy
-        , imageUrl = "https://mrmrs.github.io/photos/cpu.jpg"
-        , caption =
-            "Photo of a dimly lit room with a computer interface terminal."
-        , author = "Robin Darnell"
-        }
+    { headline = headline
+    , copy = copy
+    , imageUrl = "https://mrmrs.github.io/photos/cpu.jpg"
+    , caption =
+        "Photo of a dimly lit room with a computer interface terminal."
+    , author = "Robin Darnell"
+    }
 
 
 article2 : Article
@@ -56,12 +55,12 @@ article2 =
             villages.
             """
     in
-        { headline = "Warehouse Prices Are Fast on the Rise"
-        , copy = copy
-        , imageUrl = "https://mrmrs.github.io/photos/warehouse.jpg"
-        , caption = "Photo of a warehouse with stacked shelves."
-        , author = "Robin Darnell"
-        }
+    { headline = "Warehouse Prices Are Fast on the Rise"
+    , copy = copy
+    , imageUrl = "https://mrmrs.github.io/photos/warehouse.jpg"
+    , caption = "Photo of a warehouse with stacked shelves."
+    , author = "Robin Darnell"
+    }
 
 
 article3 : Article
@@ -75,10 +74,10 @@ article3 =
             and porpoises.
             """
     in
-        { headline =
-            "Giant Whale Invests Huge Money to Build a Computer Out of Plankton"
-        , copy = copy
-        , imageUrl = "https://mrmrs.github.io/photos/whale.jpg"
-        , caption = "Photo of a whale's tale coming crashing out of the water."
-        , author = "Robin Darnell"
-        }
+    { headline =
+        "Giant Whale Invests Huge Money to Build a Computer Out of Plankton"
+    , copy = copy
+    , imageUrl = "https://mrmrs.github.io/photos/whale.jpg"
+    , caption = "Photo of a whale's tale coming crashing out of the water."
+    , author = "Robin Darnell"
+    }

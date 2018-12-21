@@ -1,10 +1,9 @@
-module Layout.HorizontalAspectRatios.Styles
-    exposing
-        ( article
-        , image
-        , imageType
-        , title
-        )
+module Layout.HorizontalAspectRatios.Styles exposing
+    ( article
+    , image
+    , imageType
+    , title
+    )
 
 
 article : String

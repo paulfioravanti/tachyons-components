@@ -1,15 +1,14 @@
-module Collection.Vinyl.Styles
-    exposing
-        ( article
-        , bigImageWrapper
-        , image
-        , imageWrapper
-        , link
-        , section
-        , smallImageWrapper
-        , subtitle
-        , title
-        )
+module Collection.Vinyl.Styles exposing
+    ( article
+    , bigImageWrapper
+    , image
+    , imageWrapper
+    , link
+    , section
+    , smallImageWrapper
+    , subtitle
+    , title
+    )
 
 
 article : String

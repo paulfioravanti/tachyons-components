@@ -11,12 +11,12 @@ view =
         listItems =
             [ "Orange", "Apple", "Peach", "Grape", "Grapefruit", "Kiwi" ]
     in
-        div [ attribute "data-name" "component" ]
-            [ div [ class Styles.listWrapper ]
-                [ ul [ class Styles.list ]
-                    (List.map listItem listItems)
-                ]
+    div [ attribute "data-name" "component" ]
+        [ div [ class Styles.listWrapper ]
+            [ ul [ class Styles.list ]
+                (List.map listItem listItems)
             ]
+        ]
 
 
 listItem : String -> Html msg

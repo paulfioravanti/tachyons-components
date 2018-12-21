@@ -1,8 +1,7 @@
-module Article.FullBleedBackground.Article
-    exposing
-        ( Article
-        , example
-        )
+module Article.FullBleedBackground.Article exposing
+    ( Article
+    , example
+    )
 
 
 type alias Article =
@@ -28,8 +27,8 @@ example =
             are symmetrically arranged. Their function remains unknown.
             """
     in
-        { backgroundImageUrl = "https://mrmrs.github.io/photos/12.jpg"
-        , title = "Prasat Suor Prat"
-        , subtitle = "Siem Reap, Cambodia"
-        , copy = copy
-        }
+    { backgroundImageUrl = "https://mrmrs.github.io/photos/12.jpg"
+    , title = "Prasat Suor Prat"
+    , subtitle = "Siem Reap, Cambodia"
+    , copy = copy
+    }

@@ -1,9 +1,10 @@
 module Msg exposing (Msg(..))
 
-import Navigation exposing (Location)
+import Browser exposing (UrlRequest)
 import Route exposing (Route)
+import Url exposing (Url)
 
 
 type Msg
-    = ChangeLocation Route
-    | UrlChange Location
+    = UrlChanged Url
+    | LinkClicked UrlRequest

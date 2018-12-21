@@ -1,7 +1,7 @@
 module DefinitionList.View exposing (view)
 
 import DefinitionList.Inline.View as Inline
-import DefinitionList.Route exposing (Route(Inline, Simple))
+import DefinitionList.Route as Route exposing (Route)
 import DefinitionList.Simple.View as Simple
 import Html exposing (Html)
 
@@ -9,8 +9,8 @@ import Html exposing (Html)
 view : Route -> Html msg
 view route =
     case route of
-        Inline ->
+        Route.Inline ->
             Inline.view
 
-        Simple ->
+        Route.Simple ->
             Simple.view

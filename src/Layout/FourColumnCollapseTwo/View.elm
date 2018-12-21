@@ -15,10 +15,10 @@ view =
             , ( "http://tachyons.io/img/4.jpg", "night sky over land" )
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ section [ class Styles.section ]
-                (List.map image images)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ section [ class Styles.section ]
+            (List.map image images)
+        ]
 
 
 image : ( String, String ) -> Html msg

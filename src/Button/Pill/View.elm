@@ -1,7 +1,7 @@
 module Button.Pill.View exposing (view)
 
-import Button.Pill.Styles as Styles
 import Button.Colour as Colour
+import Button.Pill.Styles as Styles
 import Html exposing (Html, a, div, h1, text)
 import Html.Attributes exposing (attribute, class, href)
 
@@ -38,14 +38,14 @@ section title styles topMargin bottomMargin =
             h1 [ class Styles.heading ]
                 [ text title ]
     in
-        div []
-            [ div [ class (Styles.topSection topMargin) ]
-                (heading :: List.map (button styles) firstList)
-            , div [ class (Styles.section "") ]
-                (List.map (button styles) secondList)
-            , div [ class (Styles.section bottomMargin) ]
-                (List.map (button styles) thirdList)
-            ]
+    div []
+        [ div [ class (Styles.topSection topMargin) ]
+            (heading :: List.map (button styles) firstList)
+        , div [ class (Styles.section "") ]
+            (List.map (button styles) secondList)
+        , div [ class (Styles.section bottomMargin) ]
+            (List.map (button styles) thirdList)
+        ]
 
 
 button : (String -> String) -> String -> Html msg

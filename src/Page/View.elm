@@ -4,29 +4,21 @@ import Html exposing (Html)
 import Page.Double.View as Double
 import Page.FourByFourMixedGrid.View as FourByFourMixedGrid
 import Page.PortfolioProject.View as PortfolioProject
-import Page.Route
-    exposing
-        ( Route
-            ( Double
-            , FourByFourMixedGrid
-            , PortfolioProject
-            , SwissCoverFiveColumns
-            )
-        )
+import Page.Route as Route exposing (Route)
 import Page.SwissCoverFiveColumns.View as SwissCoverFiveColumns
 
 
 view : Route -> Html msg
 view route =
     case route of
-        Double ->
+        Route.Double ->
             Double.view
 
-        FourByFourMixedGrid ->
+        Route.FourByFourMixedGrid ->
             FourByFourMixedGrid.view
 
-        PortfolioProject ->
+        Route.PortfolioProject ->
             PortfolioProject.view
 
-        SwissCoverFiveColumns ->
+        Route.SwissCoverFiveColumns ->
             SwissCoverFiveColumns.view

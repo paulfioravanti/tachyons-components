@@ -18,12 +18,12 @@ view =
             , ( SvgLogo.dribble, "dribble" )
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ footer [ class Styles.footer ]
-                (List.map socialIconLink logos
-                    ++ [ footerLinks ]
-                )
-            ]
+    div [ attribute "data-name" "component" ]
+        [ footer [ class Styles.footer ]
+            (List.map socialIconLink logos
+                ++ [ footerLinks ]
+            )
+        ]
 
 
 socialIconLink : ( String, String ) -> Html msg
@@ -32,7 +32,7 @@ socialIconLink ( iconPath, iconName ) =
         [ svg
             [ attribute "data-icon" iconName
             , viewBox "0 0 32 32"
-            , style [ ( "fill", "currentcolor" ) ]
+            , style "fill" "currentcolor"
             ]
             [ Svg.title []
                 [ text (iconName ++ " icon") ]
@@ -48,8 +48,8 @@ footerLinks =
         links =
             [ "Help", "Send Feedback", "Privacy", "Terms" ]
     in
-        div [ class Styles.footerLinks ]
-            (List.map footerLink links)
+    div [ class Styles.footerLinks ]
+        (List.map footerLink links)
 
 
 footerLink : String -> Html msg

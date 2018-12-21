@@ -12,16 +12,16 @@ view =
         articleExample =
             Article.example
     in
-        div [ attribute "data-name" "component" ]
-            [ article [ class Styles.article ]
-                [ heading articleExample
-                , content articleExample
-                ]
+    div [ attribute "data-name" "component" ]
+        [ article [ class Styles.article ]
+            [ articleHeading articleExample
+            , content articleExample
             ]
+        ]
 
 
-heading : Article -> Html msg
-heading { heading, subHeading, date } =
+articleHeading : Article -> Html msg
+articleHeading { heading, subHeading, date } =
     header [ class Styles.header ]
         [ h1 [ class Styles.heading ]
             [ text heading ]

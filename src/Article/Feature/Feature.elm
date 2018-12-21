@@ -66,17 +66,17 @@ example =
             of ce equipment! The repercussion of ugliness is endless.
             """
     in
-        { backgroundImageUrl = "https://mrmrs.github.io/photos/u/009.jpg"
-        , issue = "Issue Six"
-        , edition = "Summer MMXVI"
-        , title = "The Chronicles"
-        , slogan =
-            "It's the space you put between the notes that make the music."
-        , author = "Massimo Vignelli"
-        , headline = "The repercussion of ugliness is endless"
-        , paragraph1 = paragraph1
-        , paragraph2 = paragraph2
-        , paragraph3 = paragraph3
-        , paragraph4 = paragraph4
-        , paragraph5 = paragraph5
-        }
+    { backgroundImageUrl = "https://mrmrs.github.io/photos/u/009.jpg"
+    , issue = "Issue Six"
+    , edition = "Summer MMXVI"
+    , title = "The Chronicles"
+    , slogan =
+        "It's the space you put between the notes that make the music."
+    , author = "Massimo Vignelli"
+    , headline = "The repercussion of ugliness is endless"
+    , paragraph1 = paragraph1
+    , paragraph2 = paragraph2
+    , paragraph3 = paragraph3
+    , paragraph4 = paragraph4
+    , paragraph5 = paragraph5
+    }

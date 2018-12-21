@@ -1,14 +1,13 @@
-module Form.SignUp.Styles
-    exposing
-        ( article
-        , emailInput
-        , field
-        , fieldset
-        , label
-        , legend
-        , passwordInput
-        , signUpButton
-        )
+module Form.SignUp.Styles exposing
+    ( article
+    , emailInput
+    , field
+    , fieldset
+    , label
+    , legend
+    , passwordInput
+    , signUpButton
+    )
 
 
 article : String

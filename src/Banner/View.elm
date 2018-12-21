@@ -1,8 +1,8 @@
 module Banner.View exposing (view)
 
-import Banner.Route exposing (Route(Basic, Info, SingleCta))
 import Banner.Basic.View as Basic
 import Banner.Info.View as Info
+import Banner.Route as Route exposing (Route)
 import Banner.SingleCta.View as SingleCta
 import Html exposing (Html)
 
@@ -10,11 +10,11 @@ import Html exposing (Html)
 view : Route -> Html msg
 view route =
     case route of
-        Basic ->
+        Route.Basic ->
             Basic.view
 
-        Info ->
+        Route.Info ->
             Info.view
 
-        SingleCta ->
+        Route.SingleCta ->
             SingleCta.view

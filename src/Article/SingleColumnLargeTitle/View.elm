@@ -6,7 +6,7 @@ import Article.SingleColumnLargeTitle.Article as Article
         , Photo
         )
 import Article.SingleColumnLargeTitle.Styles as Styles
-import Html exposing (Html, article, div, h1, img, header, p, text, time)
+import Html exposing (Html, article, div, h1, header, img, p, text, time)
 import Html.Attributes exposing (alt, attribute, class, src)
 
 
@@ -16,12 +16,12 @@ view =
         articleExample =
             Article.example
     in
-        div [ attribute "data-name" "component" ]
-            [ article [ class Styles.article ]
-                [ heading articleExample
-                , content articleExample
-                ]
+    div [ attribute "data-name" "component" ]
+        [ article [ class Styles.article ]
+            [ heading articleExample
+            , content articleExample
             ]
+        ]
 
 
 heading : Article -> Html msg
@@ -30,18 +30,18 @@ heading { title, date } =
         image =
             Article.image009
     in
-        header [ class Styles.header ]
-            [ h1 [ class Styles.heading ]
-                [ text title ]
-            , time [ class Styles.date ]
-                [ text date ]
-            , img
-                [ class Styles.headerImage
-                , src image.url
-                , alt image.caption
-                ]
-                []
+    header [ class Styles.header ]
+        [ h1 [ class Styles.heading ]
+            [ text title ]
+        , time [ class Styles.date ]
+            [ text date ]
+        , img
+            [ class Styles.headerImage
+            , src image.url
+            , alt image.caption
             ]
+            []
+        ]
 
 
 content : Article -> Html msg

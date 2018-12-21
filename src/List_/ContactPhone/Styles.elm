@@ -1,12 +1,11 @@
-module List_.ContactPhone.Styles
-    exposing
-        ( div
-        , info
-        , img
-        , li
-        , link
-        , ul
-        )
+module List_.ContactPhone.Styles exposing
+    ( div
+    , img
+    , info
+    , li
+    , link
+    , ul
+    )
 
 
 div : String

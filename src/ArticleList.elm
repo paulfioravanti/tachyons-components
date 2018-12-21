@@ -1,18 +1,17 @@
-module ArticleList
-    exposing
-        ( Route
-        , bodyClasses
-        , matchers
-        , titlePreviewAuthorMediaRoute
-        , titlePreviewAuthorMediaFlippedRoute
-        , view
-        )
+module ArticleList exposing
+    ( Route
+    , bodyClasses
+    , matchers
+    , titlePreviewAuthorMediaFlippedRoute
+    , titlePreviewAuthorMediaRoute
+    , view
+    )
 
 import ArticleList.Route as Route exposing (Route)
 import ArticleList.Styles as Styles
 import ArticleList.View as View
 import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

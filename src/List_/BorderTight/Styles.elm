@@ -1,10 +1,9 @@
-module List_.BorderTight.Styles
-    exposing
-        ( heading
-        , lastChild
-        , li
-        , ul
-        )
+module List_.BorderTight.Styles exposing
+    ( heading
+    , lastChild
+    , li
+    , ul
+    )
 
 
 heading : String

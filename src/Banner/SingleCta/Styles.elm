@@ -1,13 +1,12 @@
-module Banner.SingleCta.Styles
-    exposing
-        ( article
-        , container
-        , content
-        , copy
-        , ctaLink
-        , heading
-        , section
-        )
+module Banner.SingleCta.Styles exposing
+    ( article
+    , container
+    , content
+    , copy
+    , ctaLink
+    , heading
+    , section
+    )
 
 
 article : String

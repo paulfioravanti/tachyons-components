@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Articles))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Articles"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,58 +17,47 @@ view changeLocationMsg =
                 [ Utils.component
                     "articles/feature/"
                     "Feature"
-                    changeLocationMsg
-                    (Articles Article.featureRoute)
+                    (Route.Articles Article.featureRoute)
                 , Utils.component
                     "articles/full-bleed-background/"
                     "Full Bleed Background"
-                    changeLocationMsg
-                    (Articles Article.fullBleedBackgroundRoute)
+                    (Route.Articles Article.fullBleedBackgroundRoute)
                 , Utils.component
                     "articles/headline-title-text/"
                     "Headline Title Text"
-                    changeLocationMsg
-                    (Articles Article.headlineTitleTextRoute)
+                    (Route.Articles Article.headlineTitleTextRoute)
                 , Utils.component
                     "articles/large-title-text/"
                     "Large Title Text"
-                    changeLocationMsg
-                    (Articles Article.largeTitleTextRoute)
+                    (Route.Articles Article.largeTitleTextRoute)
                 , Utils.component
                     "articles/left-title-top-border/"
                     "Left Title Top Border"
-                    changeLocationMsg
-                    (Articles Article.leftTitleTopBorderRoute)
+                    (Route.Articles Article.leftTitleTopBorderRoute)
                 , Utils.component
                     "articles/left-title/"
                     "Left Title"
-                    changeLocationMsg
-                    (Articles Article.leftTitleRoute)
+                    (Route.Articles Article.leftTitleRoute)
                 , Utils.component
                     "articles/photo-essay/"
                     "Photo Essay"
-                    changeLocationMsg
-                    (Articles Article.photoEssayRoute)
+                    (Route.Articles Article.photoEssayRoute)
                 , Utils.component
                     "articles/single-column-large-title/"
                     "Single Column Large Title"
-                    changeLocationMsg
-                    (Articles Article.singleColumnLargeTitleRoute)
+                    (Route.Articles Article.singleColumnLargeTitleRoute)
                 , Utils.component
                     "articles/title-highlight-header-cover/"
                     "Title Highlight Header Cover"
-                    changeLocationMsg
-                    (Articles Article.titleHighlightHeaderCoverRoute)
+                    (Route.Articles Article.titleHighlightHeaderCoverRoute)
                 , Utils.component
                     "articles/title-text-image/"
                     "Title Text Image"
-                    changeLocationMsg
-                    (Articles Article.titleTextImageRoute)
+                    (Route.Articles Article.titleTextImageRoute)
                 , Utils.component
                     "articles/title-text/"
                     "Title Text"
-                    changeLocationMsg
-                    (Articles Article.titleTextRoute)
+                    (Route.Articles Article.titleTextRoute)
                 ]
             ]
         ]

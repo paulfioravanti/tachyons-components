@@ -1,22 +1,8 @@
 module Footer.View exposing (view)
 
-import Footer.Route
-    exposing
-        ( Route
-            ( CenteredIconsHoverGlow
-            , InlineText
-            , SimpleLargeType
-            , SmallPrint
-            , Social
-            , SocialCircles
-            , SocialSimple
-            , SocialSimpleText
-            , SocialText
-            , Studios
-            )
-        )
 import Footer.CenteredIconsHoverGlow.View as CenteredIconsHoverGlow
 import Footer.InlineText.View as InlineText
+import Footer.Route as Route exposing (Route)
 import Footer.SimpleLargeType.View as SimpleLargeType
 import Footer.SmallPrint.View as SmallPrint
 import Footer.Social.View as Social
@@ -31,32 +17,32 @@ import Html exposing (Html)
 view : Route -> Html msg
 view route =
     case route of
-        CenteredIconsHoverGlow ->
+        Route.CenteredIconsHoverGlow ->
             CenteredIconsHoverGlow.view
 
-        InlineText ->
+        Route.InlineText ->
             InlineText.view
 
-        SimpleLargeType ->
+        Route.SimpleLargeType ->
             SimpleLargeType.view
 
-        SmallPrint ->
+        Route.SmallPrint ->
             SmallPrint.view
 
-        Social ->
+        Route.Social ->
             Social.view
 
-        SocialCircles ->
+        Route.SocialCircles ->
             SocialCircles.view
 
-        SocialSimple ->
+        Route.SocialSimple ->
             SocialSimple.view
 
-        SocialSimpleText ->
+        Route.SocialSimpleText ->
             SocialSimpleText.view
 
-        SocialText ->
+        Route.SocialText ->
             SocialText.view
 
-        Studios ->
+        Route.Studios ->
             Studios.view

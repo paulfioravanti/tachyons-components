@@ -1,8 +1,7 @@
-module Link.DimNoUnderline.Styles
-    exposing
-        ( link
-        , links
-        )
+module Link.DimNoUnderline.Styles exposing
+    ( link
+    , links
+    )
 
 
 link : String -> String

@@ -1,13 +1,12 @@
-module Nav.LogoTitlesLinksCentered.Styles
-    exposing
-        ( header
-        , heading
-        , image
-        , imageLink
-        , navLink
-        , navLinks
-        , subheading
-        )
+module Nav.LogoTitlesLinksCentered.Styles exposing
+    ( header
+    , heading
+    , image
+    , imageLink
+    , navLink
+    , navLinks
+    , subheading
+    )
 
 
 header : String

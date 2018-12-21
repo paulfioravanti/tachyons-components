@@ -1,16 +1,6 @@
-module Layout.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Layout.Styles exposing (bodyClasses, sectionContentLinkImageFormatting)
 
-import Layout.Route
-    exposing
-        ( Route
-            ( FullScreenCenteredTitle
-            , HorizontalAspectRatios
-            )
-        )
+import Layout.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -22,9 +12,9 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            _ ->
-                defaultFormatting
+    case route of
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -35,13 +25,13 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                FullScreenCenteredTitle ->
+                Route.FullScreenCenteredTitle ->
                     [ "cover" ]
 
-                HorizontalAspectRatios ->
+                Route.HorizontalAspectRatios ->
                     [ "cover" ]
 
                 _ ->
                     [ "contain" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

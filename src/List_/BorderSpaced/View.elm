@@ -18,14 +18,14 @@ view =
             , "American Bobtail"
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ article [ class Styles.article ]
-                [ h1 [ class Styles.heading ]
-                    [ text "Cats" ]
-                , ul [ class Styles.ul ]
-                    (List.map listItem listItems)
-                ]
+    div [ attribute "data-name" "component" ]
+        [ article [ class Styles.article ]
+            [ h1 [ class Styles.heading ]
+                [ text "Cats" ]
+            , ul [ class Styles.ul ]
+                (List.map listItem listItems)
             ]
+        ]
 
 
 listItem : String -> Html msg

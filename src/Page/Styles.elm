@@ -1,18 +1,9 @@
-module Page.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Page.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
-import Page.Route
-    exposing
-        ( Route
-            ( Double
-            , FourByFourMixedGrid
-            , PortfolioProject
-            , SwissCoverFiveColumns
-            )
-        )
+import Page.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -24,20 +15,20 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            FourByFourMixedGrid ->
-                [ "black-80", "helvetica" ] ++ defaultFormatting
+    case route of
+        Route.FourByFourMixedGrid ->
+            [ "black-80", "helvetica" ] ++ defaultFormatting
 
-            SwissCoverFiveColumns ->
-                [ "bg-dark-gray"
-                , "helvetica"
-                , "sans-serif"
-                , "w-100"
-                , "white"
-                ]
+        Route.SwissCoverFiveColumns ->
+            [ "bg-dark-gray"
+            , "helvetica"
+            , "sans-serif"
+            , "w-100"
+            , "white"
+            ]
 
-            _ ->
-                defaultFormatting
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -48,16 +39,16 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                Double ->
+                Route.Double ->
                     [ "cover" ]
 
-                FourByFourMixedGrid ->
+                Route.FourByFourMixedGrid ->
                     [ "cover" ]
 
-                PortfolioProject ->
+                Route.PortfolioProject ->
                     [ "contain" ]
 
-                SwissCoverFiveColumns ->
+                Route.SwissCoverFiveColumns ->
                     [ "cover" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

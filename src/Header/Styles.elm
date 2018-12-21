@@ -1,17 +1,9 @@
-module Header.Styles
-    exposing
-        ( bodyClasses
-        , sectionContentLinkImageFormatting
-        )
+module Header.Styles exposing
+    ( bodyClasses
+    , sectionContentLinkImageFormatting
+    )
 
-import Header.Route
-    exposing
-        ( Route
-            ( CircleAvatarTitleSubtitle
-            , RoundedAvatarTitleSubtitle
-            , StartupHero
-            )
-        )
+import Header.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -23,9 +15,9 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            _ ->
-                defaultFormatting
+    case route of
+        _ ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -36,13 +28,13 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                CircleAvatarTitleSubtitle ->
+                Route.CircleAvatarTitleSubtitle ->
                     []
 
-                RoundedAvatarTitleSubtitle ->
+                Route.RoundedAvatarTitleSubtitle ->
                     []
 
-                StartupHero ->
+                Route.StartupHero ->
                     [ "cover" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

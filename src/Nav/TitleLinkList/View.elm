@@ -14,15 +14,15 @@ view =
         lastNavLink =
             navLink Styles.lastNavLink "Contact" []
     in
-        div [ attribute "data-name" "component" ]
-            [ nav [ class Styles.navLinks ]
-                (homeNavLink
-                    :: List.foldr
-                        (navLink Styles.navLink)
-                        lastNavLink
-                        navLinkNames
-                )
-            ]
+    div [ attribute "data-name" "component" ]
+        [ nav [ class Styles.navLinks ]
+            (homeNavLink
+                :: List.foldr
+                    (navLink Styles.navLink)
+                    lastNavLink
+                    navLinkNames
+            )
+        ]
 
 
 homeNavLink : Html msg
@@ -38,4 +38,4 @@ navLink styles name acc =
             a [ class styles, href "#", title name ]
                 [ text name ]
     in
-        link :: acc
+    link :: acc

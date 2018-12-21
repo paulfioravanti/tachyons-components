@@ -1,4 +1,4 @@
-module Footer.Logo exposing (Logo, list, facebook, linkedIn, medium, twitter)
+module Footer.Logo exposing (Logo, facebook, linkedIn, list, medium, twitter)
 
 import Svg exposing (g, path)
 import Svg.Attributes

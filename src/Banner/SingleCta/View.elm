@@ -28,14 +28,14 @@ ctaContent =
             that is going to be used.
             """
     in
-        div [ class Styles.content ]
-            [ div []
-                [ h2 [ class Styles.heading ]
-                    [ text "This is a promo title" ]
-                , p [ class Styles.copy ]
-                    [ text copy ]
-                ]
+    div [ class Styles.content ]
+        [ div []
+            [ h2 [ class Styles.heading ]
+                [ text "This is a promo title" ]
+            , p [ class Styles.copy ]
+                [ text copy ]
             ]
+        ]
 
 
 ctaButton : Html msg

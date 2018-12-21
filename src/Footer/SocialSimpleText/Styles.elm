@@ -1,10 +1,9 @@
-module Footer.SocialSimpleText.Styles
-    exposing
-        ( footer
-        , link
-        , svg
-        , title
-        )
+module Footer.SocialSimpleText.Styles exposing
+    ( footer
+    , link
+    , svg
+    , title
+    )
 
 
 footer : String

@@ -1,8 +1,7 @@
-module Text.Paragraph.Styles
-    exposing
-        ( main_
-        , paragraph
-        )
+module Text.Paragraph.Styles exposing
+    ( main_
+    , paragraph
+    )
 
 
 main_ : String

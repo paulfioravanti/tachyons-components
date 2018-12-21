@@ -1,31 +1,34 @@
 module Main exposing (main)
 
+import Browser
+import Browser.Navigation as Navigation exposing (Key)
 import Model exposing (Model)
-import Msg exposing (Msg(ChangeLocation, UrlChange))
-import Navigation exposing (Location)
+import Msg exposing (Msg)
 import Ports
 import Route
 import Styles
 import Update
+import Url exposing (Url)
 import View
 
 
-main : Program Never Model Msg
+main : Program () Model Msg
 main =
-    Navigation.program
-        UrlChange
+    Browser.application
         { init = init
         , update = Update.update
-        , view = View.view ChangeLocation
+        , view = View.view
         , subscriptions = always Sub.none
+        , onUrlChange = Msg.UrlChanged
+        , onUrlRequest = Msg.LinkClicked
         }
 
 
-init : Location -> ( Model, Cmd Msg )
-init location =
+init : () -> Url -> Key -> ( Model, Cmd Msg )
+init () url navKey =
     let
         route =
-            Route.fromLocation location
+            Route.fromLocation url
 
         setBodyClasses =
             route
@@ -35,6 +38,8 @@ init location =
         setUrl =
             route
                 |> Route.toPath
-                |> Navigation.newUrl
+                |> Navigation.pushUrl navKey
     in
-        ( route, Cmd.batch [ setBodyClasses, setUrl ] )
+    ( { route = route, navKey = navKey }
+    , Cmd.batch [ setBodyClasses, setUrl ]
+    )

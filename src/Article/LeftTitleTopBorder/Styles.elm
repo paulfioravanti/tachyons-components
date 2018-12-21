@@ -1,14 +1,13 @@
-module Article.LeftTitleTopBorder.Styles
-    exposing
-        ( article
-        , date
-        , content
-        , header
-        , heading
-        , paragraph1
-        , paragraph2
-        , subHeading
-        )
+module Article.LeftTitleTopBorder.Styles exposing
+    ( article
+    , content
+    , date
+    , header
+    , heading
+    , paragraph1
+    , paragraph2
+    , subHeading
+    )
 
 
 article : String

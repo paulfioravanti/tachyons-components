@@ -1,19 +1,18 @@
-module Quote
-    exposing
-        ( Route
-        , bodyClasses
-        , leftBorderRoute
-        , matchers
-        , sectionContentLinkImageFormatting
-        , pullQuoteRoute
-        , view
-        )
+module Quote exposing
+    ( Route
+    , bodyClasses
+    , leftBorderRoute
+    , matchers
+    , pullQuoteRoute
+    , sectionContentLinkImageFormatting
+    , view
+    )
 
+import Html exposing (Html)
 import Quote.Route as Route exposing (Route)
 import Quote.Styles as Styles
 import Quote.View as View
-import Html exposing (Html)
-import UrlParser exposing (Parser)
+import Url.Parser exposing (Parser)
 
 
 type alias Route =

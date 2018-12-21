@@ -1,15 +1,15 @@
 module ListComponents.Tables exposing (view)
 
-import Table
 import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Tables))
+import Route
+import Table
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Tables"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,13 +17,11 @@ view changeLocationMsg =
                 [ Utils.component
                     "tables/basic/"
                     "Basic"
-                    changeLocationMsg
-                    (Tables Table.basicRoute)
+                    (Route.Tables Table.basicRoute)
                 , Utils.component
                     "tables/striped-dark/"
                     "Striped Dark"
-                    changeLocationMsg
-                    (Tables Table.stripedDarkRoute)
+                    (Route.Tables Table.stripedDarkRoute)
                 ]
             ]
         ]

@@ -9,10 +9,10 @@ import Html
         , blockquote
         , cite
         , div
-        , header
         , h1
         , h2
         , h3
+        , header
         , p
         , text
         )
@@ -25,34 +25,30 @@ view =
         feature =
             Feature.example
     in
-        div [ attribute "data-name" "component" ]
-            [ article [ class Styles.article ]
-                [ hero feature
-                , content feature
-                ]
+    div [ attribute "data-name" "component" ]
+        [ article [ class Styles.article ]
+            [ hero feature
+            , content feature
             ]
+        ]
 
 
 hero : Feature -> Html msg
 hero { backgroundImageUrl, issue, edition, title, slogan, author } =
     let
         backgroundImageStyle =
-            [ ( "background"
-              , "url(" ++ backgroundImageUrl ++ ") no-repeat center"
-              )
-            ]
+            style
+                "background"
+                ("url(" ++ backgroundImageUrl ++ ") no-repeat center")
     in
-        div
-            [ class Styles.backgroundImage
-            , style backgroundImageStyle
+    div [ class Styles.backgroundImage, backgroundImageStyle ]
+        [ div [ class Styles.heroContent ]
+            [ heroHeader issue edition
+            , h1 [ class Styles.title ]
+                [ text title ]
+            , heroFooter slogan author
             ]
-            [ div [ class Styles.heroContent ]
-                [ heroHeader issue edition
-                , h1 [ class Styles.title ]
-                    [ text title ]
-                , heroFooter slogan author
-                ]
-            ]
+        ]
 
 
 heroHeader : String -> String -> Html msg

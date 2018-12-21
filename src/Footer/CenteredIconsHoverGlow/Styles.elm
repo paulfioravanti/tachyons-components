@@ -1,11 +1,10 @@
-module Footer.CenteredIconsHoverGlow.Styles
-    exposing
-        ( caption
-        , footer
-        , icon
-        , link
-        , links
-        )
+module Footer.CenteredIconsHoverGlow.Styles exposing
+    ( caption
+    , footer
+    , icon
+    , link
+    , links
+    )
 
 
 caption : String

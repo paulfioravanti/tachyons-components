@@ -18,17 +18,17 @@ view =
             , ( "light-yellow", "/contact", "Contact" )
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ header [ class Styles.header ]
-                [ logo
-                , h1 [ class Styles.heading ]
-                    [ text "Title" ]
-                , h2 [ class Styles.subheading ]
-                    [ text "Your amazing subtitle" ]
-                , nav [ class Styles.navLinks ]
-                    (List.map navLink navLinks)
-                ]
+    div [ attribute "data-name" "component" ]
+        [ header [ class Styles.header ]
+            [ logo
+            , h1 [ class Styles.heading ]
+                [ text "Title" ]
+            , h2 [ class Styles.subheading ]
+                [ text "Your amazing subtitle" ]
+            , nav [ class Styles.navLinks ]
+                (List.map navLink navLinks)
             ]
+        ]
 
 
 logo : Html msg
@@ -54,18 +54,18 @@ logo =
             A4.5 4.5 0 0 1 23 12
             """
     in
-        a [ class Styles.imageLink, href "#" ]
-            [ svg
-                [ Svg.Attributes.class Styles.image
-                , attribute "data-icon" "skull"
-                , viewBox "0 0 32 32"
-                , style [ ( "fill", "currentColor" ) ]
-                ]
-                [ title []
-                    [ text "skull icon" ]
-                , path [ d iconPath ] []
-                ]
+    a [ class Styles.imageLink, href "#" ]
+        [ svg
+            [ Svg.Attributes.class Styles.image
+            , attribute "data-icon" "skull"
+            , viewBox "0 0 32 32"
+            , style "fill" "currentColor"
             ]
+            [ title []
+                [ text "skull icon" ]
+            , path [ d iconPath ] []
+            ]
+        ]
 
 
 navLink : ( String, String, String ) -> Html msg

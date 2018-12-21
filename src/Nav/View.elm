@@ -8,45 +8,33 @@ import Nav.LogoLinksInline.View as LogoLinksInline
 import Nav.LogoLinksInlineCollapse.View as LogoLinksInlineCollapse
 import Nav.LogoTitlesLinksCentered.View as LogoTitlesLinksCentered
 import Nav.MinimalSignUp.View as MinimalSignUp
-import Nav.Route
-    exposing
-        ( Route
-            ( FixedSemiTransparent
-            , LargeTitleLinkList
-            , ListOverflow
-            , LogoLinksInline
-            , LogoLinksInlineCollapse
-            , LogoTitlesLinksCentered
-            , MinimalSignUp
-            , TitleLinkList
-            )
-        )
+import Nav.Route as Route exposing (Route)
 import Nav.TitleLinkList.View as TitleLinkList
 
 
 view : Route -> Html msg
 view route =
     case route of
-        FixedSemiTransparent ->
+        Route.FixedSemiTransparent ->
             FixedSemiTransparent.view
 
-        LargeTitleLinkList ->
+        Route.LargeTitleLinkList ->
             LargeTitleLinkList.view
 
-        ListOverflow ->
+        Route.ListOverflow ->
             ListOverflow.view
 
-        LogoLinksInline ->
+        Route.LogoLinksInline ->
             LogoLinksInline.view
 
-        LogoLinksInlineCollapse ->
+        Route.LogoLinksInlineCollapse ->
             LogoLinksInlineCollapse.view
 
-        LogoTitlesLinksCentered ->
+        Route.LogoTitlesLinksCentered ->
             LogoTitlesLinksCentered.view
 
-        MinimalSignUp ->
+        Route.MinimalSignUp ->
             MinimalSignUp.view
 
-        TitleLinkList ->
+        Route.TitleLinkList ->
             TitleLinkList.view

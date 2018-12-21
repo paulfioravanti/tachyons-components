@@ -1,14 +1,13 @@
-module Page.FourByFourMixedGrid.Styles
-    exposing
-        ( article
-        , content
-        , copy
-        , header
-        , heading
-        , image
-        , imageWrapper
-        , section
-        )
+module Page.FourByFourMixedGrid.Styles exposing
+    ( article
+    , content
+    , copy
+    , header
+    , heading
+    , image
+    , imageWrapper
+    , section
+    )
 
 
 article : String

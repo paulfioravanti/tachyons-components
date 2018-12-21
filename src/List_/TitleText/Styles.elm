@@ -1,10 +1,9 @@
-module List_.TitleText.Styles
-    exposing
-        ( li
-        , meaning
-        , term
-        , ul
-        )
+module List_.TitleText.Styles exposing
+    ( li
+    , meaning
+    , term
+    , ul
+    )
 
 
 li : String

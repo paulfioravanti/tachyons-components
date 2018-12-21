@@ -1,15 +1,14 @@
-module Article.SingleColumnLargeTitle.Styles
-    exposing
-        ( article
-        , content
-        , copy
-        , date
-        , header
-        , headerImage
-        , heading
-        , image
-        , lead
-        )
+module Article.SingleColumnLargeTitle.Styles exposing
+    ( article
+    , content
+    , copy
+    , date
+    , header
+    , headerImage
+    , heading
+    , image
+    , lead
+    )
 
 
 article : String

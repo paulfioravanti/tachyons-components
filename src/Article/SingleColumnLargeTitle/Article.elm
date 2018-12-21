@@ -1,14 +1,13 @@
-module Article.SingleColumnLargeTitle.Article
-    exposing
-        ( Article
-        , Photo
-        , example
-        , image009
-        , image010
-        , image011
-        , image012
-        , image013
-        )
+module Article.SingleColumnLargeTitle.Article exposing
+    ( Article
+    , Photo
+    , example
+    , image009
+    , image010
+    , image011
+    , image012
+    , image013
+    )
 
 
 type alias Article =
@@ -52,9 +51,9 @@ image011 =
             foundations of a demolished house.
             """
     in
-        { url = "https://mrmrs.github.io/photos/011.jpg"
-        , caption = caption
-        }
+    { url = "https://mrmrs.github.io/photos/011.jpg"
+    , caption = caption
+    }
 
 
 image012 : Photo
@@ -66,9 +65,9 @@ image012 =
             formations near the shore.
             """
     in
-        { url = "https://mrmrs.github.io/photos/012.jpg"
-        , caption = caption
-        }
+    { url = "https://mrmrs.github.io/photos/012.jpg"
+    , caption = caption
+    }
 
 
 image013 : Photo
@@ -80,9 +79,9 @@ image013 =
             a lighthouse.
             """
     in
-        { url = "https://mrmrs.github.io/photos/013.jpg"
-        , caption = caption
-        }
+    { url = "https://mrmrs.github.io/photos/013.jpg"
+    , caption = caption
+    }
 
 
 example : Article
@@ -129,11 +128,11 @@ example =
             all the water in five hours.
             """
     in
-        { title = title
-        , date = "March 19th, 2015"
-        , lead = lead
-        , paragraph1 = paragraph1
-        , paragraph2 = paragraph2
-        , paragraph3 = paragraph3
-        , paragraph4 = paragraph4
-        }
+    { title = title
+    , date = "March 19th, 2015"
+    , lead = lead
+    , paragraph1 = paragraph1
+    , paragraph2 = paragraph2
+    , paragraph3 = paragraph3
+    , paragraph4 = paragraph4
+    }

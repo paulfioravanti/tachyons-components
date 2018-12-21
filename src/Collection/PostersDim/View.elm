@@ -1,7 +1,7 @@
 module Collection.PostersDim.View exposing (view)
 
-import Collection.PostersDim.Styles as Styles
 import Collection.PostersDim.Movie as Movie exposing (Movie)
+import Collection.PostersDim.Styles as Styles
 import Html exposing (Html, a, div, main_)
 import Html.Attributes exposing (attribute, class, href, style)
 
@@ -12,10 +12,10 @@ view =
         movies =
             Movie.list
     in
-        div [ attribute "data-name" "component" ]
-            [ main_ [ class Styles.main_ ]
-                (List.map movieLink movies)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ main_ [ class Styles.main_ ]
+            (List.map movieLink movies)
+        ]
 
 
 movieLink : Movie -> Html msg
@@ -26,7 +26,7 @@ movieLink { imageUrl, iTunesUrl, label } =
                 [ class Styles.image
                 , attribute "role" "img"
                 , attribute "aria-label" label
-                , style [ ( "backgroundImage", "url(" ++ imageUrl ++ ")" ) ]
+                , style "backgroundImage" ("url(" ++ imageUrl ++ ")")
                 ]
                 []
             ]

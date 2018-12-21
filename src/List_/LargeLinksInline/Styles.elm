@@ -1,9 +1,8 @@
-module List_.LargeLinksInline.Styles
-    exposing
-        ( li
-        , link
-        , ul
-        )
+module List_.LargeLinksInline.Styles exposing
+    ( li
+    , link
+    , ul
+    )
 
 
 li : String

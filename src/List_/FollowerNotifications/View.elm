@@ -24,10 +24,10 @@ view =
         followers =
             Follower.list
     in
-        div [ attribute "data-name" "component" ]
-            [ main_ [ class Styles.main_ ]
-                (List.map follower followers)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ main_ [ class Styles.main_ ]
+            (List.map follower followers)
+        ]
 
 
 follower : Follower -> Html msg

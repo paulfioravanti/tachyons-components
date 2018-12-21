@@ -1,19 +1,6 @@
 module Card.Styles exposing (bodyClasses, sectionContentLinkImageFormatting)
 
-import Card.Route
-    exposing
-        ( Route
-            ( AlbumCentered
-            , AlbumLeft
-            , BasicTextCard
-            , NewsCard
-            , ProductCard
-            , ProfileCard
-            , ProfileCardTitleSubtitle
-            , SuggestedProfile
-            , TextCard
-            )
-        )
+import Card.Route as Route exposing (Route)
 
 
 bodyClasses : Route -> List String
@@ -31,33 +18,33 @@ bodyClasses route =
             , "w-100"
             ]
     in
-        case route of
-            AlbumCentered ->
-                "pt5" :: defaultFormatting
+    case route of
+        Route.AlbumCentered ->
+            "pt5" :: defaultFormatting
 
-            AlbumLeft ->
-                "pt5" :: defaultFormatting
+        Route.AlbumLeft ->
+            "pt5" :: defaultFormatting
 
-            BasicTextCard ->
-                defaultFormatting
+        Route.BasicTextCard ->
+            defaultFormatting
 
-            NewsCard ->
-                nearWhiteBackground
+        Route.NewsCard ->
+            nearWhiteBackground
 
-            ProductCard ->
-                defaultFormatting
+        Route.ProductCard ->
+            defaultFormatting
 
-            ProfileCard ->
-                nearWhiteBackground
+        Route.ProfileCard ->
+            nearWhiteBackground
 
-            ProfileCardTitleSubtitle ->
-                nearWhiteBackground
+        Route.ProfileCardTitleSubtitle ->
+            nearWhiteBackground
 
-            SuggestedProfile ->
-                defaultFormatting
+        Route.SuggestedProfile ->
+            defaultFormatting
 
-            TextCard ->
-                defaultFormatting
+        Route.TextCard ->
+            defaultFormatting
 
 
 sectionContentLinkImageFormatting : Route -> List String
@@ -68,31 +55,31 @@ sectionContentLinkImageFormatting route =
 
         componentSpecificFormatting =
             case route of
-                AlbumCentered ->
+                Route.AlbumCentered ->
                     []
 
-                AlbumLeft ->
+                Route.AlbumLeft ->
                     []
 
-                BasicTextCard ->
+                Route.BasicTextCard ->
                     [ "contain" ]
 
-                NewsCard ->
+                Route.NewsCard ->
                     []
 
-                ProductCard ->
+                Route.ProductCard ->
                     []
 
-                ProfileCard ->
+                Route.ProfileCard ->
                     []
 
-                ProfileCardTitleSubtitle ->
+                Route.ProfileCardTitleSubtitle ->
                     []
 
-                SuggestedProfile ->
+                Route.SuggestedProfile ->
                     []
 
-                TextCard ->
+                Route.TextCard ->
                     [ "contain" ]
     in
-        defaultFormatting :: componentSpecificFormatting
+    defaultFormatting :: componentSpecificFormatting

@@ -1,11 +1,10 @@
-module Collection.Posters.Styles
-    exposing
-        ( collection
-        , firstCollection
-        , image
-        , link
-        , main_
-        )
+module Collection.Posters.Styles exposing
+    ( collection
+    , firstCollection
+    , image
+    , link
+    , main_
+    )
 
 
 collection : String

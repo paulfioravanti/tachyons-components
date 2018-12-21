@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Collections))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Collections"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,33 +17,27 @@ view changeLocationMsg =
                 [ Utils.component
                     "collections/albums/"
                     "Albums"
-                    changeLocationMsg
-                    (Collections Collection.albumsRoute)
+                    (Route.Collections Collection.albumsRoute)
                 , Utils.component
                     "collections/movies/"
                     "Movies"
-                    changeLocationMsg
-                    (Collections Collection.moviesRoute)
+                    (Route.Collections Collection.moviesRoute)
                 , Utils.component
                     "collections/posters-dim/"
                     "Posters Dim"
-                    changeLocationMsg
-                    (Collections Collection.postersDimRoute)
+                    (Route.Collections Collection.postersDimRoute)
                 , Utils.component
                     "collections/posters/"
                     "Posters"
-                    changeLocationMsg
-                    (Collections Collection.postersRoute)
+                    (Route.Collections Collection.postersRoute)
                 , Utils.component
                     "collections/square-title-subtitle/"
                     "Square Title Subtitle"
-                    changeLocationMsg
-                    (Collections Collection.squareTitleSubtitleRoute)
+                    (Route.Collections Collection.squareTitleSubtitleRoute)
                 , Utils.component
                     "collections/vinyl/"
                     "Vinyl"
-                    changeLocationMsg
-                    (Collections Collection.vinylRoute)
+                    (Route.Collections Collection.vinylRoute)
                 ]
             ]
         ]

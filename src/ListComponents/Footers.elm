@@ -5,11 +5,11 @@ import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Footers))
+import Route
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Footers"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,53 +17,43 @@ view changeLocationMsg =
                 [ Utils.component
                     "footers/centered-icons-hover-glow/"
                     "Centered Icons Hover Glow"
-                    changeLocationMsg
-                    (Footers Footer.centeredIconsHoverGlowRoute)
+                    (Route.Footers Footer.centeredIconsHoverGlowRoute)
                 , Utils.component
                     "footers/inline-text/"
                     "Inline Text"
-                    changeLocationMsg
-                    (Footers Footer.inlineTextRoute)
+                    (Route.Footers Footer.inlineTextRoute)
                 , Utils.component
                     "footers/simple-large-type/"
                     "Simple Large Type"
-                    changeLocationMsg
-                    (Footers Footer.simpleLargeTypeRoute)
+                    (Route.Footers Footer.simpleLargeTypeRoute)
                 , Utils.component
                     "footers/small-print/"
                     "Small Print"
-                    changeLocationMsg
-                    (Footers Footer.smallPrintRoute)
+                    (Route.Footers Footer.smallPrintRoute)
                 , Utils.component
                     "footers/social-circles/"
                     "Social Circles"
-                    changeLocationMsg
-                    (Footers Footer.socialCirclesRoute)
+                    (Route.Footers Footer.socialCirclesRoute)
                 , Utils.component
                     "footers/social-simple-text/"
                     "Social Simple Text"
-                    changeLocationMsg
-                    (Footers Footer.socialSimpleTextRoute)
+                    (Route.Footers Footer.socialSimpleTextRoute)
                 , Utils.component
                     "footers/social-simple/"
                     "Social Simple"
-                    changeLocationMsg
-                    (Footers Footer.socialSimpleRoute)
+                    (Route.Footers Footer.socialSimpleRoute)
                 , Utils.component
                     "footers/social-text/"
                     "Social Text"
-                    changeLocationMsg
-                    (Footers Footer.socialTextRoute)
+                    (Route.Footers Footer.socialTextRoute)
                 , Utils.component
                     "footers/social/"
                     "Social"
-                    changeLocationMsg
-                    (Footers Footer.socialRoute)
+                    (Route.Footers Footer.socialRoute)
                 , Utils.component
                     "footers/studios/"
                     "Studios"
-                    changeLocationMsg
-                    (Footers Footer.studiosRoute)
+                    (Route.Footers Footer.studiosRoute)
                 ]
             ]
         ]

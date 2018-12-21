@@ -1,13 +1,12 @@
-module Form.TextareaLabel.Styles
-    exposing
-        ( form
-        , commentsField
-        , commentsHelperText
-        , commentsHelperTextLink
-        , commentsInput
-        , commentsLabel
-        , commentsLabelConstraint
-        )
+module Form.TextareaLabel.Styles exposing
+    ( commentsField
+    , commentsHelperText
+    , commentsHelperTextLink
+    , commentsInput
+    , commentsLabel
+    , commentsLabelConstraint
+    , form
+    )
 
 
 form : String

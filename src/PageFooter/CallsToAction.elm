@@ -1,7 +1,5 @@
 module PageFooter.CallsToAction exposing (view)
 
-import PageFooter.Styles as Styles
-import PageFooter.SvgPath as SvgPath
 import Html exposing (Html, a, div, span, text)
 import Html.Attributes
     exposing
@@ -9,6 +7,8 @@ import Html.Attributes
         , href
         , title
         )
+import PageFooter.Styles as Styles
+import PageFooter.SvgPath as SvgPath
 import Svg exposing (Svg, g, path, svg)
 import Svg.Attributes
     exposing
@@ -37,11 +37,11 @@ twitter =
         logo =
             path [ d SvgPath.twitterCtaLogo, fillRule "nonzero" ] []
     in
-        callToAction
-            "https://twitter.com/tachyons_css"
-            "Follow us on Twitter"
-            logo
-            "Follow @tachyons_css"
+    callToAction
+        "https://twitter.com/tachyons_css"
+        "Follow us on Twitter"
+        logo
+        "Follow @tachyons_css"
 
 
 slack : Html msg
@@ -53,11 +53,11 @@ slack =
                 , path [ d SvgPath.slackLogo ] []
                 ]
     in
-        callToAction
-            "http://tachyons-slack-invite.herokuapp.com"
-            "Join our Slack Channel"
-            logo
-            "Need Help? Join our Slack Channel"
+    callToAction
+        "http://tachyons-slack-invite.herokuapp.com"
+        "Join our Slack Channel"
+        logo
+        "Need Help? Join our Slack Channel"
 
 
 gitHub : Html msg
@@ -66,11 +66,11 @@ gitHub =
         logo =
             path [ d SvgPath.gitHubLogo ] []
     in
-        callToAction
-            "https://github.com/tachyons-css/tachyons/issues"
-            "File a bug, request a feature, ask a question!"
-            logo
-            "Open an Issue on GitHub"
+    callToAction
+        "https://github.com/tachyons-css/tachyons/issues"
+        "File a bug, request a feature, ask a question!"
+        logo
+        "Open an Issue on GitHub"
 
 
 callToAction : String -> String -> Svg msg -> String -> Html msg

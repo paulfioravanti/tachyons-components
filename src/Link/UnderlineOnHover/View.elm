@@ -27,10 +27,10 @@ view =
             , "blue"
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ div [ class Styles.links ]
-                (List.map link linkColours)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ div [ class Styles.links ]
+            (List.map link linkColours)
+        ]
 
 
 link : String -> Html msg

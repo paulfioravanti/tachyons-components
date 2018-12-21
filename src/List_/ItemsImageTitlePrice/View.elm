@@ -5,8 +5,8 @@ import Html
         ( Html
         , a
         , article
-        , div
         , dd
+        , div
         , dl
         , dt
         , h1
@@ -16,8 +16,8 @@ import Html
         , text
         )
 import Html.Attributes exposing (attribute, class, src)
-import List_.ItemsImageTitlePrice.Styles as Styles
 import List_.ItemsImageTitlePrice.Item as Item exposing (Item)
+import List_.ItemsImageTitlePrice.Styles as Styles
 
 
 view : Html msg
@@ -26,10 +26,10 @@ view =
         items =
             Item.list
     in
-        div [ attribute "data-name" "component" ]
-            [ main_ [ class Styles.main_ ]
-                (List.map item items)
-            ]
+    div [ attribute "data-name" "component" ]
+        [ main_ [ class Styles.main_ ]
+            (List.map item items)
+        ]
 
 
 item : Item -> Html msg

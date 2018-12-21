@@ -1,11 +1,10 @@
-module Layout.FourColumnCollapseTwoCollapseOne.Styles
-    exposing
-        ( four
-        , one
-        , section
-        , three
-        , two
-        )
+module Layout.FourColumnCollapseTwoCollapseOne.Styles exposing
+    ( four
+    , one
+    , section
+    , three
+    , two
+    )
 
 
 four : String

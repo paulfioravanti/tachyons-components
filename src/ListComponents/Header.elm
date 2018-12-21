@@ -3,16 +3,16 @@ module ListComponents.Header exposing (view)
 import Html exposing (Html, a, div, header, nav, small, text)
 import Html.Attributes exposing (class, href, title)
 import ListComponents.Styles as Styles
-import Route exposing (Route(ListComponents))
+import Route
 import Utils
 
 
-view : msg -> Html msg
-view msg =
+view : Html msg
+view =
     header [ class Styles.header ]
         [ div [ class Styles.headerContent ]
             [ pageTitle
-            , pageHeaderNav msg
+            , pageHeaderNav
             ]
         ]
 
@@ -34,13 +34,12 @@ pageTitle =
         ]
 
 
-pageHeaderNav : msg -> Html msg
-pageHeaderNav msg =
+pageHeaderNav : Html msg
+pageHeaderNav =
     nav [ class Styles.nav ]
         [ link "http://tachyons.io/docs" "Documentation" "Docs"
         , Utils.componentsLink
-            msg
-            (Route.toPath ListComponents)
+            (Route.toPath Route.ListComponents)
             Styles.navLink
         , link
             "http://tachyons.io/gallery"

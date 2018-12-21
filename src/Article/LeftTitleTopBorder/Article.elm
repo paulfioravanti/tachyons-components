@@ -42,9 +42,9 @@ example =
             spoil almost any typeface.
             """
     in
-        { heading = "On Typography"
-        , subHeading = "An excerpt from the Form of the Book by Jan Tschichold"
-        , date = "Sometime before 1967"
-        , paragraph1 = paragraph1
-        , paragraph2 = paragraph2
-        }
+    { heading = "On Typography"
+    , subHeading = "An excerpt from the Form of the Book by Jan Tschichold"
+    , date = "Sometime before 1967"
+    , paragraph1 = paragraph1
+    , paragraph2 = paragraph2
+    }

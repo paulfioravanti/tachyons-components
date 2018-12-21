@@ -45,21 +45,21 @@ view =
         studios =
             Studio.list
     in
-        div [ attribute "data-name" "component" ]
-            [ footer [ class Styles.footer ]
-                [ div [ class Styles.studios ]
-                    (heading :: List.map studio studios)
-                , section [ class Styles.section ]
-                    [ emailAddress
-                    , signUp
-                    ]
-                , div [ class Styles.bottomSection ]
-                    [ copyright
-                    , socialIcons
-                    ]
+    div [ attribute "data-name" "component" ]
+        [ footer [ class Styles.footer ]
+            [ div [ class Styles.studios ]
+                (heading :: List.map studio studios)
+            , section [ class Styles.section ]
+                [ emailAddress
+                , signUp
                 ]
-            , copyrightMobile
+            , div [ class Styles.bottomSection ]
+                [ copyright
+                , socialIcons
+                ]
             ]
+        , copyrightMobile
+        ]
 
 
 heading : Html msg
@@ -121,8 +121,8 @@ socialIcons =
         icons =
             [ Logo.facebook, Logo.twitter, Logo.medium, Logo.linkedIn ]
     in
-        div [ class Styles.socialIcons ]
-            (List.map socialIcon icons)
+    div [ class Styles.socialIcons ]
+        (List.map socialIcon icons)
 
 
 socialIcon : Logo msg -> Html msg
@@ -131,7 +131,7 @@ socialIcon { path, name, url } =
         [ svg
             [ attribute "data-icon" name
             , viewBox "0 0 16 16"
-            , style [ ( "fill", "currentcolor" ) ]
+            , style "fill" "currentcolor"
             , fillRule "evenodd"
             , clipRule "evenodd"
             , strokeLinejoin "round"

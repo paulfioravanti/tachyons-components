@@ -1,15 +1,15 @@
 module ListComponents.Texts exposing (view)
 
-import Text
 import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import ListComponents.Styles as Styles
 import ListComponents.Utils as Utils
-import Route exposing (Route(Texts))
+import Route
+import Text
 
 
-view : (Route -> msg) -> Html msg
-view changeLocationMsg =
+view : Html msg
+view =
     div []
         [ Utils.sectionHeader "Text"
         , div [ class Styles.sectionContentWrapper ]
@@ -17,38 +17,31 @@ view changeLocationMsg =
                 [ Utils.component
                     "text/large-paragraph/"
                     "Large Paragraph"
-                    changeLocationMsg
-                    (Texts Text.largeParagraphRoute)
+                    (Route.Texts Text.largeParagraphRoute)
                 , Utils.component
                     "text/narrow-paragraph/"
                     "Narrow Paragraph"
-                    changeLocationMsg
-                    (Texts Text.narrowParagraphRoute)
+                    (Route.Texts Text.narrowParagraphRoute)
                 , Utils.component
                     "text/paragraph/"
                     "Paragraph"
-                    changeLocationMsg
-                    (Texts Text.paragraphRoute)
+                    (Route.Texts Text.paragraphRoute)
                 , Utils.component
                     "text/small-narrow-paragraph/"
                     "Small Narrow Paragraph"
-                    changeLocationMsg
-                    (Texts Text.smallNarrowParagraphRoute)
+                    (Route.Texts Text.smallNarrowParagraphRoute)
                 , Utils.component
                     "text/small-paragraph/"
                     "Small Paragraph"
-                    changeLocationMsg
-                    (Texts Text.smallParagraphRoute)
+                    (Route.Texts Text.smallParagraphRoute)
                 , Utils.component
                     "text/title-subtitle-centered/"
                     "Title Subtitle Centered"
-                    changeLocationMsg
-                    (Texts Text.titleSubtitleCenteredRoute)
+                    (Route.Texts Text.titleSubtitleCenteredRoute)
                 , Utils.component
                     "text/wide-paragraph/"
                     "Wide Paragraph"
-                    changeLocationMsg
-                    (Texts Text.wideParagraphRoute)
+                    (Route.Texts Text.wideParagraphRoute)
                 ]
             ]
         ]

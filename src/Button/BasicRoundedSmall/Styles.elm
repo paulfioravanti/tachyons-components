@@ -1,15 +1,14 @@
-module Button.BasicRoundedSmall.Styles
-    exposing
-        ( basicButton
-        , basicButtonWithBorder
-        , basicButtonWithThickBorder
-        , basicButtonWithThinBorder
-        , bottomMargin
-        , heading
-        , section
-        , topMargin
-        , topSection
-        )
+module Button.BasicRoundedSmall.Styles exposing
+    ( basicButton
+    , basicButtonWithBorder
+    , basicButtonWithThickBorder
+    , basicButtonWithThinBorder
+    , bottomMargin
+    , heading
+    , section
+    , topMargin
+    , topSection
+    )
 
 
 basicButton : String -> String
@@ -98,8 +97,8 @@ heading =
 
 
 section : String -> String
-section bottomMargin =
-    [ bottomMargin
+section bottomMargin_ =
+    [ bottomMargin_
     , "ph3"
     ]
         |> String.join " "
@@ -111,8 +110,8 @@ topMargin =
 
 
 topSection : String -> String
-topSection topMargin =
-    [ topMargin
+topSection topMargin_ =
+    [ topMargin_
     , "ph3"
     ]
         |> String.join " "

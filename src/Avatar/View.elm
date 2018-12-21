@@ -1,23 +1,12 @@
 module Avatar.View exposing (view)
 
-import Avatar.Route
-    exposing
-        ( Route
-            ( Circle
-            , CircleBorder
-            , DoubleRing
-            , RoundedLarge
-            , RoundedMedium
-            , RoundedSmall
-            , Square
-            )
-        )
 import Avatar.Circle.View as Circle
 import Avatar.CircleBorder.View as CircleBorder
 import Avatar.DoubleRing.View as DoubleRing
 import Avatar.RoundedLarge.View as RoundedLarge
 import Avatar.RoundedMedium.View as RoundedMedium
 import Avatar.RoundedSmall.View as RoundedSmall
+import Avatar.Route as Route exposing (Route)
 import Avatar.Square.View as Square
 import Html exposing (Html)
 
@@ -25,23 +14,23 @@ import Html exposing (Html)
 view : Route -> Html msg
 view route =
     case route of
-        Circle ->
+        Route.Circle ->
             Circle.view
 
-        CircleBorder ->
+        Route.CircleBorder ->
             CircleBorder.view
 
-        DoubleRing ->
+        Route.DoubleRing ->
             DoubleRing.view
 
-        RoundedLarge ->
+        Route.RoundedLarge ->
             RoundedLarge.view
 
-        RoundedMedium ->
+        Route.RoundedMedium ->
             RoundedMedium.view
 
-        RoundedSmall ->
+        Route.RoundedSmall ->
             RoundedSmall.view
 
-        Square ->
+        Route.Square ->
             Square.view

@@ -38,8 +38,8 @@ example =
             a better job than others.
             """
     in
-        { heading = "Clay in a Potter's Hand"
-        , author = "Jan Tschichold"
-        , paragraph1 = paragraph1
-        , paragraph2 = paragraph2
-        }
+    { heading = "Clay in a Potter's Hand"
+    , author = "Jan Tschichold"
+    , paragraph1 = paragraph1
+    , paragraph2 = paragraph2
+    }

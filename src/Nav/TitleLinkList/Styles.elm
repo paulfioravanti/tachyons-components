@@ -1,10 +1,9 @@
-module Nav.TitleLinkList.Styles
-    exposing
-        ( firstNavLink
-        , lastNavLink
-        , navLink
-        , navLinks
-        )
+module Nav.TitleLinkList.Styles exposing
+    ( firstNavLink
+    , lastNavLink
+    , navLink
+    , navLinks
+    )
 
 
 firstNavLink : String

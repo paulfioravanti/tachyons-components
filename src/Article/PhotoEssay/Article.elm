@@ -1,14 +1,13 @@
-module Article.PhotoEssay.Article
-    exposing
-        ( Article
-        , Photo
-        , example
-        , image009
-        , image010
-        , image011
-        , image012
-        , image013
-        )
+module Article.PhotoEssay.Article exposing
+    ( Article
+    , Photo
+    , example
+    , image009
+    , image010
+    , image011
+    , image012
+    , image013
+    )
 
 
 type alias Article =
@@ -51,9 +50,9 @@ image011 =
             foundations of a demolished house.
             """
     in
-        { url = "https://mrmrs.github.io/photos/011.jpg"
-        , caption = caption
-        }
+    { url = "https://mrmrs.github.io/photos/011.jpg"
+    , caption = caption
+    }
 
 
 image012 : Photo
@@ -65,9 +64,9 @@ image012 =
             formations near the shore.
             """
     in
-        { url = "https://mrmrs.github.io/photos/012.jpg"
-        , caption = caption
-        }
+    { url = "https://mrmrs.github.io/photos/012.jpg"
+    , caption = caption
+    }
 
 
 image013 : Photo
@@ -79,9 +78,9 @@ image013 =
             a lighthouse.
             """
     in
-        { url = "https://mrmrs.github.io/photos/013.jpg"
-        , caption = caption
-        }
+    { url = "https://mrmrs.github.io/photos/013.jpg"
+    , caption = caption
+    }
 
 
 example : Article
@@ -111,10 +110,10 @@ example =
             insurance money.
             """
     in
-        { backgroundImageUrl = "https://mrmrs.github.io/photos/display.jpg"
-        , title = title
-        , author = "A story by Nancy Drew"
-        , lead = lead
-        , copyLead = "Before it burned to the ground, the structure "
-        , copy = copy
-        }
+    { backgroundImageUrl = "https://mrmrs.github.io/photos/display.jpg"
+    , title = title
+    , author = "A story by Nancy Drew"
+    , lead = lead
+    , copyLead = "Before it burned to the ground, the structure "
+    , copy = copy
+    }

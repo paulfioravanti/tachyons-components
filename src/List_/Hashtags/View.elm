@@ -30,15 +30,15 @@ view =
             , ( "trending", "4.1" )
             ]
     in
-        div [ attribute "data-name" "component" ]
-            [ section [ class Styles.section ]
-                [ article [ class Styles.article ]
-                    [ heading
-                    , ul [ class Styles.ul ]
-                        (List.map hashtag hashtags)
-                    ]
+    div [ attribute "data-name" "component" ]
+        [ section [ class Styles.section ]
+            [ article [ class Styles.article ]
+                [ heading
+                , ul [ class Styles.ul ]
+                    (List.map hashtag hashtags)
                 ]
             ]
+        ]
 
 
 heading : Html msg
