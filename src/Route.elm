@@ -118,7 +118,7 @@ toPath route =
             "/components/marketing/" ++ Marketing.routeToPath subRoute ++ "/"
 
         Navs subRoute ->
-            "/components/nav/" ++ Utils.pathify subRoute ++ "/"
+            "/components/nav/" ++ Nav.routeToPath subRoute ++ "/"
 
         NotFound ->
             "/not-found/"

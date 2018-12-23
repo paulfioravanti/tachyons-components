@@ -9,6 +9,7 @@ module Nav exposing
     , logoTitlesLinksCenteredRoute
     , matchers
     , minimalSignUpRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , titleLinkListRoute
     , view
@@ -68,6 +69,11 @@ matchers =
 minimalSignUpRoute : Route
 minimalSignUpRoute =
     Route.MinimalSignUp
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
