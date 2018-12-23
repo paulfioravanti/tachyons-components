@@ -1,7 +1,6 @@
-module Page.Route exposing (Route(..), matchers)
+module Page.Route exposing (Route(..), matchers, toPath)
 
 import Url.Parser exposing (Parser, map, s)
-import Utils
 
 
 type Route
@@ -13,11 +12,34 @@ type Route
 
 matchers : Parser (Route -> a) a
 matchers =
-    map FourByFourMixedGrid (s "4x4-mixed-grid")
-        :: ([ Double
-            , PortfolioProject
-            , SwissCoverFiveColumns
-            ]
-                |> List.map Utils.routeFor
-           )
+    let
+        matcher : Route -> Parser (Route -> a) a
+        matcher route =
+            route
+                |> toPath
+                |> Url.Parser.s
+                |> Url.Parser.map route
+    in
+    [ Double
+    , FourByFourMixedGrid
+    , PortfolioProject
+    , SwissCoverFiveColumns
+    ]
+        |> List.map matcher
         |> Url.Parser.oneOf
+
+
+toPath : Route -> String
+toPath route =
+    case route of
+        Double ->
+            "double"
+
+        FourByFourMixedGrid ->
+            "4x4-mixed-grid"
+
+        PortfolioProject ->
+            "portfolio-project"
+
+        SwissCoverFiveColumns ->
+            "swiss-cover-five-columns"

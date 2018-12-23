@@ -124,15 +124,7 @@ toPath route =
             "/not-found/"
 
         Pages subRoute ->
-            let
-                pageRoute =
-                    if subRoute == Page.fourByFourMixedGridRoute then
-                        "4x4-mixed-grid"
-
-                    else
-                        Utils.pathify subRoute
-            in
-            "/components/pages/" ++ pageRoute ++ "/"
+            "/components/pages/" ++ Page.routeToPath subRoute ++ "/"
 
         Quotes subRoute ->
             "/components/quotes/" ++ Utils.pathify subRoute ++ "/"

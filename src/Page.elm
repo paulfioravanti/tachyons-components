@@ -5,6 +5,7 @@ module Page exposing
     , fourByFourMixedGridRoute
     , matchers
     , portfolioProjectRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , swissCoverFiveColumnsRoute
     , view
@@ -44,6 +45,11 @@ matchers =
 portfolioProjectRoute : Route
 portfolioProjectRoute =
     Route.PortfolioProject
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
