@@ -127,7 +127,7 @@ toPath route =
             "/components/pages/" ++ Page.routeToPath subRoute ++ "/"
 
         Quotes subRoute ->
-            "/components/quotes/" ++ Utils.pathify subRoute ++ "/"
+            "/components/quotes/" ++ Quote.routeToPath subRoute ++ "/"
 
         Tables subRoute ->
             "/components/tables/" ++ Utils.pathify subRoute ++ "/"

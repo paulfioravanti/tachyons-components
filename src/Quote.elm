@@ -4,6 +4,7 @@ module Quote exposing
     , leftBorderRoute
     , matchers
     , pullQuoteRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , view
     )
@@ -37,6 +38,11 @@ matchers =
 pullQuoteRoute : Route
 pullQuoteRoute =
     Route.PullQuote
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
