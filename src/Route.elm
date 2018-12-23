@@ -133,7 +133,7 @@ toPath route =
             "/components/tables/" ++ Table.routeToPath subRoute ++ "/"
 
         Texts subRoute ->
-            "/components/text/" ++ Utils.pathify subRoute ++ "/"
+            "/components/text/" ++ Text.routeToPath subRoute ++ "/"
 
 
 matchers : Parser (Route -> a) a

@@ -5,6 +5,7 @@ module Text exposing
     , matchers
     , narrowParagraphRoute
     , paragraphRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , smallNarrowParagraphRoute
     , smallParagraphRoute
@@ -47,6 +48,11 @@ narrowParagraphRoute =
 paragraphRoute : Route
 paragraphRoute =
     Route.Paragraph
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
