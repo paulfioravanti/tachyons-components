@@ -3,6 +3,7 @@ module Marketing exposing
     , bodyClasses
     , iphoneAppRoute
     , matchers
+    , routeToPath
     , sectionContentLinkImageFormatting
     , view
     )
@@ -31,6 +32,11 @@ iphoneAppRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
