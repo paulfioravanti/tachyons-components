@@ -34,7 +34,7 @@ matchers =
     , MinimalSignUp
     , TitleLinkList
     ]
-        |> List.map Utils.routeFor
+        |> List.map matcher
         |> Url.Parser.oneOf
 
 

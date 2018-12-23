@@ -1,9 +1,7 @@
-module Utils exposing (componentsLink, pathify, routeFor, toPath)
+module Utils exposing (componentsLink, toPath)
 
 import Html exposing (Html, a, text)
 import Html.Attributes exposing (class, href, title)
-import Html.Events exposing (custom)
-import Json.Decode as Decode
 import String.Extra
 import Url.Parser exposing (Parser)
 
@@ -16,21 +14,6 @@ componentsLink link styles =
         , title "Components"
         ]
         [ text "Components" ]
-
-
-pathify : a -> String
-pathify stringifiable =
-    stringifiable
-        |> Debug.toString
-        |> toPath
-
-
-routeFor : a -> Parser (a -> b) b
-routeFor route =
-    route
-        |> pathify
-        |> Url.Parser.s
-        |> Url.Parser.map route
 
 
 toPath : String -> String
