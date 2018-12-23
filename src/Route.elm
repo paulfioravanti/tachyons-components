@@ -91,15 +91,9 @@ toPath route =
                 ++ "/"
 
         ErrorPages subRoute ->
-            let
-                errorRoute =
-                    if subRoute == ErrorPage.fourOhFourRoute then
-                        "404"
-
-                    else
-                        Utils.pathify subRoute
-            in
-            "/components/error-pages/" ++ errorRoute ++ "/"
+            "/components/error-pages/"
+                ++ ErrorPage.routeToPath subRoute
+                ++ "/"
 
         Footers subRoute ->
             "/components/footers/" ++ Utils.pathify subRoute ++ "/"

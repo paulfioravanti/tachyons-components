@@ -3,6 +3,7 @@ module ErrorPage exposing
     , bodyClasses
     , fourOhFourRoute
     , matchers
+    , routeToPath
     , sectionContentLinkImageFormatting
     , view
     )
@@ -31,6 +32,11 @@ fourOhFourRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
