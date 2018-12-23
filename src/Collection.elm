@@ -6,6 +6,7 @@ module Collection exposing
     , moviesRoute
     , postersDimRoute
     , postersRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , squareTitleSubtitleRoute
     , view
@@ -51,6 +52,11 @@ postersDimRoute =
 postersRoute : Route
 postersRoute =
     Route.Posters
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
