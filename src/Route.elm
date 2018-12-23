@@ -63,10 +63,12 @@ toPath : Route -> String
 toPath route =
     case route of
         Articles subRoute ->
-            "/components/articles/" ++ Utils.pathify subRoute ++ "/"
+            "/components/articles/" ++ Article.routeToPath subRoute ++ "/"
 
         ArticleLists subRoute ->
-            "/components/article-lists/" ++ Utils.pathify subRoute ++ "/"
+            "/components/article-lists/"
+                ++ ArticleList.routeToPath subRoute
+                ++ "/"
 
         Avatars subRoute ->
             "/components/avatars/" ++ Utils.pathify subRoute ++ "/"

@@ -9,6 +9,7 @@ module Article exposing
     , leftTitleTopBorderRoute
     , matchers
     , photoEssayRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , singleColumnLargeTitleRoute
     , titleHighlightHeaderCoverRoute
@@ -71,6 +72,11 @@ leftTitleTopBorderRoute =
 photoEssayRoute : Route
 photoEssayRoute =
     Route.PhotoEssay
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String

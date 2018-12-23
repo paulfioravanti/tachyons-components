@@ -1,6 +1,5 @@
 module Utils exposing (componentsLink, pathify, routeFor, toPath)
 
-import Debug
 import Html exposing (Html, a, text)
 import Html.Attributes exposing (class, href, title)
 import Html.Events exposing (custom)
