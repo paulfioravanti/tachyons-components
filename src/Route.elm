@@ -106,7 +106,7 @@ toPath route =
             "/components/layout/" ++ Layout.routeToPath subRoute ++ "/"
 
         Links subRoute ->
-            "/components/links/" ++ Utils.pathify subRoute ++ "/"
+            "/components/links/" ++ Link.routeToPath subRoute ++ "/"
 
         ListComponents ->
             "/components/"

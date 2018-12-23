@@ -5,6 +5,7 @@ module Link exposing
     , bodyClasses
     , dimNoUnderlineRoute
     , matchers
+    , routeToPath
     , sectionContentLinkImageFormatting
     , underlineOnHoverRoute
     , view
@@ -44,6 +45,11 @@ dimNoUnderlineRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
