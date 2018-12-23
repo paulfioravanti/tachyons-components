@@ -80,7 +80,7 @@ toPath route =
             "/components/buttons/" ++ Button.routeToPath subRoute ++ "/"
 
         Cards subRoute ->
-            "/components/cards/" ++ Utils.pathify subRoute ++ "/"
+            "/components/cards/" ++ Card.routeToPath subRoute ++ "/"
 
         Collections subRoute ->
             "/components/collections/" ++ Utils.pathify subRoute ++ "/"

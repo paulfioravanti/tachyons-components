@@ -9,6 +9,7 @@ module Card exposing
     , productCardRoute
     , profileCardRoute
     , profileCardTitleSubtitleRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , suggestedProfileRoute
     , textCardRoute
@@ -69,6 +70,11 @@ profileCardRoute =
 profileCardTitleSubtitleRoute : Route
 profileCardTitleSubtitleRoute =
     Route.ProfileCardTitleSubtitle
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
