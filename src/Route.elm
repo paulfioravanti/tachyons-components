@@ -86,7 +86,9 @@ toPath route =
             "/components/collections/" ++ Collection.routeToPath subRoute ++ "/"
 
         DefinitionLists subRoute ->
-            "/components/definition-lists/" ++ Utils.pathify subRoute ++ "/"
+            "/components/definition-lists/"
+                ++ DefinitionList.routeToPath subRoute
+                ++ "/"
 
         ErrorPages subRoute ->
             let

@@ -3,6 +3,7 @@ module DefinitionList exposing
     , bodyClasses
     , inlineRoute
     , matchers
+    , routeToPath
     , sectionContentLinkImageFormatting
     , simpleRoute
     , view
@@ -32,6 +33,11 @@ inlineRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
