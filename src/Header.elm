@@ -4,6 +4,7 @@ module Header exposing
     , circleAvatarTitleSubtitleRoute
     , matchers
     , roundedAvatarTitleSubtitleRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , startupHeroRoute
     , view
@@ -38,6 +39,11 @@ matchers =
 roundedAvatarTitleSubtitleRoute : Route
 roundedAvatarTitleSubtitleRoute =
     Route.RoundedAvatarTitleSubtitle
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
