@@ -24,9 +24,9 @@ import ListComponents.Quotes as Quotes
 import ListComponents.Styles as Styles
 import ListComponents.Tables as Tables
 import ListComponents.Texts as Texts
+import ListComponents.Utils as Utils
 import Route exposing (Route)
 import Styles
-import Utils
 
 
 view : Html msg

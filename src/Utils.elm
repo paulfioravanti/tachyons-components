@@ -1,9 +1,7 @@
-module Utils exposing (componentsLink, toPath)
+module Utils exposing (componentsLink)
 
 import Html exposing (Html, a, text)
 import Html.Attributes exposing (class, href, title)
-import String.Extra
-import Url.Parser exposing (Parser)
 
 
 componentsLink : String -> String -> Html msg
@@ -14,10 +12,3 @@ componentsLink link styles =
         , title "Components"
         ]
         [ text "Components" ]
-
-
-toPath : String -> String
-toPath string =
-    string
-        |> String.Extra.underscored
-        |> String.Extra.dasherize

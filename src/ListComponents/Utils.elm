@@ -1,4 +1,4 @@
-module ListComponents.Utils exposing (component, sectionHeader)
+module ListComponents.Utils exposing (component, sectionHeader, toPath)
 
 import Html exposing (Html, a, div, h3, p, text)
 import Html.Attributes exposing (attribute, class, href, id, title)
@@ -6,8 +6,8 @@ import Html.Events exposing (custom)
 import Json.Decode as Decode
 import ListComponents.Styles as Styles
 import Route exposing (Route)
+import String.Extra
 import Styles
-import Utils
 
 
 component : String -> String -> Route -> Html msg
@@ -40,8 +40,7 @@ sectionHeader : String -> Html msg
 sectionHeader sectionTitle =
     let
         sectionId =
-            sectionTitle
-                |> Utils.toPath
+            toPath sectionTitle
     in
     div [ class Styles.sectionHeader, id sectionId ]
         [ div [ class Styles.centerContent ]
@@ -49,3 +48,10 @@ sectionHeader sectionTitle =
                 [ text sectionTitle ]
             ]
         ]
+
+
+toPath : String -> String
+toPath string =
+    string
+        |> String.Extra.underscored
+        |> String.Extra.dasherize
