@@ -8,6 +8,7 @@ module Avatar exposing
     , roundedLargeRoute
     , roundedMediumRoute
     , roundedSmallRoute
+    , routeToPath
     , squareRoute
     , view
     )
@@ -61,6 +62,11 @@ roundedMediumRoute =
 roundedSmallRoute : Route
 roundedSmallRoute =
     Route.RoundedSmall
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 squareRoute : Route
