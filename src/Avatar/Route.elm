@@ -1,7 +1,6 @@
 module Avatar.Route exposing (Route(..), matchers, toPath)
 
 import Url.Parser exposing (Parser)
-import Utils
 
 
 type Route

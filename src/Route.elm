@@ -74,7 +74,7 @@ toPath route =
             "/components/avatars/" ++ Avatar.routeToPath subRoute ++ "/"
 
         Banners subRoute ->
-            "/components/banners/" ++ Utils.pathify subRoute ++ "/"
+            "/components/banners/" ++ Banner.routeToPath subRoute ++ "/"
 
         Buttons subRoute ->
             "/components/buttons/" ++ Utils.pathify subRoute ++ "/"
