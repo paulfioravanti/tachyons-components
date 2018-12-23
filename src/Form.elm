@@ -6,6 +6,7 @@ module Form exposing
     , matchers
     , newsletterSubscriptionRoute
     , passwordRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , signInRoute
     , signUpRoute
@@ -52,6 +53,11 @@ newsletterSubscriptionRoute =
 passwordRoute : Route
 passwordRoute =
     Route.Password
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String

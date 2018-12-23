@@ -97,7 +97,7 @@ toPath route =
             "/components/footers/" ++ Footer.routeToPath subRoute ++ "/"
 
         Forms subRoute ->
-            "/components/forms/" ++ Utils.pathify subRoute ++ "/"
+            "/components/forms/" ++ Form.routeToPath subRoute ++ "/"
 
         Headers subRoute ->
             "/components/headers/" ++ Utils.pathify subRoute ++ "/"
