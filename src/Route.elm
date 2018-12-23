@@ -130,7 +130,7 @@ toPath route =
             "/components/quotes/" ++ Quote.routeToPath subRoute ++ "/"
 
         Tables subRoute ->
-            "/components/tables/" ++ Utils.pathify subRoute ++ "/"
+            "/components/tables/" ++ Table.routeToPath subRoute ++ "/"
 
         Texts subRoute ->
             "/components/text/" ++ Utils.pathify subRoute ++ "/"

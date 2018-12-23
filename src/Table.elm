@@ -3,6 +3,7 @@ module Table exposing
     , basicRoute
     , bodyClasses
     , matchers
+    , routeToPath
     , sectionContentLinkImageFormatting
     , stripedDarkRoute
     , view
@@ -32,6 +33,11 @@ bodyClasses route =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
