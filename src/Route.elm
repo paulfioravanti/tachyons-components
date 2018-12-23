@@ -91,12 +91,10 @@ toPath route =
                 ++ "/"
 
         ErrorPages subRoute ->
-            "/components/error-pages/"
-                ++ ErrorPage.routeToPath subRoute
-                ++ "/"
+            "/components/error-pages/" ++ ErrorPage.routeToPath subRoute ++ "/"
 
         Footers subRoute ->
-            "/components/footers/" ++ Utils.pathify subRoute ++ "/"
+            "/components/footers/" ++ Footer.routeToPath subRoute ++ "/"
 
         Forms subRoute ->
             "/components/forms/" ++ Utils.pathify subRoute ++ "/"

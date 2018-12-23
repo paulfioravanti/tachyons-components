@@ -4,6 +4,7 @@ module Footer exposing
     , centeredIconsHoverGlowRoute
     , inlineTextRoute
     , matchers
+    , routeToPath
     , sectionContentLinkImageFormatting
     , simpleLargeTypeRoute
     , smallPrintRoute
@@ -45,6 +46,11 @@ inlineTextRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
