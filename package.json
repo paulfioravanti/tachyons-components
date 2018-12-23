@@ -1,18 +1,27 @@
 {
   "name": "tachyons-components",
   "version": "1.0.0",
-  "description": "This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).",
+  "description": "Re-creation of the Tachyons Components documentation using Elm",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
+  "dependencies": {
+    "lazysizes": "^4.0.4",
+    "tachyons": "^4.11.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulfioravanti/tachyons-components.git"
+  },
   "author": "Paul Fioravanti",
   "license": "MIT",
-  "dependencies": {
-    "lazysizes": "^4.0.4",
-    "tachyons": "^4.10.0"
-  }
+  "bugs": {
+    "url": "https://github.com/paulfioravanti/tachyons-components/issues"
+  },
+  "homepage": "https://github.com/paulfioravanti/tachyons-components#readme"
 }
