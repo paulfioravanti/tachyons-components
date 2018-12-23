@@ -103,7 +103,7 @@ toPath route =
             "/components/headers/" ++ Header.routeToPath subRoute ++ "/"
 
         Layouts subRoute ->
-            "/components/layout/" ++ Utils.pathify subRoute ++ "/"
+            "/components/layout/" ++ Layout.routeToPath subRoute ++ "/"
 
         Links subRoute ->
             "/components/links/" ++ Utils.pathify subRoute ++ "/"

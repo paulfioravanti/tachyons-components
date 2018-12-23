@@ -39,6 +39,7 @@ module Layout exposing
     , fullScreenCenteredTitleRoute
     , horizontalAspectRatiosRoute
     , matchers
+    , routeToPath
     , sectionContentLinkImageFormatting
     , threeColumnCollapseOneRoute
     , threeColumnRoute
@@ -251,6 +252,11 @@ horizontalAspectRatiosRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
