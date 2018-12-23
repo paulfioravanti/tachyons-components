@@ -10,6 +10,7 @@ module Button exposing
     , matchers
     , pillGrowRoute
     , pillRoute
+    , routeToPath
     , sectionContentLinkImageFormatting
     , view
     )
@@ -73,6 +74,11 @@ pillGrowRoute =
 pillRoute : Route
 pillRoute =
     Route.Pill
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
