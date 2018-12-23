@@ -112,7 +112,7 @@ toPath route =
             "/components/"
 
         Lists subRoute ->
-            "/components/lists/" ++ Utils.pathify subRoute ++ "/"
+            "/components/lists/" ++ List_.routeToPath subRoute ++ "/"
 
         Marketing subRoute ->
             "/components/marketing/" ++ Utils.pathify subRoute ++ "/"

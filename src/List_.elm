@@ -14,6 +14,7 @@ module List_ exposing
     , linksInlineRoute
     , linksWithBordersInlineRoute
     , matchers
+    , routeToPath
     , sectionContentLinkImageFormatting
     , slabStatLargeRoute
     , slabStatRoute
@@ -101,6 +102,11 @@ linksWithBordersInlineRoute =
 matchers : Parser (Route -> a) a
 matchers =
     Route.matchers
+
+
+routeToPath : Route -> String
+routeToPath route =
+    Route.toPath route
 
 
 sectionContentLinkImageFormatting : Route -> List String
