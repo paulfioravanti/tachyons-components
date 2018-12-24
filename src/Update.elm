@@ -19,7 +19,7 @@ update msg model =
                     let
                         setBodyClasses =
                             url
-                                |> Route.fromLocation
+                                |> Route.fromUrl
                                 |> Styles.bodyClasses
                                 |> Ports.setBodyClasses
 
@@ -46,6 +46,6 @@ update msg model =
         Msg.UrlChanged url ->
             let
                 route =
-                    Route.fromLocation url
+                    Route.fromUrl url
             in
             ( { model | route = route }, Cmd.none )

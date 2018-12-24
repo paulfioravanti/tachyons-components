@@ -1,4 +1,4 @@
-module Route exposing (Route(..), fromLocation, toPath)
+module Route exposing (Route(..), fromUrl, toPath)
 
 import Article
 import ArticleList
@@ -52,8 +52,8 @@ type Route
     | Texts Text.Route
 
 
-fromLocation : Url -> Route
-fromLocation url =
+fromUrl : Url -> Route
+fromUrl url =
     url
         |> Url.Parser.parse matchers
         |> Maybe.withDefault NotFound

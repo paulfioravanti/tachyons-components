@@ -28,7 +28,7 @@ init : () -> Url -> Key -> ( Model, Cmd Msg )
 init () url navKey =
     let
         route =
-            Route.fromLocation url
+            Route.fromUrl url
 
         setBodyClasses =
             route
