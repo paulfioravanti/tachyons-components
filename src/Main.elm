@@ -25,7 +25,7 @@ main =
 
 
 init : () -> Url -> Key -> ( Model, Cmd Msg )
-init () url navKey =
+init () url key =
     let
         route =
             Route.fromUrl url
@@ -38,8 +38,8 @@ init () url navKey =
         setUrl =
             route
                 |> Route.toPath
-                |> Navigation.pushUrl navKey
+                |> Navigation.pushUrl key
     in
-    ( { route = route, navKey = navKey }
+    ( { route = route, key = key }
     , Cmd.batch [ setBodyClasses, setUrl ]
     )

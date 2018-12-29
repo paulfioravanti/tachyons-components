@@ -31,7 +31,7 @@ update msg model =
                             -- urls: https://github.com/elm/browser/issues/39
                             case url.fragment of
                                 Nothing ->
-                                    Navigation.pushUrl model.navKey urlString
+                                    Navigation.pushUrl model.key urlString
 
                                 Just _ ->
                                     Navigation.load urlString

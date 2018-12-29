@@ -6,5 +6,5 @@ import Route exposing (Route)
 
 type alias Model =
     { route : Route
-    , navKey : Key
+    , key : Key
     }
