@@ -2,8 +2,6 @@ module ListComponents.Utils exposing (component, sectionHeader, toPath)
 
 import Html exposing (Html, a, div, h3, p, text)
 import Html.Attributes exposing (attribute, class, href, id, title)
-import Html.Events exposing (custom)
-import Json.Decode as Decode
 import ListComponents.Styles as Styles
 import Route exposing (Route)
 import String.Extra

@@ -23,7 +23,6 @@ import Table
 import Text
 import Url exposing (Url)
 import Url.Parser exposing ((</>), Parser, map, oneOf, s, top)
-import Utils
 
 
 type Route

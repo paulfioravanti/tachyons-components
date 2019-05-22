@@ -5,7 +5,7 @@ import Html.Attributes exposing (class, href, title)
 import PageFooter.Badges as Badges
 import PageFooter.CallsToAction as CallsToAction
 import PageFooter.Styles as Styles
-import Route exposing (Route)
+import Route
 import Styles
 import Utils
 

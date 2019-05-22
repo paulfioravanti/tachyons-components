@@ -13,7 +13,7 @@ import ErrorPage
 import Footer
 import Form
 import Header
-import Html exposing (Html, div, main_)
+import Html exposing (div, main_)
 import Layout
 import Link
 import ListComponents
