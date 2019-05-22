@@ -47,6 +47,15 @@ Now, you should be able to see the pages at the following address:
 
 - <http://localhost:3000>
 
+## Deployment
+
+Deployment is managed in the [`push`](push) script. It creates a build, pushes
+the code to Github, and deploys out to Heroku with the command:
+
+```sh
+./push
+```
+
 [Create Elm App]: https://github.com/halfzebra/create-elm-app
 [Elm]: http://elm-lang.org/
 [NodeJS]: https://nodejs.org/en/
