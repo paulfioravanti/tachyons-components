@@ -1,5 +1,5 @@
 # Distribution
-# NOTE: Build directory needed for deployment to Heroku.
+# NOTE: Build directory needed for deployment.
 # build/
 
 # elm-package generated files

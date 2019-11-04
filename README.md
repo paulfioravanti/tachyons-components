@@ -14,8 +14,8 @@ Currently deployed at:
 
 ### Dependencies
 
-- [Elm][] 0.19.0
-- [NodeJS][] 11.2.0
+- [Elm][] 0.19.1
+- [NodeJS][] 13.0.1
 
 ## Setup
 
@@ -34,7 +34,6 @@ npm install -g create-elm-app
 git clone https://github.com/paulfioravanti/tachyons-components.git
 cd tachyons-components
 npm install
-elm-package install
 ```
 
 ### Run Server
