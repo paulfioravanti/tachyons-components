@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "lazysizes": "^4.0.4",
+    "lazysizes": "^5.2.1",
     "tachyons": "^4.11.1"
   },
   "devDependencies": {},
