@@ -6,10 +6,6 @@ documentation pages using [Elm][].
 The purpose is simply for web interface coding practice using [Tachyons][] and
 Elm.
 
-Currently deployed at:
-
-- Heroku: <https://tachyons-components.herokuapp.com/>
-
 ## Development
 
 ### Dependencies
@@ -49,7 +45,7 @@ Now, you should be able to see the pages at the following address:
 ## Deployment
 
 Deployment is managed in the [`push`](push) script. It creates a build, pushes
-the code to Github, and deploys out to Heroku with the command:
+the code to Github, and originally deployed out to Heroku with the command:
 
 ```sh
 ./push
